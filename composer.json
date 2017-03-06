@@ -33,7 +33,9 @@
         "friendsofsymfony/rest-bundle": "2.1.1",
         "willdurand/hateoas-bundle": "1.2.0",
         "hautelook/templated-uri-bundle": "2.0.1",
-        "willdurand/rest-extra-bundle": "1.2.0"
+        "willdurand/rest-extra-bundle": "1.2.0",
+        "friendsofsymfony/comment-bundle": "3.0.x-dev",
+        "friendsofsymfony/user-bundle": "2.0.x-dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",

@@ -65,7 +65,9 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
         ),
         'F' => 
         array (
+            'FOS\\UserBundle\\' => 15,
             'FOS\\RestBundle\\' => 15,
+            'FOS\\CommentBundle\\' => 18,
         ),
         'D' => 
         array (
@@ -178,9 +180,17 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
         array (
             0 => __DIR__ . '/..' . '/hautelook/templated-uri-router',
         ),
+        'FOS\\UserBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/friendsofsymfony/user-bundle',
+        ),
         'FOS\\RestBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/friendsofsymfony/rest-bundle',
+        ),
+        'FOS\\CommentBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/friendsofsymfony/comment-bundle',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
