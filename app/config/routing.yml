@@ -1,5 +1,5 @@
 dieta:
     resource: "@DietaBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /api
 
 
