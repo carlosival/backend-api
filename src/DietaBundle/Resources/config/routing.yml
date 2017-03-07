@@ -2,15 +2,3 @@ dieta_homepage:
     path:     /
     defaults: { _controller: DietaBundle:Default:index }
 
-acme_demo_user_all:
-    path:  /users
-    defaults: { _controller: AcmeDemoBundle:User:all, _format: ~ }
-    requirements:
-        _method: GET
-
-acme_demo_user_get:
-    path:  /users/{id}
-    defaults: { _controller: AcmeDemoBundle:User:get, _format: ~ }
-    requirements:
-        _method: GET
-        id: "\d+"

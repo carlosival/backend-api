@@ -1,5 +1,8 @@
-dieta:
-    resource: "@DietaBundle/Resources/config/routing.yml"
-    prefix:   /api
+api_user:
+    resource: "@DietaBundle/Controller/UserController.php"
+    type:     annotation
+
+
+
 
 
