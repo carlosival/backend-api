@@ -15,9 +15,19 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '6a47392539ca2329373e0d33e1dba053' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/bootstrap.php',
         '32dcc8afd4335739640db7d200c1971d' => __DIR__ . '/..' . '/symfony/polyfill-apcu/bootstrap.php',
+        'ce89ac35a6c330c55f4710717db9ff78' => __DIR__ . '/..' . '/kriswallsmith/assetic/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'Z' => 
+        array (
+            'Zend\\EventManager\\' => 18,
+            'Zend\\Code\\' => 10,
+        ),
+        'V' => 
+        array (
+            'Vich\\UploaderBundle\\' => 20,
+        ),
         'T' => 
         array (
             'Tests\\' => 6,
@@ -31,6 +41,7 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
             'Symfony\\Component\\' => 18,
             'Symfony\\Bundle\\SwiftmailerBundle\\' => 33,
             'Symfony\\Bundle\\MonologBundle\\' => 29,
+            'Symfony\\Bundle\\AsseticBundle\\' => 29,
             'Symfony\\Bundle\\' => 15,
             'Symfony\\Bridge\\Twig\\' => 20,
             'Symfony\\Bridge\\Swiftmailer\\' => 27,
@@ -46,6 +57,7 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
         array (
             'Psr\\Log\\' => 8,
             'Psr\\Cache\\' => 10,
+            'PackageVersions\\' => 16,
         ),
         'N' => 
         array (
@@ -67,6 +79,9 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
         array (
             'FOS\\UserBundle\\' => 15,
             'FOS\\RestBundle\\' => 15,
+            'FOS\\HttpCache\\Tests\\' => 20,
+            'FOS\\HttpCache\\' => 14,
+            'FOS\\HttpCacheBundle\\' => 20,
             'FOS\\CommentBundle\\' => 18,
         ),
         'D' => 
@@ -85,6 +100,18 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
     );
 
     public static $prefixDirsPsr4 = array (
+        'Zend\\EventManager\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-eventmanager/src',
+        ),
+        'Zend\\Code\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-code/src',
+        ),
+        'Vich\\UploaderBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vich/uploader-bundle',
+        ),
         'Tests\\' => 
         array (
             0 => __DIR__ . '/../..' . '/tests',
@@ -116,6 +143,10 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
         'Symfony\\Bundle\\MonologBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/monolog-bundle',
+        ),
+        'Symfony\\Bundle\\AsseticBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/assetic-bundle',
         ),
         'Symfony\\Bundle\\' => 
         array (
@@ -165,6 +196,10 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
         ),
+        'PackageVersions\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions',
+        ),
         'Negotiation\\' => 
         array (
             0 => __DIR__ . '/..' . '/willdurand/negotiation/src/Negotiation',
@@ -188,6 +223,18 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
         'FOS\\RestBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/friendsofsymfony/rest-bundle',
+        ),
+        'FOS\\HttpCache\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/friendsofsymfony/http-cache/tests',
+        ),
+        'FOS\\HttpCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/friendsofsymfony/http-cache/src',
+        ),
+        'FOS\\HttpCacheBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/friendsofsymfony/http-cache-bundle',
         ),
         'FOS\\CommentBundle\\' => 
         array (
@@ -244,6 +291,10 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
         ),
         'P' => 
         array (
+            'ProxyManager\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/ocramius/proxy-manager/src',
+            ),
             'PhpOption\\' => 
             array (
                 0 => __DIR__ . '/..' . '/phpoption/phpoption/src',
@@ -253,8 +304,19 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
                 0 => __DIR__ . '/..' . '/phpcollection/phpcollection/src',
             ),
         ),
+        'N' => 
+        array (
+            'Nelmio\\ApiDocBundle' => 
+            array (
+                0 => __DIR__ . '/..' . '/nelmio/api-doc-bundle',
+            ),
+        ),
         'M' => 
         array (
+            'Michelf' => 
+            array (
+                0 => __DIR__ . '/..' . '/michelf/php-markdown',
+            ),
             'Metadata\\' => 
             array (
                 0 => __DIR__ . '/..' . '/jms/metadata/src',
@@ -288,6 +350,17 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
             'Hateoas' => 
             array (
                 0 => __DIR__ . '/..' . '/willdurand/hateoas/src',
+            ),
+        ),
+        'G' => 
+        array (
+            'Guzzle\\Tests' => 
+            array (
+                0 => __DIR__ . '/..' . '/guzzle/guzzle/tests',
+            ),
+            'Guzzle' => 
+            array (
+                0 => __DIR__ . '/..' . '/guzzle/guzzle/src',
             ),
         ),
         'D' => 
@@ -326,6 +399,13 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
             'Bazinga\\Bundle\\HateoasBundle' => 
             array (
                 0 => __DIR__ . '/..' . '/willdurand/hateoas-bundle',
+            ),
+        ),
+        'A' => 
+        array (
+            'Assetic' => 
+            array (
+                0 => __DIR__ . '/..' . '/kriswallsmith/assetic/src',
             ),
         ),
     );

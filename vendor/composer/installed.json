@@ -3264,5 +3264,861 @@
             "Fixture",
             "persistence"
         ]
+    },
+    {
+        "name": "guzzle/guzzle",
+        "version": "v3.8.1",
+        "version_normalized": "3.8.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/guzzle.git",
+            "reference": "4de0618a01b34aa1c8c33a3f13f396dcd3882eba"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/guzzle/guzzle/zipball/4de0618a01b34aa1c8c33a3f13f396dcd3882eba",
+            "reference": "4de0618a01b34aa1c8c33a3f13f396dcd3882eba",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "php": ">=5.3.3",
+            "symfony/event-dispatcher": ">=2.1"
+        },
+        "replace": {
+            "guzzle/batch": "self.version",
+            "guzzle/cache": "self.version",
+            "guzzle/common": "self.version",
+            "guzzle/http": "self.version",
+            "guzzle/inflection": "self.version",
+            "guzzle/iterator": "self.version",
+            "guzzle/log": "self.version",
+            "guzzle/parser": "self.version",
+            "guzzle/plugin": "self.version",
+            "guzzle/plugin-async": "self.version",
+            "guzzle/plugin-backoff": "self.version",
+            "guzzle/plugin-cache": "self.version",
+            "guzzle/plugin-cookie": "self.version",
+            "guzzle/plugin-curlauth": "self.version",
+            "guzzle/plugin-error-response": "self.version",
+            "guzzle/plugin-history": "self.version",
+            "guzzle/plugin-log": "self.version",
+            "guzzle/plugin-md5": "self.version",
+            "guzzle/plugin-mock": "self.version",
+            "guzzle/plugin-oauth": "self.version",
+            "guzzle/service": "self.version",
+            "guzzle/stream": "self.version"
+        },
+        "require-dev": {
+            "doctrine/cache": "*",
+            "monolog/monolog": "1.*",
+            "phpunit/phpunit": "3.7.*",
+            "psr/log": "1.0.*",
+            "symfony/class-loader": "*",
+            "zendframework/zend-cache": "<2.3",
+            "zendframework/zend-log": "<2.3"
+        },
+        "time": "2014-01-28T22:29:15+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.8-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Guzzle": "src/",
+                "Guzzle\\Tests": "tests/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            },
+            {
+                "name": "Guzzle Community",
+                "homepage": "https://github.com/guzzle/guzzle/contributors"
+            }
+        ],
+        "description": "Guzzle is a PHP HTTP client library and framework for building RESTful web service clients",
+        "homepage": "http://guzzlephp.org/",
+        "keywords": [
+            "client",
+            "curl",
+            "framework",
+            "http",
+            "http client",
+            "rest",
+            "web service"
+        ],
+        "abandoned": "guzzlehttp/guzzle"
+    },
+    {
+        "name": "friendsofsymfony/http-cache",
+        "version": "1.4.2",
+        "version_normalized": "1.4.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/FriendsOfSymfony/FOSHttpCache.git",
+            "reference": "783f3918d85263e444db02a9e42d0f42aa7c1f43"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/FriendsOfSymfony/FOSHttpCache/zipball/783f3918d85263e444db02a9e42d0f42aa7c1f43",
+            "reference": "783f3918d85263e444db02a9e42d0f42aa7c1f43",
+            "shasum": ""
+        },
+        "require": {
+            "guzzle/guzzle": "~3.8",
+            "php": ">=5.3.3",
+            "symfony/event-dispatcher": "^2.3||^3.0",
+            "symfony/options-resolver": "^2.3||^3.0"
+        },
+        "require-dev": {
+            "mockery/mockery": "~0.9.1",
+            "monolog/monolog": "~1.0",
+            "symfony/http-kernel": "^2.3||^3.0",
+            "symfony/process": "^2.3||^3.0"
+        },
+        "suggest": {
+            "monolog/monolog": "For logging issues while invalidating"
+        },
+        "time": "2016-02-02T12:07:34+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.4.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "FOS\\HttpCache\\": "src/",
+                "FOS\\HttpCache\\Tests\\": "tests/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Liip AG",
+                "homepage": "http://www.liip.ch/"
+            },
+            {
+                "name": "Driebit",
+                "email": "tech@driebit.nl",
+                "homepage": "http://www.driebit.nl"
+            },
+            {
+                "name": "Community contributions",
+                "homepage": "https://github.com/friendsofsymfony/FOSHttpCache/contributors"
+            }
+        ],
+        "description": "Tools to manage cache invalidation",
+        "homepage": "https://github.com/friendsofsymfony/FOSHttpCache",
+        "keywords": [
+            "caching",
+            "http",
+            "invalidation",
+            "nginx",
+            "purge",
+            "varnish"
+        ]
+    },
+    {
+        "name": "friendsofsymfony/http-cache-bundle",
+        "version": "1.3.10",
+        "version_normalized": "1.3.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/FriendsOfSymfony/FOSHttpCacheBundle.git",
+            "reference": "d5ccceeb0c6ce806b0b1f7fcc4f7a752fc85cf87"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/FriendsOfSymfony/FOSHttpCacheBundle/zipball/d5ccceeb0c6ce806b0b1f7fcc4f7a752fc85cf87",
+            "reference": "d5ccceeb0c6ce806b0b1f7fcc4f7a752fc85cf87",
+            "shasum": ""
+        },
+        "require": {
+            "friendsofsymfony/http-cache": "~1.4",
+            "php": ">=5.3.3",
+            "symfony/framework-bundle": "^2.3||^3.0"
+        },
+        "conflict": {
+            "twig/twig": "<1.12.0"
+        },
+        "require-dev": {
+            "matthiasnoback/symfony-dependency-injection-test": "^0.7.4",
+            "mockery/mockery": "0.9.*",
+            "monolog/monolog": "*",
+            "polishsymfonycommunity/symfony-mocker-container": "^1.0",
+            "sensio/framework-extra-bundle": "^2.3||^3.0",
+            "symfony/expression-language": "^2.4||^3.0",
+            "symfony/monolog-bundle": "^2.3||^3.0",
+            "symfony/phpunit-bridge": "^2.7||^3.0",
+            "symfony/symfony": "^2.3.4||^3.0"
+        },
+        "suggest": {
+            "sensio/framework-extra-bundle": "For Tagged Cache Invalidation",
+            "symfony/console": "To send invalidation requests from the command line",
+            "symfony/expression-language": "For Tagged Cache Invalidation"
+        },
+        "time": "2017-01-06T14:39:18+00:00",
+        "type": "symfony-bundle",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "FOS\\HttpCacheBundle\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Liip AG",
+                "homepage": "http://www.liip.ch/"
+            },
+            {
+                "name": "Driebit",
+                "email": "tech@driebit.nl",
+                "homepage": "http://www.driebit.nl"
+            },
+            {
+                "name": "Community contributions",
+                "homepage": "https://github.com/friendsofsymfony/FOSHttpCacheBundle/contributors"
+            }
+        ],
+        "description": "Set path based HTTP cache headers and send invalidation requests to your HTTP cache",
+        "homepage": "https://github.com/FriendsOfSymfony/FOSHttpCacheBundle",
+        "keywords": [
+            "caching",
+            "esi",
+            "http",
+            "invalidation",
+            "purge",
+            "varnish"
+        ]
+    },
+    {
+        "name": "michelf/php-markdown",
+        "version": "1.7.0",
+        "version_normalized": "1.7.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/michelf/php-markdown.git",
+            "reference": "1f51cc520948f66cd2af8cbc45a5ee175e774220"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/michelf/php-markdown/zipball/1f51cc520948f66cd2af8cbc45a5ee175e774220",
+            "reference": "1f51cc520948f66cd2af8cbc45a5ee175e774220",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2016-10-29T18:58:20+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-lib": "1.4.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Michelf": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Michel Fortin",
+                "email": "michel.fortin@michelf.ca",
+                "homepage": "https://michelf.ca/",
+                "role": "Developer"
+            },
+            {
+                "name": "John Gruber",
+                "homepage": "https://daringfireball.net/"
+            }
+        ],
+        "description": "PHP Markdown",
+        "homepage": "https://michelf.ca/projects/php-markdown/",
+        "keywords": [
+            "markdown"
+        ]
+    },
+    {
+        "name": "nelmio/api-doc-bundle",
+        "version": "2.13.1",
+        "version_normalized": "2.13.1.0",
+        "target-dir": "Nelmio/ApiDocBundle",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
+            "reference": "eab2d5d8fcbd759c4ae109b6060b7d90d4269952"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/eab2d5d8fcbd759c4ae109b6060b7d90d4269952",
+            "reference": "eab2d5d8fcbd759c4ae109b6060b7d90d4269952",
+            "shasum": ""
+        },
+        "require": {
+            "michelf/php-markdown": "~1.4",
+            "php": ">=5.4",
+            "symfony/console": "~2.3|~3.0",
+            "symfony/framework-bundle": "~2.3|~3.0",
+            "symfony/twig-bundle": "~2.3|~3.0"
+        },
+        "conflict": {
+            "jms/serializer": "<0.12",
+            "jms/serializer-bundle": "<0.11",
+            "symfony/symfony": "~2.7.8",
+            "twig/twig": "<1.12"
+        },
+        "require-dev": {
+            "doctrine/doctrine-bundle": "~1.5",
+            "doctrine/orm": "~2.3",
+            "dunglas/api-bundle": "~1.0@dev",
+            "friendsofsymfony/rest-bundle": "~1.0|~2.0",
+            "jms/serializer-bundle": ">=0.11",
+            "sensio/framework-extra-bundle": "~3.0",
+            "symfony/browser-kit": "~2.3|~3.0",
+            "symfony/css-selector": "~2.3|~3.0",
+            "symfony/finder": "~2.3|~3.0",
+            "symfony/form": "~2.3|~3.0",
+            "symfony/phpunit-bridge": "~2.7|~3.0",
+            "symfony/serializer": "~2.7|~3.0",
+            "symfony/validator": "~2.3|~3.0",
+            "symfony/yaml": "~2.3|~3.0"
+        },
+        "suggest": {
+            "dunglas/api-bundle": "For making use of resources definitions of DunglasApiBundle.",
+            "friendsofsymfony/rest-bundle": "For making use of REST information in the doc.",
+            "jms/serializer": "For making use of serializer information in the doc.",
+            "symfony/form": "For using form definitions as input.",
+            "symfony/validator": "For making use of validator information in the doc."
+        },
+        "time": "2017-02-19T05:14:31+00:00",
+        "type": "symfony-bundle",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.13-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Nelmio\\ApiDocBundle": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nelmio",
+                "homepage": "http://nelm.io"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://github.com/nelmio/NelmioApiDocBundle/contributors"
+            }
+        ],
+        "description": "Generates documentation for your REST API from annotations",
+        "keywords": [
+            "api",
+            "doc",
+            "documentation",
+            "rest"
+        ]
+    },
+    {
+        "name": "kriswallsmith/assetic",
+        "version": "v1.4.0",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kriswallsmith/assetic.git",
+            "reference": "e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1",
+            "reference": "e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.1",
+            "symfony/process": "~2.1|~3.0"
+        },
+        "conflict": {
+            "twig/twig": "<1.27"
+        },
+        "require-dev": {
+            "leafo/lessphp": "^0.3.7",
+            "leafo/scssphp": "~0.1",
+            "meenie/javascript-packer": "^1.1",
+            "mrclay/minify": "<2.3",
+            "natxet/cssmin": "3.0.4",
+            "patchwork/jsqueeze": "~1.0|~2.0",
+            "phpunit/phpunit": "~4.8 || ^5.6",
+            "psr/log": "~1.0",
+            "ptachoire/cssembed": "~1.0",
+            "symfony/phpunit-bridge": "~2.7|~3.0",
+            "twig/twig": "~1.23|~2.0",
+            "yfix/packager": "dev-master"
+        },
+        "suggest": {
+            "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
+            "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler",
+            "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin",
+            "patchwork/jsqueeze": "Assetic provides the integration with the JSqueeze JavaScript compressor",
+            "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
+            "twig/twig": "Assetic provides the integration with the Twig templating engine"
+        },
+        "time": "2016-11-11T18:43:20+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Assetic": "src/"
+            },
+            "files": [
+                "src/functions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kris Wallsmith",
+                "email": "kris.wallsmith@gmail.com",
+                "homepage": "http://kriswallsmith.net/"
+            }
+        ],
+        "description": "Asset Management for PHP",
+        "homepage": "https://github.com/kriswallsmith/assetic",
+        "keywords": [
+            "assets",
+            "compression",
+            "minification"
+        ]
+    },
+    {
+        "name": "symfony/assetic-bundle",
+        "version": "v2.8.1",
+        "version_normalized": "2.8.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/assetic-bundle.git",
+            "reference": "0241b135ff64c6031048c6425cd833a8300da46b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/assetic-bundle/zipball/0241b135ff64c6031048c6425cd833a8300da46b",
+            "reference": "0241b135ff64c6031048c6425cd833a8300da46b",
+            "shasum": ""
+        },
+        "require": {
+            "kriswallsmith/assetic": "~1.4",
+            "php": ">=5.3.0",
+            "symfony/console": "~2.3|~3.0",
+            "symfony/dependency-injection": "~2.3|~3.0",
+            "symfony/framework-bundle": "~2.3|~3.0",
+            "symfony/yaml": "~2.3|~3.0"
+        },
+        "conflict": {
+            "kriswallsmith/spork": "<=0.2",
+            "twig/twig": "<1.27"
+        },
+        "require-dev": {
+            "kriswallsmith/spork": "~0.3",
+            "patchwork/jsqueeze": "~1.0",
+            "symfony/class-loader": "~2.3|~3.0",
+            "symfony/css-selector": "~2.3|~3.0",
+            "symfony/dom-crawler": "~2.3|~3.0",
+            "symfony/phpunit-bridge": "~2.7|~3.0",
+            "symfony/twig-bundle": "~2.3|~3.0"
+        },
+        "suggest": {
+            "kriswallsmith/spork": "to be able to dump assets in parallel",
+            "symfony/twig-bundle": "to use the Twig integration"
+        },
+        "time": "2016-11-22T11:42:57+00:00",
+        "type": "symfony-bundle",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.8-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Bundle\\AsseticBundle\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kris Wallsmith",
+                "email": "kris.wallsmith@gmail.com",
+                "homepage": "http://kriswallsmith.net/"
+            }
+        ],
+        "description": "Integrates Assetic into Symfony2",
+        "homepage": "https://github.com/symfony/AsseticBundle",
+        "keywords": [
+            "assets",
+            "compression",
+            "minification"
+        ]
+    },
+    {
+        "name": "ocramius/package-versions",
+        "version": "1.1.2",
+        "version_normalized": "1.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Ocramius/PackageVersions.git",
+            "reference": "51e867c70f0799790b3e82276875414ce13daaca"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Ocramius/PackageVersions/zipball/51e867c70f0799790b3e82276875414ce13daaca",
+            "reference": "51e867c70f0799790b3e82276875414ce13daaca",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0",
+            "php": "~7.0"
+        },
+        "require-dev": {
+            "composer/composer": "^1.3",
+            "ext-zip": "*",
+            "phpunit/phpunit": "^5.4.7"
+        },
+        "time": "2016-12-30T09:49:15+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "PackageVersions\\Installer",
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PackageVersions\\": "src/PackageVersions"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Marco Pivetta",
+                "email": "ocramius@gmail.com"
+            }
+        ],
+        "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)"
+    },
+    {
+        "name": "zendframework/zend-eventmanager",
+        "version": "3.1.0",
+        "version_normalized": "3.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-eventmanager.git",
+            "reference": "c3bce7b7d47c54040b9ae51bc55491c72513b75d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zend-eventmanager/zipball/c3bce7b7d47c54040b9ae51bc55491c72513b75d",
+            "reference": "c3bce7b7d47c54040b9ae51bc55491c72513b75d",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.6 || ^7.0"
+        },
+        "require-dev": {
+            "athletic/athletic": "^0.1",
+            "container-interop/container-interop": "^1.1.0",
+            "phpunit/phpunit": "^5.6",
+            "zendframework/zend-coding-standard": "~1.0.0",
+            "zendframework/zend-stdlib": "^2.7.3 || ^3.0"
+        },
+        "suggest": {
+            "container-interop/container-interop": "^1.1.0, to use the lazy listeners feature",
+            "zendframework/zend-stdlib": "^2.7.3 || ^3.0, to use the FilterChain feature"
+        },
+        "time": "2016-12-19T21:47:12+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.1-dev",
+                "dev-develop": "3.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\EventManager\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Trigger and listen to events within a PHP application",
+        "homepage": "https://github.com/zendframework/zend-eventmanager",
+        "keywords": [
+            "event",
+            "eventmanager",
+            "events",
+            "zf2"
+        ]
+    },
+    {
+        "name": "zendframework/zend-code",
+        "version": "3.1.0",
+        "version_normalized": "3.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-code.git",
+            "reference": "2899c17f83a7207f2d7f53ec2f421204d3beea27"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zend-code/zipball/2899c17f83a7207f2d7f53ec2f421204d3beea27",
+            "reference": "2899c17f83a7207f2d7f53ec2f421204d3beea27",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.6 || 7.0.0 - 7.0.4 || ^7.0.6",
+            "zendframework/zend-eventmanager": "^2.6 || ^3.0"
+        },
+        "require-dev": {
+            "doctrine/annotations": "~1.0",
+            "ext-phar": "*",
+            "phpunit/phpunit": "^4.8.21",
+            "squizlabs/php_codesniffer": "^2.5",
+            "zendframework/zend-stdlib": "^2.7 || ^3.0"
+        },
+        "suggest": {
+            "doctrine/annotations": "Doctrine\\Common\\Annotations >=1.0 for annotation features",
+            "zendframework/zend-stdlib": "Zend\\Stdlib component"
+        },
+        "time": "2016-10-24T13:23:32+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.1-dev",
+                "dev-develop": "3.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\Code\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "provides facilities to generate arbitrary code using an object oriented interface",
+        "homepage": "https://github.com/zendframework/zend-code",
+        "keywords": [
+            "code",
+            "zf2"
+        ]
+    },
+    {
+        "name": "ocramius/proxy-manager",
+        "version": "2.0.4",
+        "version_normalized": "2.0.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Ocramius/ProxyManager.git",
+            "reference": "a55d08229f4f614bf335759ed0cf63378feeb2e6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Ocramius/ProxyManager/zipball/a55d08229f4f614bf335759ed0cf63378feeb2e6",
+            "reference": "a55d08229f4f614bf335759ed0cf63378feeb2e6",
+            "shasum": ""
+        },
+        "require": {
+            "ocramius/package-versions": "^1.0",
+            "php": "7.0.0 - 7.0.5 || ^7.0.7",
+            "zendframework/zend-code": "3.0.0 - 3.0.2 || ^3.0.4"
+        },
+        "require-dev": {
+            "couscous/couscous": "^1.4.0",
+            "ext-phar": "*",
+            "phpbench/phpbench": "^0.11.2",
+            "phpunit/phpunit": "^5.4.6",
+            "squizlabs/php_codesniffer": "^2.6.0"
+        },
+        "suggest": {
+            "ocramius/generated-hydrator": "To have very fast object to array to object conversion for ghost objects",
+            "zendframework/zend-json": "To have the JsonRpc adapter (Remote Object feature)",
+            "zendframework/zend-soap": "To have the Soap adapter (Remote Object feature)",
+            "zendframework/zend-xmlrpc": "To have the XmlRpc adapter (Remote Object feature)"
+        },
+        "time": "2016-11-04T15:53:15+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "ProxyManager\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Marco Pivetta",
+                "email": "ocramius@gmail.com",
+                "homepage": "http://ocramius.github.io/"
+            }
+        ],
+        "description": "A library providing utilities to generate, instantiate and generally operate with Object Proxies",
+        "homepage": "https://github.com/Ocramius/ProxyManager",
+        "keywords": [
+            "aop",
+            "lazy loading",
+            "proxy",
+            "proxy pattern",
+            "service proxies"
+        ]
+    },
+    {
+        "name": "vich/uploader-bundle",
+        "version": "1.5.2",
+        "version_normalized": "1.5.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dustin10/VichUploaderBundle.git",
+            "reference": "5e5fc54a0a6826b1c0f1fe3545a8b9e0f2552ae4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dustin10/VichUploaderBundle/zipball/5e5fc54a0a6826b1c0f1fe3545a8b9e0f2552ae4",
+            "reference": "5e5fc54a0a6826b1c0f1fe3545a8b9e0f2552ae4",
+            "shasum": ""
+        },
+        "require": {
+            "jms/metadata": "^1.6",
+            "ocramius/proxy-manager": "^2.0",
+            "php": "^7.0",
+            "symfony/asset": "^2.8|^3.1",
+            "symfony/dependency-injection": "^2.8|^3.1",
+            "symfony/finder": "^2.8|^3.1",
+            "symfony/framework-bundle": "^2.8|^3.1",
+            "symfony/property-access": "^2.8|^3.1",
+            "symfony/security": "^2.8|^3.1",
+            "symfony/templating": "^2.8|^3.1"
+        },
+        "require-dev": {
+            "doctrine/doctrine-bundle": "^1.6",
+            "doctrine/mongodb-odm": "^1.1",
+            "doctrine/orm": "^2.5",
+            "ext-sqlite3": "*",
+            "knplabs/knp-gaufrette-bundle": "^0.3",
+            "matthiasnoback/symfony-dependency-injection-test": "^2.0",
+            "mikey179/vfsstream": "^1.6",
+            "oneup/flysystem-bundle": "^1.7",
+            "phpunit/phpunit": "^6.0",
+            "symfony/browser-kit": "^2.8|^3.1",
+            "symfony/css-selector": "^2.8|^3.1",
+            "symfony/dom-crawler": "^2.8|^3.1",
+            "symfony/form": "^2.8|^3.1",
+            "symfony/proxy-manager-bridge": "^2.8|^3.1",
+            "symfony/twig-bridge": "^2.8.10|^3.1",
+            "symfony/twig-bundle": "^2.8|^3.1",
+            "symfony/validator": "^2.8|^3.1",
+            "symfony/yaml": "^2.8|^3.1"
+        },
+        "suggest": {
+            "doctrine/doctrine-bundle": "^1.6",
+            "doctrine/mongodb-odm-bundle": "*",
+            "doctrine/orm": "^2.5",
+            "doctrine/phpcr-odm": "^1.0",
+            "knplabs/knp-gaufrette-bundle": "^0.3",
+            "symfony/yaml": "^2.8|^3.1",
+            "willdurand/propel-eventdispatcher-bundle": "^1.2"
+        },
+        "time": "2017-03-03T15:01:00+00:00",
+        "type": "symfony-bundle",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.6.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Vich\\UploaderBundle\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dustin Dobervich",
+                "email": "ddobervich@gmail.com"
+            }
+        ],
+        "description": "Ease file uploads attached to entities",
+        "homepage": "https://github.com/dustin10/VichUploaderBundle",
+        "keywords": [
+            "file uploads",
+            "upload"
+        ]
     }
 ]

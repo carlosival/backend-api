@@ -2,6 +2,10 @@ api_user:
     resource: "@DietaBundle/Controller/UserController.php"
     type:     annotation
 
+api_dieta:
+    resource: "@DietaBundle/Controller/RecetaController.php"
+    type:     annotation
+
 
 
 

@@ -2,15 +2,16 @@
 
 namespace DietaBundle\Entity;
 
+use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * User
  *
- * @ORM\Table(name="user")
+ * @ORM\Table(name="usuario")
  * @ORM\Entity(repositoryClass="DietaBundle\Repository\UserRepository")
  */
-class User
+class User extends BaseUser
 {
     /**
      * @var int
@@ -19,7 +20,7 @@ class User
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    private $id;
+    protected $id;
 
     /**
      * Many User have Many OwnDietas.
@@ -94,6 +95,9 @@ class User
         $this->recetas_seguidas = new \Doctrine\Common\Collections\ArrayCollection();
         $this->friendsWithMe = new \Doctrine\Common\Collections\ArrayCollection();
         $this->myFriends = new \Doctrine\Common\Collections\ArrayCollection();
+
+        parent::__construct();
+
     }
 
     /**

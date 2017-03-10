@@ -1,0 +1,16 @@
+#Serialization of User Entity
+
+DietaBundle\Entity\User:
+    exclusion_policy: ALL
+    properties:
+        dietas:
+            expose: true
+        recetas:
+            expose: true
+        dietas_seguidas:
+            expose: true
+        recetas_seguidas:
+            expose: true
+        myFriends:
+            expose: true
+

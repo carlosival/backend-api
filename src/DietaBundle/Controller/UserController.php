@@ -19,21 +19,16 @@ class UserController extends FOSRestController
      * @Rest\Get("/users")
      * @Rest\View
      *
-     * Probar despues como quitarle la vista y hacerlo automatico con @Rest\View
+     *
      */
-    public function getUsersAction()
+    public function allAction()
     {
         $restresult = $this->getDoctrine()->getRepository('DietaBundle:User')->findAll();
-        if ($restresult === null) {
-            return new View("there are no users exist", Response::HTTP_NOT_FOUND);
-        }
-        return $restresult;
 
+        return array('users' => $restresult);
 
-        /*
-         * Este ejemplo traabaja llamando a localhost/app_dev.php/users
-         *
-         * $data = array("Usuarios" => array(
+/*
+         $data = array("Usuarios" => array(
             array(
                 "nombre"   => "Víctor",
                 "Apellido" => "Robles"
@@ -43,9 +38,9 @@ class UserController extends FOSRestController
                 "Apellido" => "Martinez"
             )));
 
-        return $data;
+        return $data;*/
 
-        */
+
 
     }
 
@@ -56,19 +51,22 @@ class UserController extends FOSRestController
      * @Rest\Get("/user/{id}")
      * @Rest\View
      */
-    public function idAction($id)
+    public function getAction($id)
     {
-        $singleresult = $this->getDoctrine()->getRepository('DietaBundle:User')->find($id);
-        if ($singleresult === null) {
-            return new View("user not found", Response::HTTP_NOT_FOUND);
+
+        $restresult = $this->getDoctrine()->getRepository('DietaBundle:User')->find($id);
+
+        if (!$restresult instanceof User) {
+            throw new NotFoundHttpException('Usuario not found');
         }
-        return $singleresult;
+
+        return array('usuario' => $restresult);
     }
 
-    /**
-     * @Rest\Post("/user/")
-     */
-    public function postAction(Request $request)
+    /*
+     * Rest\Post("/user/")
+     *
+    public function newAction(Request $request)
     {
         $data = new User;
         $name = $request->get('name');
@@ -83,7 +81,7 @@ class UserController extends FOSRestController
         $em->persist($data);
         $em->flush();
         return new View("User Added Successfully", Response::HTTP_OK);
-    }
+    }*/
 
    // williamduranway
     /**
@@ -93,6 +91,11 @@ class UserController extends FOSRestController
     public function newAction()
     {
         return $this->processForm(new User());
+    }
+
+    public function editAction(User $user)
+    {
+        return $this->processForm($user);
     }
 
     private function processForm(User $user)
@@ -112,7 +115,7 @@ class UserController extends FOSRestController
             if (201 === $statusCode) {
                 $response->headers->set('Location',
                     $this->generateUrl(
-                        'acme_demo_user_get', array('id' => $user->getId()),
+                        'dieta_user_get', array('id' => $user->getId()),
                         true // absolute
                     )
                 );
@@ -125,20 +128,17 @@ class UserController extends FOSRestController
     }
 
 
-    public function editAction(User $user)
-    {
-        return $this->processForm($user);
-    }
+
 
 
     // williamduranway
 
 
-    /**
+    /*/**
      *
      *
-     * @Rest\Put("/user/{id}")
-     */
+     * Rest\Put("/user/{id}")
+
     public function updateAction($id,Request $request)
     {
         $data = new User;
@@ -166,11 +166,12 @@ class UserController extends FOSRestController
             return new View("User Name Updated Successfully", Response::HTTP_OK);
         }
         else return new View("User name or role cannot be empty", Response::HTTP_NOT_ACCEPTABLE);
-    }
+    }*/
 
 
     /**
      * @Rest\Delete("/user/{id}")
+     * @Rest\View(statusCode=204)
      */
     public function deleteAction($id)
     {

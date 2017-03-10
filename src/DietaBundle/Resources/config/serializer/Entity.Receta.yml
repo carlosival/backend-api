@@ -1,0 +1,15 @@
+DietaBundle\Entity\Receta:
+    exclusion_policy: ALL
+    properties:
+        nombre:
+            expose: true
+        ingredientes:
+            expose: true
+        preparacion:
+            expose: true
+        tiempo_preparacion:
+            expose: true
+        raciones:
+            expose: true
+        usuario_seguidores:
+            expose: true

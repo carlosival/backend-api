@@ -16,8 +16,16 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
-            new FOS\RestBundle\FOSRestBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
+           # new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
+           # new FOS\HttpCacheBundle\FOSHttpCacheBundle(),
+           # new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
+           # new Hautelook\TemplatedUriBundle\HautelookTemplatedUriBundle(),
+           # new Bazinga\Bundle\RestExtraBundle\BazingaRestExtraBundle(),
+
+
 
             new DietaBundle\DietaBundle(),
         ];

@@ -6,7 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class UserType extends AbstractType
+class RecetaType extends AbstractType
 {
     /**
      * {@inheritdoc}
@@ -14,12 +14,13 @@ class UserType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('dietas')
-            ->add('recetas')
-            ->add('dieta_seguidas')
-            ->add('recetas_seguidas')
-            ->add('friendsWithMe')
-            ->add('myFriends')        ;
+            ->add('nombre')
+            ->add('ingredientes')
+            ->add('preparacion')
+            ->add('foto')
+            ->add('tiempo_preparacion')
+            ->add('raciones')
+            ->add('usuario_seguidores');
     }
     
     /**
@@ -28,7 +29,7 @@ class UserType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'DietaBundle\Entity\User',
+            'data_class' => 'DietaBundle\Entity\Receta',
             'csrf_protection'   => false,
         ));
     }
@@ -38,7 +39,7 @@ class UserType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'dietabundle_user';
+        return 'dietabundle_receta';
     }
 
 
