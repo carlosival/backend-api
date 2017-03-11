@@ -3,6 +3,7 @@
 namespace DietaBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Sylius\Component\Resource\Model\ResourceInterface;
 
 /**
  * Receta
@@ -10,7 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="receta")
  * @ORM\Entity(repositoryClass="DietaBundle\Repository\RecetaRepository")
  */
-class Receta
+class Receta implements ResourceInterface
 {
     /**
      * @var int

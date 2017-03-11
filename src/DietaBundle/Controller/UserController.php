@@ -2,6 +2,8 @@
 
 namespace DietaBundle\Controller;
 
+use DietaBundle\Form\UserType;
+use Sylius\Component\Resource\Model\ResourceInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
@@ -39,8 +41,6 @@ class UserController extends FOSRestController
             )));
 
         return $data;*/
-
-
 
     }
 
@@ -85,88 +85,23 @@ class UserController extends FOSRestController
 
    // williamduranway
     /**
-     * edit o update action
-     * Rest\Post("/user/")
+     *
+     * @Rest\Post("/user")
+     * @Rest\View
      */
-    public function newAction()
+    public function newAction(Request $request)
     {
-        return $this->processForm(new User());
+        return $this->processFormNew(new User(),$request);
     }
 
-    public function editAction(User $user)
+    /**
+     * Edit o update action
+     * @Rest\Put("/user/{id}")
+     */
+    public function editAction($id,Request $request)
     {
-        return $this->processForm($user);
+        return $this->processFormEdit($id,$request);
     }
-
-    private function processForm(User $user)
-    {
-        $statusCode = $user->isNew() ? 201 : 204;
-
-        $form = $this->createForm(new UserType(), $user);
-        $form->handleRequest($this->getRequest());
-
-        if ($form->isValid()) {
-            $user->save();
-
-            $response = new Response();
-            $response->setStatusCode($statusCode);
-
-            // set the `Location` header only when creating new resources
-            if (201 === $statusCode) {
-                $response->headers->set('Location',
-                    $this->generateUrl(
-                        'dieta_user_get', array('id' => $user->getId()),
-                        true // absolute
-                    )
-                );
-            }
-
-            return $response;
-        }
-
-        return View::create($form, 400);
-    }
-
-
-
-
-
-    // williamduranway
-
-
-    /*/**
-     *
-     *
-     * Rest\Put("/user/{id}")
-
-    public function updateAction($id,Request $request)
-    {
-        $data = new User;
-        $name = $request->get('name');
-        $role = $request->get('role');
-        $sn = $this->getDoctrine()->getManager();
-        $user = $this->getDoctrine()->getRepository('AppBundle:User')->find($id);
-        if (empty($user)) {
-            return new View("user not found", Response::HTTP_NOT_FOUND);
-        }
-        elseif(!empty($name) && !empty($role)){
-            $user->setName($name);
-            $user->setRole($role);
-            $sn->flush();
-            return new View("User Updated Successfully", Response::HTTP_OK);
-        }
-        elseif(empty($name) && !empty($role)){
-            $user->setRole($role);
-            $sn->flush();
-            return new View("role Updated Successfully", Response::HTTP_OK);
-        }
-        elseif(!empty($name) && empty($role)){
-            $user->setName($name);
-            $sn->flush();
-            return new View("User Name Updated Successfully", Response::HTTP_OK);
-        }
-        else return new View("User name or role cannot be empty", Response::HTTP_NOT_ACCEPTABLE);
-    }*/
 
 
     /**
@@ -175,32 +110,98 @@ class UserController extends FOSRestController
      */
     public function deleteAction($id)
     {
-        $data = new User;
+
         $sn = $this->getDoctrine()->getManager();
-        $user = $this->getDoctrine()->getRepository('AppBundle:User')->find($id);
-        if (empty($user)) {
-            return new View("user not found", Response::HTTP_NOT_FOUND);
+        $user = $this->getDoctrine()->getRepository('DietaBundle:User')->find($id);
+
+        if (!$user instanceof User) {
+            throw new NotFoundHttpException('Usuario not found');
         }
-        else {
-            $sn->remove($user);
-            $sn->flush();
-        }
-        return new View("deleted successfully", Response::HTTP_OK);
+
+        $sn->remove($user);
+        $sn->flush();
+
+        $response=new Response();
+        return $response->setStatusCode(Response::HTTP_OK);
+
     }
 
 
-    //williamduranway
 
-    /**
-    * Rest\View(statusCode=204)
-    */
-    public function removeAction(User $user)
+
+    private function processFormNew(User $user,Request $request)
     {
-        $user->delete();
+
+
+        //$statusCode = $user->isNew() ? 201 : 204;
+ // Obtenger datos del request
+        $username = $request->get('username');
+        $email = $request->get('email');
+        $password = $request->get('password');
+ // Validar datos del request
+
+ // Insertar datos a la base datos
+        $user->setUsername($username);
+        $user->setEmail($email);
+        $user->setPassword($password);
+
+        // Salvar usuario en la Base de Datos
+        $em = $this->getDoctrine()->getManager();
+        $em->persist($user);
+        $em->flush();
+
+ // Doy una repuesta afirmativa o negativa en el HTTP HEADER.
+
+        $response = new Response();
+        $statusCode=201;
+        // set the `Location` header only when creating new resources
+        if (201 === $statusCode) {
+            $response->setStatusCode(Response::HTTP_CREATED);
+            $response->headers->set('Location',
+                $this->generateUrl(
+                    'dieta_user_get', array('id' => $user->getId()),
+                    true // absolute
+                )
+            );
+          return $response;
+        }
+
+        return $response->setStatusCode(Response::HTTP_BAD_REQUEST);
     }
 
+    private function processFormEdit($id,Request $request)
+    {
+        // Obtenger datos del request
 
+        $username = $request->get('username');
+        $email = $request->get('email');
+        $password = $request->get('password');
 
+        // Validar datos del request
+        $sn = $this->getDoctrine()->getManager();
+        $user = $sn->getRepository('DietaBundle:User')->find($id);
+
+        if (!$user instanceof User) {
+            throw new NotFoundHttpException('Usuario not found');
+        }
+
+        $user->setUsername($username);
+        $user->setEmail($email);
+        $user->setPassword($password);
+        $sn->flush();
+
+        $statusCode = 200;
+
+        $response = new Response();
+
+        if (200 === $statusCode) {
+
+            $response->setStatusCode(Response::HTTP_OK);
+            return $response;
+        }
+
+        return $response->setStatusCode(Response::HTTP_BAD_REQUEST);
+    }
 
 
 }

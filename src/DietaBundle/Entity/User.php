@@ -4,6 +4,7 @@ namespace DietaBundle\Entity;
 
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
+use Sylius\Component\Resource\Model\ResourceInterface;
 
 /**
  * User
@@ -11,7 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="usuario")
  * @ORM\Entity(repositoryClass="DietaBundle\Repository\UserRepository")
  */
-class User extends BaseUser
+class User extends BaseUser implements ResourceInterface
 {
     /**
      * @var int
