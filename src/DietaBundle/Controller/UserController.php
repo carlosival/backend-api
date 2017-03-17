@@ -15,6 +15,7 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use DietaBundle\Entity\User;
 
 
+
 class UserController extends FOSRestController
 {
     /**
@@ -131,7 +132,17 @@ class UserController extends FOSRestController
 
     private function processFormNew(User $user,Request $request)
     {
+           $data = json_decode($request->getContent(), true);
 
+           $form = $this ->createForm( 'DietaBundle\Form\UserType',$user);
+
+           $form->submit($data);
+
+           if($form->isSubmitted() && $form->isValid()){
+
+
+               return new Response($request->getContent()) ;
+            }
 
         //$statusCode = $user->isNew() ? 201 : 204;
  // Obtenger datos del request

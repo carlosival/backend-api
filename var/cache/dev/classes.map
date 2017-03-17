@@ -64,4 +64,6 @@
   63 => 'Twig_LoaderInterface',
   64 => 'Twig_Markup',
   65 => 'Twig_Template',
+  66 => 'Symfony\\Bundle\\AsseticBundle\\DefaultValueSupplier',
+  67 => 'Symfony\\Bundle\\AsseticBundle\\Factory\\AssetFactory',
 );

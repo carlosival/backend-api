@@ -46,11 +46,11 @@ class RecetaController extends FOSRestController
     }
 
     /**
-     * @Rest\Post("/receta/")
+     * @Rest\Post("/receta")
      */
-    public function newAction()
+    public function newAction(Request $request)
     {
-        return $this->processForm(new Receta());
+        return $this->processFormNew( $request,new Receta());
     }
 
     /**
@@ -58,9 +58,9 @@ class RecetaController extends FOSRestController
      * @Rest\Put("/receta/{id}")
      *
      */
-    public function editAction(Receta $receta)
+    public function editAction( Request $request, $id)
     {
-        return $this->processForm($receta);
+        return $this->processFormEdit($request, $id);
     }
 
 
@@ -80,16 +80,67 @@ class RecetaController extends FOSRestController
         $sn ->flush();
     }
 
-    private function processForm(Receta $receta)
+    private function processFormNew(Request $request,Receta $receta)
     {
-        $statusCode = $receta->isNew() ? 201 : 204;
 
-        $form = $this->createForm(new RecetaType(), $receta);
-        $form->handleRequest($this->getRequest());
+        $data = json_decode($request->getContent(), true);
+        $em = $this->getDoctrine()->getManager();
+        $idsusuario = $data['user'];
+        $usuario = $em->getRepository('DietaBundle:User')->find($idsusuario);
 
-        if ($form->isValid()) {
+        if ($usuario === null) {
+            throw new NotFoundHttpException('Usuario dueño de la receta no encontrado');
+        }
+
+        $receta ->setUser($usuario);
+        unset($data['user']);
+
+        foreach ($data as $dataproperty => $value)
+        {
+            if (property_exists('DietaBundle\\Entity\\Receta',$dataproperty )  && method_exists('DietaBundle\\Entity\\Receta', $setmetodo = 'set'. ucfirst($dataproperty))                       )
+             {
+
+               $receta->$setmetodo($value);
+             }
+        }
+
+        $validator = $this->get('validator');
+        $errors = $validator->validate($receta);
+
+
+        if ( $er=$errors->count() === 0){
+
+
+            $em->persist($receta);
+            $em->flush();
+
             $response = new Response();
-            $response->setStatusCode($statusCode);
+            $response->setStatusCode(201);
+            $response->headers->set('Location',
+                $this->generateUrl(
+                    'dieta_receta_get', array('id' => $receta->getId()), //buscar la url de obtner receta esto esta mal
+                    true // absolute
+                )
+            );
+
+            return $response;
+        }
+        $response =new Response((string) $errors);
+        $response->setStatusCode(400);
+        return $response;
+
+       /* $form = $this->createForm('DietaBundle\Form\RecetaType', $receta);
+       // $form->submit($data);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($receta);
+            $em->flush();
+
+            $response = new Response();
+            $response->setStatusCode(201);
 
             // set the `Location` header only when creating new resources
             if (201 === $statusCode) {
@@ -104,9 +155,20 @@ class RecetaController extends FOSRestController
             return $response;
         }
 
-        return View::create($form, 400);
+        return View::create($form, 400);*/
     }
 
+    public function objectToArray($data)
+    {
+        if (is_object($data)) {
+            $data = get_object_vars($data);
+        }
 
+        if (is_array($data)) {
+            return array_map(array($this, 'objectToArray'), $data);
+        }
+
+        return $data;
+    }
 
 }

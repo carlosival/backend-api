@@ -4,15 +4,19 @@ namespace DietaBundle\Entity;
 
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
-use Sylius\Component\Resource\Model\ResourceInterface;
+use Hateoas\Configuration\Annotation as Hateoas;
+#use Sylius\Component\Resource\Model\ResourceInterface;
 
 /**
  * User
  *
  * @ORM\Table(name="usuario")
  * @ORM\Entity(repositoryClass="DietaBundle\Repository\UserRepository")
+ * @Hateoas\Relation("self", href = "expr('/api/user/' ~ object.getId())")
+ *
+ *
  */
-class User extends BaseUser implements ResourceInterface
+class User extends BaseUser
 {
     /**
      * @var int
@@ -24,27 +28,19 @@ class User extends BaseUser implements ResourceInterface
     protected $id;
 
     /**
-     * Many User have Many OwnDietas.
-     * @ORM\ManyToMany(targetEntity="Dieta")
-     * @ORM\JoinTable(name="users_owndietas",
-     *      joinColumns={@ORM\JoinColumn(name="user_id", referencedColumnName="id")},
-     *      inverseJoinColumns={@ORM\JoinColumn(name="dieta_id", referencedColumnName="id", unique=true)}
-     *      )
+     * One User own Many Dietas.
+     * @ORM\OneToMany(targetEntity="DietaBundle\Entity\Dieta", mappedBy="user")
      */
     private $dietas;
 
     /**
-     * Many User have Many Recetas.
-     * @ORM\ManyToMany(targetEntity="Receta")
-     * @ORM\JoinTable(name="users_ownrecetas",
-     *      joinColumns={@ORM\JoinColumn(name="user_id", referencedColumnName="id")},
-     *      inverseJoinColumns={@ORM\JoinColumn(name="receta_id", referencedColumnName="id", unique=true)}
-     *      )
+     * One User own Many Recetas.
+     * @ORM\OneToMany(targetEntity="DietaBundle\Entity\Receta", mappedBy="user")
      */
     private $recetas;
 
     /**
-     * Many Users have Many Dietas.
+     * Many Users follow Many Dietas.
      * @ORM\ManyToMany(targetEntity="Dieta", inversedBy="usuarios_seguidores")
      * @ORM\JoinTable(name="users_dietaseguidas")
      */
@@ -53,20 +49,20 @@ class User extends BaseUser implements ResourceInterface
 
 
     /**
-     * Many Users have Many Recetas.
-     * @ORM\ManyToMany(targetEntity="Receta", inversedBy="usuario_seguidores")
+     * Many Users follow Many Recetas.
+     * @ORM\ManyToMany(targetEntity="DietaBundle\Entity\Receta", inversedBy="usuario_seguidores")
      * @ORM\JoinTable(name="users_recetaseguidas")
      */
     private $recetas_seguidas;
 
     /**
-     * Many Users have Many Users.
+     * Many Users have me as friend Many Users.
      * @ORM\ManyToMany(targetEntity="User", mappedBy="myFriends")
      */
     private $friendsWithMe;
 
     /**
-     * Many Users have many Users.
+     * I have Many Users friends.
      * @ORM\ManyToMany(targetEntity="User", inversedBy="friendsWithMe")
      * @ORM\JoinTable(name="friends",
      *      joinColumns={@ORM\JoinColumn(name="user_id", referencedColumnName="id")},

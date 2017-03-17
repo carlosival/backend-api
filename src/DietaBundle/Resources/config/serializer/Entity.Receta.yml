@@ -11,5 +11,3 @@ DietaBundle\Entity\Receta:
             expose: true
         raciones:
             expose: true
-        usuario_seguidores:
-            expose: true

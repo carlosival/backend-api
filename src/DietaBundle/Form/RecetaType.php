@@ -14,6 +14,7 @@ class RecetaType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+            //->setDisabled(true)
             ->add('nombre')
             ->add('ingredientes')
             ->add('preparacion')
@@ -21,6 +22,7 @@ class RecetaType extends AbstractType
             ->add('tiempo_preparacion')
             ->add('raciones')
             ->add('usuario_seguidores');
+
     }
     
     /**
@@ -42,5 +44,10 @@ class RecetaType extends AbstractType
         return 'dietabundle_receta';
     }
 
+
+    /*public function getParent()
+    {
+        return null;
+    }*/
 
 }

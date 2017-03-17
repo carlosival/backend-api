@@ -16,6 +16,7 @@
             "Tests\\": "tests/"
         }
     },
+
     "require": {
         "php": ">=5.5.9",
         "symfony/symfony": "3.2.*",
@@ -44,8 +45,12 @@
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
-        "symfony/phpunit-bridge": "^3.0"
+        "symfony/phpunit-bridge": "^3.0",
+        "sylius/resource-bundle": "dev-master"
+
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "scripts": {
         "symfony-scripts": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",

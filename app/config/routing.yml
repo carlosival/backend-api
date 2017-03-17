@@ -10,6 +10,14 @@ api_dieta:
     resource: "@DietaBundle/Controller/RecetaController.php"
     type:     annotation
 
+#FOS routing
+fos_comment_api:
+    type: rest
+    resource: "@FOSCommentBundle/Resources/config/routing.yml"
+    prefix: /api
+    defaults: { _format: html }
+
+
 
 
 

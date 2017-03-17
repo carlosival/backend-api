@@ -16,8 +16,11 @@
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
       <parameter key="JMSSerializerBundle">JMS\SerializerBundle\JMSSerializerBundle</parameter>
+      <parameter key="FOSCommentBundle">FOS\CommentBundle\FOSCommentBundle</parameter>
       <parameter key="FOSRestBundle">FOS\RestBundle\FOSRestBundle</parameter>
       <parameter key="FOSUserBundle">FOS\UserBundle\FOSUserBundle</parameter>
+      <parameter key="BazingaHateoasBundle">Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle</parameter>
+      <parameter key="AsseticBundle">Symfony\Bundle\AsseticBundle\AsseticBundle</parameter>
       <parameter key="DietaBundle">DietaBundle\DietaBundle</parameter>
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
@@ -66,6 +69,11 @@
         <parameter key="path">/var/www/html/backend-api/vendor/jms/serializer-bundle/JMS/SerializerBundle</parameter>
         <parameter key="namespace">JMS\SerializerBundle</parameter>
       </parameter>
+      <parameter key="FOSCommentBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle</parameter>
+        <parameter key="namespace">FOS\CommentBundle</parameter>
+      </parameter>
       <parameter key="FOSRestBundle" type="collection">
         <parameter key="parent">null</parameter>
         <parameter key="path">/var/www/html/backend-api/vendor/friendsofsymfony/rest-bundle</parameter>
@@ -75,6 +83,16 @@
         <parameter key="parent">null</parameter>
         <parameter key="path">/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle</parameter>
         <parameter key="namespace">FOS\UserBundle</parameter>
+      </parameter>
+      <parameter key="BazingaHateoasBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/var/www/html/backend-api/vendor/willdurand/hateoas-bundle/Bazinga/Bundle/HateoasBundle</parameter>
+        <parameter key="namespace">Bazinga\Bundle\HateoasBundle</parameter>
+      </parameter>
+      <parameter key="AsseticBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/var/www/html/backend-api/vendor/symfony/assetic-bundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\AsseticBundle</parameter>
       </parameter>
       <parameter key="DietaBundle" type="collection">
         <parameter key="parent">FOSUserBundle</parameter>
@@ -145,6 +163,7 @@
     <parameter key="validator.mapping.cache.prefix"></parameter>
     <parameter key="validator.mapping.cache.file">/var/www/html/backend-api/var/cache/dev/validation.php</parameter>
     <parameter key="validator.translation_domain">validators</parameter>
+    <parameter key="translator.logging">true</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_master_requests">false</parameter>
     <parameter key="profiler.storage.dsn">file:/var/www/html/backend-api/var/cache/dev/profiler</parameter>
@@ -161,7 +180,7 @@
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
-    <parameter key="router.resource">/var/www/html/backend-api/app/config/routing_dev.yml</parameter>
+    <parameter key="router.resource">/var/www/html/backend-api/var/cache/dev/assetic/routing.yml</parameter>
     <parameter key="router.cache_class_prefix">appDevDebugProjectContainer</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
@@ -216,7 +235,6 @@
     <parameter key="swiftmailer.email_sender.listener.class">Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener</parameter>
     <parameter key="swiftmailer.data_collector.class">Symfony\Bundle\SwiftmailerBundle\DataCollector\MessageDataCollector</parameter>
     <parameter key="swiftmailer.mailer.default.transport.name">smtp</parameter>
-    <parameter key="swiftmailer.mailer.default.delivery.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.encryption">null</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.port">25</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.host">127.0.0.1</parameter>
@@ -230,6 +248,7 @@
     <parameter key="swiftmailer.mailer.default.spool.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.plugin.impersonate">null</parameter>
     <parameter key="swiftmailer.mailer.default.single_address">null</parameter>
+    <parameter key="swiftmailer.mailer.default.delivery.enabled">true</parameter>
     <parameter key="swiftmailer.spool.enabled">true</parameter>
     <parameter key="swiftmailer.delivery.enabled">true</parameter>
     <parameter key="swiftmailer.single_address">null</parameter>
@@ -398,6 +417,33 @@
     <parameter key="jms_serializer.expression_evaluator.class">JMS\Serializer\Expression\ExpressionEvaluator</parameter>
     <parameter key="jms_serializer.expression_language.class">Symfony\Component\ExpressionLanguage\ExpressionLanguage</parameter>
     <parameter key="jms_serializer.expression_language.function_provider.class">JMS\SerializerBundle\ExpressionLanguage\BasicSerializerFunctionsProvider</parameter>
+    <parameter key="fos_comment.model.thread.class">DietaBundle\Entity\Thread</parameter>
+    <parameter key="fos_comment.model.comment.class">DietaBundle\Entity\Comment</parameter>
+    <parameter key="fos_comment.model.vote.class">FOS\CommentBundle\Entity\Vote</parameter>
+    <parameter key="fos_comment.manager.thread.default.class">FOS\CommentBundle\Entity\ThreadManager</parameter>
+    <parameter key="fos_comment.manager.comment.default.class">FOS\CommentBundle\Entity\CommentManager</parameter>
+    <parameter key="fos_comment.manager.vote.default.class">FOS\CommentBundle\Entity\VoteManager</parameter>
+    <parameter key="fos_comment.listener.comment_vote_score.class">FOS\CommentBundle\EventListener\CommentVoteScoreListener</parameter>
+    <parameter key="fos_comment.listener.thread_counters.class">FOS\CommentBundle\EventListener\ThreadCountersListener</parameter>
+    <parameter key="fos_comment.listener.thread_permalink.class">FOS\CommentBundle\EventListener\ThreadPermalinkListener</parameter>
+    <parameter key="fos_comment.listener.comment_blamer.class">FOS\CommentBundle\EventListener\CommentBlamerListener</parameter>
+    <parameter key="fos_comment.listener.vote_blamer.class">FOS\CommentBundle\EventListener\VoteBlamerListener</parameter>
+    <parameter key="fos_comment.listener.closed_threads.class">FOS\CommentBundle\EventListener\ClosedThreadListener</parameter>
+    <parameter key="fos_comment.sorting_factory.class">FOS\CommentBundle\Sorting\SortingFactory</parameter>
+    <parameter key="fos_comment.sorter.date.class">FOS\CommentBundle\Sorting\DateSorting</parameter>
+    <parameter key="fos_comment.template.engine">twig</parameter>
+    <parameter key="fos_comment.model_manager_name">null</parameter>
+    <parameter key="fos_comment.form.comment.type">FOS\CommentBundle\Form\CommentType</parameter>
+    <parameter key="fos_comment.form.comment.name">fos_comment_comment</parameter>
+    <parameter key="fos_comment.form.thread.type">FOS\CommentBundle\Form\ThreadType</parameter>
+    <parameter key="fos_comment.form.thread.name">fos_comment_thread</parameter>
+    <parameter key="fos_comment.form.commentable_thread.type">FOS\CommentBundle\Form\CommentableThreadType</parameter>
+    <parameter key="fos_comment.form.commentable_thread.name">fos_comment_commentable_thread</parameter>
+    <parameter key="fos_comment.form.delete_comment.type">FOS\CommentBundle\Form\DeleteCommentType</parameter>
+    <parameter key="fos_comment.form.delete_comment.name">fos_comment_delete_comment</parameter>
+    <parameter key="fos_comment.form.vote.type">FOS\CommentBundle\Form\VoteType</parameter>
+    <parameter key="fos_comment.form.vote.name">fos_comment_vote</parameter>
+    <parameter key="fos_comment.sorting_factory.default_sorter">date_desc</parameter>
     <parameter key="fos_rest.format_listener.rules">null</parameter>
     <parameter key="fos_user.backend_type_orm">true</parameter>
     <parameter key="fos_user.security.interactive_login_listener.class">FOS\UserBundle\EventListener\LastLoginListener</parameter>
@@ -441,6 +487,73 @@
       <parameter>ResetPassword</parameter>
       <parameter>Default</parameter>
     </parameter>
+    <parameter key="hateoas.link_factory.class">Hateoas\Factory\LinkFactory</parameter>
+    <parameter key="hateoas.links_factory.class">Hateoas\Factory\LinksFactory</parameter>
+    <parameter key="hateoas.embeds_factory.class">Hateoas\Factory\EmbeddedsFactory</parameter>
+    <parameter key="hateoas.expression.evaluator.class">Bazinga\Bundle\HateoasBundle\Hateoas\Expression\LazyFunctionExpressionEvaluator</parameter>
+    <parameter key="bazinga_hateoas.expression_language.class">Bazinga\Bundle\HateoasBundle\ExpressionLanguage\ExpressionLanguage</parameter>
+    <parameter key="hateoas.expression.link.class">Hateoas\Expression\LinkExpressionFunction</parameter>
+    <parameter key="hateoas.serializer.xml.class">Hateoas\Serializer\XmlSerializer</parameter>
+    <parameter key="hateoas.serializer.json_hal.class">Hateoas\Serializer\JsonHalSerializer</parameter>
+    <parameter key="hateoas.serializer.exclusion_manager.class">Hateoas\Serializer\ExclusionManager</parameter>
+    <parameter key="hateoas.event_subscriber.xml.class">Hateoas\Serializer\EventSubscriber\XmlEventSubscriber</parameter>
+    <parameter key="hateoas.event_subscriber.json.class">Hateoas\Serializer\EventSubscriber\JsonEventSubscriber</parameter>
+    <parameter key="hateoas.inline_deferrer.embeds.class">Hateoas\Serializer\Metadata\InlineDeferrer</parameter>
+    <parameter key="hateoas.inline_deferrer.links.class">Hateoas\Serializer\Metadata\InlineDeferrer</parameter>
+    <parameter key="hateoas.configuration.provider.resolver.chain.class">Hateoas\Configuration\Provider\Resolver\ChainResolver</parameter>
+    <parameter key="hateoas.configuration.provider.resolver.method.class">Hateoas\Configuration\Provider\Resolver\MethodResolver</parameter>
+    <parameter key="hateoas.configuration.provider.resolver.static_method.class">Hateoas\Configuration\Provider\Resolver\StaticMethodResolver</parameter>
+    <parameter key="hateoas.configuration.provider.resolver.symfony_container.class">Hateoas\Configuration\Provider\Resolver\SymfonyContainerResolver</parameter>
+    <parameter key="hateoas.configuration.relation_provider.class">Hateoas\Configuration\Provider\RelationProvider</parameter>
+    <parameter key="hateoas.configuration.relations_repository.class">Hateoas\Configuration\RelationsRepository</parameter>
+    <parameter key="hateoas.configuration.metadata.yaml_driver.class">Hateoas\Configuration\Metadata\Driver\YamlDriver</parameter>
+    <parameter key="hateoas.configuration.metadata.xml_driver.class">Hateoas\Configuration\Metadata\Driver\XmlDriver</parameter>
+    <parameter key="hateoas.configuration.metadata.annotation_driver.class">Hateoas\Configuration\Metadata\Driver\AnnotationDriver</parameter>
+    <parameter key="hateoas.configuration.metadata.extension_driver.class">Hateoas\Configuration\Metadata\Driver\ExtensionDriver</parameter>
+    <parameter key="hateoas.generator.registry.class">Hateoas\UrlGenerator\UrlGeneratorRegistry</parameter>
+    <parameter key="hateoas.generator.symfony.class">Hateoas\UrlGenerator\SymfonyUrlGenerator</parameter>
+    <parameter key="hateoas.helper.link.class">Hateoas\Helper\LinkHelper</parameter>
+    <parameter key="hateoas.twig.link.class">Hateoas\Twig\Extension\LinkExtension</parameter>
+    <parameter key="assetic.asset_factory.class">Symfony\Bundle\AsseticBundle\Factory\AssetFactory</parameter>
+    <parameter key="assetic.asset_manager.class">Assetic\Factory\LazyAssetManager</parameter>
+    <parameter key="assetic.asset_manager_cache_warmer.class">Symfony\Bundle\AsseticBundle\CacheWarmer\AssetManagerCacheWarmer</parameter>
+    <parameter key="assetic.cached_formula_loader.class">Assetic\Factory\Loader\CachedFormulaLoader</parameter>
+    <parameter key="assetic.config_cache.class">Assetic\Cache\ConfigCache</parameter>
+    <parameter key="assetic.config_loader.class">Symfony\Bundle\AsseticBundle\Factory\Loader\ConfigurationLoader</parameter>
+    <parameter key="assetic.config_resource.class">Symfony\Bundle\AsseticBundle\Factory\Resource\ConfigurationResource</parameter>
+    <parameter key="assetic.coalescing_directory_resource.class">Symfony\Bundle\AsseticBundle\Factory\Resource\CoalescingDirectoryResource</parameter>
+    <parameter key="assetic.directory_resource.class">Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource</parameter>
+    <parameter key="assetic.filter_manager.class">Symfony\Bundle\AsseticBundle\FilterManager</parameter>
+    <parameter key="assetic.worker.ensure_filter.class">Assetic\Factory\Worker\EnsureFilterWorker</parameter>
+    <parameter key="assetic.worker.cache_busting.class">Assetic\Factory\Worker\CacheBustingWorker</parameter>
+    <parameter key="assetic.value_supplier.class">Symfony\Bundle\AsseticBundle\DefaultValueSupplier</parameter>
+    <parameter key="assetic.node.paths" type="collection"/>
+    <parameter key="assetic.cache_dir">/var/www/html/backend-api/var/cache/dev/assetic</parameter>
+    <parameter key="assetic.bundles" type="collection">
+      <parameter>FOSCommentBundle</parameter>
+    </parameter>
+    <parameter key="assetic.twig_extension.class">Symfony\Bundle\AsseticBundle\Twig\AsseticExtension</parameter>
+    <parameter key="assetic.twig_formula_loader.class">Assetic\Extension\Twig\TwigFormulaLoader</parameter>
+    <parameter key="assetic.helper.dynamic.class">Symfony\Bundle\AsseticBundle\Templating\DynamicAsseticHelper</parameter>
+    <parameter key="assetic.helper.static.class">Symfony\Bundle\AsseticBundle\Templating\StaticAsseticHelper</parameter>
+    <parameter key="assetic.php_formula_loader.class">Symfony\Bundle\AsseticBundle\Factory\Loader\AsseticHelperFormulaLoader</parameter>
+    <parameter key="assetic.debug">true</parameter>
+    <parameter key="assetic.use_controller">true</parameter>
+    <parameter key="assetic.enable_profiler">false</parameter>
+    <parameter key="assetic.read_from">/var/www/html/backend-api/app/../web</parameter>
+    <parameter key="assetic.write_to">/var/www/html/backend-api/app/../web</parameter>
+    <parameter key="assetic.variables" type="collection"/>
+    <parameter key="assetic.java.bin">/usr/bin/java</parameter>
+    <parameter key="assetic.node.bin">/usr/bin/node</parameter>
+    <parameter key="assetic.ruby.bin">/usr/bin/ruby</parameter>
+    <parameter key="assetic.sass.bin">/usr/bin/sass</parameter>
+    <parameter key="assetic.reactjsx.bin">/usr/bin/jsx</parameter>
+    <parameter key="assetic.twig_extension.functions" type="collection"/>
+    <parameter key="assetic.controller.class">Symfony\Bundle\AsseticBundle\Controller\AsseticController</parameter>
+    <parameter key="assetic.routing_loader.class">Symfony\Bundle\AsseticBundle\Routing\AsseticLoader</parameter>
+    <parameter key="assetic.cache.class">Assetic\Cache\FilesystemCache</parameter>
+    <parameter key="assetic.use_controller_worker.class">Symfony\Bundle\AsseticBundle\Factory\Worker\UseControllerWorker</parameter>
+    <parameter key="assetic.request_listener.class">Symfony\Bundle\AsseticBundle\EventListener\RequestListener</parameter>
     <parameter key="web_profiler.debug_toolbar.position">bottom</parameter>
     <parameter key="web_profiler.debug_toolbar.intercept_redirects">false</parameter>
     <parameter key="web_profiler.debug_toolbar.mode">2</parameter>
@@ -480,6 +593,10 @@
       <parameter key="data_collector.router" type="collection">
         <parameter>router</parameter>
         <parameter>@WebProfiler/Collector/router.html.twig</parameter>
+      </parameter>
+      <parameter key="data_collector.translation" type="collection">
+        <parameter>translation</parameter>
+        <parameter>@WebProfiler/Collector/translation.html.twig</parameter>
       </parameter>
       <parameter key="data_collector.security" type="collection">
         <parameter>security</parameter>
@@ -553,11 +670,17 @@
             <argument type="service" id="templating.locator"/>
           </service>
         </argument>
+        <argument type="service">
+          <service class="Symfony\Bundle\AsseticBundle\CacheWarmer\AssetManagerCacheWarmer" public="false">
+            <tag name="kernel.cache_warmer" priority="10"/>
+            <argument type="service" id="service_container"/>
+          </service>
+        </argument>
         <argument type="service" id="kernel.class_cache.cache_warmer"/>
         <argument type="service">
           <service class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TranslationsCacheWarmer" public="false">
             <tag name="kernel.cache_warmer"/>
-            <argument type="service" id="translator"/>
+            <argument type="service" id="translator.default"/>
           </service>
         </argument>
         <argument type="service">
@@ -571,7 +694,7 @@
                 <tag name="cache.pool" clearer="cache.default_clearer"/>
                 <argument>rgrJxsq1wm</argument>
                 <argument>0</argument>
-                <argument>XICWrp6EQmhYcF3-XSq+72</argument>
+                <argument>TIP8NqQ5xZK3wH6vcS0t2W</argument>
                 <argument>/var/www/html/backend-api/var/cache/dev/pools</argument>
                 <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                 <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -733,15 +856,9 @@
       <argument>false</argument>
       <argument>false</argument>
       <argument type="service">
-        <service class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-          <tag name="cache.pool" clearer="cache.default_clearer"/>
-          <tag name="cache.pool" clearer="cache.default_clearer"/>
-          <tag name="monolog.logger" channel="cache"/>
-          <argument>ARC--sx26F</argument>
-          <argument>null</argument>
-          <argument>XICWrp6EQmhYcF3-XSq+72</argument>
-          <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
-          <factory class="Symfony\Component\PropertyAccess\PropertyAccessor" method="createCache"/>
+        <service class="Symfony\Component\Cache\Adapter\ArrayAdapter" public="false">
+          <argument>0</argument>
+          <argument>false</argument>
         </service>
       </argument>
     </service>
@@ -760,7 +877,7 @@
       <tag name="cache.pool" clearer="cache.default_clearer"/>
       <argument>TzdF-b5t+g</argument>
       <argument>0</argument>
-      <argument>XICWrp6EQmhYcF3-XSq+72</argument>
+      <argument>TIP8NqQ5xZK3wH6vcS0t2W</argument>
       <argument>/var/www/html/backend-api/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -770,7 +887,7 @@
       <tag name="cache.pool" clearer="cache.default_clearer"/>
       <argument>OOKPMQSFaK</argument>
       <argument>0</argument>
-      <argument>XICWrp6EQmhYcF3-XSq+72</argument>
+      <argument>TIP8NqQ5xZK3wH6vcS0t2W</argument>
       <argument>/var/www/html/backend-api/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -789,7 +906,9 @@
     </service>
     <service id="translator.default" class="Symfony\Bundle\FrameworkBundle\Translation\Translator">
       <argument type="service" id="service_container"/>
-      <argument type="service" id="translator.selector"/>
+      <argument type="service">
+        <service class="Symfony\Component\Translation\MessageSelector" public="false"/>
+      </argument>
       <argument type="collection">
         <argument key="translation.loader.php" type="collection">
           <argument>php</argument>
@@ -829,17 +948,360 @@
       <argument type="collection">
         <argument key="cache_dir">/var/www/html/backend-api/var/cache/dev/translations</argument>
         <argument key="debug">true</argument>
+        <argument key="resource_files" type="collection">
+          <argument key="hr" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hr.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hr.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.hr.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.hr.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.hr.yml</argument>
+          </argument>
+          <argument key="nn" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.nn.xlf</argument>
+          </argument>
+          <argument key="et" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.et.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.et.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.et.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.et.yml</argument>
+          </argument>
+          <argument key="bg" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.bg.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.bg.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.bg.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.bg.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.bg.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.bg.yml</argument>
+          </argument>
+          <argument key="cy" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.cy.xlf</argument>
+          </argument>
+          <argument key="no" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.no.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.no.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.no.xlf</argument>
+          </argument>
+          <argument key="sq" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sq.xlf</argument>
+          </argument>
+          <argument key="pt_BR" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pt_BR.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pt_BR.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.pt_BR.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pt_BR.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pt_BR.yml</argument>
+          </argument>
+          <argument key="uk" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.uk.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.uk.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.uk.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.uk.yml</argument>
+          </argument>
+          <argument key="el" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.el.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.el.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.el.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.el.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.el.yml</argument>
+          </argument>
+          <argument key="eu" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.eu.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.eu.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.eu.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.eu.yml</argument>
+          </argument>
+          <argument key="id" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.id.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.id.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.id.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.id.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.id.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.id.yml</argument>
+          </argument>
+          <argument key="it" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.it.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.it.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.it.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.it.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.it.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.it.yml</argument>
+          </argument>
+          <argument key="ar" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ar.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ar.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ar.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ar.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ar.yml</argument>
+          </argument>
+          <argument key="he" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.he.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.he.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.he.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.he.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.he.yml</argument>
+          </argument>
+          <argument key="de" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.de.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.de.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.de.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.de.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.de.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.de.yml</argument>
+          </argument>
+          <argument key="fr" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fr.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fr.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.fr.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.fr.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fr.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fr.yml</argument>
+          </argument>
+          <argument key="nl" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.nl.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.nl.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.nl.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.nl.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.nl.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.nl.yml</argument>
+          </argument>
+          <argument key="pl" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pl.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pl.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.pl.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.pl.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pl.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pl.yml</argument>
+          </argument>
+          <argument key="ro" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ro.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ro.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ro.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ro.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ro.yml</argument>
+          </argument>
+          <argument key="vi" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.vi.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.vi.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.vi.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.vi.yml</argument>
+          </argument>
+          <argument key="ca" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ca.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ca.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ca.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ca.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ca.yml</argument>
+          </argument>
+          <argument key="fi" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fi.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fi.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.fi.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fi.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fi.yml</argument>
+          </argument>
+          <argument key="en" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.en.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.en.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.en.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.en.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.en.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.en.yml</argument>
+          </argument>
+          <argument key="zh_TW" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.zh_TW.xlf</argument>
+          </argument>
+          <argument key="ru" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ru.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ru.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ru.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.ru.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ru.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ru.yml</argument>
+          </argument>
+          <argument key="tr" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.tr.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.tr.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.tr.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.tr.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.tr.yml</argument>
+          </argument>
+          <argument key="fa" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fa.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fa.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.fa.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fa.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fa.yml</argument>
+          </argument>
+          <argument key="az" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.az.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.az.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.az.xlf</argument>
+          </argument>
+          <argument key="pt" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pt.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pt.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.pt.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pt.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pt.yml</argument>
+          </argument>
+          <argument key="lt" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.lt.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lt.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.lt.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.lt.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lt.yml</argument>
+          </argument>
+          <argument key="hu" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hu.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hu.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.hu.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.hu.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.hu.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.hu.yml</argument>
+          </argument>
+          <argument key="sl" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sl.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sl.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.sl.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.sl.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sl.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sl.yml</argument>
+          </argument>
+          <argument key="hy" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hy.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hy.xlf</argument>
+          </argument>
+          <argument key="th" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.th.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.th.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.th.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.th.yml</argument>
+          </argument>
+          <argument key="lb" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.lb.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lb.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.lb.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lb.yml</argument>
+          </argument>
+          <argument key="sv" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sv.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sv.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.sv.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sv.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sv.yml</argument>
+          </argument>
+          <argument key="es" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.es.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.es.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.es.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.es.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.es.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.es.yml</argument>
+          </argument>
+          <argument key="sk" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sk.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sk.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.sk.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sk.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sk.yml</argument>
+          </argument>
+          <argument key="da" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.da.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.da.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.da.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.da.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.da.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.da.yml</argument>
+          </argument>
+          <argument key="sr_Cyrl" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sr_Cyrl.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sr_Cyrl.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.sr_Cyrl.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.sr_Cyrl.yml</argument>
+          </argument>
+          <argument key="cs" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.cs.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.cs.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.cs.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.cs.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.cs.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.cs.yml</argument>
+          </argument>
+          <argument key="lv" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.lv.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lv.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.lv.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.lv.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lv.yml</argument>
+          </argument>
+          <argument key="ja" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ja.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ja.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ja.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.ja.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ja.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ja.yml</argument>
+          </argument>
+          <argument key="gl" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.gl.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.gl.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.gl.xlf</argument>
+          </argument>
+          <argument key="af" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.af.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.af.yml</argument>
+          </argument>
+          <argument key="mn" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.mn.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.mn.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.mn.yml</argument>
+          </argument>
+          <argument key="sr_Latn" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sr_Latn.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sr_Latn.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.sr_Latn.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.sr_Latn.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sr_Latn.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sr_Latn.yml</argument>
+          </argument>
+          <argument key="zh_CN" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.zh_CN.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.zh_CN.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.zh_CN.xlf</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.zh_CN.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.zh_CN.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.zh_CN.yml</argument>
+          </argument>
+          <argument key="pt_PT" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.pt_PT.xlf</argument>
+          </argument>
+          <argument key="ua" type="collection">
+            <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ua.xlf</argument>
+          </argument>
+          <argument key="fa_IR" type="collection">
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/translations/FOSCommentBundle.fa_IR.yml</argument>
+          </argument>
+          <argument key="ky" type="collection">
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ky.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ky.yml</argument>
+          </argument>
+          <argument key="nb" type="collection">
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.nb.yml</argument>
+            <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.nb.yml</argument>
+          </argument>
+        </argument>
       </argument>
       <argument type="collection"/>
       <call method="setConfigCacheFactory">
         <argument type="service" id="config_cache_factory"/>
       </call>
+      <call method="setFallbackLocales">
+        <argument type="collection">
+          <argument>en</argument>
+        </argument>
+      </call>
       <autowiring-type>Symfony\Component\Translation\TranslatorInterface</autowiring-type>
     </service>
-    <service id="translator" class="Symfony\Component\Translation\IdentityTranslator">
-      <argument type="service" id="translator.selector"/>
-    </service>
-    <service id="translator.selector" class="Symfony\Component\Translation\MessageSelector" public="false"/>
     <service id="translation.loader.php" class="Symfony\Component\Translation\Loader\PhpFileLoader">
       <tag name="translation.loader" alias="php"/>
     </service>
@@ -1060,6 +1522,11 @@
               <argument key="Symfony\Component\Form\Extension\Core\Type\FormType">form.type.form</argument>
               <argument key="Symfony\Component\Form\Extension\Core\Type\ChoiceType">form.type.choice</argument>
               <argument key="Symfony\Bridge\Doctrine\Form\Type\EntityType">form.type.entity</argument>
+              <argument key="FOS\CommentBundle\Form\CommentType">fos_comment.form_type.comment.default</argument>
+              <argument key="FOS\CommentBundle\Form\CommentableThreadType">fos_comment.form_type.commentable_thread.default</argument>
+              <argument key="FOS\CommentBundle\Form\DeleteCommentType">fos_comment.form_type.delete_comment.default</argument>
+              <argument key="FOS\CommentBundle\Form\ThreadType">fos_comment.form_type.thread.default</argument>
+              <argument key="FOS\CommentBundle\Form\VoteType">fos_comment.form_type.vote.default</argument>
               <argument key="FOS\UserBundle\Form\Type\UsernameFormType">fos_user.username_form_type</argument>
               <argument key="FOS\UserBundle\Form\Type\ProfileFormType">fos_user.profile.form.type</argument>
               <argument key="FOS\UserBundle\Form\Type\RegistrationFormType">fos_user.registration.form.type</argument>
@@ -1301,6 +1768,7 @@
       <call method="addXmlMappings">
         <argument type="collection">
           <argument>/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/config/validation.xml</argument>
+          <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/config/validation.xml</argument>
           <argument>/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/config/validation.xml</argument>
         </argument>
       </call>
@@ -1403,6 +1871,9 @@
         <argument type="service" id="data_collector.router"/>
       </call>
       <call method="add">
+        <argument type="service" id="data_collector.translation"/>
+      </call>
+      <call method="add">
         <argument type="service">
           <service class="Symfony\Bundle\SecurityBundle\DataCollector\SecurityDataCollector" public="false">
             <tag name="data_collector" template="@Security/Collector/security.html.twig" id="security" priority="270"/>
@@ -1482,6 +1953,10 @@
       <argument type="service" id="data_collector.form.extractor"/>
       <argument>false</argument>
     </service>
+    <service id="data_collector.translation" class="Symfony\Component\Translation\DataCollector\TranslationDataCollector">
+      <tag name="data_collector" template="@WebProfiler/Collector/translation.html.twig" id="translation" priority="275"/>
+      <argument type="service" id="translator"/>
+    </service>
     <service id="debug.debug_handlers_listener" class="Symfony\Component\HttpKernel\EventListener\DebugHandlersListener">
       <tag name="kernel.event_subscriber"/>
       <tag name="monolog.logger" channel="php"/>
@@ -1540,6 +2015,14 @@
           <argument>onKernelController</argument>
         </argument>
         <argument>5</argument>
+      </call>
+      <call method="addListenerService">
+        <argument>kernel.request</argument>
+        <argument type="collection">
+          <argument>assetic.request_listener</argument>
+          <argument>onKernelRequest</argument>
+        </argument>
+        <argument>0</argument>
       </call>
       <call method="addSubscriberService">
         <argument>response_listener</argument>
@@ -1628,6 +2111,30 @@
       <call method="addSubscriberService">
         <argument>sensio_framework_extra.security.listener</argument>
         <argument>Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListener</argument>
+      </call>
+      <call method="addSubscriberService">
+        <argument>fos_comment.listener.comment_vote_score</argument>
+        <argument>FOS\CommentBundle\EventListener\CommentVoteScoreListener</argument>
+      </call>
+      <call method="addSubscriberService">
+        <argument>fos_comment.listener.thread_counters</argument>
+        <argument>FOS\CommentBundle\EventListener\ThreadCountersListener</argument>
+      </call>
+      <call method="addSubscriberService">
+        <argument>fos_comment.listener.thread_permalink</argument>
+        <argument>FOS\CommentBundle\EventListener\ThreadPermalinkListener</argument>
+      </call>
+      <call method="addSubscriberService">
+        <argument>fos_comment.listener.comment_blamer</argument>
+        <argument>FOS\CommentBundle\EventListener\CommentBlamerListener</argument>
+      </call>
+      <call method="addSubscriberService">
+        <argument>fos_comment.listener.vote_blamer</argument>
+        <argument>FOS\CommentBundle\EventListener\VoteBlamerListener</argument>
+      </call>
+      <call method="addSubscriberService">
+        <argument>fos_comment.listener.closed_threads</argument>
+        <argument>FOS\CommentBundle\EventListener\ClosedThreadListener</argument>
       </call>
       <call method="addSubscriberService">
         <argument>fos_rest.view_response_listener</argument>
@@ -1862,6 +2369,15 @@
               </service>
             </argument>
           </call>
+          <call method="addLoader">
+            <argument type="service">
+              <service class="Symfony\Bundle\AsseticBundle\Routing\AsseticLoader" public="false">
+                <tag name="routing.loader"/>
+                <argument type="service" id="assetic.asset_manager"/>
+                <argument type="collection"/>
+              </service>
+            </argument>
+          </call>
         </service>
       </argument>
     </service>
@@ -1895,7 +2411,7 @@
       <argument type="collection">
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>58c1f2e08133c1.38652078</argument>
+            <argument>58cb0f2fb4b8a8.69530427</argument>
           </service>
         </argument>
       </argument>
@@ -1974,6 +2490,12 @@
       <call method="setVoters">
         <argument type="collection">
           <argument type="service">
+            <service class="Symfony\Component\Security\Core\Authorization\Voter\AuthenticatedVoter" public="false">
+              <tag name="security.voter" priority="250"/>
+              <argument type="service" id="security.authentication.trust_resolver"/>
+            </service>
+          </argument>
+          <argument type="service">
             <service class="Symfony\Component\Security\Core\Authorization\Voter\RoleHierarchyVoter" public="false">
               <tag name="security.voter" priority="245"/>
               <argument type="service" id="security.role_hierarchy"/>
@@ -1987,12 +2509,6 @@
               </argument>
               <argument type="service" id="security.authentication.trust_resolver"/>
               <argument type="service" id="security.role_hierarchy" on-invalid="null"/>
-            </service>
-          </argument>
-          <argument type="service">
-            <service class="Symfony\Component\Security\Core\Authorization\Voter\AuthenticatedVoter" public="false">
-              <tag name="security.voter" priority="250"/>
-              <argument type="service" id="security.authentication.trust_resolver"/>
             </service>
           </argument>
         </argument>
@@ -2053,7 +2569,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>58c1f2e08133c1.38652078</argument>
+            <argument>58cb0f2fb4b8a8.69530427</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2258,6 +2774,39 @@
           <service class="JMS\Serializer\Twig\SerializerExtension" public="false">
             <tag name="twig.extension"/>
             <argument type="service" id="jms_serializer"/>
+          </service>
+        </argument>
+      </call>
+      <call method="addExtension">
+        <argument type="service">
+          <service class="FOS\CommentBundle\Twig\CommentExtension" public="false">
+            <tag name="twig.extension"/>
+            <argument>null</argument>
+            <argument>null</argument>
+            <argument>null</argument>
+          </service>
+        </argument>
+      </call>
+      <call method="addExtension">
+        <argument type="service" id="hateoas.twig.link"/>
+      </call>
+      <call method="addExtension">
+        <argument type="service">
+          <service class="Symfony\Bundle\AsseticBundle\Twig\AsseticExtension" public="false">
+            <tag name="twig.extension"/>
+            <tag name="assetic.templating.twig"/>
+            <argument type="service" id="assetic.asset_factory"/>
+            <argument type="service" id="templating.name_parser"/>
+            <argument>true</argument>
+            <argument type="collection"/>
+            <argument type="collection">
+              <argument>FOSCommentBundle</argument>
+            </argument>
+            <argument type="service">
+              <service class="Symfony\Bundle\AsseticBundle\DefaultValueSupplier" public="false">
+                <argument type="service" id="service_container"/>
+              </service>
+            </argument>
           </service>
         </argument>
       </call>
@@ -2533,6 +3082,7 @@
         <service class="Doctrine\ORM\Configuration" public="false">
           <call method="setEntityNamespaces">
             <argument type="collection">
+              <argument key="FOSCommentBundle">FOS\CommentBundle\Entity</argument>
               <argument key="DietaBundle">DietaBundle\Entity</argument>
             </argument>
           </call>
@@ -2548,6 +3098,19 @@
           <call method="setMetadataDriverImpl">
             <argument type="service">
               <service class="Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain" public="false">
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\SimplifiedXmlDriver" public="false">
+                      <argument type="collection">
+                        <argument key="/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/config/doctrine">FOS\CommentBundle\Entity</argument>
+                      </argument>
+                      <call method="setGlobalBasename">
+                        <argument>mapping</argument>
+                      </call>
+                    </service>
+                  </argument>
+                  <argument>FOS\CommentBundle\Entity</argument>
+                </call>
                 <call method="addDriver">
                   <argument type="service">
                     <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
@@ -2697,6 +3260,47 @@
     <service id="jms_serializer.constraint_violation_handler" class="JMS\Serializer\Handler\ConstraintViolationHandler">
       <tag name="jms_serializer.subscribing_handler"/>
     </service>
+    <service id="jms_serializer.metadata.file_locator" class="Metadata\Driver\FileLocator" public="false">
+      <argument type="collection">
+        <argument key="Symfony\Bundle\FrameworkBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/config/serializer</argument>
+        <argument key="Symfony\Bundle\SecurityBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/config/serializer</argument>
+        <argument key="Symfony\Bundle\TwigBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/config/serializer</argument>
+        <argument key="Symfony\Bundle\MonologBundle">/var/www/html/backend-api/vendor/symfony/monolog-bundle/Resources/config/serializer</argument>
+        <argument key="Symfony\Bundle\SwiftmailerBundle">/var/www/html/backend-api/vendor/symfony/swiftmailer-bundle/Resources/config/serializer</argument>
+        <argument key="Doctrine\Bundle\DoctrineBundle">/var/www/html/backend-api/vendor/doctrine/doctrine-bundle/Resources/config/serializer</argument>
+        <argument key="Sensio\Bundle\FrameworkExtraBundle">/var/www/html/backend-api/vendor/sensio/framework-extra-bundle/Resources/config/serializer</argument>
+        <argument key="JMS\SerializerBundle">/var/www/html/backend-api/vendor/jms/serializer-bundle/JMS/SerializerBundle/Resources/config/serializer</argument>
+        <argument key="FOS\CommentBundle">/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/config/serializer</argument>
+        <argument key="FOS\RestBundle">/var/www/html/backend-api/vendor/friendsofsymfony/rest-bundle/Resources/config/serializer</argument>
+        <argument key="FOS\UserBundle">/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/config/serializer</argument>
+        <argument key="Bazinga\Bundle\HateoasBundle">/var/www/html/backend-api/vendor/willdurand/hateoas-bundle/Bazinga/Bundle/HateoasBundle/Resources/config/serializer</argument>
+        <argument key="Symfony\Bundle\AsseticBundle">/var/www/html/backend-api/vendor/symfony/assetic-bundle/Resources/config/serializer</argument>
+        <argument key="DietaBundle">/var/www/html/backend-api/src/DietaBundle/Resources/config/serializer</argument>
+        <argument key="Symfony\Bundle\DebugBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
+        <argument key="Symfony\Bundle\WebProfilerBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
+        <argument key="Sensio\Bundle\DistributionBundle">/var/www/html/backend-api/vendor/sensio/distribution-bundle/Resources/config/serializer</argument>
+        <argument key="Sensio\Bundle\GeneratorBundle">/var/www/html/backend-api/vendor/sensio/generator-bundle/Resources/config/serializer</argument>
+        <argument key="Doctrine\Bundle\FixturesBundle">/var/www/html/backend-api/vendor/doctrine/doctrine-fixtures-bundle/Resources/config/serializer</argument>
+        <argument key="">/var/www/html/backend-api/src/DietaBundle/Resources/config/serializer</argument>
+      </argument>
+    </service>
+    <service id="jms_serializer.metadata_factory" class="Metadata\MetadataFactory" public="false">
+      <argument type="service">
+        <service class="Metadata\Driver\LazyLoadingDriver" public="false">
+          <argument type="service" id="service_container"/>
+          <argument>jms_serializer.metadata_driver</argument>
+        </service>
+      </argument>
+      <argument>Metadata\ClassHierarchyMetadata</argument>
+      <argument>true</argument>
+      <call method="setCache">
+        <argument type="service">
+          <service class="Metadata\Cache\FileCache" public="false">
+            <argument>/var/www/html/backend-api/var/cache/dev/jms_serializer</argument>
+          </service>
+        </argument>
+      </call>
+    </service>
     <service id="jms_serializer.unserialize_object_constructor" class="JMS\Serializer\Construction\UnserializeObjectConstructor" public="false"/>
     <service id="jms_serializer.expression_evaluator" class="JMS\Serializer\Expression\ExpressionEvaluator">
       <argument type="service">
@@ -2749,6 +3353,89 @@
     </service>
     <service id="jms_serializer.serialization_context_factory" class="JMS\Serializer\ContextFactory\DefaultSerializationContextFactory"/>
     <service id="jms_serializer.deserialization_context_factory" class="JMS\Serializer\ContextFactory\DefaultDeserializationContextFactory"/>
+    <service id="fos_comment.manager.thread.default" class="FOS\CommentBundle\Entity\ThreadManager">
+      <argument type="service" id="debug.event_dispatcher"/>
+      <argument type="service" id="fos_comment.entity_manager"/>
+      <argument>DietaBundle\Entity\Thread</argument>
+    </service>
+    <service id="fos_comment.manager.comment.default" class="FOS\CommentBundle\Entity\CommentManager">
+      <argument type="service" id="debug.event_dispatcher"/>
+      <argument type="service" id="fos_comment.sorting_factory"/>
+      <argument type="service" id="fos_comment.entity_manager"/>
+      <argument>DietaBundle\Entity\Comment</argument>
+    </service>
+    <service id="fos_comment.manager.vote.default" class="FOS\CommentBundle\Entity\VoteManager">
+      <argument type="service" id="debug.event_dispatcher"/>
+      <argument type="service" id="fos_comment.entity_manager"/>
+      <argument>FOS\CommentBundle\Entity\Vote</argument>
+    </service>
+    <service id="fos_comment.entity_manager" class="Doctrine\ORM\EntityManager" public="false">
+      <argument>null</argument>
+      <factory service="doctrine" method="getManager"/>
+    </service>
+    <service id="fos_comment.listener.comment_vote_score" class="FOS\CommentBundle\EventListener\CommentVoteScoreListener">
+      <tag name="kernel.event_subscriber"/>
+    </service>
+    <service id="fos_comment.listener.thread_counters" class="FOS\CommentBundle\EventListener\ThreadCountersListener">
+      <tag name="kernel.event_subscriber"/>
+      <argument type="service" id="fos_comment.manager.comment.default"/>
+    </service>
+    <service id="fos_comment.listener.thread_permalink" class="FOS\CommentBundle\EventListener\ThreadPermalinkListener">
+      <tag name="kernel.event_subscriber"/>
+      <argument type="service" id="service_container"/>
+    </service>
+    <service id="fos_comment.listener.comment_blamer" class="FOS\CommentBundle\EventListener\CommentBlamerListener">
+      <tag name="kernel.event_subscriber"/>
+      <argument type="service" id="security.authorization_checker"/>
+      <argument type="service" id="security.token_storage"/>
+      <argument type="service" id="logger" on-invalid="null"/>
+    </service>
+    <service id="fos_comment.listener.vote_blamer" class="FOS\CommentBundle\EventListener\VoteBlamerListener">
+      <tag name="kernel.event_subscriber"/>
+      <argument type="service" id="security.authorization_checker"/>
+      <argument type="service" id="security.token_storage"/>
+      <argument type="service" id="logger" on-invalid="null"/>
+    </service>
+    <service id="fos_comment.listener.closed_threads" class="FOS\CommentBundle\EventListener\ClosedThreadListener">
+      <tag name="kernel.event_subscriber"/>
+    </service>
+    <service id="fos_comment.form_type.comment.default" class="FOS\CommentBundle\Form\CommentType">
+      <tag name="form.type" alias="fos_comment_comment"/>
+      <argument>DietaBundle\Entity\Comment</argument>
+    </service>
+    <service id="fos_comment.form_type.commentable_thread.default" class="FOS\CommentBundle\Form\CommentableThreadType">
+      <tag name="form.type" alias="fos_comment_commentable_thread" extended_type="FOS\CommentBundle\Form\CommentableThreadType" extended-type="FOS\CommentBundle\Form\CommentableThreadType"/>
+      <argument>DietaBundle\Entity\Thread</argument>
+    </service>
+    <service id="fos_comment.form_type.delete_comment.default" class="FOS\CommentBundle\Form\DeleteCommentType">
+      <tag name="form.type" alias="fos_comment_delete_comment" extended_type="FOS\CommentBundle\Form\DeleteCommentType" extended-type="FOS\CommentBundle\Form\DeleteCommentType"/>
+      <argument>DietaBundle\Entity\Comment</argument>
+    </service>
+    <service id="fos_comment.form_type.thread.default" class="FOS\CommentBundle\Form\ThreadType">
+      <tag name="form.type" alias="fos_comment_thread" extended_type="FOS\CommentBundle\Form\ThreadType" extended-type="FOS\CommentBundle\Form\ThreadType"/>
+      <argument>DietaBundle\Entity\Thread</argument>
+    </service>
+    <service id="fos_comment.form_type.vote.default" class="FOS\CommentBundle\Form\VoteType">
+      <tag name="form.type" alias="fos_comment_vote" extended_type="FOS\CommentBundle\Form\VoteType" extended-type="FOS\CommentBundle\Form\VoteType"/>
+      <argument>FOS\CommentBundle\Entity\Vote</argument>
+    </service>
+    <service id="fos_comment.sorting_factory" class="FOS\CommentBundle\Sorting\SortingFactory">
+      <argument type="collection">
+        <argument key="date_asc" type="service">
+          <service class="FOS\CommentBundle\Sorting\DateSorting" public="false">
+            <tag name="fos_comment.sorter" alias="date_asc"/>
+            <argument>ASC</argument>
+          </service>
+        </argument>
+        <argument key="date_desc" type="service">
+          <service class="FOS\CommentBundle\Sorting\DateSorting" public="false">
+            <tag name="fos_comment.sorter" alias="date_desc"/>
+            <argument>DESC</argument>
+          </service>
+        </argument>
+      </argument>
+      <argument>date_desc</argument>
+    </service>
     <service id="fos_rest.request.param_fetcher" class="FOS\RestBundle\Request\ParamFetcher">
       <argument type="service" id="service_container"/>
       <argument type="service" id="fos_rest.request.param_fetcher.reader"/>
@@ -2941,6 +3628,267 @@
       <argument type="service" id="router"/>
       <argument>86400</argument>
     </service>
+    <service id="hateoas.link_factory" class="Hateoas\Factory\LinkFactory" public="false">
+      <argument type="service" id="hateoas.expression.evaluator"/>
+      <argument type="service" id="hateoas.generator.registry"/>
+    </service>
+    <service id="hateoas.links_factory" class="Hateoas\Factory\LinksFactory" public="false">
+      <argument type="service" id="hateoas.configuration.relations_repository"/>
+      <argument type="service" id="hateoas.link_factory"/>
+      <argument type="service" id="hateoas.serializer.exclusion_manager"/>
+    </service>
+    <service id="hateoas.embeds_factory" class="Hateoas\Factory\EmbeddedsFactory" public="false">
+      <argument type="service" id="hateoas.configuration.relations_repository"/>
+      <argument type="service" id="hateoas.expression.evaluator"/>
+      <argument type="service" id="hateoas.serializer.exclusion_manager"/>
+    </service>
+    <service id="hateoas.expression.evaluator" class="Bazinga\Bundle\HateoasBundle\Hateoas\Expression\LazyFunctionExpressionEvaluator">
+      <argument type="service" id="bazinga_hateoas.expression_language"/>
+      <argument type="collection"/>
+      <argument type="service" id="service_container"/>
+      <call method="setContextVariable">
+        <argument>container</argument>
+        <argument type="service" id="service_container"/>
+      </call>
+      <call method="registerFunctionId">
+        <argument>hateoas.expression.link</argument>
+      </call>
+    </service>
+    <service id="bazinga_hateoas.expression_language" class="Bazinga\Bundle\HateoasBundle\ExpressionLanguage\ExpressionLanguage"/>
+    <service id="hateoas.expression.link" class="Hateoas\Expression\LinkExpressionFunction">
+      <tag name="hateoas.expression_function"/>
+      <argument type="service" id="hateoas.helper.link"/>
+    </service>
+    <service id="hateoas.serializer.exclusion_manager" class="Hateoas\Serializer\ExclusionManager">
+      <argument type="service" id="hateoas.expression.evaluator"/>
+    </service>
+    <service id="hateoas.event_subscriber.xml" class="Hateoas\Serializer\EventSubscriber\XmlEventSubscriber">
+      <tag name="jms_serializer.event_subscriber"/>
+      <argument type="service">
+        <service class="Hateoas\Serializer\XmlSerializer" public="false">
+          <call method="setMetadataFactory">
+            <argument type="service" id="jms_serializer.metadata_factory"/>
+          </call>
+        </service>
+      </argument>
+      <argument type="service" id="hateoas.links_factory"/>
+      <argument type="service" id="hateoas.embeds_factory"/>
+    </service>
+    <service id="hateoas.event_subscriber.json" class="Hateoas\Serializer\EventSubscriber\JsonEventSubscriber">
+      <tag name="jms_serializer.event_subscriber"/>
+      <argument type="service">
+        <service class="Hateoas\Serializer\JsonHalSerializer" public="false"/>
+      </argument>
+      <argument type="service" id="hateoas.links_factory"/>
+      <argument type="service" id="hateoas.embeds_factory"/>
+      <argument type="service">
+        <service class="Hateoas\Serializer\Metadata\InlineDeferrer" public="false">
+          <argument type="service" id="jms_serializer.metadata_factory"/>
+        </service>
+      </argument>
+      <argument type="service">
+        <service class="Hateoas\Serializer\Metadata\InlineDeferrer" public="false">
+          <argument type="service" id="jms_serializer.metadata_factory"/>
+        </service>
+      </argument>
+    </service>
+    <service id="hateoas.configuration.relations_repository" class="Hateoas\Configuration\RelationsRepository" public="false">
+      <argument type="service">
+        <service class="Metadata\MetadataFactory" public="false">
+          <argument type="service">
+            <service class="Metadata\Driver\DriverChain" public="false">
+              <argument type="collection">
+                <argument type="service">
+                  <service class="Hateoas\Configuration\Metadata\Driver\YamlDriver" public="false">
+                    <argument type="service" id="jms_serializer.metadata.file_locator"/>
+                  </service>
+                </argument>
+                <argument type="service">
+                  <service class="Hateoas\Configuration\Metadata\Driver\XmlDriver" public="false">
+                    <argument type="service" id="jms_serializer.metadata.file_locator"/>
+                  </service>
+                </argument>
+                <argument type="service">
+                  <service class="Hateoas\Configuration\Metadata\Driver\ExtensionDriver" public="false">
+                    <argument type="service">
+                      <service class="Hateoas\Configuration\Metadata\Driver\AnnotationDriver" public="false">
+                        <argument type="service" id="annotation_reader"/>
+                      </service>
+                    </argument>
+                  </service>
+                </argument>
+              </argument>
+            </service>
+          </argument>
+          <argument>Metadata\ClassHierarchyMetadata</argument>
+          <argument>true</argument>
+          <call method="setCache">
+            <argument type="service">
+              <service class="Metadata\Cache\FileCache" public="false">
+                <argument>/var/www/html/backend-api/var/cache/dev/hateoas</argument>
+              </service>
+            </argument>
+          </call>
+        </service>
+      </argument>
+      <argument type="service">
+        <service class="Hateoas\Configuration\Provider\RelationProvider" public="false">
+          <argument type="service">
+            <service class="Metadata\MetadataFactory" public="false">
+              <argument type="service">
+                <service class="Metadata\Driver\DriverChain" public="false">
+                  <argument type="collection">
+                    <argument type="service">
+                      <service class="Hateoas\Configuration\Metadata\Driver\YamlDriver" public="false">
+                        <argument type="service" id="jms_serializer.metadata.file_locator"/>
+                      </service>
+                    </argument>
+                    <argument type="service">
+                      <service class="Hateoas\Configuration\Metadata\Driver\XmlDriver" public="false">
+                        <argument type="service" id="jms_serializer.metadata.file_locator"/>
+                      </service>
+                    </argument>
+                    <argument type="service">
+                      <service class="Hateoas\Configuration\Metadata\Driver\ExtensionDriver" public="false">
+                        <argument type="service">
+                          <service class="Hateoas\Configuration\Metadata\Driver\AnnotationDriver" public="false">
+                            <argument type="service" id="annotation_reader"/>
+                          </service>
+                        </argument>
+                      </service>
+                    </argument>
+                  </argument>
+                </service>
+              </argument>
+              <argument>Metadata\ClassHierarchyMetadata</argument>
+              <argument>true</argument>
+              <call method="setCache">
+                <argument type="service">
+                  <service class="Metadata\Cache\FileCache" public="false">
+                    <argument>/var/www/html/backend-api/var/cache/dev/hateoas</argument>
+                  </service>
+                </argument>
+              </call>
+            </service>
+          </argument>
+          <argument type="service" id="hateoas.configuration.provider.resolver"/>
+        </service>
+      </argument>
+    </service>
+    <service id="hateoas.generator.registry" class="Hateoas\UrlGenerator\UrlGeneratorRegistry">
+      <argument type="service" id="hateoas.generator.symfony"/>
+    </service>
+    <service id="hateoas.generator.symfony" class="Hateoas\UrlGenerator\SymfonyUrlGenerator">
+      <argument type="service" id="router"/>
+    </service>
+    <service id="hateoas.helper.link" class="Hateoas\Helper\LinkHelper">
+      <argument type="service" id="hateoas.link_factory"/>
+      <argument type="service" id="hateoas.configuration.relations_repository"/>
+    </service>
+    <service id="hateoas.twig.link" class="Hateoas\Twig\Extension\LinkExtension">
+      <tag name="twig.extension"/>
+      <argument type="service" id="hateoas.helper.link"/>
+    </service>
+    <service id="assetic.filter_manager" class="Symfony\Bundle\AsseticBundle\FilterManager">
+      <argument type="service" id="service_container"/>
+      <argument type="collection"/>
+    </service>
+    <service id="assetic.asset_manager" class="Assetic\Factory\LazyAssetManager">
+      <argument type="service" id="assetic.asset_factory"/>
+      <argument type="collection">
+        <argument key="twig" type="service">
+          <service class="Assetic\Factory\Loader\CachedFormulaLoader" public="false">
+            <tag name="assetic.formula_loader" alias="twig"/>
+            <tag name="assetic.templating.twig"/>
+            <argument type="service">
+              <service class="Assetic\Extension\Twig\TwigFormulaLoader" public="false">
+                <tag name="assetic.templating.twig"/>
+                <tag name="monolog.logger" channel="assetic"/>
+                <argument type="service" id="twig"/>
+                <argument type="service" id="monolog.logger.assetic" on-invalid="ignore"/>
+              </service>
+            </argument>
+            <argument type="service">
+              <service class="Assetic\Cache\ConfigCache" public="false">
+                <argument>/var/www/html/backend-api/var/cache/dev/assetic/config</argument>
+              </service>
+            </argument>
+            <argument>true</argument>
+          </service>
+        </argument>
+      </argument>
+      <call method="addResource">
+        <argument type="service">
+          <service class="Symfony\Bundle\AsseticBundle\Factory\Resource\CoalescingDirectoryResource" public="false">
+            <tag name="assetic.templating.twig"/>
+            <tag name="assetic.formula_resource" loader="twig"/>
+            <argument type="collection">
+              <argument type="service">
+                <service class="%assetic.directory_resource.class%" public="false">
+                  <argument type="service" id="templating.loader"/>
+                  <argument>FOSCommentBundle</argument>
+                  <argument>/var/www/html/backend-api/app/Resources/FOSCommentBundle/views</argument>
+                  <argument>/\.[^.]+\.twig$/</argument>
+                </service>
+              </argument>
+              <argument type="service">
+                <service class="%assetic.directory_resource.class%" public="false">
+                  <argument type="service" id="templating.loader"/>
+                  <argument>FOSCommentBundle</argument>
+                  <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/views</argument>
+                  <argument>/\.[^.]+\.twig$/</argument>
+                </service>
+              </argument>
+            </argument>
+          </service>
+        </argument>
+        <argument>twig</argument>
+      </call>
+      <call method="addResource">
+        <argument type="service">
+          <service class="Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource" public="false">
+            <tag name="assetic.templating.twig"/>
+            <tag name="assetic.formula_resource" loader="twig"/>
+            <argument type="service" id="templating.loader"/>
+            <argument></argument>
+            <argument>/var/www/html/backend-api/app/Resources/views</argument>
+            <argument>/\.[^.]+\.twig$/</argument>
+          </service>
+        </argument>
+        <argument>twig</argument>
+      </call>
+    </service>
+    <service id="assetic.asset_factory" class="Symfony\Bundle\AsseticBundle\Factory\AssetFactory" public="false">
+      <argument type="service" id="kernel"/>
+      <argument type="service" id="service_container"/>
+      <argument type="service">
+        <service class="Symfony\Component\DependencyInjection\ParameterBag\ParameterBag" public="false">
+          <factory service="service_container" method="getParameterBag"/>
+        </service>
+      </argument>
+      <argument>/var/www/html/backend-api/app/../web</argument>
+      <argument>true</argument>
+      <call method="addWorker">
+        <argument type="service">
+          <service class="Symfony\Bundle\AsseticBundle\Factory\Worker\UseControllerWorker" public="false">
+            <tag name="assetic.factory_worker"/>
+          </service>
+        </argument>
+      </call>
+    </service>
+    <service id="assetic.controller" class="Symfony\Bundle\AsseticBundle\Controller\AsseticController">
+      <argument type="service" id="assetic.asset_manager"/>
+      <argument type="service">
+        <service class="Assetic\Cache\FilesystemCache" public="false">
+          <argument>/var/www/html/backend-api/var/cache/dev/assetic/assets</argument>
+        </service>
+      </argument>
+      <argument>false</argument>
+      <argument type="service" id="profiler" on-invalid="null"/>
+    </service>
+    <service id="assetic.request_listener" class="Symfony\Bundle\AsseticBundle\EventListener\RequestListener">
+      <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest"/>
+    </service>
     <service id="data_collector.dump" class="Symfony\Component\HttpKernel\DataCollector\DumpDataCollector">
       <tag name="data_collector" id="dump" template="@Debug/Profiler/dump.html.twig" priority="240"/>
       <argument type="service" id="debug.stopwatch" on-invalid="ignore"/>
@@ -3007,6 +3955,10 @@
         <argument key="data_collector.router" type="collection">
           <argument>router</argument>
           <argument>@WebProfiler/Collector/router.html.twig</argument>
+        </argument>
+        <argument key="data_collector.translation" type="collection">
+          <argument>translation</argument>
+          <argument>@WebProfiler/Collector/translation.html.twig</argument>
         </argument>
         <argument key="data_collector.security" type="collection">
           <argument>security</argument>
@@ -3181,6 +4133,18 @@
         <argument type="service" id="monolog.handler.main"/>
       </call>
     </service>
+    <service id="monolog.logger.assetic" class="Symfony\Bridge\Monolog\Logger">
+      <argument>assetic</argument>
+      <call method="pushProcessor">
+        <argument type="service" id="debug.log_processor"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.console"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.main"/>
+      </call>
+    </service>
     <service id="monolog.handler.null_internal" class="Monolog\Handler\NullHandler"/>
     <service id="session.storage.filesystem" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage">
       <argument>/var/www/html/backend-api/var/cache/dev/sessions</argument>
@@ -3200,10 +4164,19 @@
       <autowiring-type>Symfony\Component\Templating\EngineInterface</autowiring-type>
       <autowiring-type>Symfony\Bundle\FrameworkBundle\Templating\EngineInterface</autowiring-type>
     </service>
+    <service id="translator" class="Symfony\Component\Translation\DataCollectorTranslator">
+      <argument type="service">
+        <service class="Symfony\Component\Translation\LoggingTranslator" public="false">
+          <tag name="monolog.logger" channel="translation"/>
+          <argument type="service" id="translator.default"/>
+          <argument type="service" id="monolog.logger.translation"/>
+        </service>
+      </argument>
+    </service>
     <service id="router" class="Symfony\Bundle\FrameworkBundle\Routing\Router">
       <tag name="monolog.logger" channel="router"/>
       <argument type="service" id="service_container"/>
-      <argument>/var/www/html/backend-api/app/config/routing_dev.yml</argument>
+      <argument>/var/www/html/backend-api/var/cache/dev/assetic/routing.yml</argument>
       <argument type="collection">
         <argument key="cache_dir">/var/www/html/backend-api/var/cache/dev</argument>
         <argument key="debug">true</argument>
@@ -3216,6 +4189,7 @@
         <argument key="matcher_dumper_class">Symfony\Component\Routing\Matcher\Dumper\PhpMatcherDumper</argument>
         <argument key="matcher_cache_class">appDevDebugProjectContainerUrlMatcher</argument>
         <argument key="strict_requirements">true</argument>
+        <argument key="resource_type">yaml</argument>
       </argument>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="monolog.logger.router" on-invalid="ignore"/>
@@ -3340,83 +4314,17 @@
           <argument type="collection">
             <argument type="service">
               <service class="JMS\Serializer\Metadata\Driver\YamlDriver" public="false">
-                <argument type="service">
-                  <service class="Metadata\Driver\FileLocator" public="false">
-                    <argument type="collection">
-                      <argument key="Symfony\Bundle\FrameworkBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SecurityBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\TwigBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\MonologBundle">/var/www/html/backend-api/vendor/symfony/monolog-bundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SwiftmailerBundle">/var/www/html/backend-api/vendor/symfony/swiftmailer-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\DoctrineBundle">/var/www/html/backend-api/vendor/doctrine/doctrine-bundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\FrameworkExtraBundle">/var/www/html/backend-api/vendor/sensio/framework-extra-bundle/Resources/config/serializer</argument>
-                      <argument key="JMS\SerializerBundle">/var/www/html/backend-api/vendor/jms/serializer-bundle/JMS/SerializerBundle/Resources/config/serializer</argument>
-                      <argument key="FOS\RestBundle">/var/www/html/backend-api/vendor/friendsofsymfony/rest-bundle/Resources/config/serializer</argument>
-                      <argument key="FOS\UserBundle">/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/config/serializer</argument>
-                      <argument key="DietaBundle">/var/www/html/backend-api/src/DietaBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\DebugBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\WebProfilerBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\DistributionBundle">/var/www/html/backend-api/vendor/sensio/distribution-bundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\GeneratorBundle">/var/www/html/backend-api/vendor/sensio/generator-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\FixturesBundle">/var/www/html/backend-api/vendor/doctrine/doctrine-fixtures-bundle/Resources/config/serializer</argument>
-                      <argument key="">/var/www/html/backend-api/src/DietaBundle/Resources/config/serializer</argument>
-                    </argument>
-                  </service>
-                </argument>
+                <argument type="service" id="jms_serializer.metadata.file_locator"/>
               </service>
             </argument>
             <argument type="service">
               <service class="JMS\Serializer\Metadata\Driver\XmlDriver" public="false">
-                <argument type="service">
-                  <service class="Metadata\Driver\FileLocator" public="false">
-                    <argument type="collection">
-                      <argument key="Symfony\Bundle\FrameworkBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SecurityBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\TwigBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\MonologBundle">/var/www/html/backend-api/vendor/symfony/monolog-bundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SwiftmailerBundle">/var/www/html/backend-api/vendor/symfony/swiftmailer-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\DoctrineBundle">/var/www/html/backend-api/vendor/doctrine/doctrine-bundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\FrameworkExtraBundle">/var/www/html/backend-api/vendor/sensio/framework-extra-bundle/Resources/config/serializer</argument>
-                      <argument key="JMS\SerializerBundle">/var/www/html/backend-api/vendor/jms/serializer-bundle/JMS/SerializerBundle/Resources/config/serializer</argument>
-                      <argument key="FOS\RestBundle">/var/www/html/backend-api/vendor/friendsofsymfony/rest-bundle/Resources/config/serializer</argument>
-                      <argument key="FOS\UserBundle">/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/config/serializer</argument>
-                      <argument key="DietaBundle">/var/www/html/backend-api/src/DietaBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\DebugBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\WebProfilerBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\DistributionBundle">/var/www/html/backend-api/vendor/sensio/distribution-bundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\GeneratorBundle">/var/www/html/backend-api/vendor/sensio/generator-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\FixturesBundle">/var/www/html/backend-api/vendor/doctrine/doctrine-fixtures-bundle/Resources/config/serializer</argument>
-                      <argument key="">/var/www/html/backend-api/src/DietaBundle/Resources/config/serializer</argument>
-                    </argument>
-                  </service>
-                </argument>
+                <argument type="service" id="jms_serializer.metadata.file_locator"/>
               </service>
             </argument>
             <argument type="service">
               <service class="JMS\Serializer\Metadata\Driver\PhpDriver" public="false">
-                <argument type="service">
-                  <service class="Metadata\Driver\FileLocator" public="false">
-                    <argument type="collection">
-                      <argument key="Symfony\Bundle\FrameworkBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SecurityBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\TwigBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\MonologBundle">/var/www/html/backend-api/vendor/symfony/monolog-bundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SwiftmailerBundle">/var/www/html/backend-api/vendor/symfony/swiftmailer-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\DoctrineBundle">/var/www/html/backend-api/vendor/doctrine/doctrine-bundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\FrameworkExtraBundle">/var/www/html/backend-api/vendor/sensio/framework-extra-bundle/Resources/config/serializer</argument>
-                      <argument key="JMS\SerializerBundle">/var/www/html/backend-api/vendor/jms/serializer-bundle/JMS/SerializerBundle/Resources/config/serializer</argument>
-                      <argument key="FOS\RestBundle">/var/www/html/backend-api/vendor/friendsofsymfony/rest-bundle/Resources/config/serializer</argument>
-                      <argument key="FOS\UserBundle">/var/www/html/backend-api/vendor/friendsofsymfony/user-bundle/Resources/config/serializer</argument>
-                      <argument key="DietaBundle">/var/www/html/backend-api/src/DietaBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\DebugBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\WebProfilerBundle">/var/www/html/backend-api/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\DistributionBundle">/var/www/html/backend-api/vendor/sensio/distribution-bundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\GeneratorBundle">/var/www/html/backend-api/vendor/sensio/generator-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\FixturesBundle">/var/www/html/backend-api/vendor/doctrine/doctrine-fixtures-bundle/Resources/config/serializer</argument>
-                      <argument key="">/var/www/html/backend-api/src/DietaBundle/Resources/config/serializer</argument>
-                    </argument>
-                  </service>
-                </argument>
+                <argument type="service" id="jms_serializer.metadata.file_locator"/>
               </service>
             </argument>
             <argument type="service">
@@ -3446,25 +4354,7 @@
       <argument type="service" id="jms_serializer.unserialize_object_constructor"/>
     </service>
     <service id="jms_serializer" class="JMS\Serializer\Serializer">
-      <argument type="service">
-        <service class="Metadata\MetadataFactory" public="false">
-          <argument type="service">
-            <service class="Metadata\Driver\LazyLoadingDriver" public="false">
-              <argument type="service" id="service_container"/>
-              <argument>jms_serializer.metadata_driver</argument>
-            </service>
-          </argument>
-          <argument>Metadata\ClassHierarchyMetadata</argument>
-          <argument>true</argument>
-          <call method="setCache">
-            <argument type="service">
-              <service class="Metadata\Cache\FileCache" public="false">
-                <argument>/var/www/html/backend-api/var/cache/dev/jms_serializer</argument>
-              </service>
-            </argument>
-          </call>
-        </service>
-      </argument>
+      <argument type="service" id="jms_serializer.metadata_factory"/>
       <argument type="service" id="jms_serializer.handler_registry"/>
       <argument type="service" id="jms_serializer.unserialize_object_constructor"/>
       <argument type="service">
@@ -3510,6 +4400,22 @@
               <argument key="serializer.post_serialize" type="collection">
                 <argument type="collection">
                   <argument type="collection">
+                    <argument>hateoas.event_subscriber.xml</argument>
+                    <argument>onPostSerialize</argument>
+                  </argument>
+                  <argument>null</argument>
+                  <argument>xml</argument>
+                </argument>
+                <argument type="collection">
+                  <argument type="collection">
+                    <argument>hateoas.event_subscriber.json</argument>
+                    <argument>onPostSerialize</argument>
+                  </argument>
+                  <argument>null</argument>
+                  <argument>json</argument>
+                </argument>
+                <argument type="collection">
+                  <argument type="collection">
                     <argument>jms_serializer.stopwatch_subscriber</argument>
                     <argument>onPostSerialize</argument>
                   </argument>
@@ -3529,6 +4435,31 @@
       <call method="setDeserializationContextFactory">
         <argument type="service" id="jms_serializer.deserialization_context_factory"/>
       </call>
+    </service>
+    <service id="fos_comment.form_factory.comment" class="FOS\CommentBundle\FormFactory\CommentFormFactory">
+      <argument type="service" id="form.factory"/>
+      <argument>FOS\CommentBundle\Form\CommentType</argument>
+      <argument>fos_comment_comment</argument>
+    </service>
+    <service id="fos_comment.form_factory.commentable_thread" class="FOS\CommentBundle\FormFactory\CommentableThreadFormFactory">
+      <argument type="service" id="form.factory"/>
+      <argument>FOS\CommentBundle\Form\CommentableThreadType</argument>
+      <argument>fos_comment_commentable_thread</argument>
+    </service>
+    <service id="fos_comment.form_factory.delete_comment" class="FOS\CommentBundle\FormFactory\DeleteCommentFormFactory">
+      <argument type="service" id="form.factory"/>
+      <argument>FOS\CommentBundle\Form\DeleteCommentType</argument>
+      <argument>fos_comment_delete_comment</argument>
+    </service>
+    <service id="fos_comment.form_factory.thread" class="FOS\CommentBundle\FormFactory\ThreadFormFactory">
+      <argument type="service" id="form.factory"/>
+      <argument>FOS\CommentBundle\Form\ThreadType</argument>
+      <argument>fos_comment_thread</argument>
+    </service>
+    <service id="fos_comment.form_factory.vote" class="FOS\CommentBundle\FormFactory\VoteFormFactory">
+      <argument type="service" id="form.factory"/>
+      <argument>FOS\CommentBundle\Form\VoteType</argument>
+      <argument>fos_comment_vote</argument>
     </service>
     <service id="fos_rest.view_handler" class="FOS\RestBundle\View\ViewHandler">
       <argument type="service" id="router"/>
@@ -3581,6 +4512,26 @@
       </argument>
       <argument>DietaBundle\Entity\User</argument>
     </service>
+    <service id="hateoas.configuration.provider.resolver" class="Hateoas\Configuration\Provider\Resolver\ChainResolver">
+      <argument type="collection">
+        <argument type="service">
+          <service class="Hateoas\Configuration\Provider\Resolver\MethodResolver" public="false">
+            <tag name="hateoas.relation_provider"/>
+          </service>
+        </argument>
+        <argument type="service">
+          <service class="Hateoas\Configuration\Provider\Resolver\StaticMethodResolver" public="false">
+            <tag name="hateoas.relation_provider"/>
+          </service>
+        </argument>
+        <argument type="service">
+          <service class="Hateoas\Configuration\Provider\Resolver\SymfonyContainerResolver" public="false">
+            <tag name="hateoas.relation_provider"/>
+            <argument type="service" id="service_container"/>
+          </service>
+        </argument>
+      </argument>
+    </service>
     <service id="twig.loader" class="Symfony\Bundle\TwigBundle\Loader\FilesystemLoader">
       <tag name="twig.loader"/>
       <argument type="service" id="templating.locator"/>
@@ -3605,6 +4556,10 @@
       <call method="addPath">
         <argument>/var/www/html/backend-api/vendor/doctrine/doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
+      </call>
+      <call method="addPath">
+        <argument>/var/www/html/backend-api/vendor/friendsofsymfony/comment-bundle/Resources/views</argument>
+        <argument>FOSComment</argument>
       </call>
       <call method="addPath">
         <argument>/var/www/html/backend-api/src/DietaBundle/Resources/views</argument>
@@ -3982,6 +4937,9 @@
     <service id="doctrine.orm.default_result_cache" alias="doctrine_cache.providers.doctrine.orm.default_result_cache"/>
     <service id="doctrine.orm.default_query_cache" alias="doctrine_cache.providers.doctrine.orm.default_query_cache"/>
     <service id="serializer" alias="jms_serializer"/>
+    <service id="fos_comment.manager.thread" alias="fos_comment.manager.thread.default"/>
+    <service id="fos_comment.manager.comment" alias="fos_comment.manager.comment.default"/>
+    <service id="fos_comment.manager.vote" alias="fos_comment.manager.vote.default"/>
     <service id="fos_rest.router" alias="router"/>
     <service id="fos_rest.templating" alias="templating"/>
     <service id="fos_user.util.username_canonicalizer" alias="fos_user.util.email_canonicalizer"/>

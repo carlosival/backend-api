@@ -3,7 +3,7 @@
 namespace DietaBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Sylius\Component\Resource\Model\ResourceInterface;
+
 
 /**
  * Receta
@@ -11,7 +11,7 @@ use Sylius\Component\Resource\Model\ResourceInterface;
  * @ORM\Table(name="receta")
  * @ORM\Entity(repositoryClass="DietaBundle\Repository\RecetaRepository")
  */
-class Receta implements ResourceInterface
+class Receta
 {
     /**
      * @var int
@@ -46,19 +46,19 @@ class Receta implements ResourceInterface
     private $preparacion;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", nullable=true)
      * @var string
      */
     private $foto;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string" ,nullable=true)
      * @var string
      */
     private $tiempo_preparacion;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string" ,nullable=true)
      * @var string
      */
     private $raciones;
@@ -68,6 +68,13 @@ class Receta implements ResourceInterface
      * @ORM\ManyToMany(targetEntity="User", mappedBy="recetas_seguidas")
      */
     private $usuario_seguidores;
+
+    /**
+     * Many Recetas belongs One User.
+     * @ORM\ManyToOne(targetEntity="DietaBundle\Entity\User", inversedBy="recetas")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     */
+    private $user;
 
     private $comentarios;
 
@@ -266,5 +273,29 @@ class Receta implements ResourceInterface
     public function getUsuarioSeguidores()
     {
         return $this->usuario_seguidores;
+    }
+
+    /**
+     * Set user
+     *
+     * @param \DietaBundle\Entity\User $user
+     *
+     * @return Receta
+     */
+    public function setUser(\DietaBundle\Entity\User $user = null)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \DietaBundle\Entity\User
+     */
+    public function getUser()
+    {
+        return $this->user;
     }
 }

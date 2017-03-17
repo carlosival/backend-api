@@ -12,7 +12,7 @@ parameters:
 
 framework:
     #esi:             ~
-    #translator:      { fallbacks: ["%locale%"] }
+    translator:      { fallbacks: ["%locale%"] }
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -105,3 +105,13 @@ fos_rest:
         formats:
             json: true
 
+# FOSComment
+fos_comment:
+    db_driver: orm
+    class:
+        model:
+            comment: DietaBundle\Entity\Comment
+            thread: DietaBundle\Entity\Thread
+
+assetic:
+    bundles: [ "FOSCommentBundle" ]

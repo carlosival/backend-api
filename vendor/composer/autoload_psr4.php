@@ -6,8 +6,12 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'winzou\\Bundle\\StateMachineBundle\\' => array($vendorDir . '/winzou/state-machine-bundle'),
+    'Zend\\Stdlib\\' => array($vendorDir . '/zendframework/zend-stdlib/src'),
     'Zend\\EventManager\\' => array($vendorDir . '/zendframework/zend-eventmanager/src'),
     'Zend\\Code\\' => array($vendorDir . '/zendframework/zend-code/src'),
+    'WhiteOctober\\PagerfantaBundle\\' => array($vendorDir . '/white-october/pagerfanta-bundle'),
+    'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
     'Vich\\UploaderBundle\\' => array($vendorDir . '/vich/uploader-bundle'),
     'Tests\\' => array($baseDir . '/tests'),
     'Symfony\\Polyfill\\Util\\' => array($vendorDir . '/symfony/polyfill-util'),
@@ -25,6 +29,10 @@ return array(
     'Symfony\\Bridge\\PhpUnit\\' => array($vendorDir . '/symfony/phpunit-bridge'),
     'Symfony\\Bridge\\Monolog\\' => array($vendorDir . '/symfony/symfony/src/Symfony/Bridge/Monolog'),
     'Symfony\\Bridge\\Doctrine\\' => array($vendorDir . '/symfony/symfony/src/Symfony/Bridge/Doctrine'),
+    'Sylius\\Component\\Resource\\' => array($vendorDir . '/sylius/resource'),
+    'Sylius\\Component\\Registry\\' => array($vendorDir . '/sylius/registry'),
+    'Sylius\\Bundle\\ResourceBundle\\' => array($vendorDir . '/sylius/resource-bundle'),
+    'Stof\\DoctrineExtensionsBundle\\' => array($vendorDir . '/stof/doctrine-extensions-bundle'),
     'Sensio\\Bundle\\GeneratorBundle\\' => array($vendorDir . '/sensio/generator-bundle'),
     'Sensio\\Bundle\\FrameworkExtraBundle\\' => array($vendorDir . '/sensio/framework-extra-bundle'),
     'Sensio\\Bundle\\DistributionBundle\\' => array($vendorDir . '/sensio/distribution-bundle'),
@@ -43,6 +51,7 @@ return array(
     'FOS\\CommentBundle\\' => array($vendorDir . '/friendsofsymfony/comment-bundle'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),
+    'Doctrine\\Common\\Annotations\\' => array($vendorDir . '/doctrine/annotations/lib/Doctrine/Common/Annotations'),
     'Doctrine\\Common\\' => array($vendorDir . '/doctrine/common/lib/Doctrine/Common'),
     'Doctrine\\Bundle\\FixturesBundle\\' => array($vendorDir . '/doctrine/doctrine-fixtures-bundle'),
     'Doctrine\\Bundle\\DoctrineCacheBundle\\' => array($vendorDir . '/doctrine/doctrine-cache-bundle'),

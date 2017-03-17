@@ -43,6 +43,14 @@ class Dieta
      */
     private $usuarios_seguidores;
 
+    /**
+     * Many Dietas belongs One User.
+     * @ORM\ManyToOne(targetEntity="DietaBundle\Entity\User", inversedBy="dietas")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     */
+    private $user;
+
+
     private $commentarios;
 
     private $valoracion;
@@ -154,5 +162,29 @@ class Dieta
     public function getUsuariosSeguidores()
     {
         return $this->usuarios_seguidores;
+    }
+
+    /**
+     * Set user
+     *
+     * @param \DietaBundle\Entity\User $user
+     *
+     * @return Dieta
+     */
+    public function setUser(\DietaBundle\Entity\User $user = null)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \DietaBundle\Entity\User
+     */
+    public function getUser()
+    {
+        return $this->user;
     }
 }

@@ -3,14 +3,28 @@
 DietaBundle\Entity\User:
     exclusion_policy: ALL
     properties:
+        id:
+            expose: true
+        username:
+            expose: true
+        password:
+            expose: false
         dietas:
             expose: true
-        recetas:
-            expose: true
-        dietas_seguidas:
-            expose: true
-        recetas_seguidas:
-            expose: true
-        myFriends:
-            expose: true
+    relations:
+        -
+            rel: self
+            href:
+                route: dieta_user_get
+                parameters:
+                      id: expr(object.getId())
+            absolute: true
+        #recetas:
+        #    expose: true
+        #dietas_seguidas:
+        #    expose: true
+        #recetas_seguidas:
+        #  expose: true
+        #myFriends:
+        #    expose: true
 

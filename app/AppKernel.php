@@ -17,8 +17,11 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
             new JMS\SerializerBundle\JMSSerializerBundle(),
+            new FOS\CommentBundle\FOSCommentBundle(),
             new FOS\RestBundle\FOSRestBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
+            new Symfony\Bundle\AsseticBundle\AsseticBundle(),
            # new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
            # new FOS\HttpCacheBundle\FOSHttpCacheBundle(),
            # new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
