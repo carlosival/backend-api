@@ -51,9 +51,6 @@ class Dieta
     private $user;
 
 
-    private $commentarios;
-
-    private $valoracion;
     /**
      * Get id
      *

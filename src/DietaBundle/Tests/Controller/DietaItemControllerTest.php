@@ -2,54 +2,139 @@
 
 namespace DietaBundle\Tests\Controller;
 
+use Guzzle\Http\Client;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class DietaItemControllerTest extends WebTestCase
 {
-    /*
-    public function testCompleteScenario()
-    {
-        // Create a new client to browse the application
-        $client = static::createClient();
 
-        // Create a new entry in the database
-        $crawler = $client->request('GET', '/dietaitem/');
-        $this->assertEquals(200, $client->getResponse()->getStatusCode(), "Unexpected HTTP status code for GET /dietaitem/");
-        $crawler = $client->click($crawler->selectLink('Create a new entry')->link());
 
-        // Fill in the form and submit it
-        $form = $crawler->selectButton('Create')->form(array(
-            'dietabundle_dietaitem[field_name]'  => 'Test',
-            // ... other fields to fill
-        ));
 
-        $client->submit($form);
-        $crawler = $client->followRedirect();
+/**
+ * dieta_dietaitem_new                      POST     ANY      ANY    /dietaitem
+ *
+ */
 
-        // Check data in the show view
-        $this->assertGreaterThan(0, $crawler->filter('td:contains("Test")')->count(), 'Missing element td:contains("Test")');
+  public function testNew (){
 
-        // Edit the entity
-        $crawler = $client->click($crawler->selectLink('Edit')->link());
+      // create our http client (Guzzle)
+      $client = new Client('http://localhost', array(
+          'request.options' => array(
+              'exceptions' => false,
+          )
+      ));
 
-        $form = $crawler->selectButton('Update')->form(array(
-            'dietabundle_dietaitem[field_name]'  => 'Foo',
-            // ... other fields to fill
-        ));
+      // Build the resouce
 
-        $client->submit($form);
-        $crawler = $client->followRedirect();
+      $clasificacion = array_rand(array('desayuno','aperitivo','comida','merienda','cena'));
+      // No se va a probar ahora las rutinas nacen sin recetas.
+      $recetas = null;
 
-        // Check the element contains an attribute with value equals "Foo"
-        $this->assertGreaterThan(0, $crawler->filter('[value="Foo"]')->count(), 'Missing element [value="Foo"]');
 
-        // Delete the entity
-        $client->submit($crawler->selectButton('Delete')->form());
-        $crawler = $client->followRedirect();
+      // Other properties that not going to be test now
 
-        // Check the entity has been delete on the list
-        $this->assertNotRegExp('/Foo/', $client->getResponse()->getContent());
-    }
 
-    */
+
+      $data = array(
+          'clasificacion' => $clasificacion
+
+      );
+
+      // Prepare and Send the Request
+
+      $request = $client->post('/app_dev.php/dietaitem', null, json_encode($data));
+      $response = $request->send();
+
+      // Check the response
+
+      $this->assertEquals(201, $response->getStatusCode());
+      $this->assertTrue($response->hasHeader('Location'));
+      $dataresponse = json_decode($response->getBody(true), true);
+      $this->assertArrayHasKey('clasificacion', $dataresponse);
+
+ }
+
+/**
+ * dieta_dietaitem_get                      GET      ANY      ANY    /dietaitem/{id}
+ *
+ */
+
+ public function testGet(){
+
+
+ }
+
+ /**
+  * dieta_dietaitem_edit                     PUT      ANY      ANY    /dietaitem/{id}
+  *
+  */
+
+  public function testEdit(){
+
+
+
+  }
+ /**
+  * dieta_dietaitem_all                      GET      ANY      ANY    /dietaitems
+  *
+  *
+  */
+
+  public function testAll(){
+
+
+
+
+  }
+
+
+    /**
+     * dieta_dietaitem_addietaitem_receta       POST     ANY      ANY    /dietaitem/{dietaitemid}/receta/{recetaid}
+     *
+     */
+      public function testAddReceta(){
+
+
+      }
+
+    /**
+     * dieta_dietaitem_dietaitem_recetas        GET      ANY      ANY    /dietaitem/{id}/recetas
+     *
+     *
+     */
+     public function testGetRecetas(){
+
+
+
+     }
+
+    /**
+     * dieta_dietaitem_dietaitem_receta         DELETE   ANY      ANY    /dietaitem/{dietaitemid}/receta/{recetaid}
+     *
+     */
+     public function testDeleteReceta(){
+
+
+
+     }
+
+ /**
+  * dieta_dietaitem_delete                   DELETE   ANY      ANY    /receta/{id}
+  *
+  */
+   public function testDelete(){
+
+
+
+   }
+
+
+
+
+
+
+
+
+
+
 }

@@ -115,3 +115,19 @@ fos_comment:
 
 assetic:
     bundles: [ "FOSCommentBundle" ]
+
+
+# VichUploaderBundle
+
+vich_uploader:
+    db_driver: orm # or mongodb or propel or phpcr
+
+    mappings:
+        receta_image:
+            uri_prefix:         /images/recetas
+            upload_destination: '%kernel.root_dir%/../web/images/recetas'
+            namer:              vich_uploader.namer_uniqid
+
+            inject_on_load:     false
+            delete_on_update:   true
+            delete_on_remove:   true

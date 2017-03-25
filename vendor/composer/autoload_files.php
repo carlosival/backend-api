@@ -15,4 +15,5 @@ return array(
     '6a47392539ca2329373e0d33e1dba053' => $vendorDir . '/symfony/polyfill-intl-icu/bootstrap.php',
     '32dcc8afd4335739640db7d200c1971d' => $vendorDir . '/symfony/polyfill-apcu/bootstrap.php',
     'ce89ac35a6c330c55f4710717db9ff78' => $vendorDir . '/kriswallsmith/assetic/src/functions.php',
+    'eeb67749d868aab1ddce18ba2fb6a885' => $vendorDir . '/nelmio/alice/src/functions.php',
 );

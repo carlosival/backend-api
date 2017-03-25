@@ -50,7 +50,7 @@ class User extends BaseUser
 
     /**
      * Many Users follow Many Recetas.
-     * @ORM\ManyToMany(targetEntity="DietaBundle\Entity\Receta", inversedBy="usuario_seguidores")
+     * @ORM\ManyToMany(targetEntity="DietaBundle\Entity\Receta", mappedBy="usuario_seguidores")
      * @ORM\JoinTable(name="users_recetaseguidas")
      */
     private $recetas_seguidas;

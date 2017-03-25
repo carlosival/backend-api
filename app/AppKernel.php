@@ -22,6 +22,7 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
+            new Vich\UploaderBundle\VichUploaderBundle(),
            # new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
            # new FOS\HttpCacheBundle\FOSHttpCacheBundle(),
            # new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
@@ -39,6 +40,7 @@ class AppKernel extends Kernel
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
             $bundles[] = new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle();
+
         }
 
         return $bundles;
