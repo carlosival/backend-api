@@ -45,7 +45,7 @@ class DietaItemController extends FOSRestController
                 'dietaitems', // embedded rel
                 'dietaitems'  // xml element name
             ),
-            'dieta_dietaitems_all', // route
+            'dieta_dietaitem_all', // route
             array(), // route parameters
             $page,       // page number
             $limit,      // limit
@@ -56,12 +56,11 @@ class DietaItemController extends FOSRestController
         $response = $this->createApiResponse($paginatedCollection, 200, 'json');
         return $response;
 
-
     }
 
     
     /**
-     * Finds a Item an show
+     *
      *
      * @Rest\Get("/dietaitem/{id}")
      * @Rest\View
@@ -75,13 +74,14 @@ class DietaItemController extends FOSRestController
             throw new NotFoundHttpException('Dieta not found');
         }
 
-        return array('receta' => $dietaitem);
+        return array('dietaitem' => $dietaitem);
 
     }
 
 
     /**
      * @Rest\Post("/dietaitem")
+     * @Rest\View
      */
     public function newAction(Request $request)
     {
@@ -91,7 +91,7 @@ class DietaItemController extends FOSRestController
     /**
      *
      * @Rest\Put("/dietaitem/{id}")
-     *
+     * @Rest\View
      */
     public function editAction(Request $request, $id)
     {
@@ -100,7 +100,7 @@ class DietaItemController extends FOSRestController
 
 
     /**
-     * @Rest\Delete("/receta/{id}")
+     * @Rest\Delete("/dietaitem/{id}")
      * @Rest\View(statusCode=204)
      */
     public function deleteAction($id)
@@ -109,10 +109,13 @@ class DietaItemController extends FOSRestController
         $dietaitem = $this->getDoctrine()->getRepository('DietaBundle:DietaItem')->find($id);
 
         if (!$dietaitem instanceof DietaItem) {
-            throw new NotFoundHttpException('Dieta not found');
+            throw new NotFoundHttpException('DietaItem not found');
         }
         $sn ->remove($dietaitem);
         $sn ->flush();
+
+        $response = $this->createApiResponse(null,204);
+        return $response;
     }
 
 
@@ -143,11 +146,11 @@ class DietaItemController extends FOSRestController
 
         $paginatedCollection = new PaginatedRepresentation(
             new CollectionRepresentation(
-                array_slice( $recetas,$offset,$limit),
-                'usuarios_seguidores', // embedded rel
-                'usuarios_seguidores'  // xml element name
+                array_slice( $recetas->getValues(),$offset,$limit),
+                'dietaitem_recetas', // embedded rel
+                'dietaitem_recetas'  // xml element name
             ),
-            'dieta_receta_usuarios_seguidores', // route
+            'dieta_dietaitem_dietaitem_recetas', // route
             array("id"=>$id), // route parameters
             $page,       // page number
             $limit,      // limit
@@ -206,9 +209,10 @@ class DietaItemController extends FOSRestController
         }
 
         $dietaitem->addReceta($receta);
+        $sn->persist($dietaitem);
         $sn->flush();
 
-        $response = $this->createApiResponse($receta, 204, 'json');
+        $response = $this->createApiResponse($receta, 200);
         return $response;
 
     }
@@ -223,7 +227,7 @@ class DietaItemController extends FOSRestController
 
         foreach ($data as $dataproperty => $value)
         {
-            if (property_exists('DietaBundle\\Entity\\DietaItem',$dataproperty )  && method_exists('DietaBundle\\Entity\\DietaIem', $setmetodo = 'set'. ucfirst($dataproperty))                       )
+            if (property_exists('DietaBundle\Entity\DietaItem',$dataproperty )  && method_exists('DietaBundle\Entity\DietaItem', $setmetodo = 'set'. ucfirst($dataproperty))                       )
             {
 
                 $dietaitem->$setmetodo($value);
@@ -239,7 +243,7 @@ class DietaItemController extends FOSRestController
             $em->persist($dietaitem);
             $em->flush();
 
-            $response = $this->createApiResponse($dietaitem, 204, 'json');
+            $response = $this->createApiResponse($dietaitem, 201);
 
             $response->headers->set('Location',
                 $this->generateUrl(
@@ -251,11 +255,50 @@ class DietaItemController extends FOSRestController
             return $response;
         }
 
-        $response = $this->createApiResponse((string) $errors, 204, 'json');
+        $response = $this->createApiResponse((string) $errors, 400);
         return $response;
 
     }
 
+
+    private function processFormEdit(Request $request, $id)
+    {
+        $data = json_decode($request->getContent(), true);
+        $em = $this->getDoctrine()->getManager();
+        $dietaitem = $em->getRepository('DietaBundle:DietaItem')->find($id);
+
+        if ($dietaitem === null) {
+            throw new NotFoundHttpException('DietaItem Not Found');
+        }
+
+
+        foreach ($data as $dataproperty => $value)
+        {
+            if (property_exists('DietaBundle\Entity\DietaItem',$dataproperty )  && method_exists('DietaBundle\Entity\DietaItem', $setmetodo = 'set'. ucfirst($dataproperty))                       )
+            {
+
+                $dietaitem->$setmetodo($value);
+            }
+        }
+
+        $validator = $this->get('validator');
+        $errors = $validator->validate($dietaitem);
+
+
+        if ( $er=$errors->count() === 0){
+
+
+            $em->persist($dietaitem);
+            $em->flush();
+
+            $response = $this->createApiResponse($dietaitem,200);
+            return $response;
+        }
+
+        $response =$this->createApiResponse((string) $errors,400);
+        return $response;
+
+    }
 
     protected function createApiResponse($data, $statusCode = 200)
     {

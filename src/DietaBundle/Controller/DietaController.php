@@ -24,8 +24,8 @@ class DietaController extends FOSRestController
 
 
     /**
-     * @Rest\Get("/dietas")
-     * @Rest\View
+     * @Rest\Get("/dietas")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ("/dietas")
+     * @Rest\View()
      */
     public function allAction(Request $request)
     {
@@ -60,7 +60,7 @@ class DietaController extends FOSRestController
 
     /**
      * @Rest\Get("/dieta/{id}")
-     * @Rest\View
+     * @Rest\View()
      */
     public function getAction($id)
     {
@@ -76,6 +76,7 @@ class DietaController extends FOSRestController
 
     /**
      * @Rest\Post("/dieta")
+     * @Rest\View()
      */
     public function newAction(Request $request)
     {
@@ -84,8 +85,8 @@ class DietaController extends FOSRestController
 
     /**
      *
-     * @Rest\Put("/receta/{id}")
-     *
+     * @Rest\Put("/dieta/{id}")
+     * @Rest\View()
      */
     public function editAction( Request $request, $id)
     {
@@ -95,7 +96,7 @@ class DietaController extends FOSRestController
 
     /**
      * @Rest\Delete("/dieta/{id}")
-     *
+     * @Rest\View()
      */
     public function deleteAction($id)
     {
@@ -117,7 +118,7 @@ class DietaController extends FOSRestController
 
     /**
      * @Rest\Get("/dieta/{id}/seguidores")
-     * @Rest\View
+     * @Rest\View()
      */
     public function usuarios_seguidoresAction(Request $request, $id){
 
@@ -161,7 +162,7 @@ class DietaController extends FOSRestController
 
     /**
      * @Rest\Delete("/dieta/{dietaid}/user/{userid}")
-     * @Rest\View(statusCode=204)
+     * @Rest\View()
      */
     public function usuario_seguidor (Request $request, $resourceid, $subresourceid) {
 
@@ -186,7 +187,7 @@ class DietaController extends FOSRestController
 
     /**
      * @Rest\Post("/dieta/{dietaid}/user/{userid}")
-     * @Rest\View(statusCode=204)
+     * @Rest\View()
      */
     public function addusuario_seguidor(Request $request, $resourceid, $subresourceid){
 
@@ -212,7 +213,7 @@ class DietaController extends FOSRestController
 
     /**
      * @Rest\Get("/dieta/{id}/dietaitems")
-     * @Rest\View
+     * @Rest\View()
      */
     public function dieta_dietaitemssAction(Request $request, $id){
 
@@ -256,7 +257,7 @@ class DietaController extends FOSRestController
 
     /**
      * @Rest\Delete("/dieta/{dietaid}/dietaitem/{dietaitemid}")
-     * @Rest\View(statusCode=204)
+     * @Rest\View()
      */
     public function dieta_dietaitem (Request $request, $dietaid, $dietaitemid) {
 
@@ -282,7 +283,7 @@ class DietaController extends FOSRestController
     /**
      * @Rest\Post("/dieta/{dietaid}/dietaitem/{dietaitemid}")
      *
-     * @Rest\View(statusCode=204)
+     * @Rest\View()
      */
     public function addieta_dietaitem(Request $request, $dietaid, $dietaitemid){
 
@@ -311,7 +312,7 @@ class DietaController extends FOSRestController
 
     /**
      * @Rest\Get("/receta/{id}/owner")
-     * @Rest\View
+     * @Rest\View()
      */
     public function ownerAction (Request $request, $id){
 

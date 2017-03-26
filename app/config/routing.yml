@@ -1,4 +1,4 @@
-dieta_dieta_item:
+api_dieta_item:
     resource: "@DietaBundle/Controller/DietaItemController.php"
     type:     annotation
 
@@ -6,8 +6,12 @@ api_user:
     resource: "@DietaBundle/Controller/UserController.php"
     type:     annotation
 
-api_dieta:
+api_receta:
     resource: "@DietaBundle/Controller/RecetaController.php"
+    type:     annotation
+
+api_dieta:
+    resource: "@DietaBundle/Controller/DietaController.php"
     type:     annotation
 
 #FOS routing

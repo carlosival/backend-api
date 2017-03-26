@@ -9,17 +9,19 @@ DietaBundle\Entity\DietaItem:
         -
             rel: self
             href:
-                route: dieta_dietaItem_get
+                route: dieta_dietaitem_get
                 parameters:
                     id: expr(object.getId())
             absolute: true
 
         -
-            rel:  recetas_DietaItem
+            rel:  recetas
             href:
-                route: Ahora no se
+                route: dieta_dietaitem_dietaitem_recetas
                 parameters:
                     id: expr(object.getId())
             absolute: true
-            exclusion:
-                    exclude_if: expr(object.getRecetas() === null)
+            embedded:
+                  content: expr(object.getRecetas() )
+
+

@@ -24,7 +24,7 @@ class RecetaController extends FOSRestController
 
     /**
      * @Rest\Get("/recetas")
-     * @Rest\View
+     * @Rest\View()
      */
     public function allAction(Request $request)
     {
@@ -113,7 +113,7 @@ class RecetaController extends FOSRestController
 
     /**
      * @Rest\Post("/receta/{id}/picture")
-     *
+     * @Rest\View()
      */
     public function uploadAction(Request $request, $id){
 
@@ -159,7 +159,7 @@ class RecetaController extends FOSRestController
 
     /**
      * @Rest\Get("/receta/{id}/picture")
-     * @Rest\View
+     * @Rest\View()
      */
     public function pictureAction(Request $request, $id){
 
@@ -181,7 +181,7 @@ class RecetaController extends FOSRestController
 
     /**
      * @Rest\Get("/receta/{id}/seguidores")
-     * @Rest\View
+     * @Rest\View()
      */
     public function usuarios_seguidoresAction(Request $request, $id){
 
@@ -278,7 +278,7 @@ class RecetaController extends FOSRestController
 
     /**
      * @Rest\Get("/receta/{id}/owner")
-     * @Rest\View
+     * @Rest\View()
      */
     public function ownerAction (Request $request, $id){
 
@@ -359,7 +359,6 @@ class RecetaController extends FOSRestController
         }
 
 
-
         foreach ($data as $dataproperty => $value)
         {
             if (property_exists('DietaBundle\\Entity\\Receta',$dataproperty )  && method_exists('DietaBundle\\Entity\\Receta', $setmetodo = 'set'. ucfirst($dataproperty))                       )
@@ -380,14 +379,6 @@ class RecetaController extends FOSRestController
             $em->flush();
 
             $response = $this->createApiResponse($receta,200);
-
-            /*$response->headers->set('Location',
-                $this->generateUrl(
-                    'dieta_receta_get', array('id' => $receta->getId()), //buscar la url de obtner receta esto esta mal
-                    true // absolute
-                )
-            );*/
-
             return $response;
         }
 
