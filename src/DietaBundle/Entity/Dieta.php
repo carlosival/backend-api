@@ -39,7 +39,7 @@ class Dieta
 
     /**
      * Many Dietas have Many Users.
-     * @ORM\ManyToMany(targetEntity="User", mappedBy="dieta_seguidas")
+     * @ORM\ManyToMany(targetEntity="User", inversedBy="dieta_seguidas")
      */
     private $usuarios_seguidores;
 

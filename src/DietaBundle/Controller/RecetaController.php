@@ -52,7 +52,7 @@ class RecetaController extends FOSRestController
 );
 
 
-        $response = $this->createApiResponse($paginatedCollection, 200, 'json');
+        $response = $this->createApiResponse($paginatedCollection, 200);
         return $response;
 
     }
@@ -361,7 +361,7 @@ class RecetaController extends FOSRestController
 
         foreach ($data as $dataproperty => $value)
         {
-            if (property_exists('DietaBundle\\Entity\\Receta',$dataproperty )  && method_exists('DietaBundle\\Entity\\Receta', $setmetodo = 'set'. ucfirst($dataproperty))                       )
+            if (property_exists('DietaBundle\Entity\Receta',$dataproperty )  && method_exists('DietaBundle\Entity\Receta', $setmetodo = 'set'. ucfirst($dataproperty))                       )
             {
 
                 $receta->$setmetodo($value);

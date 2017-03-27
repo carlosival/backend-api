@@ -41,7 +41,7 @@ class User extends BaseUser
 
     /**
      * Many Users follow Many Dietas.
-     * @ORM\ManyToMany(targetEntity="Dieta", inversedBy="usuarios_seguidores")
+     * @ORM\ManyToMany(targetEntity="Dieta", mappedBy="usuarios_seguidores")
      * @ORM\JoinTable(name="users_dietaseguidas")
      */
 

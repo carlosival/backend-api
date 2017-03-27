@@ -44,7 +44,7 @@ class DietaController extends FOSRestController
                 'dietas', // embedded rel
                 'dietas'  // xml element name
             ),
-            'dieta_dietas_all', // route
+            'dieta_dieta_all', // route
             array(), // route parameters
             $page,       // page number
             $limit,      // limit
@@ -70,7 +70,9 @@ class DietaController extends FOSRestController
             throw new NotFoundHttpException('Dieta not found');
         }
 
-        return array('receta' => $entity);
+        $resposne = $this->createApiResponse($entity, 200);
+        return $resposne;
+        //return array('dieta' => $entity);
     }
 
 
@@ -109,7 +111,7 @@ class DietaController extends FOSRestController
         $sn ->remove($entity);
         $sn ->flush();
 
-        $response = $this->createApiResponse(null, 200, 'json');
+        $response = $this->createApiResponse(null, 204);
         return $response;
 
     }
@@ -130,7 +132,7 @@ class DietaController extends FOSRestController
             throw new NotFoundHttpException('Dieta not found');
         }
 
-        $usuarios_seguidores = $entity->getUsuarioSeguidores();
+        $usuarios_seguidores = $entity->getUsuariosSeguidores();
 
 
         $limit = $request->query->get('limit', 5);
@@ -143,11 +145,11 @@ class DietaController extends FOSRestController
 
         $paginatedCollection = new PaginatedRepresentation(
             new CollectionRepresentation(
-                array_slice( $usuarios_seguidores,$offset,$limit),
+                array_slice( $usuarios_seguidores->getValues(),$offset,$limit),
                 'usuarios_seguidores', // embedded rel
                 'usuarios_seguidores'  // xml element name
             ),
-            'dieta_receta_usuarios_seguidores', // route
+            'dieta_dieta_usuarios_seguidores', // route
             array("id"=>$id), // route parameters
             $page,       // page number
             $limit,      // limit
@@ -156,7 +158,7 @@ class DietaController extends FOSRestController
         );
 
 
-        $response = $this->createApiResponse($paginatedCollection, 200, 'json');
+        $response = $this->createApiResponse($paginatedCollection, 200);
         return $response;
     }
 
@@ -164,11 +166,11 @@ class DietaController extends FOSRestController
      * @Rest\Delete("/dieta/{dietaid}/user/{userid}")
      * @Rest\View()
      */
-    public function usuario_seguidor (Request $request, $resourceid, $subresourceid) {
+    public function usuario_seguidor (Request $request, $dietaid, $userid) {
 
         $sn = $this->getDoctrine()->getManager();
-        $resource = $sn->getRepository('DietaBundle:Dieta')->find($resourceid);
-        $sub_resource = $sn->getRepository('DietaBundle:User')->find($subresourceid);
+        $resource = $sn->getRepository('DietaBundle:Dieta')->find($dietaid);
+        $sub_resource = $sn->getRepository('DietaBundle:User')->find($userid);
 
         if (!$resource instanceof Dieta) {
             throw new NotFoundHttpException('Dieta not found');
@@ -181,7 +183,7 @@ class DietaController extends FOSRestController
         $resource->removeUsuariosSeguidore($sub_resource);
         $sn->flush();
 
-        $response = $this->createApiResponse($resource, 204, 'json');
+        $response = $this->createApiResponse($resource, 204);
         return $response;
     }
 
@@ -189,11 +191,11 @@ class DietaController extends FOSRestController
      * @Rest\Post("/dieta/{dietaid}/user/{userid}")
      * @Rest\View()
      */
-    public function addusuario_seguidor(Request $request, $resourceid, $subresourceid){
+    public function addusuario_seguidor(Request $request, $dietaid, $userid){
 
         $sn = $this->getDoctrine()->getManager();
-        $resource = $sn->getRepository('DietaBundle:Dieta')->find($resourceid);
-        $subresource = $sn->getRepository('DietaBundle:User')->find($subresourceid);
+        $resource = $sn->getRepository('DietaBundle:Dieta')->find($dietaid);
+        $subresource = $sn->getRepository('DietaBundle:User')->find($userid);
 
         if (!$resource instanceof Dieta) {
             throw new NotFoundHttpException('Dieta not found');
@@ -204,9 +206,10 @@ class DietaController extends FOSRestController
         }
 
         $resource->addUsuariosSeguidore($subresource);
+        $sn->persist($resource);
         $sn->flush();
 
-        $response = $this->createApiResponse($resource, 204, 'json');
+        $response = $this->createApiResponse($resource, 200);
         return $response;
 
     }
@@ -215,7 +218,7 @@ class DietaController extends FOSRestController
      * @Rest\Get("/dieta/{id}/dietaitems")
      * @Rest\View()
      */
-    public function dieta_dietaitemssAction(Request $request, $id){
+    public function dieta_dietaitemsAction(Request $request, $id){
 
         $sn = $this->getDoctrine()->getManager();
         $entity = $sn->getRepository('DietaBundle:Dieta')->find($id);
@@ -238,11 +241,11 @@ class DietaController extends FOSRestController
 
         $paginatedCollection = new PaginatedRepresentation(
             new CollectionRepresentation(
-                array_slice( $dietaitems,$offset,$limit),
-                'usuarios_seguidores', // embedded rel
-                'usuarios_seguidores'  // xml element name
+                array_slice( $dietaitems->getValues(),$offset,$limit),
+                'dieta_dietaitems', // embedded rel
+                'dieta_dietaitems'  // xml element name
             ),
-            'dieta_receta_usuarios_seguidores', // route
+            'dieta_dieta_dieta_dietaitems', // route
             array("id"=>$id), // route parameters
             $page,       // page number
             $limit,      // limit
@@ -251,7 +254,7 @@ class DietaController extends FOSRestController
         );
 
 
-        $response = $this->createApiResponse($paginatedCollection, 200, 'json');
+        $response = $this->createApiResponse($paginatedCollection, 200);
         return $response;
     }
 
@@ -276,7 +279,7 @@ class DietaController extends FOSRestController
         $resource->removeDietaItem($sub_resource);
         $sn->flush();
 
-        $response = $this->createApiResponse($resource, 204, 'json');
+        $response = $this->createApiResponse($resource, 204);
         return $response;
     }
 
@@ -302,7 +305,7 @@ class DietaController extends FOSRestController
         $resource->addDietaItem($subresource);
         $sn->flush();
 
-        $response = $this->createApiResponse($resource, 204, 'json');
+        $response = $this->createApiResponse($resource, 200);
         return $response;
 
     }
@@ -311,7 +314,7 @@ class DietaController extends FOSRestController
 
 
     /**
-     * @Rest\Get("/receta/{id}/owner")
+     * @Rest\Get("/dieta/{id}/owner")
      * @Rest\View()
      */
     public function ownerAction (Request $request, $id){
@@ -326,61 +329,114 @@ class DietaController extends FOSRestController
 
         $subresource = $resource->getUser();
 
-        $response = $this->createApiResponse($subresource, 200, 'json');
+        $response = $this->createApiResponse($subresource, 200);
         return $response;
     }
 
 
-    private function processFormNew(Request $request,Receta $receta)
+    private function processFormNew(Request $request,Dieta $dieta)
     {
 
         $data = json_decode($request->getContent(), true);
         $em = $this->getDoctrine()->getManager();
-        $idsusuario = $data['user'];
-        $usuario = $em->getRepository('DietaBundle:User')->find($idsusuario);
 
-        if ($usuario === null) {
-            throw new NotFoundHttpException('Usuario dueño de la receta no encontrado');
+        if(isset($data['user'])) {
+            $idsusuario = $data['user'];
+            $usuario = $em->getRepository('DietaBundle:User')->find($idsusuario);
+
+            if ($usuario === null) {
+                throw new NotFoundHttpException('Usuario dueño de la receta no encontrado');
+            }
+
+            $dieta->setUser($usuario);
+            unset($data['user']);
         }
-
-        $receta ->setUser($usuario);
-        unset($data['user']);
-
         foreach ($data as $dataproperty => $value)
         {
-            if (property_exists('DietaBundle\\Entity\\Receta',$dataproperty )  && method_exists('DietaBundle\\Entity\\Receta', $setmetodo = 'set'. ucfirst($dataproperty))                       )
+            if (property_exists('DietaBundle\Entity\Receta',$dataproperty )  && method_exists('DietaBundle\Entity\Receta', $setmetodo = 'set'. ucfirst($dataproperty))                       )
             {
 
-                $receta->$setmetodo($value);
+                $dieta->$setmetodo($value);
             }
         }
 
         $validator = $this->get('validator');
-        $errors = $validator->validate($receta);
+        $errors = $validator->validate($dieta);
 
 
         if ( $er=$errors->count() === 0){
 
 
-            $em->persist($receta);
+            $em->persist($dieta);
             $em->flush();
 
-            $response = new Response();
-            $response->setStatusCode(201);
+            $response = $this->createApiResponse($dieta, 201);
+
             $response->headers->set('Location',
                 $this->generateUrl(
-                    'dieta_receta_get', array('id' => $receta->getId()), //buscar la url de obtner receta esto esta mal
+                    'dieta_dieta_get', array('id' => $dieta->getId()), //buscar la url de obtner receta esto esta mal
                     true // absolute
                 )
             );
 
             return $response;
         }
-        $response =new Response((string) $errors);
-        $response->setStatusCode(400);
+        $response = $this->createApiResponse((string) $errors,400);
         return $response;
 
     }
+
+    private function processFormEdit(Request $request, $id)
+    {
+        $data = json_decode($request->getContent(), true);
+        $em = $this->getDoctrine()->getManager();
+        $dieta = $em->getRepository('DietaBundle:Dieta')->find($id);
+
+        if ($dieta === null) {
+            throw new NotFoundHttpException('Dieta Not Found');
+        }
+
+        if(isset($data['user'])) {
+            $idsusuario = $data['user'];
+            $usuario = $em->getRepository('DietaBundle:User')->find($idsusuario);
+
+            if ($usuario === null) {
+                throw new NotFoundHttpException('Usuario dueño de la receta no encontrado');
+            }
+
+            $dieta->setUser($usuario);
+            unset($data['user']);
+        }
+
+
+        foreach ($data as $dataproperty => $value)
+        {
+            if (property_exists('DietaBundle\Entity\Dieta',$dataproperty )  && method_exists('DietaBundle\Entity\Dieta', $setmetodo = 'set'. ucfirst($dataproperty))                       )
+            {
+
+                $dieta->$setmetodo($value);
+            }
+        }
+
+        $validator = $this->get('validator');
+        $errors = $validator->validate($dieta);
+
+
+        if ( $er=$errors->count() === 0){
+
+
+            $em->persist($dieta);
+            $em->flush();
+
+            $response = $this->createApiResponse($dieta,200);
+            return $response;
+        }
+
+        $response =$this->createApiResponse((string) $errors,400);
+        return $response;
+
+    }
+
 
     protected function createApiResponse($data, $statusCode = 200)
     {
