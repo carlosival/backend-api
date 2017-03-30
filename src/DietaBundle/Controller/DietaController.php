@@ -345,16 +345,11 @@ class DietaController extends FOSRestController
         $em = $this->getDoctrine()->getManager();
 
         if(isset($data['user'])) {
-            $idsusuario = $data['user'];
-            $usuario = $em->getRepository('DietaBundle:User')->find($idsusuario);
 
-            if ($usuario === null) {
-                throw new NotFoundHttpException('Usuario dueño de la receta no encontrado');
-            }
-
-            $dieta->setUser($usuario);
             unset($data['user']);
         }
+
+        $dieta->setUser($this->getUser());
         foreach ($data as $dataproperty => $value)
         {
             if (property_exists('DietaBundle\Entity\Receta',$dataproperty )  && method_exists('DietaBundle\Entity\Receta', $setmetodo = 'set'. ucfirst($dataproperty))                       )

@@ -52,7 +52,7 @@ class RecetaController extends FOSRestController
     $limit,      // limit
     $numberOfPages       // total pages
 
-);
+    );
 
 
         $response = $this->createApiResponse($paginatedCollection, 200);
@@ -305,19 +305,19 @@ class RecetaController extends FOSRestController
        // $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
         $data = json_decode($request->getContent(), true);
         $em = $this->getDoctrine()->getManager();
-       /*if(isset($data['user'])) {
+       if(isset($data['user'])) {
 
-        $idsusuario = $data['user'];
+        /*$idsusuario = $data['user'];
         $usuario = $em->getRepository('DietaBundle:User')->find($idsusuario);
 
         if ($usuario === null) {
             throw new NotFoundHttpException('Usuario dueño de la receta no encontrado');
         }
 
-       // $receta ->setUser($usuario);
+       // $receta ->setUser($usuario);*/
         unset($data['user']);
 
-       }*/
+       }
         $receta->setUser($this->getUser());
         foreach ($data as $dataproperty => $value)
         {
