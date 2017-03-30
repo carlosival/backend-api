@@ -17,8 +17,11 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Hateoas\Representation\PaginatedRepresentation;
 use Hateoas\Representation\CollectionRepresentation;
 use DietaBundle\Entity\Receta;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 
-
+/**
+ * @Security("is_granted('IS_AUTHENTICATED_FULLY')")
+ */
 class RecetaController extends FOSRestController
 {
 
@@ -68,8 +71,9 @@ class RecetaController extends FOSRestController
         if (!$singleresult instanceof Receta) {
             throw new NotFoundHttpException('Receta not found');
         }
+        $response = $this->createApiResponse($singleresult,200);
+        return $response;
 
-        return array('receta' => $singleresult);
     }
 
 
@@ -78,6 +82,7 @@ class RecetaController extends FOSRestController
      */
     public function newAction(Request $request)
     {
+
         return $this->processFormNew( $request,new Receta());
     }
 
@@ -170,10 +175,10 @@ class RecetaController extends FOSRestController
             throw new NotFoundHttpException('Receta not found');
         }
 
-        $helper = $this->container->get('vich_uploader.templating.helper.uploader_helper');
+        $helper = $this->get('vich_uploader.templating.helper.uploader_helper');
         $path = $helper->asset($receta, 'imageFile');
 
-        $response = $this->createApiResponse($path, 200, 'json');
+        $response = $this->createApiResponse($path, 200);
         return $response;
     }
 
@@ -218,7 +223,7 @@ class RecetaController extends FOSRestController
         );
 
 
-        $response = $this->createApiResponse($paginatedCollection, 200, 'json');
+        $response = $this->createApiResponse($paginatedCollection, 200);
         return $response;
     }
 
@@ -297,10 +302,10 @@ class RecetaController extends FOSRestController
 
     private function processFormNew(Request $request,Receta $receta)
     {
-
+       // $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
         $data = json_decode($request->getContent(), true);
         $em = $this->getDoctrine()->getManager();
-       if(isset($data['user'])) {
+       /*if(isset($data['user'])) {
 
         $idsusuario = $data['user'];
         $usuario = $em->getRepository('DietaBundle:User')->find($idsusuario);
@@ -309,10 +314,11 @@ class RecetaController extends FOSRestController
             throw new NotFoundHttpException('Usuario dueño de la receta no encontrado');
         }
 
-        $receta ->setUser($usuario);
+       // $receta ->setUser($usuario);
         unset($data['user']);
 
-       }
+       }*/
+        $receta->setUser($this->getUser());
         foreach ($data as $dataproperty => $value)
         {
             if (property_exists('DietaBundle\\Entity\\Receta',$dataproperty )  && method_exists('DietaBundle\\Entity\\Receta', $setmetodo = 'set'. ucfirst($dataproperty))                       )
@@ -404,19 +410,5 @@ class RecetaController extends FOSRestController
         return $this->get('serializer')->serialize($data, $format, $context);
     }
 
-
-
-    public function objectToArray($data)
-    {
-        if (is_object($data)) {
-            $data = get_object_vars($data);
-        }
-
-        if (is_array($data)) {
-            return array_map(array($this, 'objectToArray'), $data);
-        }
-
-        return $data;
-    }
 
 }

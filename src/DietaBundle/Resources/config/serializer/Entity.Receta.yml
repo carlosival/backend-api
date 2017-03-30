@@ -24,6 +24,7 @@ DietaBundle\Entity\Receta:
                 absolute: true
             -
                 rel:  picture
+                #href: expr(@=service('vich_uploader.templating.helper.uploader_helper').asset(object, 'imageFile'))
                 href:
                     route: dieta_receta_picture
                     parameters:

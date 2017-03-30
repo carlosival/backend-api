@@ -15,7 +15,9 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use DietaBundle\Entity\User;
 
 
-
+/**
+ * @Security("is_granted('IS_AUTHENTICATED_FULLY')")
+ */
 class UserController extends FOSRestController
 {
     /**

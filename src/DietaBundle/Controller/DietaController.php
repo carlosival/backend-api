@@ -18,7 +18,11 @@ use FOS\RestBundle\View\View;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Hateoas\Representation\PaginatedRepresentation;
 use Hateoas\Representation\CollectionRepresentation;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 
+/**
+* @Security("is_granted('IS_AUTHENTICATED_FULLY')")
+*/
 class DietaController extends FOSRestController
 {
 

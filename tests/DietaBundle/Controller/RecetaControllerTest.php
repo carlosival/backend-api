@@ -1,35 +1,18 @@
 <?php
 
-namespace DietaBundle\Tests\Controller;
+namespace Tests\DietaBundle\Controller;
 
-#use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
-use Bazinga\Bundle\RestExtraBundle\Test\WebTestCase as WebTestCase;
+use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+#use Bazinga\Bundle\RestExtraBundle\Test\WebTestCase as WebTestCase;
 use Guzzle\Http\Client;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
-class RecetaControllerTest extends \PHPUnit_Framework_TestCase
+class RecetaControllerTest extends WebTestCase
 {
 
-public function testAll () {
-
-    // create our http client (Guzzle)
-    $client = new Client('http://localhost', array(
-        'request.options' => array(
-            'exceptions' => false,
-        )
-    ));
 
 
-    $request = $client->get('/app_dev.php/recetas', null, array());
-    $response = $request->send();
-
-    $this->assertEquals(200, $response->getStatusCode());
-    $this->assertTrue($response->hasHeader('Content-Type'));
-    $this->assertEquals($response->getHeader('Content-Type'), 'application/json');
-
-}
-
-    public function testGet () {
+    /*public function testAll () {
 
         // create our http client (Guzzle)
         $client = new Client('http://localhost', array(
@@ -39,8 +22,7 @@ public function testAll () {
         ));
 
 
-
-        $request = $client->get('/app_dev.php/receta/1', null, array());
+        $request = $client->get('/app_dev.php/recetas', null, array());
         $response = $request->send();
 
         $this->assertEquals(200, $response->getStatusCode());
@@ -48,6 +30,26 @@ public function testAll () {
         $this->assertEquals($response->getHeader('Content-Type'), 'application/json');
 
     }
+
+        public function testGet () {
+
+            // create our http client (Guzzle)
+            $client = new Client('http://localhost', array(
+                'request.options' => array(
+                    'exceptions' => false,
+                )
+            ));
+
+
+
+            $request = $client->get('/app_dev.php/receta/1', null, array());
+            $response = $request->send();
+
+            $this->assertEquals(200, $response->getStatusCode());
+            $this->assertTrue($response->hasHeader('Content-Type'));
+            $this->assertEquals($response->getHeader('Content-Type'), 'application/json');
+
+        }*/
 
    public function testNew () {
 
@@ -71,19 +73,48 @@ public function testAll () {
        $user = 1;
       // $imageFile = new UploadedFile();
        $usuario_seguidores = null;
+       $username = 'carlosmartinezival@gmail.com';
 
        $data = array(
            'nombre' => $nombre,
            'tiempo_preparacion' => $tiempo_preparacion,
            'ingredientes' => $ingredientes,
            'preparacion' => $preparacion,
-           'raciones' => $raciones,
-           'user' => $user
+           'raciones' => $raciones
+
        );
 
         // Prepare and Send the Request
 
-       $request = $client->post('/app_dev.php/receta', null, json_encode($data));
+       //Send a request to get the token.
+       // Build the resouce to get the Token
+
+       $username = 'carlosmartinezival@gmail.com';
+       $passsword = 'test123';
+       //  $plainPassword = ['first' => 'test123', 'second' => 'test123'];
+
+
+       $credenciales = array(
+           'username' => $username,
+           'password' => $passsword
+           // 'plainPassword' => $plainPassword
+       );
+
+
+       // Prepare and Send the Request
+
+       $request = $client->post('/app_dev.php/login', null, json_encode($credenciales));
+       $response = $request->send();
+
+       $dataresponse = json_decode($response->getBody(true), true);
+       $this->assertArrayHasKey('token', $dataresponse);
+
+       $token = $dataresponse['token'];
+       $headers = array();
+       $headers['Authorization'] = 'Bearer '.$token;
+
+
+       $request = $client->post('/app_dev.php/receta', $headers, json_encode($data));
        $response = $request->send();
 
        // Check the response
@@ -95,7 +126,7 @@ public function testAll () {
 
     }
 
-   public function testEdit(){
+   /*public function testEdit(){
 
 
        // create our http client (Guzzle)
@@ -140,7 +171,7 @@ public function testAll () {
        $dataresponse = json_decode($response->getBody(true), true);
        $this->assertArrayHasKey('nombre', $dataresponse);
 
-   }
+   }*/
 
 
     /*public function testaddusuario_seguidor () {
@@ -168,7 +199,7 @@ public function testAll () {
     }*/
 
 
-    public function tetsGetusuarios_seguidores (){
+   /* public function tetsGetusuarios_seguidores (){
 
         // create our http client (Guzzle)
         $client = new Client('http://localhost', array(
@@ -192,7 +223,7 @@ public function testAll () {
         $this->assertArrayHasKey('usuarios_seguidores', $dataresponse);
 
 
-    }
+    }*/
 
    /* public function testDeleteusuario_seguidor() {
 
@@ -221,8 +252,7 @@ public function testAll () {
 
 
 
-
-    public function testGetowner () {
+    /*public function testGetowner () {
 
         // create our http client (Guzzle)
         $client = new Client('http://localhost', array(
@@ -243,8 +273,27 @@ public function testAll () {
         $dataresponse = json_decode($response->getBody(true), true);
         $this->assertArrayHasKey('email', $dataresponse);
 
+    }*/
+
+    /*public function testRequiresAuthentication()
+    {
+        // create our http client (Guzzle)
+        $client = new Client('http://localhost', array(
+            'request.options' => array(
+                'exceptions' => false,
+            )
+        ));
+
+        $request = $client->post('/app_dev.php/receta', ['body' => '[]'],array());
+        $response = $request->send();
+        $this->assertEquals(401, $response->getStatusCode());
+    }*/
+
+    protected function getAuthorizedHeaders($username, $headers = array())
+    {
+        $lex = $this->client->getContainer()->get('lexik_jwt_authentication.encoder');
+        $token = $lex->encode(['username' => $username]);
+        $headers['Authorization'] = 'Bearer '.$token;
+        return $headers;
     }
-
-
-
 }

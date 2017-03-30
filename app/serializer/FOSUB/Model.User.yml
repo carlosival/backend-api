@@ -1,16 +1,19 @@
-#Serialization of User Entity
 
-DietaBundle\Entity\User:
+#app/Resources/FOSUserBundle/serializer/Model.User.yml
+FOS\UserBundle\Model\User:
     exclusion_policy: ALL
     properties:
         id:
             expose: true
         username:
             expose: true
-        password:
-            expose: false
-        dietas:
+        email:
             expose: true
+        enabled:
+            expose: true
+        locked:
+             expose: true
+
     relations:
         -
             rel: self

@@ -14,6 +14,17 @@ api_dieta:
     resource: "@DietaBundle/Controller/DietaController.php"
     type:     annotation
 
+api_util_register:
+    resource: "@DietaBundle/Controller/RegistrationController.php"
+    type:     annotation
+
+api_util_login:
+    resource: "@DietaBundle/Controller/LoginController.php"
+    type:     annotation
+
+api_login_check:
+    path: /login_check
+
 #FOS routing
 fos_comment_api:
     type: rest

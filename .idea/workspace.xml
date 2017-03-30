@@ -2,19 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f2d209a-4075-44cb-91a9-50886132f1c9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DietaBundle/Controller/LoginController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DietaBundle/Controller/RegistrationController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DietaBundle/Security/JwtTokenAuthenticator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DietaBundle/Tests/credenciales.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/DietaBundle/ApiTestCase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/DietaBundle/Controller/LoginControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/DietaBundle/Controller/RegistrationControllerTest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.User.yml" afterPath="$PROJECT_DIR$/app/serializer/FOSUB/Model.User.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/DietaControllerTest.php" afterPath="$PROJECT_DIR$/tests/DietaBundle/Controller/DietaControllerTest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/DietaItemControllerTest.php" afterPath="$PROJECT_DIR$/tests/DietaBundle/Controller/DietaItemControllerTest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/RecetaControllerTest.php" afterPath="$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/UserControllerTest.php" afterPath="$PROJECT_DIR$/tests/DietaBundle/Controller/UserControllerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/backend-api.iml" afterPath="$PROJECT_DIR$/.idea/backend-api.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml" afterPath="$PROJECT_DIR$/app/config/parameters.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpunit.xml.dist" afterPath="$PROJECT_DIR$/phpunit.xml.dist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Controller/DietaController.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Controller/DietaController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Controller/DietaItemController.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Controller/DietaItemController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Entity/Dieta.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Entity/Dieta.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Dieta.yml" afterPath="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Dieta.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/DietaControllerTest.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/DietaControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations.map" afterPath="$PROJECT_DIR$/var/cache/dev/annotations.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Receta.yml" afterPath="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Receta.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerCompiler.log" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerCompiler.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/classes.map" afterPath="$PROJECT_DIR$/var/cache/dev/classes.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,40 +75,79 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DietaController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/DietaController.php">
+      <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="113" column="56" lean-forward="false" selection-start-line="113" selection-start-column="56" selection-end-line="113" selection-end-column="56" />
+              <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecetaControllerTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2268">
+              <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
               <folding>
-                <element signature="e#42#71#0#PHP" expanded="true" />
-                <element signature="e#3462#3481#1#PHP" expanded="true" />
-                <element signature="e#3996#4015#1#PHP" expanded="true" />
-                <element signature="e#5429#5448#1#PHP" expanded="true" />
-                <element signature="e#5510#5528#1#PHP" expanded="true" />
-                <element signature="e#6218#6237#1#PHP" expanded="true" />
-                <element signature="e#6298#6316#1#PHP" expanded="true" />
-                <element signature="e#7013#7032#1#PHP" expanded="true" />
-                <element signature="e#8416#8435#1#PHP" expanded="true" />
-                <element signature="e#8497#8520#1#PHP" expanded="true" />
-                <element signature="e#9237#9256#1#PHP" expanded="true" />
-                <element signature="e#9317#9340#1#PHP" expanded="true" />
-                <element signature="e#10000#10019#1#PHP" expanded="true" />
-                <element signature="e#10600#10618#1#PHP" expanded="true" />
-                <element signature="e#12096#12115#1#PHP" expanded="true" />
-                <element signature="e#12354#12372#1#PHP" expanded="true" />
+                <element signature="e#48#100#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/User.php">
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="43" column="54" lean-forward="false" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
+            <state relative-caret-position="90">
+              <caret line="5" column="59" lean-forward="true" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
               <folding>
-                <element signature="e#38#80#0#PHP" expanded="false" />
+                <element signature="e#42#99#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DietaController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/DietaController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DietaItemController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/DietaItemController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="24" selection-end-column="3" />
+              <folding>
+                <element signature="e#42#72#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/LoginController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1116">
+              <caret line="62" column="68" lean-forward="false" selection-start-line="62" selection-start-column="68" selection-end-line="62" selection-end-column="68" />
+              <folding>
+                <element signature="e#42#99#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,31 +156,41 @@
       <file leaf-file-name="RecetaController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6120">
-              <caret line="354" column="56" lean-forward="false" selection-start-line="354" selection-start-column="56" selection-end-line="354" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entity.Dieta.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Dieta.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DietaControllerTest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Tests/Controller/DietaControllerTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="337" column="56" lean-forward="false" selection-start-line="337" selection-start-column="56" selection-end-line="337" selection-end-column="56" />
+            <state relative-caret-position="412">
+              <caret line="23" column="3" lean-forward="false" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
               <folding>
-                <element signature="e#48#71#0#PHP" expanded="true" />
+                <element signature="e#42#70#0#PHP" expanded="true" />
+                <element signature="e#3466#3486#1#PHP" expanded="true" />
+                <element signature="e#4692#4712#1#PHP" expanded="true" />
+                <element signature="e#5312#5332#1#PHP" expanded="true" />
+                <element signature="e#6761#6781#1#PHP" expanded="true" />
+                <element signature="e#6836#6854#1#PHP" expanded="true" />
+                <element signature="e#7546#7566#1#PHP" expanded="true" />
+                <element signature="e#7621#7639#1#PHP" expanded="true" />
+                <element signature="e#8311#8331#1#PHP" expanded="true" />
+                <element signature="e#10504#10524#1#PHP" expanded="true" />
+                <marker date="1490886487863" expanded="false" signature="8967:8983" ph="User" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="19" column="3" lean-forward="false" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Receta.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="336" column="0" lean-forward="false" selection-start-line="336" selection-start-column="0" selection-end-line="336" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,8 +200,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="tsconfig.json" />
         <option value="Yml File" />
+        <option value="tsconfig.json" />
       </list>
     </option>
   </component>
@@ -144,35 +217,36 @@
       <find>owner</find>
       <find>add</find>
       <find>usuario_se</find>
+      <find>picture</find>
     </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="doctrine:schema:update --dump-sql" />
-      <command text="s doctrine:schema:update --dump-sql " />
       <command text="s doctrine:schema:update --force" />
-      <command text="s doctrine:schema:update --force " />
-      <command text="s doctrine:schema:update -f " />
+      <command text="s debug:router " />
+      <command text="s cache:clear" />
+      <command text="s debug:router " />
+      <command text="s cache:clear" />
+      <command text="s debug:router " />
+      <command text="s doctrine:schema:validate" />
+      <command text="s doctrine:schema:update --force" />
       <command text="s debug:container " />
       <command text="s debug:router " />
-      <command text="s debug:router  " />
-      <command text="s debug:router " />
+      <command text="s cache:clear" />
       <command text="s generate:controller" />
-      <command text="s generate:controller DietaBundle:Dieta" />
-      <command text="s generate:controller DietaBundle:DietaController" />
-      <command text="s generate:controller --controller=DietaController" />
-      <command text="s generate:controller --controller=DietaBundle:Dieta" />
+      <command text="s generate:controller --controller RegistrationController" />
+      <command text="s debug:container " />
       <command text="s debug:router " />
-      <command text="s doctrine:schema:update --force" />
-      <command text="s doctrine:schema:validate" />
-      <command text="s doctrine:schema:update --force" />
+      <command text="debug:container jwt" />
+      <command text="debug:container " />
+      <command text="s debug:container " />
+      <command text="debug:container lexik" />
+      <command text="s cache:clear" />
+      <command text="s debug:container " />
       <command text="s debug:router " />
       <command text="s cache:clear" />
-      <command text="s debug:router " />
-      <command text="s cache:clear" />
-      <command text="s debug:router " />
-      <command text="s doctrine:schema:validate" />
-      <command text="s doctrine:schema:update --force" />
+      <command text="container debug" />
+      <command text="s debug:container " />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -184,18 +258,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response45.json" root0="SKIP_INSPECTION" />
     <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-    <setting file="dummy://restClient/response11.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Entity/DietaItem.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/src/DietaBundle/DietaBundle.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Form/UserType.php" />
         <option value="$PROJECT_DIR$/web/info.php" />
@@ -205,29 +277,44 @@
         <option value="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.User.yml" />
         <option value="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Form/RecetaType.php" />
-        <option value="$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Entity/Thread.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Entity/Comment.php" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Tests/recetainsertar.json" />
         <option value="$PROJECT_DIR$/src/DietaBundle/DataFixtures/ORM/DietaFixtures.php" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/81ada90c-3f03-4fcf-82c5-77657bc58f83/console.sql" />
         <option value="$PROJECT_DIR$/tests/DietaBundle/Controller/DefaultControllerTest.php" />
-        <option value="$PROJECT_DIR$/phpunit.xml.dist" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php" />
-        <option value="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/RecetaControllerTest.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.DietaItem.yml" />
-        <option value="$PROJECT_DIR$/src/DietaBundle/Controller/DietaItemController.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/DietaItemControllerTest.php" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Receta.yml" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Dieta.yml" />
-        <option value="$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Entity/Dieta.php" />
-        <option value="$PROJECT_DIR$/src/DietaBundle/Controller/DietaController.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/DietaControllerTest.php" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Receta.yml" />
+        <option value="$PROJECT_DIR$/app/serializer/FOSUB/Entity.User.yml" />
+        <option value="$PROJECT_DIR$/app/serializer/FOSUB/Model.User.yml" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Controller/RegistrationControllerTestController.php" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Controller/RegistrationController.php" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/RegistrationControllerTest.php" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Tests/ApiTestCase.php" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/LoginControllerTest.php" />
+        <option value="$PROJECT_DIR$/phpunit.xml.dist" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/app/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/RecetaControllerTest.php" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Controller/LoginController.php" />
+        <option value="$PROJECT_DIR$/tests/DietaBundle/Controller/LoginControllerTest.php" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Security/JwtTokenAuthenticator.php" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Tests/credenciales.json" />
+        <option value="$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Controller/DietaController.php" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Controller/DietaItemController.php" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php" />
       </list>
     </option>
   </component>
@@ -345,6 +432,8 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
       <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
@@ -371,7 +460,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -394,7 +482,55 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend-api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lexik" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jwt-authentication-bundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend-api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lexik" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jwt-authentication-bundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Security" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -409,180 +545,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DietaBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DietaBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DietaBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DietaBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DietaBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DietaBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="serializer" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DietaBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DietaBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -600,8 +562,27 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend-api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -609,7 +590,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="/home/carlos/Descargas/polloagridulce.jpeg" />
     <property name="settings.editor.selected.configurable" value="database.main" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php&#10;true" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php&#10;/var/www/html/backend-api/app/config/parameters.yml&#10;true" />
     <property name="settings.editor.splitter.proportion" value="0.27783063" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
@@ -617,10 +598,651 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/DietaBundle" />
+      <recent name="$PROJECT_DIR$/tests/DietaBundle/Controller" />
+      <recent name="$PROJECT_DIR$/src/DietaBundle/Tests/Controller" />
+      <recent name="$PROJECT_DIR$/app/serializer/FOSUB" />
+      <recent name="$PROJECT_DIR$/app/Resources/FOSUserBundle/serializer" />
+    </key>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/receta" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_USER'" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_PW'" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MiwiZW1haWwiOiJjYXJsb3NtYXJ0aW5leml2YWxAZ21haWwuY29tIiwiY29uZmlybWF0aW9udG9rZW4iOm51bGwsImxhc3Rsb2dpbiI6bnVsbCwidXNlcm5hbWUiOiJjYXJsb3NtYXJ0aW5leml2YWxAZ21haWwuY29tIiwiZXhwIjoxNDkwODg1NjE0LCJpYXQiOjE0OTA4ODIwMTR9.VG16FWMEb1jK2ZNJT004oECv4qtVB4taIFBO2Cep2XqZN20F9E_GPra64GUehhS19qRtb2K47q1Ejw2bzoRBhtJycd-gcOln2m0Ix3hJeYrNVE4DIUijKTauGQURox_uJP-ci8IgtUHcZhUtMGDicw3AN2yMURFfJZvPlDRn8N55KGgzQqIiTQfcDtIG55FyIGIydmj6Fr9Z6jWkBuv93qoPsNVqskb3Y6x8O08kWvBDoefcNyYjv4Xq18DYbSpsfV10GLPFz8V6aGwihVypMZPxgcZKv7wwI8G-MeyotJFlW3xyEm014rlkiNFJhtQrCZGgevX9IvcAOHXow6LVtC1k8Xxc7EIGeTddIipsxYsLfHu3rqLh6N0z5cjbv2QEE17E4PIK6l3a65rzENa2_NoW0GhMN8TBSwYrmSvkrzw6U3lJm1mpQ1UbTYMBV9rWSNWaMv_tVJPzNlw5A844eWZEr-70-fBxWy3U9TqOHiY2hVANUwixWJeRdJuYWLdEK7YBv_4cVaeMxkweV2BpQgTMvZOfv8ufBxdei-qHoIR03k-a5U24f_mx51GoydY7yKEc53cvhJ1UGYo9UMQugMtEqyFkWLkyzJNt9xl_pgb17CxExj3leEXfZhBrW-_LKKpe58zh_b6N90vpQx29F_Y6OymEVnA0XiPLDbGglls" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;nombre&quot;: &quot;Carne con papas&quot;,  &quot;raciones&quot;: &quot;10&quot;,   &quot;tiempo_preparacion&quot;: &quot;15min&quot;,    &quot;ingredientes&quot;: [     &quot;carne&quot;,     &quot;papas&quot;,     &quot;aceite&quot;,     &quot;ajo&quot;   ],    &quot;preparacion&quot;: [     &quot;Cortar&quot;,     &quot;Cocinar durante 15 min&quot;,     &quot;Aliñar &quot;,     &quot;Enplatar&quot;   ]    }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/receta" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_USER'" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_PW'" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MiwiZW1haWwiOiJjYXJsb3NtYXJ0aW5leml2YWxAZ21haWwuY29tIiwiY29uZmlybWF0aW9udG9rZW4iOm51bGwsImxhc3Rsb2dpbiI6bnVsbCwidXNlcm5hbWUiOiJjYXJsb3NtYXJ0aW5leml2YWxAZ21haWwuY29tIiwiZXhwIjoxNDkwODg1NjE0LCJpYXQiOjE0OTA4ODIwMTR9.VG16FWMEb1jK2ZNJT004oECv4qtVB4taIFBO2Cep2XqZN20F9E_GPra64GUehhS19qRtb2K47q1Ejw2bzoRBhtJycd-gcOln2m0Ix3hJeYrNVE4DIUijKTauGQURox_uJP-ci8IgtUHcZhUtMGDicw3AN2yMURFfJZvPlDRn8N55KGgzQqIiTQfcDtIG55FyIGIydmj6Fr9Z6jWkBuv93qoPsNVqskb3Y6x8O08kWvBDoefcNyYjv4Xq18DYbSpsfV10GLPFz8V6aGwihVypMZPxgcZKv7wwI8G-MeyotJFlW3xyEm014rlkiNFJhtQrCZGgevX9IvcAOHXow6LVtC1k8Xxc7EIGeTddIipsxYsLfHu3rqLh6N0z5cjbv2QEE17E4PIK6l3a65rzENa2_NoW0GhMN8TBSwYrmSvkrzw6U3lJm1mpQ1UbTYMBV9rWSNWaMv_tVJPzNlw5A844eWZEr-70-fBxWy3U9TqOHiY2hVANUwixWJeRdJuYWLdEK7YBv_4cVaeMxkweV2BpQgTMvZOfv8ufBxdei-qHoIR03k-a5U24f_mx51GoydY7yKEc53cvhJ1UGYo9UMQugMtEqyFkWLkyzJNt9xl_pgb17CxExj3leEXfZhBrW-_LKKpe58zh_b6N90vpQx29F_Y6OymEVnA0XiPLDbGglls" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;nombre&quot;: &quot;Carne con papas&quot;,   &quot;user&quot;: &quot;1&quot;,   &quot;raciones&quot;: &quot;10&quot;,   &quot;tiempo_preparacion&quot;: &quot;15min&quot;,    &quot;ingredientes&quot;: [     &quot;carne&quot;,     &quot;papas&quot;,     &quot;aceite&quot;,     &quot;ajo&quot;   ],    &quot;preparacion&quot;: [     &quot;Cortar&quot;,     &quot;Cocinar durante 15 min&quot;,     &quot;Aliñar &quot;,     &quot;Enplatar&quot;   ]    }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/receta" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_USER'" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_PW'" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MiwiZW1haWwiOiJjYXJsb3NtYXJ0aW5leml2YWxAZ21haWwuY29tIiwiY29uZmlybWF0aW9udG9rZW4iOm51bGwsImxhc3Rsb2dpbiI6bnVsbCwidXNlcm5hbWUiOiJjYXJsb3NtYXJ0aW5leml2YWxAZ21haWwuY29tIiwiZXhwIjoxNDkwODg1NjE0LCJpYXQiOjE0OTA4ODIwMTR9.VG16FWMEb1jK2ZNJT004oECv4qtVB4taIFBO2Cep2XqZN20F9E_GPra64GUehhS19qRtb2K47q1Ejw2bzoRBhtJycd-gcOln2m0Ix3hJeYrNVE4DIUijKTauGQURox_uJP-ci8IgtUHcZhUtMGDicw3AN2yMURFfJZvPlDRn8N55KGgzQqIiTQfcDtIG55FyIGIydmj6Fr9Z6jWkBuv93qoPsNVqskb3Y6x8O08kWvBDoefcNyYjv4Xq18DYbSpsfV10GLPFz8V6aGwihVypMZPxgcZKv7wwI8G-MeyotJFlW3xyEm014rlkiNFJhtQrCZGgevX9IvcAOHXow6LVtC1k8Xxc7EIGeTddIipsxYsLfHu3rqLh6N0z5cjbv2QEE17E4PIK6l3a65rzENa2_NoW0GhMN8TBSwYrmSvkrzw6U3lJm1mpQ1UbTYMBV9rWSNWaMv_tVJPzNlw5A844eWZEr-70-fBxWy3U9TqOHiY2hVANUwixWJeRdJuYWLdEK7YBv_4cVaeMxkweV2BpQgTMvZOfv8ufBxdei-qHoIR03k-a5U24f_mx51GoydY7yKEc53cvhJ1UGYo9UMQugMtEqyFkWLkyzJNt9xl_pgb17CxExj3leEXfZhBrW-_LKKpe58zh_b6N90vpQx29F_Y6OymEVnA0XiPLDbGglls" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{ &quot;username&quot;: &quot;carlosmartinezival@gmail.com&quot;, &quot;password&quot;: &quot;test123&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_USER'" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_PW'" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MiwiZW1haWwiOiJjYXJsb3NtYXJ0aW5leml2YWxAZ21haWwuY29tIiwiY29uZmlybWF0aW9udG9rZW4iOm51bGwsImxhc3Rsb2dpbiI6bnVsbCwidXNlcm5hbWUiOiJjYXJsb3NtYXJ0aW5leml2YWxAZ21haWwuY29tIiwiZXhwIjoxNDkwODg1NjE0LCJpYXQiOjE0OTA4ODIwMTR9.VG16FWMEb1jK2ZNJT004oECv4qtVB4taIFBO2Cep2XqZN20F9E_GPra64GUehhS19qRtb2K47q1Ejw2bzoRBhtJycd-gcOln2m0Ix3hJeYrNVE4DIUijKTauGQURox_uJP-ci8IgtUHcZhUtMGDicw3AN2yMURFfJZvPlDRn8N55KGgzQqIiTQfcDtIG55FyIGIydmj6Fr9Z6jWkBuv93qoPsNVqskb3Y6x8O08kWvBDoefcNyYjv4Xq18DYbSpsfV10GLPFz8V6aGwihVypMZPxgcZKv7wwI8G-MeyotJFlW3xyEm014rlkiNFJhtQrCZGgevX9IvcAOHXow6LVtC1k8Xxc7EIGeTddIipsxYsLfHu3rqLh6N0z5cjbv2QEE17E4PIK6l3a65rzENa2_NoW0GhMN8TBSwYrmSvkrzw6U3lJm1mpQ1UbTYMBV9rWSNWaMv_tVJPzNlw5A844eWZEr-70-fBxWy3U9TqOHiY2hVANUwixWJeRdJuYWLdEK7YBv_4cVaeMxkweV2BpQgTMvZOfv8ufBxdei-qHoIR03k-a5U24f_mx51GoydY7yKEc53cvhJ1UGYo9UMQugMtEqyFkWLkyzJNt9xl_pgb17CxExj3leEXfZhBrW-_LKKpe58zh_b6N90vpQx29F_Y6OymEVnA0XiPLDbGglls" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{ &quot;username&quot;: &quot;carlosmartinezival@gmail.com&quot;, &quot;password&quot;: &quot;test123&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_USER'" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_PW'" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MiwiZW1haWwiOiJjYXJsb3NtYXJ0aW5leml2YWxAZ21haWwuY29tIiwiY29uZmlybWF0aW9udG9rZW4iOm51bGwsImxhc3Rsb2dpbiI6bnVsbCwidXNlcm5hbWUiOiJjYXJsb3NtYXJ0aW5leml2YWxAZ21haWwuY29tIiwiZXhwIjoxNDkwODg0NDQzLCJpYXQiOjE0OTA4ODA4NDN9.14Z1QdQ1mF5rmU3mXPzp73OYgAX2xCNCAeu3xzYhPxypZ92LNPFDKPwfBGBdQSnUjdX3qXq2z6Zigl91hT_fBneWye671Y027JyAA_IASWDV7T5IrBR8l_3rIjaQ4Cherdzoz49XDaqFtIuFrfjhoOe_G-MEv_WwgwS93vdmj6b8_-0zp7XUn9IJ0EiqDbePsUMxnZKpGq5V_JelQ0G8-LyaWRj1nPrnNsuqT8tlZp_boXYdaRhYpkKvFmdmX_kM_D9ThcgNWAL4YqiqA70NOB_RU6icBsdGkkNmG26-mqTPr8NHl47yyz8uIP6Berpt6_FXLhChuEi7W3jchBGeufksKZ_vM56dKJPgDI8i5X-o2ZF2eijzFURZ2MJNPttSj7DS-iYqvSk55n6o49lygPrW1wvQ4kRDCNEtO7h2vgauuRI0W-VVP1Tf0R5lVW5IcReVDOEy7ThOP18F0MRL1aptMhUVfJ0bSQE8RV43-PaRsqTCZ4dSIp5toepwhRr10IR_adCOlPlJM5heJr8HCOLvL8yPJAkrmPTSJbcl7-SdolgCV_52_W7h6kSADMY1ZL_55XJET7i2J7aoCKMrSGBe7HNOwghJ1RNAeo_calo4upF2Ocs2y5EmzgvA_CQ3h0AmkKAmN0cD97L-NlS2u6eI4dk3j4D1uRFuX_QUa-g" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{ &quot;username&quot;: &quot;carlosmartinezival@gmail.com&quot;, &quot;password&quot;: &quot;test123&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/receta" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_USER'" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_PW'" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MiwiZW1haWwiOiJjYXJsb3NtYXJ0aW5leml2YWxAZ21haWwuY29tIiwiY29uZmlybWF0aW9udG9rZW4iOm51bGwsImxhc3Rsb2dpbiI6bnVsbCwidXNlcm5hbWUiOiJjYXJsb3NtYXJ0aW5leml2YWxAZ21haWwuY29tIiwiZXhwIjoxNDkwODg0NDQzLCJpYXQiOjE0OTA4ODA4NDN9.14Z1QdQ1mF5rmU3mXPzp73OYgAX2xCNCAeu3xzYhPxypZ92LNPFDKPwfBGBdQSnUjdX3qXq2z6Zigl91hT_fBneWye671Y027JyAA_IASWDV7T5IrBR8l_3rIjaQ4Cherdzoz49XDaqFtIuFrfjhoOe_G-MEv_WwgwS93vdmj6b8_-0zp7XUn9IJ0EiqDbePsUMxnZKpGq5V_JelQ0G8-LyaWRj1nPrnNsuqT8tlZp_boXYdaRhYpkKvFmdmX_kM_D9ThcgNWAL4YqiqA70NOB_RU6icBsdGkkNmG26-mqTPr8NHl47yyz8uIP6Berpt6_FXLhChuEi7W3jchBGeufksKZ_vM56dKJPgDI8i5X-o2ZF2eijzFURZ2MJNPttSj7DS-iYqvSk55n6o49lygPrW1wvQ4kRDCNEtO7h2vgauuRI0W-VVP1Tf0R5lVW5IcReVDOEy7ThOP18F0MRL1aptMhUVfJ0bSQE8RV43-PaRsqTCZ4dSIp5toepwhRr10IR_adCOlPlJM5heJr8HCOLvL8yPJAkrmPTSJbcl7-SdolgCV_52_W7h6kSADMY1ZL_55XJET7i2J7aoCKMrSGBe7HNOwghJ1RNAeo_calo4upF2Ocs2y5EmzgvA_CQ3h0AmkKAmN0cD97L-NlS2u6eI4dk3j4D1uRFuX_QUa-g" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{ &quot;username&quot;: &quot;carlosmartinezival@gmail.com&quot;, &quot;password&quot;: &quot;test123&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_USER'" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_PW'" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MiwiZW1haWwiOiJjYXJsb3NtYXJ0aW5leml2YWxAZ21haWwuY29tIiwiY29uZmlybWF0aW9udG9rZW4iOm51bGwsImxhc3Rsb2dpbiI6bnVsbCwidXNlcm5hbWUiOiJjYXJsb3NtYXJ0aW5leml2YWxAZ21haWwuY29tIiwiZXhwIjoxNDkwODc1MjE4LCJpYXQiOjE0OTA4NzE2MTh9.VBekQ-cW9CpemIeQ4WJYAyE39RebtbwWcQ0N8ECkkWhjZv9DgD_J4IqA3UhQeD48-v4F5pFgq1A8duzUq0RwAcBQGSOwmZPaO6gm85qRVq6P5_w96RG0iA8GH1FlekcRQqiNMb5jXT9c6cM8OqkmwFzFTnNDoZdIVnhKN58ndBpoBCISyFUMhzabu13e7pnKWHSVtZ0Pw8Rd2onMpkgnmfcsHq4KgPrFc8BxYAp7MPEvayzw2ytDD_cP_0zufAqIcgeH3vBVUVV5OAETT8847N5ujDfNnJeyCxlxYEIe-xWWhYpKN1cVUZCTJSq8R1akZX8MHpkv-JSepLQOmPQ0BOoiK502KJvASGE39mQgS1XXsOmZqB0PT5imSP7Th6dAbqXStD6MYIMksXYcW0PWbNCthYZgT01b9CRH4rBAKPbFm0WrBwV6BZz4nEhSCUYgm-e07ArkTL-7x2wVhiCVoUUwyRsYaYjI8n962_8HRQctm-j9wFISsxkjbFCsAaMRLmZ7d6AibVyAnx-VOihBvO5kY89Pie8W9KoZt9tSg9bE9oOfQG94UzWdfs3XVs7aqK9iON3d8b8IAM0XOMxQwfLKW4XbM3Ejtz7SxU-Ktdjzv2JMCw1dwYRmvdNulCbKg2IOkffsdSbwsmO_gO53WFg6NWRfwGLpz_5qJE-NGww" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{ &quot;username&quot;: &quot;carlosmartinezival@gmail.com&quot;, &quot;password&quot;: &quot;test123&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/receta" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_USER'" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_PW'" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MiwiZW1haWwiOiJjYXJsb3NtYXJ0aW5leml2YWxAZ21haWwuY29tIiwiY29uZmlybWF0aW9udG9rZW4iOm51bGwsImxhc3Rsb2dpbiI6bnVsbCwidXNlcm5hbWUiOiJjYXJsb3NtYXJ0aW5leml2YWxAZ21haWwuY29tIiwiZXhwIjoxNDkwODc1MjE4LCJpYXQiOjE0OTA4NzE2MTh9.VBekQ-cW9CpemIeQ4WJYAyE39RebtbwWcQ0N8ECkkWhjZv9DgD_J4IqA3UhQeD48-v4F5pFgq1A8duzUq0RwAcBQGSOwmZPaO6gm85qRVq6P5_w96RG0iA8GH1FlekcRQqiNMb5jXT9c6cM8OqkmwFzFTnNDoZdIVnhKN58ndBpoBCISyFUMhzabu13e7pnKWHSVtZ0Pw8Rd2onMpkgnmfcsHq4KgPrFc8BxYAp7MPEvayzw2ytDD_cP_0zufAqIcgeH3vBVUVV5OAETT8847N5ujDfNnJeyCxlxYEIe-xWWhYpKN1cVUZCTJSq8R1akZX8MHpkv-JSepLQOmPQ0BOoiK502KJvASGE39mQgS1XXsOmZqB0PT5imSP7Th6dAbqXStD6MYIMksXYcW0PWbNCthYZgT01b9CRH4rBAKPbFm0WrBwV6BZz4nEhSCUYgm-e07ArkTL-7x2wVhiCVoUUwyRsYaYjI8n962_8HRQctm-j9wFISsxkjbFCsAaMRLmZ7d6AibVyAnx-VOihBvO5kY89Pie8W9KoZt9tSg9bE9oOfQG94UzWdfs3XVs7aqK9iON3d8b8IAM0XOMxQwfLKW4XbM3Ejtz7SxU-Ktdjzv2JMCw1dwYRmvdNulCbKg2IOkffsdSbwsmO_gO53WFg6NWRfwGLpz_5qJE-NGww" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{ &quot;username&quot;: &quot;carlosmartinezival@gmail.com&quot;, &quot;password&quot;: &quot;test123&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_USER'" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_PW'" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{ &quot;username&quot;: &quot;carlosmartinezival@gmail.com&quot;, &quot;password&quot;: &quot;test123&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_USER'" />
+                <option name="value" value="carlosmartinezival@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_PW'" />
+                <option name="value" value="test123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{ &quot;username&quot;: &quot;carlosmartinezival@gmail.com&quot;, &quot;password&quot;: &quot;test123&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_USER'" />
+                <option name="value" value="carlosmartinezival@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_PW'" />
+                <option name="value" value="test123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{ &quot;username&quot;: &quot;carlosmartinezival@gmail.com&quot;, &quot;password&quot;: &quot;test1234&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_USER'" />
+                <option name="value" value="carlosmartinezival@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_PW'" />
+                <option name="value" value="test123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{ &quot;username&quot;: &quot;carlosmartinezival@gmail.com&quot;, &quot;password&quot;: &quot;test1234&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_USER'" />
+                <option name="value" value="carlosmartinezival@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_PW'" />
+                <option name="value" value="test123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{ &quot;username&quot;: &quot;carlosmartinezival@gmail.com&quot;, &quot;password&quot;: &quot;test1234&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_USER'" />
+                <option name="value" value="carlosmartinezival@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_PW'" />
+                <option name="value" value="test123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{ &quot;username&quot;: &quot;carlosmartinezival@gmail.com&quot;, &quot;password&quot;: &quot;test1234&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_USER'" />
+                <option name="value" value="carlosmartinezival@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_PW'" />
+                <option name="value" value="test123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{ &quot;username&quot;: &quot;carlosmartinezival@gmail.com&quot;, &quot;password&quot;: &quot;test123&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/receta" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_USER'" />
+                <option name="value" value="carlosmartinezival@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_PW'" />
+                <option name="value" value="test123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{ &quot;username&quot;: &quot;carlosmartinezival@gmail.com&quot;, &quot;password&quot;: &quot;test123&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_USER'" />
+                <option name="value" value="carlosmartinezival@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_PW'" />
+                <option name="value" value="test123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{ &quot;username&quot;: &quot;carlosmartinezival@gmail.com&quot;, &quot;password&quot;: &quot;test123&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_USER'" />
+                <option name="value" value="carlosmartinezival@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="'PHP_AUTH_PW'" />
+                <option name="value" value="test123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="PHP_AUTH_USER" />
+                <option name="value" value="carlosmartinezival@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="PHP_AUTH_PW" />
+                <option name="value" value="test123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/user/1" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/receta/1/picture" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/receta/1" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost" />
@@ -1210,475 +1832,28 @@
           <option name="textToSend" value="" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/receta/1" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/receta/3" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/receta/4" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/receta/3/seguidores" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/receta/3" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/receta/1" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/receta/2" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/receta/1/owner" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/receta/3/owner" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/receta/2/owner" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/recetas" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/receta/1/picture" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/receta/1" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="/home/carlos/Descargas/polloagridulce.jpeg" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/receta/1" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveFileToSend" value="true" />
-          <option name="isFileUpload" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="/home/carlos/Descargas/polloagridulce.jpeg" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/receta/1/picture" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveFileToSend" value="true" />
-          <option name="isFileUpload" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="/home/carlos/Descargas/polloagridulce.jpeg" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/recetas" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="/home/carlos/Descargas/polloagridulce.jpeg" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/recetas" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{  &quot;nombre&quot;: &quot;arroz moros&quot;,  &quot;raciones&quot;: &quot;15&quot;, &quot;ingredientes&quot;:[&quot;ajo&quot;,&quot;cebolla&quot;,&quot;comino&quot;,&quot;laurel&quot;],&quot;preparacion&quot;:[&quot;Cortar&quot;,&quot;Picar&quot;,&quot;Lavar&quot;,&quot;Cocinar&quot;], &quot;user&quot;: 1}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/receta" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{  &quot;nombre&quot;: &quot;arroz moros&quot;,  &quot;raciones&quot;: &quot;15&quot;, &quot;ingredientes&quot;:[&quot;ajo&quot;,&quot;cebolla&quot;,&quot;comino&quot;,&quot;laurel&quot;],&quot;preparacion&quot;:[&quot;Cortar&quot;,&quot;Picar&quot;,&quot;Lavar&quot;,&quot;Cocinar&quot;], &quot;user&quot;: 1}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/recetas" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{  &quot;nombre&quot;: &quot;arroz moros&quot;,  &quot;raciones&quot;: &quot;15&quot;, &quot;ingredientes&quot;:[&quot;ajo&quot;,&quot;cebolla&quot;,&quot;comino&quot;,&quot;laurel&quot;],&quot;preparacion&quot;:[&quot;Cortar&quot;,&quot;Picar&quot;,&quot;Lavar&quot;,&quot;Cocinar&quot;]}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/users" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{  &quot;nombre&quot;: &quot;arroz moros&quot;,  &quot;raciones&quot;: &quot;15&quot;, &quot;ingredientes&quot;:[&quot;ajo&quot;,&quot;cebolla&quot;,&quot;comino&quot;,&quot;laurel&quot;],&quot;preparacion&quot;:[&quot;Cortar&quot;,&quot;Picar&quot;,&quot;Lavar&quot;,&quot;Cocinar&quot;]}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/receta" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{  &quot;nombre&quot;: &quot;arroz moros&quot;,  &quot;raciones&quot;: &quot;15&quot;, &quot;ingredientes&quot;:[&quot;ajo&quot;,&quot;cebolla&quot;,&quot;comino&quot;,&quot;laurel&quot;],&quot;preparacion&quot;:[&quot;Cortar&quot;,&quot;Picar&quot;,&quot;Lavar&quot;,&quot;Cocinar&quot;]}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/receta" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{  &quot;nombre&quot;: &quot;arroz moros&quot;,  &quot;raciones&quot;: &quot;15&quot;, &quot;ingredientes&quot;:[&quot;ajo&quot;,&quot;cebolla&quot;,&quot;comino&quot;,&quot;laurel&quot;]}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.DietaControllerTest.testGet">
-    <configuration default="false" name="RecetaControllerTest.testEdit" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="DietaBundle\Tests\Controller\RecetaControllerTest" file="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/RecetaControllerTest.php" method="testEdit" scope="Method" />
-      <method />
-    </configuration>
-    <configuration default="false" name="DietaItemControllerTest.testNew" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="DietaBundle\Tests\Controller\DietaItemControllerTest" file="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/DietaItemControllerTest.php" method="testNew" scope="Method" />
-      <method />
-    </configuration>
-    <configuration default="false" name="DietaItemControllerTest.testGet" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="DietaBundle\Tests\Controller\DietaItemControllerTest" file="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/DietaItemControllerTest.php" method="testGet" scope="Method" />
-      <method />
-    </configuration>
-    <configuration default="false" name="DietaItemControllerTest.testAll" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="DietaBundle\Tests\Controller\DietaItemControllerTest" file="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/DietaItemControllerTest.php" method="testAll" scope="Method" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="PHPUnit.RecetaControllerTest.testNew (1)">
     <configuration default="false" name="DietaControllerTest.testGet" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="DietaBundle\Tests\Controller\DietaControllerTest" file="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/DietaControllerTest.php" method="testGet" scope="Method" />
+      <TestRunner class="DietaBundle\Tests\Controller\DietaControllerTest" file="$PROJECT_DIR$/tests/DietaBundle/Controller/DietaControllerTest.php" method="testGet" scope="Method" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RecetaControllerTest.testNew" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="DietaBundle\Tests\Controller\RecetaControllerTest" file="$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php" method="testNew" scope="Method" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RecetaControllerTest.testEdit" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="DietaBundle\Tests\Controller\RecetaControllerTest" file="$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php" method="testEdit" scope="Method" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RecetaControllerTest.testNew (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\DietaBundle\Controller\RecetaControllerTest" file="$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php" method="testNew" scope="Method" />
+      <method />
+    </configuration>
+    <configuration default="false" name="LoginControllerTest.testLogin" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="DietaBundle\Tests\Controller\LoginControllerTest" file="$PROJECT_DIR$/tests/DietaBundle/Controller/LoginControllerTest.php" method="testLogin" scope="Method" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -1745,19 +1920,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="PHP Web Application.Usuarios" />
-      <item index="1" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testEdit" />
-      <item index="2" class="java.lang.String" itemvalue="PHPUnit.DietaItemControllerTest.testNew" />
-      <item index="3" class="java.lang.String" itemvalue="PHPUnit.DietaItemControllerTest.testGet" />
-      <item index="4" class="java.lang.String" itemvalue="PHPUnit.DietaItemControllerTest.testAll" />
-      <item index="5" class="java.lang.String" itemvalue="PHPUnit.DietaControllerTest.testGet" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.DietaControllerTest.testGet" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testNew" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testEdit" />
+      <item index="4" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testNew (1)" />
+      <item index="5" class="java.lang.String" itemvalue="PHPUnit.LoginControllerTest.testLogin" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHPUnit.DietaControllerTest.testGet" />
-        <item index="1" class="java.lang.String" itemvalue="PHPUnit.DietaItemControllerTest.testAll" />
-        <item index="2" class="java.lang.String" itemvalue="PHPUnit.DietaItemControllerTest.testGet" />
-        <item index="3" class="java.lang.String" itemvalue="PHPUnit.DietaItemControllerTest.testNew" />
-        <item index="4" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testEdit" />
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testNew (1)" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.LoginControllerTest.testLogin" />
+        <item index="2" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testEdit" />
+        <item index="3" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testNew" />
+        <item index="4" class="java.lang.String" itemvalue="PHPUnit.DietaControllerTest.testGet" />
       </list>
     </recent_temporary>
   </component>
@@ -1795,7 +1970,12 @@
       <workItem from="1490264787859" duration="31748000" />
       <workItem from="1490435013717" duration="37268000" />
       <workItem from="1490527897409" duration="17942000" />
-      <workItem from="1490614503998" duration="2850000" />
+      <workItem from="1490614503998" duration="10051000" />
+      <workItem from="1490644832795" duration="30441000" />
+      <workItem from="1490778348707" duration="8230000" />
+      <workItem from="1490808527684" duration="483000" />
+      <workItem from="1490822573916" duration="1872000" />
+      <workItem from="1490867509677" duration="13534000" />
     </task>
     <task id="LOCAL-00001" summary="Primeros Pasos implementando el API REST.">
       <created>1488912254168</created>
@@ -1839,43 +2019,50 @@
       <option name="project" value="LOCAL" />
       <updated>1490486942503</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="principales recursos con sus correspondientes acciones Solo falta el usuario.">
+      <created>1490617522141</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1490617522141</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DietaControllerTest_testGet - 2017.03.27 at 00h 09m 22s.xml">
-      <configuration name="DietaControllerTest.testGet" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="LoginControllerTest_testLogin - 2017.03.30 at 12h 45m 38s.xml">
+      <configuration name="LoginControllerTest.testLogin" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="DietaItemControllerTest_testGet - 2017.03.25 at 18h 09m 10s.xml">
-      <configuration name="DietaItemControllerTest.testGet" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="LoginControllerTest_testLogin - 2017.03.30 at 12h 49m 16s.xml">
+      <configuration name="LoginControllerTest.testLogin" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="DietaItemControllerTest_testNew - 2017.03.25 at 18h 06m 43s.xml">
-      <configuration name="DietaItemControllerTest.testNew" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="RecetaControllerTest_testNew_(1) - 2017.03.29 at 23h 49m 06s.xml">
+      <configuration name="RecetaControllerTest.testNew (1)" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="RecetaControllerTest_testEdit - 2017.03.24 at 19h 50m 27s.xml">
-      <configuration name="RecetaControllerTest.testEdit" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="RecetaControllerTest_testNew_(1) - 2017.03.30 at 12h 39m 11s.xml">
+      <configuration name="RecetaControllerTest.testNew (1)" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="RecetaControllerTest_testGet - 2017.03.24 at 17h 27m 56s.xml">
-      <configuration name="RecetaControllerTest.testGet" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="RecetaControllerTest_testNew_(1) - 2017.03.30 at 12h 44m 23s.xml">
+      <configuration name="RecetaControllerTest.testNew (1)" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="RecetaControllerTest_testNew - 2017.03.24 at 18h 44m 36s.xml">
-      <configuration name="RecetaControllerTest.testNew" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="RecetaControllerTest_testNew_(1) - 2017.03.30 at 13h 05m 51s.xml">
+      <configuration name="RecetaControllerTest.testNew (1)" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="RecetaControllerTest_testNew - 2017.03.24 at 18h 47m 31s.xml">
-      <configuration name="RecetaControllerTest.testNew" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="RecetaControllerTest_testNew_(1) - 2017.03.30 at 15h 57m 59s.xml">
+      <configuration name="RecetaControllerTest.testNew (1)" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="RecetaControllerTest_testNew - 2017.03.24 at 18h 56m 25s.xml">
-      <configuration name="RecetaControllerTest.testNew" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="RecetaControllerTest_testNew_(1) - 2017.03.30 at 15h 59m 25s.xml">
+      <configuration name="RecetaControllerTest.testNew (1)" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="RecetaControllerTest_testNew - 2017.03.24 at 18h 58m 15s.xml">
-      <configuration name="RecetaControllerTest.testNew" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="RecetaControllerTest_testNew_(1) - 2017.03.30 at 16h 28m 25s.xml">
+      <configuration name="RecetaControllerTest.testNew (1)" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="RecetaControllerTest_testNew - 2017.03.24 at 19h 13m 33s.xml">
-      <configuration name="RecetaControllerTest.testNew" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="RecetaControllerTest_testNew_(1) - 2017.03.30 at 16h 35m 40s.xml">
+      <configuration name="RecetaControllerTest.testNew (1)" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="333439000" />
+    <option name="totallyTimeSpent" value="395200000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1890,30 +2077,30 @@
     <frame x="0" y="24" width="1366" height="720" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23823975" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27162367" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.56155145" sideWeight="0.5030349" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14567527" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60033727" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59527826" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44856662" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44182125" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44856662" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53288364" sideWeight="0.4969651" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47554806" sideWeight="0.4969651" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39629006" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="91" y="128" width="1166" height="520" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4148398" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39629006" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1972,310 +2159,403 @@
     <MESSAGE value="CRUD RestFUl of Usuario a apartir de este crear los demas" />
     <MESSAGE value="Antes de subir usuarios a la base de datos." />
     <MESSAGE value="Api en face de prueba" />
-    <option name="LAST_COMMIT_MESSAGE" value="Api en face de prueba" />
+    <MESSAGE value="principales recursos con sus correspondientes acciones Solo falta el usuario." />
+    <option name="LAST_COMMIT_MESSAGE" value="principales recursos con sus correspondientes acciones Solo falta el usuario." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="45" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/DietaBundle/Controller/LoginController.php</url>
+          <line>28</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php</url>
+          <line>116</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="72" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Tests/TestCase.php">
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/rest-bundle/Controller/FOSRestController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        <state relative-caret-position="290">
+          <caret line="33" column="77" lean-forward="false" selection-start-line="33" selection-start-column="77" selection-end-line="33" selection-end-column="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Tests/Controller/ControllerTest.php">
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/RegistrationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        <state relative-caret-position="-938">
+          <caret line="66" column="34" lean-forward="true" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/willdurand/rest-extra-bundle/Test/WebTestCase.php">
+    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/DietaControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="45" />
+        <state relative-caret-position="356">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="51" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Response.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1026">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-1007">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/DefaultControllerTest.php">
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/RegistrationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="13" selection-end-column="48" />
+        <state relative-caret-position="572">
+          <caret line="64" column="31" lean-forward="true" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Tests/Controller/UserControllerTest.php">
+    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/RegistrationControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://PHP/\DietaBundle\Controller\RecetaController">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>PHP</ID>
-          <OriginalElement>\DietaBundle\Controller\RecetaController</OriginalElement>
-          <nodes>
-            <node x="309.5" y="714.0">\FOS\RestBundle\Controller\FOSRestController</node>
-            <node x="296.0" y="0.0">\Symfony\Component\DependencyInjection\ContainerAwareInterface</node>
-            <node x="-86.0" y="-33.0">\Symfony\Bundle\FrameworkBundle\Controller\Controller</node>
-            <node x="134.5" y="808.0">\DietaBundle\Controller\RecetaController</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="\FOS\RestBundle\Controller\FOSRestController" target="\Symfony\Bundle\FrameworkBundle\Controller\Controller">
-              <point x="0.0" y="-27.5" />
-              <point x="0.0" y="279.5" />
-            </edge>
-            <edge source="\DietaBundle\Controller\RecetaController" target="\FOS\RestBundle\Controller\FOSRestController">
-              <point x="0.0" y="-195.5" />
-              <point x="0.0" y="27.5" />
-            </edge>
-            <edge source="\Symfony\Bundle\FrameworkBundle\Controller\Controller" target="\Symfony\Component\DependencyInjection\ContainerAwareInterface">
-              <point x="0.0" y="-279.5" />
-              <point x="0.0" y="27.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-148.0" y="947.0" />
-          <SelectedNodes>
-            <node>\DietaBundle\Controller\RecetaController</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constants</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://PHP/\DietaBundle\Entity\Receta">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>PHP</ID>
-          <OriginalElement>\DietaBundle\Entity\Receta</OriginalElement>
-          <nodes>
-            <node x="-183.0" y="-195.0">\DietaBundle\Entity\Receta</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-87.0" y="-72.0" />
-          <SelectedNodes>
-            <node>\DietaBundle\Entity\Receta</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/var/cache/test/appTestDebugProjectContainer.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Validator/Validator/ValidatorInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/guzzle/guzzle/src/Guzzle/Http/Message/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/guzzle/guzzle/src/Guzzle/Common/Collection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="323" column="0" lean-forward="false" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/guzzle/guzzle/src/Guzzle/Parser/ParserRegistry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/guzzle/guzzle/src/Guzzle/Parser/UriTemplate/UriTemplate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/guzzle/guzzle/src/Guzzle/Http/Url.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="537" column="0" lean-forward="false" selection-start-line="537" selection-start-column="0" selection-end-line="537" selection-end-column="0" />
+        <state relative-caret-position="140">
+          <caret line="23" column="5" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="46" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/guzzle/guzzle/src/Guzzle/Http/Client.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="198" column="0" lean-forward="false" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+        <state relative-caret-position="349">
+          <caret line="263" column="20" lean-forward="false" selection-start-line="263" selection-start-column="20" selection-end-line="263" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/guzzle/guzzle/src/Guzzle/Http/EntityBodyInterface.php">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+        <state relative-caret-position="85">
+          <caret line="989" column="40" lean-forward="false" selection-start-line="989" selection-start-column="35" selection-end-line="989" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="55" />
-          <folding />
+        <state relative-caret-position="324">
+          <caret line="25" column="84" lean-forward="false" selection-start-line="25" selection-start-column="84" selection-end-line="25" selection-end-column="84" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php">
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="411" column="0" lean-forward="false" selection-start-line="411" selection-start-column="0" selection-end-line="411" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/DietaItem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.User.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestResult.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="756" column="0" lean-forward="false" selection-start-line="756" selection-start-column="0" selection-end-line="756" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/TextUI/TestRunner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7938">
-          <caret line="466" column="0" lean-forward="false" selection-start-line="466" selection-start-column="0" selection-end-line="466" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestSuite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="755" column="0" lean-forward="false" selection-start-line="755" selection-start-column="0" selection-end-line="755" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestCase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="894" column="0" lean-forward="false" selection-start-line="894" selection-start-column="0" selection-end-line="894" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/phpunit-bridge/DeprecationErrorHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-958">
-          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/TextUI/Command.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/81ada90c-3f03-4fcf-82c5-77657bc58f83/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/var/cache/dev/validation.php">
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.DietaItem.yml">
+    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/DietaItemControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="283">
+          <caret line="83" column="51" lean-forward="false" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/DietaItemController.php">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/BadCredentialsException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="111" column="54" lean-forward="false" selection-start-line="111" selection-start-column="54" selection-end-line="111" selection-end-column="54" />
+        <state relative-caret-position="216">
+          <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/guzzle/guzzle/src/Guzzle/Plugin/History/HistoryPlugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://PHP/\Symfony\Bundle\FrameworkBundle\Test\KernelTestCase">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>\Symfony\Bundle\FrameworkBundle\Test\KernelTestCase</OriginalElement>
+          <nodes>
+            <node x="325.5" y="162.0">\PHPUnit\Framework\TestCase</node>
+            <node x="0.0" y="0.0">\PHPUnit_Framework_Test</node>
+            <node x="533.0" y="0.0">\PHPUnit_Framework_Assert</node>
+            <node x="303.5" y="243.0">\Symfony\Bundle\FrameworkBundle\Test\KernelTestCase</node>
+            <node x="250.5" y="81.0">\PHPUnit_Framework_TestCase</node>
+            <node x="231.0" y="0.0">\PHPUnit_Framework_SelfDescribing</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="\PHPUnit_Framework_TestCase" target="\PHPUnit_Framework_Assert">
+              <point x="81.0" y="-15.5" />
+              <point x="453.0" y="56.0" />
+              <point x="646.0" y="56.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="\PHPUnit_Framework_TestCase" target="\PHPUnit_Framework_Test">
+              <point x="-81.0" y="-15.5" />
+              <point x="291.0" y="56.0" />
+              <point x="105.5" y="56.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="\PHPUnit_Framework_TestCase" target="\PHPUnit_Framework_SelfDescribing">
+              <point x="0.0" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="\Symfony\Bundle\FrameworkBundle\Test\KernelTestCase" target="\PHPUnit\Framework\TestCase">
+              <point x="0.0" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="\PHPUnit\Framework\TestCase" target="\PHPUnit_Framework_TestCase">
+              <point x="0.0" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="131.0" y="109.0" />
+          <SelectedNodes>
+            <node>\Symfony\Bundle\FrameworkBundle\Test\KernelTestCase</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://PHP/\Symfony\Bundle\FrameworkBundle\Test\WebTestCase">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>\Symfony\Bundle\FrameworkBundle\Test\WebTestCase</OriginalElement>
+          <nodes>
+            <node x="325.5" y="162.0">\PHPUnit\Framework\TestCase</node>
+            <node x="310.0" y="324.0">\Symfony\Bundle\FrameworkBundle\Test\WebTestCase</node>
+            <node x="0.0" y="0.0">\PHPUnit_Framework_Test</node>
+            <node x="533.0" y="0.0">\PHPUnit_Framework_Assert</node>
+            <node x="303.5" y="243.0">\Symfony\Bundle\FrameworkBundle\Test\KernelTestCase</node>
+            <node x="250.5" y="81.0">\PHPUnit_Framework_TestCase</node>
+            <node x="231.0" y="0.0">\PHPUnit_Framework_SelfDescribing</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="\PHPUnit_Framework_TestCase" target="\PHPUnit_Framework_Test">
+              <point x="-81.0" y="-15.5" />
+              <point x="291.0" y="56.0" />
+              <point x="105.5" y="56.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="\PHPUnit_Framework_TestCase" target="\PHPUnit_Framework_Assert">
+              <point x="81.0" y="-15.5" />
+              <point x="453.0" y="56.0" />
+              <point x="646.0" y="56.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="\Symfony\Bundle\FrameworkBundle\Test\WebTestCase" target="\Symfony\Bundle\FrameworkBundle\Test\KernelTestCase">
+              <point x="0.0" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="\PHPUnit_Framework_TestCase" target="\PHPUnit_Framework_SelfDescribing">
+              <point x="0.0" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="\Symfony\Bundle\FrameworkBundle\Test\KernelTestCase" target="\PHPUnit\Framework\TestCase">
+              <point x="0.0" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="\PHPUnit\Framework\TestCase" target="\PHPUnit_Framework_TestCase">
+              <point x="0.0" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="131.0" y="230.0" />
+          <SelectedNodes>
+            <node>\Symfony\Bundle\FrameworkBundle\Test\WebTestCase</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Test/WebTestCase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="20" column="40" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
           <folding>
-            <element signature="e#42#72#0#PHP" expanded="false" />
-            <element signature="e#1047#1070#1#PHP" expanded="false" />
-            <element signature="e#2168#2191#1#PHP" expanded="false" />
-            <element signature="e#3018#3041#1#PHP" expanded="false" />
-            <element signature="e#3567#3590#1#PHP" expanded="false" />
-            <element signature="e#5011#5034#1#PHP" expanded="false" />
-            <element signature="e#5094#5114#1#PHP" expanded="false" />
-            <element signature="e#5833#5856#1#PHP" expanded="false" />
-            <element signature="e#5916#5936#1#PHP" expanded="false" />
-            <element signature="e#7850#7873#1#PHP" expanded="false" />
+            <element signature="e#7#236#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/ApiTestCase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://PHP/\Lexik\Bundle\JWTAuthenticationBundle\Tests\Services\JWSProvider\DefaultJWSProviderTest">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>\Lexik\Bundle\JWTAuthenticationBundle\Tests\Services\JWSProvider\DefaultJWSProviderTest</OriginalElement>
+          <nodes>
+            <node x="" y="">\Lexik\Bundle\JWTAuthenticationBundle\Tests\Services\JWSProvider\DefaultJWSProviderTest</node>
+            <node x="" y="">\PHPUnit_Framework_Assert</node>
+            <node x="" y="">\PHPUnit_Framework_Test</node>
+            <node x="" y="">\PHPUnit_Framework_TestCase</node>
+            <node x="" y="">\Lexik\Bundle\JWTAuthenticationBundle\Tests\Services\JWSProvider\AbstractJWSProviderTest</node>
+            <node x="" y="">\PHPUnit_Framework_SelfDescribing</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="380.0" y="137.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://PHP/\Lexik\Bundle\JWTAuthenticationBundle\Tests\Encoder\DefaultEncoderTest">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>\Lexik\Bundle\JWTAuthenticationBundle\Tests\Encoder\DefaultEncoderTest</OriginalElement>
+          <nodes>
+            <node x="" y="">\PHPUnit_Framework_Assert</node>
+            <node x="" y="">\PHPUnit_Framework_Test</node>
+            <node x="" y="">\Lexik\Bundle\JWTAuthenticationBundle\Tests\Encoder\DefaultEncoderTest</node>
+            <node x="" y="">\PHPUnit_Framework_TestCase</node>
+            <node x="" y="">\PHPUnit_Framework_SelfDescribing</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="380.0" y="97.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle/Tests/Services/JWSProvider/DefaultJWSProviderTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle/Tests/Encoder/DefaultEncoderTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2556">
+          <caret line="142" column="45" lean-forward="false" selection-start-line="142" selection-start-column="45" selection-end-line="142" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Test/KernelTestCase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="75" column="28" lean-forward="false" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestResult.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="876" column="0" lean-forward="false" selection-start-line="876" selection-start-column="0" selection-end-line="876" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/TextUI/TestRunner.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8172">
+          <caret line="470" column="0" lean-forward="false" selection-start-line="470" selection-start-column="0" selection-end-line="470" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestSuite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="765" column="0" lean-forward="false" selection-start-line="765" selection-start-column="0" selection-end-line="765" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/LoginControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Security/JwtTokenAuthenticator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="127" column="45" lean-forward="false" selection-start-line="127" selection-start-column="45" selection-end-line="127" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle/Security/Guard/JWTTokenAuthenticator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="131" column="5" lean-forward="false" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
+          <folding>
+            <element signature="e#71#140#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="450">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2283,146 +2563,155 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="266">
+          <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Tests/Controller/DietaItemControllerTest.php">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="66" selection-start-column="4" selection-end-line="80" selection-end-column="83" />
+        <state relative-caret-position="180">
+          <caret line="387" column="0" lean-forward="false" selection-start-line="387" selection-start-column="0" selection-end-line="387" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="147" column="30" lean-forward="true" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Receta.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Dieta.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        <state relative-caret-position="145">
+          <caret line="336" column="0" lean-forward="false" selection-start-line="336" selection-start-column="0" selection-end-line="336" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app_dev.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
+        <state relative-caret-position="161">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Tests/credenciales.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Tests/recetainsertar.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="577" column="0" lean-forward="false" selection-start-line="577" selection-start-column="0" selection-end-line="577" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="513" column="0" lean-forward="false" selection-start-line="513" selection-start-column="0" selection-end-line="513" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/var/cache/dev/classes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="1055" column="0" lean-forward="false" selection-start-line="1055" selection-start-column="0" selection-end-line="1055" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/DataCollector/DumpDataCollector.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="228" column="0" lean-forward="false" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Tests/Controller/RecetaControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="7" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="27" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6120">
-          <caret line="354" column="56" lean-forward="false" selection-start-line="354" selection-start-column="56" selection-end-line="354" selection-end-column="56" />
+        <state relative-caret-position="226">
+          <caret line="4625" column="0" lean-forward="false" selection-start-line="4625" selection-start-column="0" selection-end-line="4625" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/User.php">
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestCase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="43" column="54" lean-forward="false" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
+        <state relative-caret-position="19368">
+          <caret line="1091" column="0" lean-forward="false" selection-start-line="1091" selection-start-column="0" selection-end-line="1091" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2268">
+          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
           <folding>
-            <element signature="e#38#80#0#PHP" expanded="false" />
+            <element signature="e#48#100#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/Dieta.php">
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="41" column="71" lean-forward="false" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="5" column="59" lean-forward="true" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+          <folding>
+            <element signature="e#42#99#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/DietaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="113" column="56" lean-forward="false" selection-start-line="113" selection-start-column="56" selection-end-line="113" selection-end-column="56" />
+        <state relative-caret-position="359">
+          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1116">
+          <caret line="62" column="68" lean-forward="false" selection-start-line="62" selection-start-column="68" selection-end-line="62" selection-end-column="68" />
           <folding>
-            <element signature="e#42#71#0#PHP" expanded="true" />
-            <element signature="e#3462#3481#1#PHP" expanded="true" />
-            <element signature="e#3996#4015#1#PHP" expanded="true" />
-            <element signature="e#5429#5448#1#PHP" expanded="true" />
-            <element signature="e#5510#5528#1#PHP" expanded="true" />
-            <element signature="e#6218#6237#1#PHP" expanded="true" />
-            <element signature="e#6298#6316#1#PHP" expanded="true" />
-            <element signature="e#7013#7032#1#PHP" expanded="true" />
-            <element signature="e#8416#8435#1#PHP" expanded="true" />
-            <element signature="e#8497#8520#1#PHP" expanded="true" />
-            <element signature="e#9237#9256#1#PHP" expanded="true" />
-            <element signature="e#9317#9340#1#PHP" expanded="true" />
-            <element signature="e#10000#10019#1#PHP" expanded="true" />
-            <element signature="e#10600#10618#1#PHP" expanded="true" />
-            <element signature="e#12096#12115#1#PHP" expanded="true" />
-            <element signature="e#12354#12372#1#PHP" expanded="true" />
+            <element signature="e#42#99#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Tests/Controller/DietaControllerTest.php">
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/DietaItemController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="337" column="56" lean-forward="false" selection-start-line="337" selection-start-column="56" selection-end-line="337" selection-end-column="56" />
+        <state relative-caret-position="396">
+          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="24" selection-end-column="3" />
           <folding>
-            <element signature="e#48#71#0#PHP" expanded="true" />
+            <element signature="e#42#72#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="23" column="3" lean-forward="false" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          <folding>
+            <element signature="e#42#70#0#PHP" expanded="true" />
+            <element signature="e#3466#3486#1#PHP" expanded="true" />
+            <element signature="e#4692#4712#1#PHP" expanded="true" />
+            <element signature="e#5312#5332#1#PHP" expanded="true" />
+            <element signature="e#6761#6781#1#PHP" expanded="true" />
+            <element signature="e#6836#6854#1#PHP" expanded="true" />
+            <element signature="e#7546#7566#1#PHP" expanded="true" />
+            <element signature="e#7621#7639#1#PHP" expanded="true" />
+            <element signature="e#8311#8331#1#PHP" expanded="true" />
+            <element signature="e#10504#10524#1#PHP" expanded="true" />
+            <marker date="1490886487863" expanded="false" signature="8967:8983" ph="User" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="19" column="3" lean-forward="false" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>

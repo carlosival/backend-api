@@ -20,8 +20,8 @@ security:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
 
-        main:
-            anonymous: ~
+        #main:
+            #anonymous: ~
             # activate different ways to authenticate
 
             # http_basic: ~
@@ -29,3 +29,34 @@ security:
 
             # form_login: ~
             # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
+        login:
+            pattern: ^/login
+            anonymous: true
+            form_login:
+                  # The route name that the login form submits to
+                  check_path:               /login_check
+                  success_handler:          lexik_jwt_authentication.handler.authentication_success
+                  failure_handler:          lexik_jwt_authentication.handler.authentication_failure
+                  require_previous_session: false
+
+            #logout:
+                  # The route name the user can go to in order to logout
+             #     path: security_logout
+
+        main:
+            pattern:   ^/
+            stateless: true
+            guard:
+                  authenticators:
+                      - lexik_jwt_authentication.jwt_token_authenticator
+
+    access_control:
+            - { path: ^/_wdt|_profiler, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+            - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+            - { path: ^/, roles: IS_AUTHENTICATED_FULLY }
+
+    #  - { path: ^/register, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+    #
+    # allow anonymous API - if auth is needed, it's handled in the controller
+    #  - { path: ^/api, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+    #

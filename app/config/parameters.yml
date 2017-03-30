@@ -10,3 +10,4 @@ parameters:
     mailer_user: null
     mailer_password: null
     secret: e4bb64ece154c23f2c432d5ffc623d115b6a08ce
+    jwt_key_pass_phrase: yanelis*89

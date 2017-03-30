@@ -84,6 +84,11 @@ jms_serializer:
         directories:
             DietaBundle:
                 path: "@DietaBundle/Resources/config/serializer"
+            FOSUB:
+                namespace_prefix: "FOS\\UserBundle"
+                path: "%kernel.root_dir%/serializer/FOSUB"
+
+
 #FOSUserBundle
 fos_user:
     db_driver: orm # other valid values are 'mongodb' and 'couchdb'
@@ -131,3 +136,9 @@ vich_uploader:
             inject_on_load:     false
             delete_on_update:   true
             delete_on_remove:   true
+
+lexik_jwt_authentication:
+    private_key_path: '%kernel.root_dir%/../var/jwt/private.pem'
+    public_key_path:  '%kernel.root_dir%/../var/jwt/public.pem'
+    pass_phrase:      '%jwt_key_pass_phrase%'
+    token_ttl:        3600
