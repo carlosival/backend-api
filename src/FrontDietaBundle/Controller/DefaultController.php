@@ -13,7 +13,7 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return new Response('Under the sea!');
-       // return $this->get('templating')->render('FrontDietaBundle:Default:index.html.twig', array());
+       // return new Response('Under the sea!');
+       return $this->render('FrontDietaBundle:Default:index.html.twig', array());
     }
 }
