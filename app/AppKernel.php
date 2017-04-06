@@ -33,6 +33,7 @@ class AppKernel extends Kernel
 
 
             new DietaBundle\DietaBundle(),
+            new FrontDietaBundle\FrontDietaBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

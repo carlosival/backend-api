@@ -1,18 +1,28 @@
+front_dieta:
+    resource: "@FrontDietaBundle/Controller/"
+    type:     annotation
+    prefix:   /
+    defaults: { _format: html }
+
 api_dieta_item:
     resource: "@DietaBundle/Controller/DietaItemController.php"
     type:     annotation
+    prefix:   /api
 
 api_user:
     resource: "@DietaBundle/Controller/UserController.php"
     type:     annotation
+    prefix:   /api
 
 api_receta:
     resource: "@DietaBundle/Controller/RecetaController.php"
     type:     annotation
+    prefix:   /api
 
 api_dieta:
     resource: "@DietaBundle/Controller/DietaController.php"
     type:     annotation
+    prefix:   /api
 
 api_util_register:
     resource: "@DietaBundle/Controller/RegistrationController.php"

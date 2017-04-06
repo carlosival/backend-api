@@ -133,6 +133,7 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="module" module-name="diets-frontend" />
     <orderEntry type="module-library">
       <library name="PHP" type="php">
         <CLASSES>

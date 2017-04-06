@@ -3,6 +3,7 @@ imports:
     - { resource: security.yml }
     - { resource: services.yml }
     - { resource: "@DietaBundle/Resources/config/services.yml" }
+    - { resource: "@FrontDietaBundle/Resources/config/services.yml" }
     #- { resource: resources.yml }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
@@ -40,6 +41,7 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    autoescape:       false
 
 # Doctrine Configuration
 doctrine:
