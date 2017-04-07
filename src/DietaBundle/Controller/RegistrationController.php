@@ -2,6 +2,7 @@
 
 namespace DietaBundle\Controller;
 
+use DietaBundle\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use FOS\UserBundle\Controller\RegistrationController as BaseController;
 use Symfony\Component\HttpFoundation\Request;
@@ -40,24 +41,33 @@ class RegistrationController extends BaseController
             return $event->getResponse();
         }
 
-        $form = $formFactory->createForm(array('csrf_protection' => false));
-        $form->setData($user);
-        $this->processForm($request, $form);
+       // $form = $formFactory->createForm(array('csrf_protection' => false));
+        //$form->setData($user);
+        $this->processForm($request, $user);
 
-        if ($form->isValid()) {
-            $event = new FormEvent($form, $request);
-            $dispatcher->dispatch(
-                FOSUserEvents::REGISTRATION_SUCCESS, $event
-            );
+        $validator = $this->get('validator');
+        $errors = $validator->validate($user);
+
+        if ($er=$errors->count() === 0) {
 
             $userManager->updateUser($user);
 
-            $response = new Response($this->serialize('User created.'), Response::HTTP_CREATED);
+            $response = $this->createApiResponse($user,201);
+            $response->headers->set('Location',
+                $this->generateUrl(
+                    'dieta_user_get', array('id' => $user->getId()), //buscar la url de obtner receta esto esta mal
+                    true // absolute
+                )
+            );
+
+
+
+
         } else {
             throw new BadRequestHttpException();
         }
 
-        return $this->setBaseHeaders($response);
+        return $response;
 
     }
 
@@ -65,14 +75,20 @@ class RegistrationController extends BaseController
      * @param  Request $request
      * @param  FormInterface $form
      */
-    private function processForm(Request $request, FormInterface $form)
+    private function processForm(Request $request, User $user)
     {
         $data = json_decode($request->getContent(), true);
         if ($data === null) {
             throw new BadRequestHttpException();
         }
 
-        $form->submit($data);
+        $user->setUsername($data['username']);
+        $user->setPlainPassword($data['password']);
+        $user->setEmail($data['username']);
+        $user->setEnabled(true);
+
+
+
     }
 
     /**
@@ -100,12 +116,19 @@ class RegistrationController extends BaseController
      */
     private function setBaseHeaders(Response $response)
     {
-        $response->headers->set('Content-Type', 'application/json');
+       // $response->headers->set('Content-Type', 'application/json');
         $response->headers->set('Access-Control-Allow-Origin', '*');
 
         return $response;
     }
 
-
+    protected function createApiResponse($data, $statusCode = 200)
+    {
+        $json = $this->serialize($data);
+        return new Response($json, $statusCode, array(
+            'Content-Type' => 'application/json',
+            'Access-Control-Allow-Origin' => '*'
+        ));
+    }
 
 }

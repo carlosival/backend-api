@@ -24,7 +24,7 @@ DietaBundle\Entity\Receta:
                 absolute: true
             -
                 rel:  picture
-                href: expr(object.getUri())
+                href: expr(object.getImageName())
                 #href:
                     #route: dieta_receta_picture
                     #parameters:
