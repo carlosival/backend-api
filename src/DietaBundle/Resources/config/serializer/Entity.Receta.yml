@@ -13,7 +13,8 @@ DietaBundle\Entity\Receta:
             expose: true
         raciones:
             expose: true
-
+        imageName:
+            expose: true
     relations:
             -
                 rel: self
