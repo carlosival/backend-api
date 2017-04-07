@@ -20,7 +20,7 @@ use DietaBundle\Entity\Receta;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 
 /**
- * @Security("is_granted('IS_AUTHENTICATED_FULLY')")
+ * Security("is_granted('IS_AUTHENTICATED_FULLY')")
  */
 class RecetaController extends FOSRestController
 {
@@ -176,7 +176,11 @@ class RecetaController extends FOSRestController
         }
 
         $helper = $this->get('vich_uploader.templating.helper.uploader_helper');
-        $path = $helper->asset($receta, 'imageFile');
+
+        $baseUrl = $request->getSchemeAndHttpHost() . $request->getBasePath();
+        $path = $baseUrl . $helper->asset($receta, 'imageFile');
+
+
 
         $response = $this->createApiResponse($path, 200);
         return $response;

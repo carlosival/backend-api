@@ -346,4 +346,13 @@ class Receta
     {
         return $this->user;
     }
+
+    public function getUri()
+    {
+        $domain = 'http://localhost/images/recetas/';
+        return $domain . $this->getImageName() ;
+
+        //return $this->user;
+    }
+
 }

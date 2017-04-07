@@ -24,12 +24,12 @@ DietaBundle\Entity\Receta:
                 absolute: true
             -
                 rel:  picture
-                #href: expr(@=service('vich_uploader.templating.helper.uploader_helper').asset(object, 'imageFile'))
-                href:
-                    route: dieta_receta_picture
-                    parameters:
-                          id: expr(object.getId())
-                    absolute: true
+                href: expr(object.getUri())
+                #href:
+                    #route: dieta_receta_picture
+                    #parameters:
+                     #     id: expr(object.getId())
+                    #absolute: true
             -
                 rel:  usuarios_seguidores
                 href:
