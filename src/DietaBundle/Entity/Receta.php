@@ -54,7 +54,15 @@ class Receta
      * @ORM\Column(type="string" ,nullable=true)
      * @var string
      */
-    private $tiempo_preparacion;
+    private $tiempopreparacion;
+
+    /**
+     * @ORM\Column(type="text" ,nullable=true)
+     * @var string
+     *
+     */
+
+    private $descripcion;
 
     /**
      * @ORM\Column(type="string" ,nullable=true)
@@ -242,30 +250,6 @@ class Receta
 
 
     /**
-     * Set tiempoPreparacion
-     *
-     * @param string $tiempoPreparacion
-     *
-     * @return Receta
-     */
-    public function setTiempoPreparacion($tiempoPreparacion)
-    {
-        $this->tiempo_preparacion = $tiempoPreparacion;
-
-        return $this;
-    }
-
-    /**
-     * Get tiempoPreparacion
-     *
-     * @return string
-     */
-    public function getTiempoPreparacion()
-    {
-        return $this->tiempo_preparacion;
-    }
-
-    /**
      * Set raciones
      *
      * @param string $raciones
@@ -352,7 +336,78 @@ class Receta
         $domain = 'http://localhost/images/recetas/';
         return $domain . $this->getImageName() ;
 
-        //return $this->user;
     }
 
+
+    /**
+     * Set updatedAt
+     *
+     * @param \DateTime $updatedAt
+     *
+     * @return Receta
+     */
+    public function setUpdatedAt($updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get updatedAt
+     *
+     * @return \DateTime
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
+    }
+
+    /**
+     * Set tiempopreparacion
+     *
+     * @param string $tiempopreparacion
+     *
+     * @return Receta
+     */
+    public function setTiempopreparacion($tiempopreparacion)
+    {
+        $this->tiempopreparacion = $tiempopreparacion;
+
+        return $this;
+    }
+
+    /**
+     * Get tiempopreparacion
+     *
+     * @return string
+     */
+    public function getTiempopreparacion()
+    {
+        return $this->tiempopreparacion;
+    }
+
+    /**
+     * Set descripcion
+     *
+     * @param string $descripcion
+     *
+     * @return Receta
+     */
+    public function setDescripcion($descripcion)
+    {
+        $this->descripcion = $descripcion;
+
+        return $this;
+    }
+
+    /**
+     * Get descripcion
+     *
+     * @return string
+     */
+    public function getDescripcion()
+    {
+        return $this->descripcion;
+    }
 }

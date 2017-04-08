@@ -2,7 +2,306 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f2d209a-4075-44cb-91a9-50886132f1c9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/FontAwesome.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/Material-Design-Iconic-Font.eot" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/Material-Design-Iconic-Font.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/Material-Design-Iconic-Font.ttf" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/Material-Design-Iconic-Font.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/Material-Design-Iconic-Font.woff" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/Material-Design-Iconic-Font.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/fontawesome-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/fontawesome-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/fontawesome-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/fontawesome-webfont.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-arrows.eot" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-arrows.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-arrows.ttf" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-arrows.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-arrows.woff" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-arrows.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-clothing.eot" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-clothing.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-clothing.ttf" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-clothing.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-clothing.woff" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-clothing.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-emotions.eot" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-emotions.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-emotions.ttf" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-emotions.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-emotions.woff" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-emotions.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-food.eot" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-food.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-food.ttf" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-food.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-food.woff" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-food.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-general.eot" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-general.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-general.ttf" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-general.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-general.woff" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-general.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-household.eot" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-household.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-household.ttf" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-household.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-household.woff" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-household.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-medical-science.eot" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-medical-science.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-medical-science.ttf" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-medical-science.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-medical-science.woff" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-medical-science.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-multimedia.eot" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-multimedia.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-multimedia.ttf" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-multimedia.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-multimedia.woff" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-multimedia.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-nature.eot" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-nature.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-nature.ttf" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-nature.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-nature.woff" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-nature.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-shopping-finance.eot" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-shopping-finance.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-shopping-finance.ttf" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-shopping-finance.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-shopping-finance.woff" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-shopping-finance.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-sports.eot" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-sports.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-sports.ttf" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-sports.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-sports.woff" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-sports.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-vehicle-navigation.eot" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-vehicle-navigation.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-vehicle-navigation.ttf" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-vehicle-navigation.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-vehicle-navigation.woff" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-vehicle-navigation.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-weather.eot" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-weather.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-weather.ttf" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-weather.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-weather.woff" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-weather.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/ajax-loader.gif" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/ajax-loader.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/fonts/slick.eot" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/fonts/slick.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/fonts/slick.ttf" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/fonts/slick.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/fonts/slick.woff" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/fonts/slick.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/select2-spinner.gif" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/select2-spinner.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/select2.png" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/select2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/select2x2.png" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/select2x2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/food1-full.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/food1-full.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/food1-wide.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/food1-wide.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/food1.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/food1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/img1.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/img1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/img2.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/img2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/img3.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/img3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/lock-1.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/lock-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/logo.png" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/child-1.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/child-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/guy-1.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/guy-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/guy-2.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/guy-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/guy-3.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/guy-3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/guy-4.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/guy-4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/guy-5.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/guy-5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/guy-6.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/guy-6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/guy-7.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/guy-7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/guy-8.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/guy-8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/guy-9.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/guy-9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-1.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-10.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-10.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-2.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-3.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-4.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-5.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-6.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-7.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-8.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-9.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/110/woman-9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/child-1.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/child-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/guy-1.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/guy-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/guy-2.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/guy-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/guy-3.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/guy-3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/guy-4.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/guy-4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/guy-5.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/guy-5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/guy-6.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/guy-6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/guy-7.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/guy-7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/guy-8.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/guy-8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/guy-9.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/guy-9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-1.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-10.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-10.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-2.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-3.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-4.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-5.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-6.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-7.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-8.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-9.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/people/50/woman-9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/photodune-6745579-modern-creative-man-relaxing-on-workspace-m.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/photodune-6745579-modern-creative-man-relaxing-on-workspace-m.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/photodune-6745585-modern-creative-workspace-m.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/photodune-6745585-modern-creative-workspace-m.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/place1-full.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/place1-full.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/place1-wide.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/place1-wide.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/place1.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/place1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/place2-full.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/place2-full.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/place2-wide.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/place2-wide.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/place2.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/place2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/place3-full.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/place3-full.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/place3-wide.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/place3-wide.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/place3.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/place3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/profile-cover.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/profile-cover.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/social/100/1.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/social/100/1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/social/100/2.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/social/100/2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/social/100/3.jpg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/social/100/3.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/serializer/FOSUB/Model.User.yml" afterPath="$PROJECT_DIR$/app/serializer/FOSUB/Model.User.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Entity/Comment.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Entity/Comment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Entity/Thread.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Entity/Thread.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Receta.yml" afterPath="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Receta.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/app.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/charts.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/charts.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/chat.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/chat.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/colors-alerts.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/colors-alerts.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/colors-background.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/colors-background.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/colors-buttons.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/colors-buttons.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/colors-calendar.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/colors-calendar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/colors-progress-bars.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/colors-progress-bars.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/colors-text.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/colors-text.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/cover.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/cover.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/essentials.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/essentials.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/layout.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/main.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/maps.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/maps.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/media.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/media.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/navbar.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/navbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/sidebar-skins.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/sidebar-skins.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/sidebar.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/sidebar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/timeline.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/app/timeline.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/Material-Design-Iconic-Font.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/Material-Design-Iconic-Font.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-arrows.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-arrows.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-clothing.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-clothing.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-emotions.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-emotions.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-food.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-food.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-general.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-general.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-household.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-household.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-medical-science.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-medical-science.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-multimedia.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-multimedia.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-nature.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-nature.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-shopping-finance.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-shopping-finance.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-sports.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-sports.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-vehicle-navigation.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-vehicle-navigation.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-weather.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/fonts/picto-foundry-weather.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/skin-blue.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/skin-blue.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/skin-brown.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/skin-brown.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/skin-default-nav-inverse.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/skin-default-nav-inverse.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/skin-orange.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/skin-orange.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/skin-purple.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/skin-purple.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/all.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/all.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/bootstrap-slider.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/bootstrap-slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/bootstrap.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/datepicker3.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/datepicker3.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/daterangepicker-bs3.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/daterangepicker-bs3.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/font-awesome.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/font-awesome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/fonts/slick.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/fonts/slick.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/jquery-jvectormap.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/jquery-jvectormap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/jquery.bootstrap-touchspin.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/jquery.bootstrap-touchspin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/jquery.minicolors.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/jquery.minicolors.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/material-design-iconic-font.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/material-design-iconic-font.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/morris.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/morris.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/owl.carousel.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/owl.carousel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/picto.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/picto.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/railscasts.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/railscasts.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/select2.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/select2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/slick.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/slick.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/ui.fancytree.css" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/css/vendor/ui.fancytree.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/flags/Flag_of_France.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/flags/Flag_of_France.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/flags/Flag_of_Germany.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/flags/Flag_of_Germany.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/flags/Flag_of_Poland.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/flags/Flag_of_Poland.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/flags/Flag_of_Romania.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/flags/Flag_of_Romania.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/flags/Flag_of_the_United_States.svg" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/images/flags/Flag_of_the_United_States.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app.react.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app.react.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/all.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/app.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/charts/all.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/charts/all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/charts/easy-pie.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/charts/easy-pie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/charts/flot.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/charts/flot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/charts/morris.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/charts/morris.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/charts/sparkline.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/charts/sparkline.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/chat.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/chat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/essentials.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/essentials.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/layout.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/layout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/main.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/maps.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/maps.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/media.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/media.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/player.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/sidebar.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/sidebar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/timeline.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app/timeline.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/all.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/all.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/easy-pie/jquery.easypiechart.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/easy-pie/jquery.easypiechart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/flot/all.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/flot/all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/flot/jquery.flot.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/flot/jquery.flot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/flot/jquery.flot.orderBars.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/flot/jquery.flot.orderBars.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/flot/jquery.flot.pie.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/flot/jquery.flot.pie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/flot/jquery.flot.resize.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/flot/jquery.flot.resize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/flot/jquery.flot.stack.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/flot/jquery.flot.stack.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/morris/all.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/morris/all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/morris/morris.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/morris/morris.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/morris/raphael.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/morris/raphael.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/all.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/base.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/chart-bar.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/chart-bar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/chart-box.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/chart-box.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/chart-bullet.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/chart-bullet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/chart-discrete.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/chart-discrete.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/chart-line.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/chart-line.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/chart-pie.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/chart-pie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/chart-tristate.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/chart-tristate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/defaults.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/defaults.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/footer.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/footer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/header.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/header.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/interact.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/interact.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/rangemap.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/rangemap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/simpledraw.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/simpledraw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/utils.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/vcanvas-base.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/vcanvas-base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/vcanvas-canvas.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/vcanvas-canvas.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/vcanvas-vml.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/charts/sparkline/vcanvas-vml.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/all.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/bootstrap.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/breakpoints.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/breakpoints.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/handlebars.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/handlebars.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/holder.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/holder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/isotope.pkgd.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/isotope.pkgd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui.custom.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui.custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui/core.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui/draggable.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui/draggable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui/droppable.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui/droppable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui/mouse.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui/mouse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui/position.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui/position.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui/resizable.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui/resizable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui/selectable.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui/selectable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui/sortable.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui/sortable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui/widget.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery-ui/widget.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery.cookie.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery.cookie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery.debouncedresize.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery.debouncedresize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery.grid-a-licious.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery.grid-a-licious.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery.hotkeys.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery.hotkeys.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery.nicescroll.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/jquery.nicescroll.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/load_image.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/load_image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/packery-mode.pkgd.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/core/packery-mode.pkgd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/all.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/bootstrap-datepicker.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/bootstrap-datepicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/bootstrap-select.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/bootstrap-select.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/bootstrap-slider.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/bootstrap-slider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/bootstrap-switch.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/bootstrap-switch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/daterangepicker.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/daterangepicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/jquery.bootstrap-touchspin.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/jquery.bootstrap-touchspin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/jquery.minicolors.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/jquery.minicolors.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/moment.min.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/moment.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/select2.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/forms/select2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/addons/infobox.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/addons/infobox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/addons/infobox_packed.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/addons/infobox_packed.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/addons/markerclusterer.min.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/addons/markerclusterer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/ui/jquery.ui.map.extensions.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/ui/jquery.ui.map.extensions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/ui/jquery.ui.map.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/ui/jquery.ui.map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/ui/jquery.ui.map.microdata.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/ui/jquery.ui.map.microdata.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/ui/jquery.ui.map.microformat.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/ui/jquery.ui.map.microformat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/ui/jquery.ui.map.overlays.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/ui/jquery.ui.map.overlays.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/ui/jquery.ui.map.rdfa.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/ui/jquery.ui.map.rdfa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/ui/jquery.ui.map.services.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/maps/google/jquery-ui-map/ui/jquery.ui.map.services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/media/all.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/media/all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/media/owl.carousel.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/media/owl.carousel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/media/slick.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/media/slick.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/nestable/jquery.nestable.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/nestable/jquery.nestable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/tables/all.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/tables/all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/tables/dataTables.bootstrap.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/tables/dataTables.bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/tables/jquery.dataTables.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/tables/jquery.dataTables.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/tree/jquery.fancytree-all.js" afterPath="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/vendor/tree/jquery.fancytree-all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerCompiler.log" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerCompiler.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../diets-frontend/src/app.js" afterPath="$PROJECT_DIR$/../diets-frontend/src/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../diets-frontend/src/controllers/LoginController.js" afterPath="$PROJECT_DIR$/../diets-frontend/src/controllers/LoginController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../diets-frontend/src/controllers/RecipesListController.js" afterPath="$PROJECT_DIR$/../diets-frontend/src/controllers/RecipesListController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../diets-frontend/src/index.html" afterPath="$PROJECT_DIR$/../diets-frontend/src/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,81 +337,12 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../dieta-frontend/src/App.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-              <folding>
-                <marker date="1491241472597" expanded="false" signature="7:92" ph="..." />
-                <marker date="1491241472597" expanded="true" signature="122:474" ph="{...}" />
-                <marker date="1491241472597" expanded="true" signature="135:472" ph="{...}" />
-                <marker date="1491241472597" expanded="true" signature="156:461" ph="&lt;div/&gt;" />
-                <marker date="1491241472597" expanded="true" signature="186:326" ph="&lt;div/&gt;" />
-                <marker date="1491241472597" expanded="true" signature="335:448" ph="&lt;p/&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="credenciales.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Tests/credenciales.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegistrationController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/RegistrationController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="87" column="30" lean-forward="false" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
-              <folding>
-                <element signature="e#42#70#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Receta.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="147" column="30" lean-forward="false" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entity.Receta.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Receta.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-22">
-              <caret line="26" column="46" lean-forward="false" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/LoginController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-495">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecetaController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="405" column="4" lean-forward="false" selection-start-line="402" selection-start-column="4" selection-end-line="408" selection-end-column="5" />
+            <state relative-caret-position="230">
+              <caret line="143" column="74" lean-forward="false" selection-start-line="143" selection-start-column="74" selection-end-line="143" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -121,8 +351,76 @@
       <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-796">
-              <caret line="117" column="21" lean-forward="false" selection-start-line="117" selection-start-column="21" selection-end-line="117" selection-end-column="21" />
+            <state relative-caret-position="191">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding>
+                <element signature="e#42#72#0#PHP" expanded="true" />
+                <element signature="e#1053#1071#1#PHP" expanded="true" />
+                <element signature="e#2186#2204#1#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ErrorHandler.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="513" column="0" lean-forward="false" selection-start-line="513" selection-start-column="0" selection-end-line="513" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="117" column="46" lean-forward="false" selection-start-line="117" selection-start-column="46" selection-end-line="117" selection-end-column="46" />
+              <folding>
+                <element signature="e#38#80#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recetainsertar.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Tests/recetainsertar.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Receta.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="126" column="55" lean-forward="false" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="55" />
+              <folding>
+                <element signature="e#38#70#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entity.Receta.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Receta.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Model.User.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/serializer/FOSUB/Model.User.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -151,20 +449,11 @@
       <find>add</find>
       <find>usuario_se</find>
       <find>picture</find>
+      <find>serial</find>
     </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s debug:router " />
-      <command text="s doctrine:schema:validate" />
-      <command text="s doctrine:schema:update --force" />
-      <command text="s debug:container " />
-      <command text="s debug:router " />
-      <command text="s cache:clear" />
-      <command text="s generate:controller" />
-      <command text="s generate:controller --controller RegistrationController" />
-      <command text="s debug:container " />
-      <command text="s debug:router " />
       <command text="debug:container jwt" />
       <command text="debug:container " />
       <command text="s debug:container " />
@@ -180,6 +469,16 @@
       <command text="s cache:clear" />
       <command text="s assets:install --symlink " />
       <command text="s debug:router " />
+      <command text="s doctrine:schema:validate" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s debug:router " />
+      <command text="s doctrine:schema:update" />
+      <command text="s doctrine:generate:entities DietaBundle" />
+      <command text="s doctrine:generate:entities DietaBundle:Receta" />
+      <command text="s doctrine:schema:validate" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s cache:clear" />
+      <command text="s debug:router " />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -191,7 +490,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response37.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response80.json" root0="SKIP_INSPECTION" />
     <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
@@ -209,11 +508,9 @@
         <option value="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.DietaItem.yml" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/DietaItemControllerTest.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Dieta.yml" />
-        <option value="$PROJECT_DIR$/src/DietaBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Entity/Dieta.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/DietaControllerTest.php" />
         <option value="$PROJECT_DIR$/app/serializer/FOSUB/Entity.User.yml" />
-        <option value="$PROJECT_DIR$/app/serializer/FOSUB/Model.User.yml" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Controller/RegistrationControllerTestController.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Tests/Controller/RegistrationControllerTest.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
@@ -228,7 +525,6 @@
         <option value="$PROJECT_DIR$/src/DietaBundle/Security/JwtTokenAuthenticator.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Tests/credenciales.json" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Controller/DietaItemController.php" />
-        <option value="$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Controller/DietaController.php" />
         <option value="$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php" />
         <option value="$PROJECT_DIR$/tests/DietaBundle/Controller/DietaControllerTest.php" />
@@ -238,16 +534,19 @@
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/FrontDietaBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app.react.js" />
         <option value="$PROJECT_DIR$/src/FrontDietaBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/../untitled/app/view1/view1.js" />
         <option value="$PROJECT_DIR$/../untitled/app/app.js" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php" />
-        <option value="$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Controller/RegistrationController.php" />
+        <option value="$PROJECT_DIR$/app/serializer/FOSUB/Model.User.yml" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Receta.yml" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Entity/User.php" />
       </list>
     </option>
   </component>
@@ -269,6 +568,7 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/../dieta-frontend/node_modules" />
+    <handled-path value="$PROJECT_DIR$/../diets-frontend/node_modules" />
   </component>
   <component name="PhpServers">
     <servers>
@@ -405,6 +705,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -427,6 +728,60 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend-api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="usuarios" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend-api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend-api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -446,106 +801,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DietaBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DietaBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DietaBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DietaBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DietaBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="serializer" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -581,28 +836,37 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend-api" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DietaBundle" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="$PROJECT_DIR$/../dieta-frontend/node_modules/eslint" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dieta-frontend" />
+    <property name="last_opened_file_path" value="/home/carlos/Descargas/perfil.jpg" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="add_unversioned_files" value="true" />
     <property name="settings.editor.splitter.proportion" value="0.27783063" />
@@ -619,9 +883,6 @@
     </excluded-roots>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests/DietaBundle" />
       <recent name="$PROJECT_DIR$/tests/DietaBundle/Controller" />
@@ -629,10 +890,99 @@
       <recent name="$PROJECT_DIR$/app/serializer/FOSUB" />
       <recent name="$PROJECT_DIR$/app/Resources/FOSUserBundle/serializer" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/images" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/api/user/1/avatar" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveFileToSend" value="true" />
+          <option name="isFileUpload" value="true" />
+          <option name="textToSend" value="{    &quot;nombre&quot;: &quot;Carne con papas&quot;,      &quot;user&quot;: &quot;1&quot;,     &quot;raciones&quot;: &quot;10&quot;,     &quot;tiempopreparacion&quot;: &quot;20min&quot;,       &quot;ingredientes&quot;: [     &quot;carne&quot;,     &quot;papas&quot;,     &quot;aceite&quot;,     &quot;ajo&quot;   ],       &quot;preparacion&quot;: [     &quot;Cortar&quot;,     &quot;Cocinar durante 15 min&quot;,     &quot;Aliñar &quot;,     &quot;Enplatar&quot;   ] , &quot;descripcion&quot;: &quot; plato tipico cubano&quot;         }" />
+          <option name="filesToSend" value="/home/carlos/Descargas/perfil.jpg" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/api/receta" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{    &quot;nombre&quot;: &quot;Carne con papas&quot;,      &quot;user&quot;: &quot;1&quot;,     &quot;raciones&quot;: &quot;10&quot;,     &quot;tiempopreparacion&quot;: &quot;20min&quot;,       &quot;ingredientes&quot;: [     &quot;carne&quot;,     &quot;papas&quot;,     &quot;aceite&quot;,     &quot;ajo&quot;   ],       &quot;preparacion&quot;: [     &quot;Cortar&quot;,     &quot;Cocinar durante 15 min&quot;,     &quot;Aliñar &quot;,     &quot;Enplatar&quot;   ] , &quot;descripcion&quot;: &quot; plato tipico cubano&quot;         }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/api/receta" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{    &quot;nombre&quot;: &quot;Carne con papas&quot;,      &quot;user&quot;: &quot;1&quot;,     &quot;raciones&quot;: &quot;10&quot;,     &quot;tiempopreparacion&quot;: &quot;20min&quot;,       &quot;ingredientes&quot;: [     &quot;carne&quot;,     &quot;papas&quot;,     &quot;aceite&quot;,     &quot;ajo&quot;   ],       &quot;preparacion&quot;: [     &quot;Cortar&quot;,     &quot;Cocinar durante 15 min&quot;,     &quot;Aliñar &quot;,     &quot;Enplatar&quot;   ] , &quot;description&quot;: &quot; plato tipico cubano&quot;         }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/api/receta" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;nombre&quot;: &quot;Carne con papas&quot;,   &quot;user&quot;: &quot;1&quot;,   &quot;raciones&quot;: &quot;10&quot;,   &quot;tiempo_preparacion&quot;: &quot;20min&quot;,    &quot;ingredientes&quot;: [     &quot;carne&quot;,     &quot;papas&quot;,     &quot;aceite&quot;,     &quot;ajo&quot;   ],    &quot;preparacion&quot;: [     &quot;Cortar&quot;,     &quot;Cocinar durante 15 min&quot;,     &quot;Aliñar &quot;,     &quot;Enplatar&quot;   ]    }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost" />
@@ -1825,89 +2175,6 @@
           <option name="textToSend" value="{ &quot;clasificacion&quot;: &quot;hola&quot; }" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="PUT" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/dietaitem/13" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{ &quot;clasificacion&quot;: &quot;hola&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="PUT" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/dietaitem/13" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{ &quot;clasificacion&quot;: &quot;edicion&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="PUT" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/receta/13" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{ &quot;clasificacion&quot;: &quot;edicion&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/recetas" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{ &quot;clasificacion&quot;: &quot;desayuno&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -2060,6 +2327,7 @@
       <workItem from="1491515254987" duration="4541000" />
       <workItem from="1491555662993" duration="2747000" />
       <workItem from="1491559093717" duration="10733000" />
+      <workItem from="1491659299443" duration="10806000" />
     </task>
     <task id="LOCAL-00001" summary="Primeros Pasos implementando el API REST.">
       <created>1488912254168</created>
@@ -2181,7 +2449,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="441253000" />
+    <option name="totallyTimeSpent" value="452059000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2196,18 +2464,18 @@
     <frame x="0" y="24" width="1366" height="720" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23065251" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23444612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.56155145" sideWeight="0.5030349" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14567527" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60033727" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44182125" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45868465" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44856662" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47554806" sideWeight="0.4969651" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39629006" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48397976" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2294,54 +2562,17 @@
           <line>35</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php</url>
+          <line>31</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="74" />
+      <option name="time" value="77" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/DietaControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6840">
-          <caret line="381" column="5" lean-forward="false" selection-start-line="381" selection-start-column="5" selection-end-line="381" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/DietaItemControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5184">
-          <caret line="289" column="5" lean-forward="false" selection-start-line="289" selection-start-column="5" selection-end-line="289" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/UserControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/RegistrationControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="280" column="30" lean-forward="true" selection-start-line="280" selection-start-column="30" selection-end-line="280" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -2443,13 +2674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="616" column="0" lean-forward="false" selection-start-line="616" selection-start-column="0" selection-end-line="616" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/app_dev.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
@@ -2476,13 +2700,6 @@
         <state relative-caret-position="18">
           <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1908">
-          <caret line="106" column="14" lean-forward="false" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -2582,9 +2799,6 @@
         <state relative-caret-position="54">
           <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding>
-            <marker date="1491241472597" expanded="false" signature="7:92" ph="..." />
-            <marker date="1491241472597" expanded="true" signature="122:474" ph="{...}" />
-            <marker date="1491241472597" expanded="true" signature="135:472" ph="{...}" />
             <marker date="1491241472597" expanded="true" signature="156:461" ph="&lt;div/&gt;" />
             <marker date="1491241472597" expanded="true" signature="186:326" ph="&lt;div/&gt;" />
             <marker date="1491241472597" expanded="true" signature="335:448" ph="&lt;p/&gt;" />
@@ -2596,13 +2810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <marker date="1491556953000" expanded="true" signature="67:220" ph="[...]" />
-            <marker date="1491556953000" expanded="true" signature="111:219" ph="{...}" />
-            <marker date="1491556953000" expanded="true" signature="145:215" ph="{&quot;templateUrl&quot;: 'view1/view1.html'...}" />
-            <marker date="1491556953000" expanded="true" signature="248:265" ph="[...]" />
-            <marker date="1491556953000" expanded="true" signature="260:264" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2610,7 +2817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-342">
           <caret line="1" column="45" lean-forward="false" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2618,7 +2824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2626,7 +2831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2638,61 +2842,178 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/var/cache/dev/classes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="4216" column="0" lean-forward="false" selection-start-line="4216" selection-start-column="0" selection-end-line="4216" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-796">
-          <caret line="117" column="21" lean-forward="false" selection-start-line="117" selection-start-column="21" selection-end-line="117" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="405" column="4" lean-forward="false" selection-start-line="402" selection-start-column="4" selection-end-line="408" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/RegistrationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
+        <state relative-caret-position="1566">
           <caret line="87" column="30" lean-forward="false" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
-          <folding>
-            <element signature="e#42#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="147" column="30" lean-forward="false" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Receta.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="26" column="46" lean-forward="false" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-495">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="140" column="9" lean-forward="false" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="133" column="21" lean-forward="false" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Tests/recetainsertar.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/cache/dev/classes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="4173" column="0" lean-forward="false" selection-start-line="4173" selection-start-column="0" selection-end-line="4173" selection-end-column="0" />
+          <folding>
+            <marker date="1491666868145" expanded="true" signature="85844:86037" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="86730:86917" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="87690:87877" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="89113:89300" ph="..." />
+            <marker date="1491666868145" expanded="false" signature="97483:97649" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="100627:100834" ph="..." />
+            <marker date="1491666868145" expanded="false" signature="101834:102028" ph="..." />
+            <marker date="1491666868145" expanded="false" signature="102611:102934" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="108216:108404" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="108872:109060" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="109981:110172" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="114255:114533" ph="..." />
+            <marker date="1491666868145" expanded="false" signature="117960:118100" ph="..." />
+            <marker date="1491666868145" expanded="false" signature="118706:118801" ph="..." />
+            <marker date="1491666868145" expanded="false" signature="119283:119425" ph="..." />
+            <marker date="1491666868145" expanded="false" signature="120279:120374" ph="..." />
+            <marker date="1491666868145" expanded="false" signature="120915:121010" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="123257:123500" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="123265:123480" ph="..." />
+            <marker date="1491666868145" expanded="false" signature="128642:128748" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="130035:130159" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="130565:130760" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="131692:131760" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="131707:131730" ph="..." />
+            <marker date="1491666868145" expanded="false" signature="133929:134032" ph="..." />
+            <marker date="1491666868145" expanded="false" signature="136108:136248" ph="..." />
+            <marker date="1491666868145" expanded="false" signature="136486:136625" ph="..." />
+            <marker date="1491666868145" expanded="false" signature="136789:137419" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="141805:141812" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="142208:142224" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="142765:142779" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="142788:142795" ph="..." />
+            <marker date="1491666868145" expanded="false" signature="146875:147036" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="151402:151583" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="161327:161506" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="179935:179973" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="179985:180024" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="180037:180076" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="180085:180167" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="180669:181893" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="181903:182536" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="182853:183118" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="183237:184220" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="183576:183624" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="184231:184261" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="184270:184711" ph="..." />
+            <marker date="1491666868145" expanded="true" signature="188018:188068" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Receta.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/serializer/FOSUB/Model.User.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#72#0#PHP" expanded="true" />
+            <element signature="e#1053#1071#1#PHP" expanded="true" />
+            <element signature="e#2186#2204#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="513" column="0" lean-forward="false" selection-start-line="513" selection-start-column="0" selection-end-line="513" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/images/recetas/58e915fa65734.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="143" column="74" lean-forward="false" selection-start-line="143" selection-start-column="74" selection-end-line="143" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="126" column="55" lean-forward="false" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="55" />
+          <folding>
+            <element signature="e#38#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="117" column="46" lean-forward="false" selection-start-line="117" selection-start-column="46" selection-end-line="117" selection-end-column="46" />
+          <folding>
+            <element signature="e#38#80#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

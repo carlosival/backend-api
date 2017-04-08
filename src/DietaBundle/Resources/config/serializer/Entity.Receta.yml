@@ -9,11 +9,13 @@ DietaBundle\Entity\Receta:
             expose: true
         preparacion:
             expose: true
-        tiempo_preparacion:
+        tiempopreparacion:
             expose: true
         raciones:
             expose: true
         imageName:
+            expose: true
+        descripcion:
             expose: true
     relations:
             -

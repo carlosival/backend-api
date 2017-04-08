@@ -591,6 +591,22 @@
         </parameter>
         <parameter key="db_driver">orm</parameter>
       </parameter>
+      <parameter key="usuario_avatar" type="collection">
+        <parameter key="uri_prefix">/images/usuarios</parameter>
+        <parameter key="upload_destination">/var/www/html/backend-api/app/../web/images/usuarios</parameter>
+        <parameter key="namer" type="collection">
+          <parameter key="service">vich_uploader.namer_uniqid.usuario_avatar</parameter>
+          <parameter key="options" type="collection"/>
+        </parameter>
+        <parameter key="inject_on_load">false</parameter>
+        <parameter key="delete_on_update">true</parameter>
+        <parameter key="delete_on_remove">true</parameter>
+        <parameter key="directory_namer" type="collection">
+          <parameter key="service">null</parameter>
+          <parameter key="options">null</parameter>
+        </parameter>
+        <parameter key="db_driver">orm</parameter>
+      </parameter>
     </parameter>
     <parameter key="vich_uploader.file_injector.class">Vich\UploaderBundle\Injector\FileInjector</parameter>
     <parameter key="lexik_jwt_authentication.private_key_path">/var/www/html/backend-api/app/../var/jwt/private.pem</parameter>
@@ -744,7 +760,7 @@
                 <tag name="cache.pool" clearer="cache.default_clearer"/>
                 <argument>rgrJxsq1wm</argument>
                 <argument>0</argument>
-                <argument>w8y7dRtCiw+ASME0xoqNbR</argument>
+                <argument>PxU9l2X1T6Y4Yod-EbvTU+</argument>
                 <argument>/var/www/html/backend-api/var/cache/dev/pools</argument>
                 <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                 <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -927,7 +943,7 @@
       <tag name="cache.pool" clearer="cache.default_clearer"/>
       <argument>TzdF-b5t+g</argument>
       <argument>0</argument>
-      <argument>w8y7dRtCiw+ASME0xoqNbR</argument>
+      <argument>PxU9l2X1T6Y4Yod-EbvTU+</argument>
       <argument>/var/www/html/backend-api/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -937,7 +953,7 @@
       <tag name="cache.pool" clearer="cache.default_clearer"/>
       <argument>OOKPMQSFaK</argument>
       <argument>0</argument>
-      <argument>w8y7dRtCiw+ASME0xoqNbR</argument>
+      <argument>PxU9l2X1T6Y4Yod-EbvTU+</argument>
       <argument>/var/www/html/backend-api/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -2486,7 +2502,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>58e69e86a97d85.08669004</argument>
+            <argument>58e917dedf2307.57882662</argument>
           </service>
         </argument>
         <argument type="service">
@@ -2788,7 +2804,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>58e69e86a97d85.08669004</argument>
+            <argument>58e917dedf2307.57882662</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -3287,7 +3303,46 @@
             <argument type="service">
               <service class="Vich\UploaderBundle\EventListener\Doctrine\CleanListener" public="false">
                 <tag name="doctrine.event_subscriber" priority="50"/>
+                <argument>usuario_avatar</argument>
+                <argument type="service">
+                  <service class="Vich\UploaderBundle\Adapter\ORM\DoctrineORMAdapter" public="false"/>
+                </argument>
+                <argument type="service" id="vich_uploader.metadata_reader"/>
+                <argument type="service" id="vich_uploader.upload_handler"/>
+              </service>
+            </argument>
+          </call>
+          <call method="addEventSubscriber">
+            <argument type="service">
+              <service class="Vich\UploaderBundle\EventListener\Doctrine\CleanListener" public="false">
+                <tag name="doctrine.event_subscriber" priority="50"/>
                 <argument>receta_image</argument>
+                <argument type="service">
+                  <service class="Vich\UploaderBundle\Adapter\ORM\DoctrineORMAdapter" public="false"/>
+                </argument>
+                <argument type="service" id="vich_uploader.metadata_reader"/>
+                <argument type="service" id="vich_uploader.upload_handler"/>
+              </service>
+            </argument>
+          </call>
+          <call method="addEventSubscriber">
+            <argument type="service">
+              <service class="Vich\UploaderBundle\EventListener\Doctrine\UploadListener" public="false">
+                <tag name="doctrine.event_subscriber" priority="0"/>
+                <argument>usuario_avatar</argument>
+                <argument type="service">
+                  <service class="Vich\UploaderBundle\Adapter\ORM\DoctrineORMAdapter" public="false"/>
+                </argument>
+                <argument type="service" id="vich_uploader.metadata_reader"/>
+                <argument type="service" id="vich_uploader.upload_handler"/>
+              </service>
+            </argument>
+          </call>
+          <call method="addEventSubscriber">
+            <argument type="service">
+              <service class="Vich\UploaderBundle\EventListener\Doctrine\RemoveListener" public="false">
+                <tag name="doctrine.event_subscriber" priority="0"/>
+                <argument>usuario_avatar</argument>
                 <argument type="service">
                   <service class="Vich\UploaderBundle\Adapter\ORM\DoctrineORMAdapter" public="false"/>
                 </argument>
@@ -4218,6 +4273,7 @@
       <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest"/>
     </service>
     <service id="vich_uploader.namer_uniqid.receta_image" class="Vich\UploaderBundle\Naming\UniqidNamer"/>
+    <service id="vich_uploader.namer_uniqid.usuario_avatar" class="Vich\UploaderBundle\Naming\UniqidNamer"/>
     <service id="vich_uploader.templating.helper.uploader_helper" class="Vich\UploaderBundle\Templating\Helper\UploaderHelper">
       <tag name="templating.helper" alias="vich_uploader"/>
       <argument type="service" id="vich_uploader.storage"/>
@@ -4275,6 +4331,22 @@
           <argument key="upload_destination">/var/www/html/backend-api/app/../web/images/recetas</argument>
           <argument key="namer" type="collection">
             <argument key="service">vich_uploader.namer_uniqid.receta_image</argument>
+            <argument key="options" type="collection"/>
+          </argument>
+          <argument key="inject_on_load">false</argument>
+          <argument key="delete_on_update">true</argument>
+          <argument key="delete_on_remove">true</argument>
+          <argument key="directory_namer" type="collection">
+            <argument key="service">null</argument>
+            <argument key="options">null</argument>
+          </argument>
+          <argument key="db_driver">orm</argument>
+        </argument>
+        <argument key="usuario_avatar" type="collection">
+          <argument key="uri_prefix">/images/usuarios</argument>
+          <argument key="upload_destination">/var/www/html/backend-api/app/../web/images/usuarios</argument>
+          <argument key="namer" type="collection">
+            <argument key="service">vich_uploader.namer_uniqid.usuario_avatar</argument>
             <argument key="options" type="collection"/>
           </argument>
           <argument key="inject_on_load">false</argument>

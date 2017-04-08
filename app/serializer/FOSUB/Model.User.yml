@@ -12,8 +12,9 @@ FOS\UserBundle\Model\User:
         enabled:
             expose: true
         locked:
-             expose: true
-
+            expose: true
+        imageAvatar:
+            expose: true
     relations:
         -
             rel: self

@@ -3,9 +3,11 @@
 namespace DietaBundle\Controller;
 
 use DietaBundle\Form\UserType;
+use JMS\Serializer\SerializationContext;
 use Sylius\Component\Resource\Model\ResourceInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\Response;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use FOS\RestBundle\Controller\FOSRestController;
@@ -16,10 +18,77 @@ use DietaBundle\Entity\User;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 
 /**
- * @Security("is_granted('IS_AUTHENTICATED_FULLY')")
+ * Security("is_granted('IS_AUTHENTICATED_FULLY')")
  */
 class UserController extends FOSRestController
 {
+
+    /**
+     * @Rest\Post("/user/{id}/avatar")
+     * @Rest\View()
+     */
+    public function uploadAction(Request $request, $id){
+
+        $sn = $this->getDoctrine()->getManager();
+        $user = $sn->getRepository('DietaBundle:User')->find($id);
+
+        if (!$user instanceof User) {
+            throw new NotFoundHttpException('User not found');
+        }
+
+        $images = $request->files->all();
+
+        foreach ($images as $key => $value){
+
+            if( $value instanceof UploadedFile){
+
+                $user->setImageFile($value);
+                $sn->flush();
+
+
+                $helper = $this->get('vich_uploader.templating.helper.uploader_helper');
+                $baseUrl = $request->getSchemeAndHttpHost() . $request->getBasePath();
+                $path = $baseUrl . $helper->asset($user, 'imageFile');
+
+                $response = $this->createApiResponse($user, 200);
+                $response->headers->set('Location',$path );
+
+                return $response;
+
+            }
+            $response =new Response();
+            $response->setStatusCode(400);
+            return $response;
+        }
+
+    }
+
+    /**
+     * @Rest\Get("/user/{id}/avatar")
+     * @Rest\View()
+     */
+    public function pictureAction(Request $request, $id){
+
+        $sn = $this->getDoctrine()->getManager();
+        $user = $sn->getRepository('DietaBundle:User')->find($id);
+
+        if (!$user instanceof User) {
+            throw new NotFoundHttpException('User not found');
+        }
+
+        $helper = $this->get('vich_uploader.templating.helper.uploader_helper');
+
+        $baseUrl = $request->getSchemeAndHttpHost() . $request->getBasePath();
+        $path = $baseUrl . $helper->asset($user, 'imageFile');
+
+
+
+        $response = $this->createApiResponse($path, 200);
+        return $response;
+    }
+
+
+
     /**
      * @Rest\Get("/users")
      * @Rest\View
@@ -199,5 +268,19 @@ class UserController extends FOSRestController
         return $response->setStatusCode(Response::HTTP_BAD_REQUEST);
     }
 
+    protected function createApiResponse($data, $statusCode = 200)
+    {
+        $json = $this->serialize($data);
+        return new Response($json, $statusCode, array(
+            'Content-Type' => 'application/json'
+        ));
+    }
+
+    protected function serialize($data, $format = 'json')
+    {
+        $context = new SerializationContext();
+        $context->setSerializeNull(true);
+        return $this->get('serializer')->serialize($data, $format, $context);
+    }
 
 }
