@@ -36,7 +36,7 @@ class DietaController extends FOSRestController
 
         $entitys = $this->getDoctrine()->getRepository('DietaBundle:Dieta')->findAll();
 
-        $limit = $request->query->get('limit', 5);
+        $limit = $request->query->get('limit', 15);
         $page = $request->query->get('page', 1);
         // my manual, silly pagination logic. Use a real library like Pagerfanta
         $offset = ($page - 1) * $limit;
@@ -235,7 +235,7 @@ class DietaController extends FOSRestController
         $dietaitems = $entity->getDietaItems();
 
 
-        $limit = $request->query->get('limit', 5);
+        $limit = $request->query->get('limit', 15);
         $page = $request->query->get('page', 1);
         // my manual, silly pagination logic. Use a real library like Pagerfanta
         $offset = ($page - 1) * $limit;
