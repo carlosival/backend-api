@@ -134,7 +134,6 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="diets-frontend" />
     <orderEntry type="module-library">
       <library name="PHP" type="php">
         <CLASSES>
@@ -349,7 +348,6 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="dieta-frontend" />
-    <orderEntry type="module" module-name="untitled" />
+    <orderEntry type="module" module-name="angularjs" />
   </component>
 </module>

@@ -87,7 +87,105 @@ class UserController extends FOSRestController
         return $response;
     }
 
+    /**
+     * @Rest\Get("/user/{id}/recetasseguidas")
+     * @Rest\View
+     *
+     */
+    public function recetaSeguidasAction(Request $request, $id) {
 
+
+        $sn = $this->getDoctrine()->getManager();
+        $user = $sn->getRepository('DietaBundle:User')->find($id);
+
+        if (!$user instanceof User) {
+            throw new NotFoundHttpException('User not found');
+        }
+        $recetasseguidas = $user->getRecetasSeguidas();
+
+        $resposne = $this->createApiResponse($recetasseguidas, 200);
+
+    }
+
+    /**
+     * @Rest\Get("/user/{id}/recetas")
+     * @Rest\View
+     *
+     */
+      public function recetasAction(Request $request, $id) {
+
+
+          $sn = $this->getDoctrine()->getManager();
+          $user = $sn->getRepository('DietaBundle:User')->find($id);
+
+          if (!$user instanceof User) {
+              throw new NotFoundHttpException('User not found');
+          }
+          $recetas = $user->getRecetas();
+
+          $resposne = $this->createApiResponse($recetas, 200);
+
+      }
+
+    /**
+     * @Rest\Get("/user/{id}/dietaseguidas")
+     * @Rest\View
+     *
+     */
+    public function dietasAction(Request $request, $id) {
+
+        $sn = $this->getDoctrine()->getManager();
+        $user = $sn->getRepository('DietaBundle:User')->find($id);
+
+        if (!$user instanceof User) {
+            throw new NotFoundHttpException('User not found');
+        }
+        $dietaseguidas = $user->getDietaSeguidas();
+
+        $resposne = $this->createApiResponse($dietaseguidas, 200);
+
+    }
+
+    /**
+     * @Rest\Get("/user/{id}/owndietas")
+     * @Rest\View
+     *
+     */
+    public function owndietasAction(Request $request, $id) {
+
+        $sn = $this->getDoctrine()->getManager();
+        $user = $sn->getRepository('DietaBundle:User')->find($id);
+
+        if (!$user instanceof User) {
+            throw new NotFoundHttpException('User not found');
+        }
+        $dietas = $user->getDietas();
+
+        $resposne = $this->createApiResponse($dietas, 200);
+
+    }
+
+
+
+    /**
+     * @Rest\Get("/user/{id}/friends")
+     * @Rest\View
+     *
+     */
+
+    public function friendsAction(Request $request, $id) {
+
+        $sn = $this->getDoctrine()->getManager();
+        $user = $sn->getRepository('DietaBundle:User')->find($id);
+
+        if (!$user instanceof User) {
+            throw new NotFoundHttpException('User not found');
+        }
+        $friends = $user->getMyFriends();
+
+        $resposne = $this->createApiResponse($friends, 200);
+
+    }
 
     /**
      * @Rest\Get("/users")

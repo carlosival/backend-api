@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f2d209a-4075-44cb-91a9-50886132f1c9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/backend-api.iml" afterPath="$PROJECT_DIR$/.idea/backend-api.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,22 +45,27 @@
       <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
+            <state relative-caret-position="2574">
               <caret line="143" column="74" lean-forward="false" selection-start-line="143" selection-start-column="74" selection-end-line="143" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="1458">
+              <caret line="94" column="65" lean-forward="true" selection-start-line="94" selection-start-column="65" selection-end-line="94" selection-end-column="65" />
               <folding>
-                <element signature="e#42#72#0#PHP" expanded="true" />
                 <element signature="e#1053#1071#1#PHP" expanded="true" />
                 <element signature="e#2186#2204#1#PHP" expanded="true" />
+                <element signature="e#2890#2908#1#PHP" expanded="true" />
+                <element signature="e#3400#3418#1#PHP" expanded="true" />
+                <element signature="e#3896#3914#1#PHP" expanded="true" />
+                <element signature="e#4397#4415#1#PHP" expanded="true" />
+                <element signature="e#4876#4894#1#PHP" expanded="true" />
+                <element signature="e#8940#8958#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,21 +74,22 @@
       <file leaf-file-name="ErrorHandler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
+            <state relative-caret-position="8928">
               <caret line="513" column="0" lean-forward="false" selection-start-line="513" selection-start-column="0" selection-end-line="513" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#7#236#0#PHP" expanded="false" />
+                <element signature="e#274#295#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="18">
               <caret line="117" column="46" lean-forward="false" selection-start-line="117" selection-start-column="46" selection-end-line="117" selection-end-column="46" />
-              <folding>
-                <element signature="e#38#80#0#PHP" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,10 +107,10 @@
       <file leaf-file-name="Receta.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
+            <state relative-caret-position="2232">
               <caret line="126" column="55" lean-forward="false" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="55" />
               <folding>
-                <element signature="e#38#70#0#PHP" expanded="true" />
+                <element signature="e#38#70#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -190,10 +199,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response80.json" root0="SKIP_INSPECTION" />
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -244,10 +249,10 @@
         <option value="$PROJECT_DIR$/src/DietaBundle/Controller/RegistrationController.php" />
         <option value="$PROJECT_DIR$/app/serializer/FOSUB/Model.User.yml" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Receta.yml" />
-        <option value="$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php" />
       </list>
     </option>
   </component>
@@ -406,7 +411,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -429,60 +434,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="usuarios" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -523,52 +474,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend-api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="$PROJECT_DIR$/../dieta-frontend/node_modules/eslint" />
     <property name="last_opened_file_path" value="/home/carlos/Descargas/perfil.jpg" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="add_unversioned_files" value="true" />
     <property name="settings.editor.splitter.proportion" value="0.27783063" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
@@ -2029,6 +1948,8 @@
       <workItem from="1491555662993" duration="2747000" />
       <workItem from="1491559093717" duration="10733000" />
       <workItem from="1491659299443" duration="10886000" />
+      <workItem from="1491686734035" duration="1305000" />
+      <workItem from="1491693831439" duration="3629000" />
     </task>
     <task id="LOCAL-00001" summary="Primeros Pasos implementando el API REST.">
       <created>1488912254168</created>
@@ -2157,7 +2078,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="452139000" />
+    <option name="totallyTimeSpent" value="457073000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2170,32 +2091,32 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="720" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23444612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24203338" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.56155145" sideWeight="0.5030349" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14567527" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60033727" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45868465" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44856662" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47554806" sideWeight="0.4969651" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48397976" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="91" y="128" width="1166" height="520" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60033727" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45868465" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4148398" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48397976" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2270,38 +2191,12 @@
           <line>35</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php</url>
-          <line>31</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="77" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="25" column="84" lean-forward="false" selection-start-line="25" selection-start-column="84" selection-end-line="25" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../diets-frontend/src/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="6" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="196" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../diets-frontend/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -2407,7 +2302,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2422,10 +2316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3996">
           <caret line="245" column="24" lean-forward="false" selection-start-line="245" selection-start-column="24" selection-end-line="245" selection-end-column="24" />
-          <folding>
-            <element signature="e#7#236#0#PHP" expanded="false" />
-            <element signature="e#292#358#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2460,42 +2350,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled/app/view1/view1_test.js">
+    <entry file="file://$PROJECT_DIR$/../angularjs/app/view1/view1_test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled/app/view2/view2.js">
+    <entry file="file://$PROJECT_DIR$/../angularjs/app/view2/view2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled/app/components/version/version.js">
+    <entry file="file://$PROJECT_DIR$/../angularjs/app/components/version/version.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled/app/components/version/version_test.js">
+    <entry file="file://$PROJECT_DIR$/../angularjs/app/components/version/version_test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled/LICENSE">
+    <entry file="file://$PROJECT_DIR$/../angularjs/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled/app/view1/view1.html">
+    <entry file="file://$PROJECT_DIR$/../angularjs/app/view1/view1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2506,29 +2396,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding>
-            <marker date="1491241472597" expanded="true" signature="156:461" ph="&lt;div/&gt;" />
-            <marker date="1491241472597" expanded="true" signature="186:326" ph="&lt;div/&gt;" />
-            <marker date="1491241472597" expanded="true" signature="335:448" ph="&lt;p/&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled/app/view1/view1.js">
+    <entry file="file://$PROJECT_DIR$/../angularjs/app/view1/view1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled/app/index.html">
+    <entry file="file://$PROJECT_DIR$/../angularjs/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-342">
           <caret line="1" column="45" lean-forward="false" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled/app/app.js">
+    <entry file="file://$PROJECT_DIR$/../angularjs/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
@@ -2546,7 +2431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2562,7 +2446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2570,7 +2453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="140" column="9" lean-forward="false" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2578,6 +2460,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="133" column="21" lean-forward="false" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/cache/dev/classes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="4173" column="0" lean-forward="false" selection-start-line="4173" selection-start-column="0" selection-end-line="4173" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8928">
+          <caret line="513" column="0" lean-forward="false" selection-start-line="513" selection-start-column="0" selection-end-line="513" selection-end-column="0" />
+          <folding>
+            <element signature="e#7#236#0#PHP" expanded="false" />
+            <element signature="e#274#295#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/images/recetas/58e915fa65734.jpg" />
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2574">
+          <caret line="143" column="74" lean-forward="false" selection-start-line="143" selection-start-column="74" selection-end-line="143" selection-end-column="74" />
           <folding />
         </state>
       </provider>
@@ -2590,58 +2505,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/var/cache/dev/classes.php">
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="4173" column="0" lean-forward="false" selection-start-line="4173" selection-start-column="0" selection-end-line="4173" selection-end-column="0" />
+        <state relative-caret-position="2232">
+          <caret line="126" column="55" lean-forward="false" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="55" />
           <folding>
-            <marker date="1491666868145" expanded="true" signature="85844:86037" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="86730:86917" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="87690:87877" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="89113:89300" ph="..." />
-            <marker date="1491666868145" expanded="false" signature="97483:97649" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="100627:100834" ph="..." />
-            <marker date="1491666868145" expanded="false" signature="101834:102028" ph="..." />
-            <marker date="1491666868145" expanded="false" signature="102611:102934" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="108216:108404" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="108872:109060" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="109981:110172" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="114255:114533" ph="..." />
-            <marker date="1491666868145" expanded="false" signature="117960:118100" ph="..." />
-            <marker date="1491666868145" expanded="false" signature="118706:118801" ph="..." />
-            <marker date="1491666868145" expanded="false" signature="119283:119425" ph="..." />
-            <marker date="1491666868145" expanded="false" signature="120279:120374" ph="..." />
-            <marker date="1491666868145" expanded="false" signature="120915:121010" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="123257:123500" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="123265:123480" ph="..." />
-            <marker date="1491666868145" expanded="false" signature="128642:128748" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="130035:130159" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="130565:130760" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="131692:131760" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="131707:131730" ph="..." />
-            <marker date="1491666868145" expanded="false" signature="133929:134032" ph="..." />
-            <marker date="1491666868145" expanded="false" signature="136108:136248" ph="..." />
-            <marker date="1491666868145" expanded="false" signature="136486:136625" ph="..." />
-            <marker date="1491666868145" expanded="false" signature="136789:137419" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="141805:141812" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="142208:142224" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="142765:142779" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="142788:142795" ph="..." />
-            <marker date="1491666868145" expanded="false" signature="146875:147036" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="151402:151583" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="161327:161506" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="179935:179973" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="179985:180024" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="180037:180076" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="180085:180167" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="180669:181893" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="181903:182536" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="182853:183118" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="183237:184220" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="183576:183624" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="184231:184261" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="184270:184711" ph="..." />
-            <marker date="1491666868145" expanded="true" signature="188018:188068" ph="..." />
+            <element signature="e#38#70#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2654,16 +2523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-684">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#42#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/serializer/FOSUB/Model.User.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -2672,55 +2531,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <element signature="e#42#72#0#PHP" expanded="true" />
-            <element signature="e#1053#1071#1#PHP" expanded="true" />
-            <element signature="e#2186#2204#1#PHP" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/../angularjs/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php">
+    <entry file="file://$PROJECT_DIR$/../angularjs/.bowerrc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="513" column="0" lean-forward="false" selection-start-line="513" selection-start-column="0" selection-end-line="513" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../angularjs/app/index-async.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/recetas/58e915fa65734.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="143" column="74" lean-forward="false" selection-start-line="143" selection-start-column="74" selection-end-line="143" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="126" column="55" lean-forward="false" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="55" />
-          <folding>
-            <element signature="e#38#70#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="18">
           <caret line="117" column="46" lean-forward="false" selection-start-line="117" selection-start-column="46" selection-end-line="117" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1458">
+          <caret line="94" column="65" lean-forward="true" selection-start-line="94" selection-start-column="65" selection-end-line="94" selection-end-column="65" />
           <folding>
-            <element signature="e#38#80#0#PHP" expanded="true" />
+            <element signature="e#1053#1071#1#PHP" expanded="true" />
+            <element signature="e#2186#2204#1#PHP" expanded="true" />
+            <element signature="e#2890#2908#1#PHP" expanded="true" />
+            <element signature="e#3400#3418#1#PHP" expanded="true" />
+            <element signature="e#3896#3914#1#PHP" expanded="true" />
+            <element signature="e#4397#4415#1#PHP" expanded="true" />
+            <element signature="e#4876#4894#1#PHP" expanded="true" />
+            <element signature="e#8940#8958#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
