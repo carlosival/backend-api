@@ -4,6 +4,11 @@ front_dieta:
     prefix:   /
     defaults: { _format: html }
 
+api_dieta_util:
+    resource: "@DietaBundle/Controller/DefaultController.php"
+    type:     annotation
+    prefix:   /api
+
 api_dieta_item:
     resource: "@DietaBundle/Controller/DietaItemController.php"
     type:     annotation

@@ -2,7 +2,6 @@
 
 namespace DietaBundle\Controller;
 
-use DietaBundle\Form\UserType;
 use JMS\Serializer\SerializationContext;
 use Sylius\Component\Resource\Model\ResourceInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;

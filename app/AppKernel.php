@@ -23,12 +23,12 @@ class AppKernel extends Kernel
             new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Vich\UploaderBundle\VichUploaderBundle(),
-            new Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle(),
-            # new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
-           # new FOS\HttpCacheBundle\FOSHttpCacheBundle(),
-           # new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
-           # new Hautelook\TemplatedUriBundle\HautelookTemplatedUriBundle(),
-           # new Bazinga\Bundle\RestExtraBundle\BazingaRestExtraBundle(),
+          //  new Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle(),
+            //new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
+           // new FOS\HttpCacheBundle\FOSHttpCacheBundle(),
+           // new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
+           // new Hautelook\TemplatedUriBundle\HautelookTemplatedUriBundle(),
+           // new Bazinga\Bundle\RestExtraBundle\BazingaRestExtraBundle(),
 
 
 
@@ -42,6 +42,10 @@ class AppKernel extends Kernel
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
             $bundles[] = new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle();
+
+            $bundles[] = new Nelmio\Alice\Bridge\Symfony\NelmioAliceBundle();
+            $bundles[] = new Fidry\AliceDataFixtures\Bridge\Symfony\FidryAliceDataFixturesBundle();
+            $bundles[] = new Hautelook\AliceBundle\HautelookAliceBundle();
 
         }
 

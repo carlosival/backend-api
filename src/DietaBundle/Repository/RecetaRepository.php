@@ -2,6 +2,7 @@
 
 namespace DietaBundle\Repository;
 
+
 /**
  * RecetaRepository
  *
@@ -10,4 +11,37 @@ namespace DietaBundle\Repository;
  */
 class RecetaRepository extends \Doctrine\ORM\EntityRepository
 {
+
+    public function findRecentRecipesOrderedByDate($user, \DateTime $timespam , $limit =5, $offset=5)
+    {
+        $timespam->format('Y-m-d H:i:s');
+        $representacion=$timespam->getTimestamp();
+
+        $query = $this->getEntityManager()->createQueryBuilder();
+
+         $query
+             ->select('receta')
+             ->from('DietaBundle:Receta', 'receta')
+             ->leftJoin('receta.user', 'usuario')
+             ->andWhere(
+             $query->expr()->andX(
+                 $query->expr()->eq('receta.user', '?1'),
+                 $query->expr()->lte('receta.updatedAt', '?2')
+        )
+         )
+             // ->andWhere('receta.user = :userid')
+            ->OrderBy('receta.updatedAt', 'DESC')
+           // ->setParameter('userid',$user)
+            //->setParameter('timespam' , $timespam)
+            ->setParameters(array(1 =>$user, 2=>$timespam))
+             ->setMaxResults($limit)
+             ->getQuery() ;
+
+
+
+         //var_dump($query->getQuery()->getSQL());die;
+
+        return $query->getQuery()->getResult();
+    }
+
 }

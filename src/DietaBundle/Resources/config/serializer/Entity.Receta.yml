@@ -17,6 +17,8 @@ DietaBundle\Entity\Receta:
             expose: true
         descripcion:
             expose: true
+        updatedAt:
+            expose: true
     relations:
             -
                 rel: self
