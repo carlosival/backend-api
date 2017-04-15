@@ -249,7 +249,7 @@ class RecetaController extends FOSRestController
             throw new NotFoundHttpException('User not found');
         }
 
-        $receta->removeUsuarioSeguidore($user);
+        $receta->removeUsuarioSeguidores($user);
         $sn->flush();
 
         $response = $this->createApiResponse($receta, 204, 'json');
@@ -274,7 +274,7 @@ class RecetaController extends FOSRestController
             throw new NotFoundHttpException('User not found');
         }
 
-        $receta->addUsuarioSeguidore($user);
+        $receta->addUsuarioSeguidores($user);
         $sn->persist($receta);
         $sn->flush();
 

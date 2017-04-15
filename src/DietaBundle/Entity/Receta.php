@@ -274,27 +274,27 @@ class Receta
     }
 
     /**
-     * Add usuarioSeguidore
+     * Add usuarioSeguidores
      *
-     * @param \DietaBundle\Entity\User $usuarioSeguidore
+     * @param \DietaBundle\Entity\User $usuarioSeguidores
      *
      * @return Receta
      */
-    public function addUsuarioSeguidore(\DietaBundle\Entity\User $usuarioSeguidore)
+    public function addUsuarioSeguidores(\DietaBundle\Entity\User $usuarioSeguidores)
     {
-        $this->usuario_seguidores[] = $usuarioSeguidore;
+        $this->usuario_seguidores[] = $usuarioSeguidores;
 
         return $this;
     }
 
     /**
-     * Remove usuarioSeguidore
+     * Remove usuarioSeguidores
      *
-     * @param \DietaBundle\Entity\User $usuarioSeguidore
+     * @param \DietaBundle\Entity\User $usuarioSeguidores
      */
-    public function removeUsuarioSeguidore(\DietaBundle\Entity\User $usuarioSeguidore)
+    public function removeUsuarioSeguidores(\DietaBundle\Entity\User $usuarioSeguidores)
     {
-        $this->usuario_seguidores->removeElement($usuarioSeguidore);
+        $this->usuario_seguidores->removeElement($usuarioSeguidores);
     }
 
     /**

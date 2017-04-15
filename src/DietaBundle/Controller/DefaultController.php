@@ -66,7 +66,7 @@ class DefaultController extends Controller
         }
 
 
-        $response =$this->createApiResponse($allrecetas,200);
+        $response =$this->createApiResponse(array('recetas' =>$allrecetas),200);
         return $response;
     }
 

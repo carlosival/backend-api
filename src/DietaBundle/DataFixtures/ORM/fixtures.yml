@@ -1,0 +1,13 @@
+# Alice Fixtures Load
+
+DietaBundle\Entity\Receta:
+      receta_{1..100}:
+          nombre: <current()>
+          ingredientes: <ingredientes()>
+          preparacion:  <preparacion()>
+          tiempopreparacion: <numberBetween(1, 100)>
+          descripcion: <paragraph($nbSentences = 4, $variableNbSentences = true)>
+          raciones:   <numberBetween(1, 100)>
+          imageName: '58cebe5624c95.jpeg'
+
+

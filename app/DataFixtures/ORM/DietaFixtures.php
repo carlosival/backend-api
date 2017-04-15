@@ -8,15 +8,22 @@
 
 namespace DietaBundle\DataFixtures\ORM;
 
-use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
+
 use Nelmio\Alice\Fixtures;
+use Symfony\Component\DependencyInjection\ContainerAwareInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 
-
-class DietaFixtures extends AbstractFixture
+class DietaFixtures implements FixtureInterface, ContainerAwareInterface
 {
+
+    /**
+     * @var ContainerInterface
+     */
+    private $container;
+
 
     /**
      * Load data fixtures with the passed EntityManager
@@ -71,5 +78,15 @@ class DietaFixtures extends AbstractFixture
         return $genera[$key];
     }
 
+    protected function getProcessors()
+    {
+        return array(
+            new FriendsProcessor($this->container)
+        );
+    }
 
+    public function setContainer(ContainerInterface $container = null)
+    {
+        // TODO: Implement setContainer() method.
+    }
 }
