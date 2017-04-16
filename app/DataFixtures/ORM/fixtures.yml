@@ -8,7 +8,7 @@ DietaBundle\Entity\User:
           enabled: 1
           imageAvatar: '58e917f55d8e6.jpg'
           updatedAt: '<datetime()>'
-          myFriends: ['@user_1']
+          myFriends: '5x @user_*'
 
 DietaBundle\Entity\Receta:
       receta_{1..200}:
@@ -21,4 +21,4 @@ DietaBundle\Entity\Receta:
           imageName: '58cebe5624c95.jpeg'
           updatedAt: '<datetime()>'
           user: '@user_*'
-          usuario_seguidores: ['@user_1', '@user_2']
+          usuario_seguidores: '20x @user_*'

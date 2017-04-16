@@ -25,5 +25,36 @@ class UserRepository extends \Doctrine\ORM\EntityRepository
             ->getResult();*/
     }
 
+    public function findTotalAmount () {
+
+        $query = $this->getEntityManager()->createQueryBuilder();
+
+     return   $query
+            ->select('COUNT(user)')
+            ->from('DietaBundle:User', 'user')
+          //  ->setMaxResults($amount)
+           // ->setFirstResult($offset)
+            ->getQuery()
+            ->getSingleScalarResult();
+
+    }
+
+    public function findSomeUsers($user,$amount = 10,$offset = 0) {
+
+        $query = $this->getEntityManager()->createQueryBuilder();
+
+        return   $query
+            ->select('user')
+            ->from('DietaBundle:User', 'user')
+            ->andWhere('user != :usuario' )
+            ->setParameter('usuario' , $user)
+            ->setMaxResults($amount)
+             ->setFirstResult($offset)
+            ->getQuery()
+            ->getResult();
+
+    }
+
+
 
 }

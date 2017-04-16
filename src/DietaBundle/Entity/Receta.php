@@ -282,6 +282,10 @@ class Receta
      */
     public function addUsuarioSeguidores(\DietaBundle\Entity\User $usuarioSeguidores)
     {
+        if ($this->usuario_seguidores->contains($usuarioSeguidores)) {
+            return $this;
+        }
+
         $this->usuario_seguidores[] = $usuarioSeguidores;
 
         return $this;

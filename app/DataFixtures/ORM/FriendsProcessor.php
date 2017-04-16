@@ -35,32 +35,7 @@ class FriendsProcessor implements ProcessorInterface
      */
     public function preProcess($object)
     {
-        // TODO: Implement preProcess() method.
-        if (!$object instanceof User) {
-            return;
-        }
 
-        $amount = 10;
-        $em = $this->container->get('doctrine.orm.entity_manager');
-
-        //Get the number of rows from your table
-        $rows = $em->createQuery('SELECT COUNT(u.id) FROM DietaBundle:User u')->getSingleScalarResult();
-
-        $offset = max(0, rand(0, $rows - $amount - 1));
-
-        //Get the first $amount users starting from a random point
-        $query = $em->createQuery('
-                SELECT DISTINCT u
-                FROM DietaBundle:User u')
-            ->setMaxResults($amount)
-            ->setFirstResult($offset);
-
-        $result = $query->getResult();
-
-        foreach ($result as $closefriend){
-
-            $object->addMyFriend($closefriend);
-        }
 
     }
 
@@ -72,5 +47,32 @@ class FriendsProcessor implements ProcessorInterface
     public function postProcess($object)
     {
         // TODO: Implement postProcess() method.
+
+        if (!$object instanceof User) {
+            return;
+        }
+
+        $amount = 10;
+        $em = $this->container->get('doctrine.orm.entity_manager');
+
+        //Get the number of rows from your table
+        $rows = $em->getRepository('DietaBundle:User')->findTotalAmount();
+
+        $offset = max(0, rand(0, $rows - $amount - 1));
+
+        //Get the first $amount users starting from a random point
+
+
+        $result = $em->getRepository('DietaBundle:User')->findSomeUsers($object,$amount,$offset);
+
+        foreach ($result as $closefriend){
+
+            $object->addMyFriend($closefriend);
+
+
+        }
+
+        $em->persist($object);
+        $em->flush();
     }
 }

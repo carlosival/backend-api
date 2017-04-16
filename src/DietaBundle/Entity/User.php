@@ -185,6 +185,10 @@ class User extends BaseUser
      */
     public function addDieta(\DietaBundle\Entity\Dieta $dieta)
     {
+        if($this->dietas->contains($dieta)){
+            return $this;
+        }
+
         $this->dietas[] = $dieta;
 
         return $this;
@@ -219,6 +223,10 @@ class User extends BaseUser
      */
     public function addReceta(\DietaBundle\Entity\Receta $receta)
     {
+        if($this->recetas->contains($receta)){
+            return $this;
+        }
+
         $this->recetas[] = $receta;
 
         return $this;
@@ -253,6 +261,12 @@ class User extends BaseUser
      */
     public function addDietaSeguida(\DietaBundle\Entity\Dieta $dietaSeguida)
     {
+
+        if($this->dieta_seguidas->contains($dietaSeguida)){
+
+            return $this;
+        }
+
         $this->dieta_seguidas[] = $dietaSeguida;
 
         return $this;
@@ -287,6 +301,11 @@ class User extends BaseUser
      */
     public function addRecetasSeguida(\DietaBundle\Entity\Receta $recetasSeguida)
     {
+        if($this->recetas_seguidas->contains($recetasSeguida)){
+
+            return $this;
+        }
+
         $this->recetas_seguidas[] = $recetasSeguida;
 
         return $this;
@@ -321,6 +340,11 @@ class User extends BaseUser
      */
     public function addFriendsWithMe(\DietaBundle\Entity\User $friendsWithMe)
     {
+        if($this->friendsWithMe->contains($friendsWithMe)){
+
+            return $this;
+        }
+
         $this->friendsWithMe[] = $friendsWithMe;
 
         return $this;
@@ -355,6 +379,12 @@ class User extends BaseUser
      */
     public function addMyFriend(\DietaBundle\Entity\User $myFriend)
     {
+
+        if($this->myFriends->contains($myFriend)){
+
+            return $this;
+        }
+
         $this->myFriends[] = $myFriend;
 
         return $this;
@@ -367,6 +397,8 @@ class User extends BaseUser
      */
     public function removeMyFriend(\DietaBundle\Entity\User $myFriend)
     {
+
+
         $this->myFriends->removeElement($myFriend);
     }
 

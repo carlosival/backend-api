@@ -114,6 +114,10 @@ class Dieta
      */
     public function removeDietaItem(\DietaBundle\Entity\DietaItem $dietaItem)
     {
+        if (!$this->dieta_items->contains($dietaItem)) {
+            return;
+        }
+
         $this->dieta_items->removeElement($dietaItem);
     }
 
