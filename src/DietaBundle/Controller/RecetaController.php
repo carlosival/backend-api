@@ -18,6 +18,7 @@ use Hateoas\Representation\PaginatedRepresentation;
 use Hateoas\Representation\CollectionRepresentation;
 use DietaBundle\Entity\Receta;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
+use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 
 /**
  * Security("is_granted('IS_AUTHENTICATED_FULLY')")
@@ -26,6 +27,22 @@ class RecetaController extends FOSRestController
 {
 
     /**
+     *
+     *  This is the documentation description of your method, it will appear
+     * on a specific pane. It will read all the text until the first
+     * annotation.
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  section="Receta",
+     *  resource=true,
+     *  description=" ",
+     *  statusCodes={
+     *         200=" Devuelve la lista de Recetas"
+     *  },
+     * )
+     *
+     *
      * @Rest\Get("/recetas")
      * @Rest\View()
      */
@@ -61,6 +78,33 @@ class RecetaController extends FOSRestController
     }
 
     /**
+     * This is the documentation description of your method, it will appear
+     * on a specific pane. It will read all the text until the first
+     * annotation.
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  section="Receta",
+     *  resource=true,
+     *  description=" ",
+     *  statusCodes={
+     *         200=" Obtiene una receta a partir del id proporcionado",
+     *         404=" Si la receta no se encuentra "
+     *  },
+     *
+     *   requirements={
+     *      {
+     *          "name"="id",
+     *          "dataType"="numero",
+     *          "requirement"="*",
+     *          "description"="usuario id"
+     *      }
+     *  },
+     *
+     *
+     * )
+     *
+     *
      * @Rest\Get("/receta/{id}")
      * @Rest\View
      */
@@ -78,6 +122,64 @@ class RecetaController extends FOSRestController
 
 
     /**
+     *
+     * This is the documentation description of your method, it will appear
+     * on a specific pane. It will read all the text until the first
+     * annotation.
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  section="Receta",
+     *  resource=true,
+     *  description=" ",
+     *  *  statusCodes={
+     *         201=" Crea una receta",
+     *         400=" Cuando no es posible crear la receta debido a un error en la peticion "
+     *  },
+     *
+     * *  requirements={
+     *      {
+     *          "name"="nombre",
+     *          "dataType"="string",
+     *          "requirement"="*",
+     *          "description"="nombre de la receta"
+     *      },
+     *     {
+     *          "name"="ingredientes",
+     *          "dataType"="string",
+     *          "requirement"="*",
+     *          "description"="Arreglo con el orden de las operaciones en formato string ejemplo [' 2 spone sugar ','2 egg' ,' 1 gr apple']"
+     *      },
+     *      {
+     *          "name"="preparacion",
+     *          "dataType"="string",
+     *          "requirement"="*",
+     *          "description"="Arreglo con el orden de las operaciones en formato string ejemplo ['step1 do thing','step2 do next thing' ]"
+     *      },
+     *     {
+     *          "name"="tiempopreparacion",
+     *          "dataType"="numero",
+     *          "requirement"="*",
+     *          "description"="Cuanto tiempo demora realizar la preparacion"
+     *      },
+     *      {
+     *          "name"="descripcion",
+     *          "dataType"="string",
+     *          "requirement"="*",
+     *          "description"="Descripcion de como se realiza y lo que representa la receta."
+     *      },
+     *      {
+     *          "name"="raciones",
+     *          "dataType"="numero",
+     *          "requirement"="*",
+     *          "description"="Para cuantos comensales es la receta"
+     *      }
+     *},
+     *
+     *
+     * )
+     *
+     *
      * @Rest\Post("/receta")
      */
     public function newAction(Request $request)
@@ -87,6 +189,56 @@ class RecetaController extends FOSRestController
     }
 
     /**
+     *
+     * This is the documentation description of your method, it will appear
+     * on a specific pane. It will read all the text until the first
+     * annotation.
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  section="Receta",
+     *  resource=true,
+     *  description=" ",
+     *  *  statusCodes={
+     *         200=" Receta modificada satisfactoriamente",
+     *         400=" Cuando no es posible modificar la receta debido a un error en la peticion "
+     *  },
+     *
+     *  requirements={
+     *      {
+     *          "name"="nombre",
+     *          "dataType"="string",
+     *          "description"="nombre de la receta"
+     *      },
+     *     {
+     *          "name"="ingredientes",
+     *          "dataType"="string",
+     *          "description"="Arreglo con el orden de las operaciones en formato string ejemplo [' 2 spone sugar ','2 egg' ,' 1 gr apple']"
+     *      },
+     *      {
+     *          "name"="preparacion",
+     *          "dataType"="string",
+     *          "description"="Arreglo con el orden de las operaciones en formato string ejemplo ['step1 do thing','step2 do next thing' ]"
+     *      },
+     *     {
+     *          "name"="tiempopreparacion",
+     *          "dataType"="numero",
+     *          "description"="Cuanto tiempo demora realizar la preparacion"
+     *      },
+     *      {
+     *          "name"="descripcion",
+     *          "dataType"="string",
+     *          "description"="Descripcion de como se realiza y lo que representa la receta."
+     *      },
+     *      {
+     *          "name"="raciones",
+     *          "dataType"="numero",
+     *          "description"="Para cuantos comensales es la receta"
+     *      }
+     *},
+     *
+     *
+     * )
      *
      * @Rest\Put("/receta/{id}")
      *
@@ -98,6 +250,28 @@ class RecetaController extends FOSRestController
 
 
     /**
+     * This is the documentation description of your method, it will appear
+     * on a specific pane. It will read all the text until the first
+     * annotation.
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  section="Receta",
+     *  description="Eiminar receta",
+     *  statusCodes={
+     *         204=" Receta no existe sea por que se elimino o por que no se encontro",
+     *  },
+     *
+     *  requirements={
+     *      {
+     *          "name"="id",
+     *          "dataType"="numero",
+     *          "requirement"="*",
+     *          "description"="usuario id"
+     *      }
+     *  },
+     *  )
+     *
      * @Rest\Delete("/receta/{id}")
      * @Rest\View(statusCode=204)
      */
@@ -112,11 +286,27 @@ class RecetaController extends FOSRestController
         $sn ->remove($receta);
         $sn ->flush();
 
-        $response = $this->createApiResponse(null, 200, 'json');
+        $response = $this->createApiResponse(null ,204 );
        return $response;
     }
 
     /**
+     ** This is the documentation description of your method, it will appear
+     * on a specific pane. It will read all the text until the first
+     * annotation.
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  section="Receta",
+     *  resource=true,
+     *  description=" ",
+     *  statusCodes={
+     *         201=" Subir la imagen de la receta ",
+     *         400=" No es posible subir la foto por errores en la peticion ",
+     *         404=" Cuando no es posible subir la foto por que la receta asociada no se encuentra "
+     *  },
+     *)
+     *
      * @Rest\Post("/receta/{id}/picture")
      * @Rest\View()
      */

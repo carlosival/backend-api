@@ -40,6 +40,11 @@ api_util_login:
 api_login_check:
     path: /login_check
 
+#Nelmio API doc
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
+
 #FOS routing
 fos_comment_api:
     type: rest

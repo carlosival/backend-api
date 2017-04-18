@@ -16,10 +16,42 @@ use FOS\UserBundle\FOSUserEvents;
 use Symfony\Component\Form\FormInterface;
 use JMS\Serializer\SerializationContext;
 use FOS\RestBundle\Controller\Annotations as Rest;
+use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 
 class RegistrationController extends BaseController
 {
     /**
+     *
+     *  This is the documentation description of your method, it will appear
+     * on a specific pane. It will read all the text until the first
+     * annotation.
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  section="Autorizacion y Autenticacion",
+     *  resource=true,
+     *  description= " Registra un nuevo usuario en la base aplicacion. ",
+     *  *  statusCodes={
+     *         201= " Registra un nuevo usuario "
+     *  },
+     *  requirements={
+     *      {
+     *          "name"="username",
+     *          "dataType"="string",
+     *          "requirement"="*",
+     *          "description"="Nombre de usuario"
+     *      },
+     *      {
+     *          "name"="password",
+     *          "dataType"="string",
+     *          "requirement"="*",
+     *          "description"="Password"
+     *      }
+     *
+     * },
+     * )
+     *
+     *
      * @Rest\Post("/register")
      * @Rest\View()
      */

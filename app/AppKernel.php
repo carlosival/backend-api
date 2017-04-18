@@ -24,7 +24,7 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Vich\UploaderBundle\VichUploaderBundle(),
             new Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle(),
-            //new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
+            new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
            // new FOS\HttpCacheBundle\FOSHttpCacheBundle(),
            // new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
            // new Hautelook\TemplatedUriBundle\HautelookTemplatedUriBundle(),

@@ -16,11 +16,45 @@ use Symfony\Component\Form\FormInterface;
 use JMS\Serializer\SerializationContext;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use Symfony\Component\Security\Core\Exception\BadCredentialsException;
-
+use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 
 class LoginController extends Controller
 {
     /**
+     *
+     *  This is the documentation description of your method, it will appear
+     * on a specific pane. It will read all the text until the first
+     * annotation.
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  section="Autorizacion y Autenticacion",
+     *  resource=true,
+     *  description="Metodo de Login Retorna una Token de seguridad desde de proporcion las credenciales de acceso ",
+     *  *  statusCodes={
+     *         200="Cuando las credenciales son correctas"
+     *  },
+     *  requirements={
+     *      {
+     *          "name"="username",
+     *          "dataType"="string",
+     *          "requirement"="*",
+     *          "description"="Nombre de usuario"
+     *      },
+     *      {
+     *          "name"="password",
+     *          "dataType"="string",
+     *          "requirement"="*",
+     *          "description"="Password"
+     *      }
+     *
+     * },
+     * )
+     *
+     *
+     *
+     *
+     *
      * @Rest\Post("/login")
      * @Rest\View()
      */
@@ -56,7 +90,8 @@ class LoginController extends Controller
                 'confirmationtoken' => $user->getConfirmationToken(),
                 'lastlogin' => $user->getLastLogin(),
                 'username' => $user->getUsername(),
-                'exp' => time() + 3600 // 1 hour expiration
+                'foto' => $user->getImageAvatar(),
+                'exp' => time() + 86400 // 24 hours expiration
             ]);
 
 
