@@ -1,6 +1,5 @@
 {
   "nombre": "Carne con papas",
-  "user": "1",
   "raciones": "10",
   "tiempo_preparacion": "15min",
 
@@ -17,7 +16,6 @@
     "Aliñar ",
     "Enplatar"
   ]
-
 
 
 }

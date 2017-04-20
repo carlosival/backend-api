@@ -3,7 +3,6 @@
 namespace DietaBundle\Controller;
 
 use JMS\Serializer\SerializationContext;
-use Sylius\Component\Resource\Model\ResourceInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
@@ -17,7 +16,7 @@ use DietaBundle\Entity\User;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 
 /**
- * Security("is_granted('IS_AUTHENTICATED_FULLY')")
+ * @Security("is_granted('IS_AUTHENTICATED_FULLY')")
  */
 class UserController extends FOSRestController
 {
@@ -196,21 +195,9 @@ class UserController extends FOSRestController
     {
         $restresult = $this->getDoctrine()->getRepository('DietaBundle:User')->findAll();
 
-        return array('users' => $restresult);
 
-/*
-         $data = array("Usuarios" => array(
-            array(
-                "nombre"   => "Víctor",
-                "Apellido" => "Robles"
-            ),
-            array(
-                "nombre"   => "Antonio",
-                "Apellido" => "Martinez"
-            )));
 
-        return $data;*/
-
+        return $this->createApiResponse($restresult,200);
     }
 
 
@@ -223,13 +210,15 @@ class UserController extends FOSRestController
     public function getAction($id)
     {
 
-        $restresult = $this->getDoctrine()->getRepository('DietaBundle:User')->find($id);
+        $user = $this->getDoctrine()->getRepository('DietaBundle:User')->find($id);
 
-        if (!$restresult instanceof User) {
+        if (!$user instanceof User) {
             throw new NotFoundHttpException('Usuario not found');
         }
 
-        return array('usuario' => $restresult);
+       $response = $this->createApiResponse($user,200);
+
+        return $response;
     }
 
 
@@ -377,6 +366,7 @@ class UserController extends FOSRestController
     {
         $context = new SerializationContext();
         $context->setSerializeNull(true);
+        $context->enableMaxDepthChecks();
         return $this->get('serializer')->serialize($data, $format, $context);
     }
 

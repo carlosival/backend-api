@@ -20,9 +20,9 @@ security:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
 
-        frontend:
-            pattern: ^/
-            security: false
+#        frontend:
+#            pattern: ^/
+#            security: false
         #main:
             #anonymous: ~
             # activate different ways to authenticate
@@ -49,15 +49,18 @@ security:
         main:
             pattern:   ^/api
             stateless: true
+            anonymous: true
             guard:
                   authenticators:
                       - lexik_jwt_authentication.jwt_token_authenticator
 
     access_control:
-            - { path: ^/_wdt|_profiler, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-            - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-            - { path: ^/api, roles: IS_AUTHENTICATED_FULLY }
-            - { path: ^/, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+            #- { path: ^/_wdt|_profiler, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+           # - { path: ^//login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+           # - { path: ^/register, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+           # - { path: ^/api/doc, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+           # - { path: ^/api, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+           # - { path: ^/, roles: IS_AUTHENTICATED_ANONYMOUSLY }
 
     #  - { path: ^/register, roles: IS_AUTHENTICATED_ANONYMOUSLY }
     #

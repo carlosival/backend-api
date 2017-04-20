@@ -82,7 +82,7 @@ swiftmailer:
 
 jms_serializer:
     metadata:
-        auto_detection:  true
+        #auto_detection:  true
         directories:
             DietaBundle:
                 path: "@DietaBundle/Resources/config/serializer"

@@ -17,6 +17,10 @@ use FOS\RestBundle\Controller\FOSRestController;
 use JMS\Serializer\SerializationContext;
 use FOS\RestBundle\View\View;
 
+
+/**
+ * @Security("is_granted('IS_AUTHENTICATED_FULLY')")
+ */
 class DefaultController extends Controller
 {
     /**

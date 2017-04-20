@@ -30,11 +30,11 @@ DietaBundle\Entity\Receta:
             -
                 rel:  picture
                 href: expr(object.getImageName())
-                #href:
-                    #route: dieta_receta_picture
-                    #parameters:
-                     #     id: expr(object.getId())
-                    #absolute: true
+                href:
+                    route: dieta_receta_picture
+                    parameters:
+                          id: expr(object.getId())
+                    absolute: true
             -
                 rel:  usuarios_seguidores
                 href:
@@ -44,14 +44,14 @@ DietaBundle\Entity\Receta:
                 absolute: true
                 exclusion:
                    exclude_if: expr(object.getUsuarioSeguidores() === null)
+                #maxDepth: 2
             -
                 rel: user
                 href:
                     route: dieta_user_get
                     parameters:
-                        id: expr(object.getUser())
+                        id: expr(object.getUser().getId())
                     absolute: true
-                embedded:
-                      content: expr(object.getUser())
                 exclusion:
                       exclude_if: expr(object.getUser() === null)
+               # maxDepth: 1

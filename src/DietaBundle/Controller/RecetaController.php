@@ -23,6 +23,7 @@ use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 /**
  * Security("is_granted('IS_AUTHENTICATED_FULLY')")
  */
+
 class RecetaController extends FOSRestController
 {
 
@@ -110,6 +111,7 @@ class RecetaController extends FOSRestController
      */
     public function getAction($id)
     {
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
         $singleresult = $this->getDoctrine()->getRepository('DietaBundle:Receta')->find($id);
 
         if (!$singleresult instanceof Receta) {
@@ -245,6 +247,7 @@ class RecetaController extends FOSRestController
      */
     public function editAction( Request $request, $id)
     {
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
         return $this->processFormEdit($request, $id);
     }
 
@@ -277,6 +280,7 @@ class RecetaController extends FOSRestController
      */
     public function deleteAction($id)
     {
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
         $sn = $this->getDoctrine()->getManager();
         $receta = $this->getDoctrine()->getRepository('DietaBundle:Receta')->find($id);
 
@@ -291,12 +295,12 @@ class RecetaController extends FOSRestController
     }
 
     /**
-     ** This is the documentation description of your method, it will appear
+     *
+     * This is the documentation description of your method, it will appear
      * on a specific pane. It will read all the text until the first
      * annotation.
      *
      * @ApiDoc(
-     *  resource=true,
      *  section="Receta",
      *  resource=true,
      *  description=" ",
@@ -305,13 +309,23 @@ class RecetaController extends FOSRestController
      *         400=" No es posible subir la foto por errores en la peticion ",
      *         404=" Cuando no es posible subir la foto por que la receta asociada no se encuentra "
      *  },
-     *)
+     *
+     *  requirements={
+     *      {
+     *          "name"="id",
+     *          "dataType"="numero",
+     *          "requirement"="*",
+     *          "description"="usuario id"
+     *      }
+     *  },
+     *
+     * )
      *
      * @Rest\Post("/receta/{id}/picture")
      * @Rest\View()
      */
     public function uploadAction(Request $request, $id){
-
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
         $sn = $this->getDoctrine()->getManager();
         $receta = $sn->getRepository('DietaBundle:Receta')->find($id);
 
@@ -353,11 +367,38 @@ class RecetaController extends FOSRestController
     }
 
     /**
+     *
+     * This is the documentation description of your method, it will appear
+     * on a specific pane. It will read all the text until the first
+     * annotation.
+     *
+     * @ApiDoc(
+     *
+     *  section="Receta",
+     *  resource=true,
+     *  description=" Obtener la foto asociada de una Receta",
+     *  statusCodes={
+     *         200=" Foto satisfactoriamente encontrada",
+     *         400=" No es posible encontrar la foto por errores en la peticion ",
+     *
+     *  },
+     *
+     * requirements={
+     *      {
+     *          "name"="id",
+     *          "dataType"="numero",
+     *          "requirement"="*",
+     *          "description"="receta id"
+     *      }
+     *  },
+     *
+     * )
+     *
      * @Rest\Get("/receta/{id}/picture")
      * @Rest\View()
      */
     public function pictureAction(Request $request, $id){
-
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
         $sn = $this->getDoctrine()->getManager();
         $receta = $sn->getRepository('DietaBundle:Receta')->find($id);
 
@@ -379,11 +420,39 @@ class RecetaController extends FOSRestController
 
 
     /**
+     *
+     * This is the documentation description of your method, it will appear
+     * on a specific pane. It will read all the text until the first
+     * annotation.
+     *
+     * @ApiDoc(
+     *
+     *  section="Receta",
+     *  resource=true,
+     *  description=" Obtiene todos los seguidores de una receta.",
+     *  statusCodes={
+     *         200=" Foto satisfactoriamente encontrada",
+     *         400=" No es posible encontrar la foto por errores en la peticion ",
+     *
+     *  },
+     *
+     *  requirements={
+     *      {
+     *          "name"="id",
+     *          "dataType"="numero",
+     *          "requirement"="*",
+     *          "description"="receta id"
+     *      }
+     *  },
+     *
+     * )
+     *
+     *
      * @Rest\Get("/receta/{id}/seguidores")
      * @Rest\View()
      */
     public function usuarios_seguidoresAction(Request $request, $id){
-
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
         $sn = $this->getDoctrine()->getManager();
         $receta = $sn->getRepository('DietaBundle:Receta')->find($id);
 
@@ -395,7 +464,9 @@ class RecetaController extends FOSRestController
         $usuarios_seguidores = $receta->getUsuarioSeguidores();
 
 
-        $limit = $request->query->get('limit', 5);
+        return $this->createApiResponse($usuarios_seguidores,200);
+
+        $limit = $request->query->get('limit', 15);
         $page = $request->query->get('page', 1);
         // my manual, silly pagination logic. Use a real library like Pagerfanta
         $offset = ($page - 1) * $limit;
@@ -404,7 +475,7 @@ class RecetaController extends FOSRestController
 
         $paginatedCollection = new PaginatedRepresentation(
             new CollectionRepresentation(
-               array_slice( $usuarios_seguidores->getValues(),$offset,$limit),
+               array_slice( $valor=$usuarios_seguidores->getValues(),$offset,$limit),
                 'usuarios_seguidores', // embedded rel
                 'usuarios_seguidores'  // xml element name
             ),
@@ -416,20 +487,57 @@ class RecetaController extends FOSRestController
 
         );
 
-
         $response = $this->createApiResponse($paginatedCollection, 200);
         return $response;
     }
 
     /**
+     *
+     *  This is the documentation description of your method, it will appear
+     * on a specific pane. It will read all the text until the first
+     * annotation.
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  section="Receta",
+     *  description="Eiminar usuario seguidor de una receta",
+     *  statusCodes={
+     *         204=" Usuario no existe sea por que se elimino de seguidor de la receta o por que no se seguidor de la receta",
+     *  },
+     *
+     *  requirements={
+     *      {
+     *          "name"="recetaid",
+     *          "dataType"="numero",
+     *          "requirement"="*",
+     *          "description"="receta id"
+     *      },
+     *     {
+     *          "name"="userid",
+     *          "dataType"="numero",
+     *          "requirement"="*",
+     *          "description"="user id"
+     *      }
+     *  },
+     *
+     *  )
+     *
+     *
      * @Rest\Delete("/receta/{recetaid}/user/{userid}")
      * @Rest\View(statusCode=204)
      */
     public function usuario_seguidor (Request $request, $recetaid, $userid) {
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
 
         $sn = $this->getDoctrine()->getManager();
         $receta = $sn->getRepository('DietaBundle:Receta')->find($recetaid);
-        $user = $sn->getRepository('DietaBundle:User')->find($userid);
+        //$user = $sn->getRepository('DietaBundle:User')->find($userid);
+        $user = $this->getUser();
+
+        if($user === null || $user->getId() != $userid){
+
+          throw new \HttpRequestException() ;
+        }
 
         if (!$receta instanceof Receta) {
             throw new NotFoundHttpException('Receta not found');
@@ -447,14 +555,54 @@ class RecetaController extends FOSRestController
     }
 
     /**
+     *
+     * This is the documentation description of your method, it will appear
+     * on a specific pane. It will read all the text until the first
+     * annotation.
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  section="Receta",
+     *  description="Añadir usuario seguidor de una receta receta",
+     *  statusCodes={
+     *         200=" Usuario no existe sea por que se elimino de seguidor de la receta o por que no se seguidor de la receta",
+     *         400=" no es posible añadir al usuario por algun error en la peticion"
+     *      },
+     *
+     *  requirements={
+     *      {
+     *          "name"="recetaid",
+     *          "dataType"="numero",
+     *          "requirement"="*",
+     *          "description"="receta id"
+     *      },
+     *     {
+     *          "name"="userid",
+     *          "dataType"="numero",
+     *          "requirement"="*",
+     *          "description"="user id"
+     *      }
+     *  },
+     *  )
+     *
+     *
      * @Rest\Post("/receta/{recetaid}/user/{userid}")
      * @Rest\View(statusCode=200)
      */
     public function addusuario_seguidor(Request $request, $recetaid, $userid){
 
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
         $sn = $this->getDoctrine()->getManager();
         $receta = $sn->getRepository('DietaBundle:Receta')->find($recetaid);
-        $user = $sn->getRepository('DietaBundle:User')->find($userid);
+       // $user = $sn->getRepository('DietaBundle:User')->find($userid);
+
+
+        $user = $this->getUser();
+
+        if($user === null || $user->getId() != $userid){
+
+            throw new \HttpRequestException() ;
+        }
 
         if (!$receta instanceof Receta) {
             throw new NotFoundHttpException('Receta not found');
@@ -465,7 +613,10 @@ class RecetaController extends FOSRestController
         }
 
         $receta->addUsuarioSeguidores($user);
+        $user->addRecetasSeguida($receta);
+
         $sn->persist($receta);
+        $sn->persist($user);
         $sn->flush();
 
         $response = $this->createApiResponse($receta, 200, 'json');
@@ -476,10 +627,39 @@ class RecetaController extends FOSRestController
 
 
     /**
+     *
+     * This is the documentation description of your method, it will appear
+     * on a specific pane. It will read all the text until the first
+     * annotation.
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  section="Receta",
+     *  description="Obtener el usuario dueño de la receta.",
+     *  statusCodes={
+     *         200=" Propietario de la receta encontrado",
+     *         400=" no es posible encontrar al usuario por algun error en la peticion"
+     *      },
+     *
+     *  requirements={
+     *      {
+     *          "name"="id",
+     *          "dataType"="numero",
+     *          "requirement"="*",
+     *          "description"="receta id"
+     *      }
+     *
+     *  },
+     *  )
+     *
+     *
+     *
+     *
      * @Rest\Get("/receta/{id}/owner")
      * @Rest\View()
      */
     public function ownerAction (Request $request, $id){
+
 
         $sn = $this->getDoctrine()->getManager();
         $receta = $sn->getRepository('DietaBundle:Receta')->find($id);
@@ -496,7 +676,7 @@ class RecetaController extends FOSRestController
 
     private function processFormNew(Request $request,Receta $receta)
     {
-       // $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+       $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
         $data = json_decode($request->getContent(), true);
         $em = $this->getDoctrine()->getManager();
        if(isset($data['user'])) {
@@ -601,6 +781,7 @@ class RecetaController extends FOSRestController
     {
         $context = new SerializationContext();
         $context->setSerializeNull(true);
+        $context->enableMaxDepthChecks();
         return $this->get('serializer')->serialize($data, $format, $context);
     }
 

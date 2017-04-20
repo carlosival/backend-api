@@ -1,4 +1,3 @@
-
 #app/Resources/FOSUserBundle/serializer/Model.User.yml
 FOS\UserBundle\Model\User:
     exclusion_policy: ALL
@@ -11,18 +10,15 @@ FOS\UserBundle\Model\User:
             expose: true
         enabled:
             expose: true
-        locked:
-            expose: true
-        imageAvatar:
-            expose: true
-    relations:
-        -
-            rel: self
-            href:
-                route: dieta_user_get
-                parameters:
-                      id: expr(object.getId())
-            absolute: true
+
+#    relations:
+#        -
+#            rel: self
+#            href:
+#                route: dieta_user_get
+#                parameters:
+#                      id: expr(object.getId())
+#            absolute: true
         #recetas:
         #    expose: true
         #dietas_seguidas:

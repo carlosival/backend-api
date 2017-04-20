@@ -91,7 +91,7 @@ class LoginController extends Controller
                 'lastlogin' => $user->getLastLogin(),
                 'username' => $user->getUsername(),
                 'foto' => $user->getImageAvatar(),
-                'exp' => time() + 86400 // 24 hours expiration
+                'exp' => time() + 864000 // 24 hours expiration
             ]);
 
 

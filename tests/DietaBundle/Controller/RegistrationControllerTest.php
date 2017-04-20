@@ -26,15 +26,15 @@ class RegistrationControllerTestController extends WebTestCase
 
         // Build the resouce
 
-        $username = 'carlosmartinezival@gmail.com';
-        $email = 'carlosmartinezival@gmail.com';
-        $plainPassword = ['first' => 'test123', 'second' => 'test123'];
+        $username = 'fefa@gmail.com';
+        $email = 'fefa@gmail.com';
+        $plainPassword ='test123';
 
 
         $data = array(
             'username' => $username,
             'email' => $email,
-            'plainPassword' => $plainPassword
+            'password' => $plainPassword
         );
 
         // Prepare and Send the Request
@@ -66,7 +66,7 @@ class RegistrationControllerTestController extends WebTestCase
         // Build the resouce
 
         $username = 'matko';
-        $email = 'matkasgasgashgamail.com';
+        $email = 'matkasgasgashgamail';
         $plainPassword = [
             'first' => 'test123', 'second' => 'test123'
         ];

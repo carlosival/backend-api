@@ -1,7 +1,7 @@
 # Alice Fixtures Load
 
 DietaBundle\Entity\User:
-      user_{1..100}:
+      user_{1..10}:
           username (unique): '<firstName()>'
           email (unique):  '<firstName()><safeEmail()>@gmail.com'
           plainPassword: 'test123'

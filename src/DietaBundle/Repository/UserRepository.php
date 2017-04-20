@@ -11,7 +11,7 @@ namespace DietaBundle\Repository;
 class UserRepository extends \Doctrine\ORM\EntityRepository
 {
 
-    public function findRecentRecipesOrderedByDate($id, \DateTime $timespam , $limit =5, $offset=5)
+    public function findRecentRecipesOrderedByDate($id, \DateTime $timespam , $limit =5, $offset=0)
     {
         // 'SELECT r u FROM DietaBundle:User DietaBundle:Receta r LEFT JOIN u.recetas WHERE (u.id = :userid AND :timespam > r.updatedAt)  ORDER BY r.updatedAt DESC'
         /*return $this->getEntityManager()

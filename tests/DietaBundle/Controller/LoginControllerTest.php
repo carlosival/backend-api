@@ -32,7 +32,7 @@ class LoginControllerTest extends WebTestCase
 
         // Build the resouce
 
-        $username = 'carlosmartinezival@gmail.com';
+        $username = 'Adah';
         $passsword = 'test123';
       //  $plainPassword = ['first' => 'test123', 'second' => 'test123'];
 
@@ -61,7 +61,7 @@ class LoginControllerTest extends WebTestCase
 
     }
 
-    /*public function testloginInvalidCredentials()
+    public function testloginInvalidCredentials()
     {
 
         // create our http client (Guzzle)
@@ -73,7 +73,7 @@ class LoginControllerTest extends WebTestCase
 
         // Build the resouce
 
-        $username = 'carlosmartinezival@gmail.com';
+        $username = 'Adah';
         $passsword = 'test12345';
         //  $plainPassword = ['first' => 'test123', 'second' => 'test123'];
 
@@ -94,7 +94,7 @@ class LoginControllerTest extends WebTestCase
 
 
         $this->assertEquals(401, $response->getStatusCode());
-    }*/
+    }
 
     /*protected function getAuthorizedHeaders($username, $headers = array())
     {

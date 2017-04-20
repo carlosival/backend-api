@@ -12,7 +12,7 @@ class RecetaControllerTest extends WebTestCase
 
 
 
-    /*public function testAll () {
+    public function testAll () {
 
         // create our http client (Guzzle)
         $client = new Client('http://localhost', array(
@@ -21,8 +21,9 @@ class RecetaControllerTest extends WebTestCase
             )
         ));
 
+        $headers = $this->getAuthorizedHeaders();
 
-        $request = $client->get('/app_dev.php/recetas', null, array());
+        $request = $client->get('/app_dev.php/api/recetas', $headers, array());
         $response = $request->send();
 
         $this->assertEquals(200, $response->getStatusCode());
@@ -49,7 +50,7 @@ class RecetaControllerTest extends WebTestCase
             $this->assertTrue($response->hasHeader('Content-Type'));
             $this->assertEquals($response->getHeader('Content-Type'), 'application/json');
 
-        }*/
+        }
 
    public function testNew () {
 
@@ -87,7 +88,7 @@ class RecetaControllerTest extends WebTestCase
 
         $headers = $this->getAuthorizedHeaders();
 
-       $request = $client->post('/app_dev.php/receta', $headers, json_encode($data));
+       $request = $client->post('/app_dev.php/api/receta', $headers, json_encode($data));
        $response = $request->send();
 
        // Check the response
@@ -99,7 +100,7 @@ class RecetaControllerTest extends WebTestCase
 
     }
 
-   /*public function testEdit(){
+   public function testEdit(){
 
 
        // create our http client (Guzzle)
@@ -134,7 +135,9 @@ class RecetaControllerTest extends WebTestCase
 
        // Prepare and Send the Request
 
-       $request = $client->put('/app_dev.php/receta/1', null, json_encode($data));
+       $headers = $this->getAuthorizedHeaders();
+
+       $request = $client->put('/app_dev.php/api/receta/602', $headers, json_encode($data));
        $response = $request->send();
 
        // Check the response
@@ -144,10 +147,10 @@ class RecetaControllerTest extends WebTestCase
        $dataresponse = json_decode($response->getBody(true), true);
        $this->assertArrayHasKey('nombre', $dataresponse);
 
-   }*/
+   }
 
 
-    /*public function testaddusuario_seguidor () {
+    public function testaddusuario_seguidor () {
 
         // create our http client (Guzzle)
         $client = new Client('http://localhost', array(
@@ -156,8 +159,9 @@ class RecetaControllerTest extends WebTestCase
             )
         ));
 
+        $headers = $this->getAuthorizedHeaders();
 
-        $request = $client->post('/app_dev.php/receta/1/user/1', null, array());
+        $request = $client->post('/app_dev.php/api/receta/602/user/21', $headers, array());
         $response = $request->send();
 
         // Extender y probar tambien la base de datos.
@@ -169,10 +173,10 @@ class RecetaControllerTest extends WebTestCase
         $dataresponse = json_decode($response->getBody(true), true);
         $this->assertArrayHasKey('nombre', $dataresponse);
 
-    }*/
+    }
 
 
-   /* public function tetsGetusuarios_seguidores (){
+    public function tetsGetusuarios_seguidores (){
 
         // create our http client (Guzzle)
         $client = new Client('http://localhost', array(
@@ -196,9 +200,9 @@ class RecetaControllerTest extends WebTestCase
         $this->assertArrayHasKey('usuarios_seguidores', $dataresponse);
 
 
-    }*/
+    }
 
-   /* public function testDeleteusuario_seguidor() {
+   public function testDeleteusuario_seguidor() {
 
         // create our http client (Guzzle)
         $client = new Client('http://localhost', array(
@@ -221,11 +225,11 @@ class RecetaControllerTest extends WebTestCase
 //        $dataresponse = json_decode($response->getBody(true), true);
 //        $this->assertArrayHasKey('nombre', $dataresponse);
 
-    }*/
+    }
 
 
 
-    /*public function testGetowner () {
+    public function testGetowner () {
 
         // create our http client (Guzzle)
         $client = new Client('http://localhost', array(
@@ -246,9 +250,9 @@ class RecetaControllerTest extends WebTestCase
         $dataresponse = json_decode($response->getBody(true), true);
         $this->assertArrayHasKey('email', $dataresponse);
 
-    }*/
+    }
 
-    /*public function testRequiresAuthentication()
+    public function testRequiresAuthentication()
     {
         // create our http client (Guzzle)
         $client = new Client('http://localhost', array(
@@ -260,9 +264,9 @@ class RecetaControllerTest extends WebTestCase
         $request = $client->post('/app_dev.php/receta', ['body' => '[]'],array());
         $response = $request->send();
         $this->assertEquals(401, $response->getStatusCode());
-    }*/
+    }
 
-    protected function getAuthorizedHeaders($username = "carlosmartinezival@gmail.com",$passsword = "test123" ,$headers = array())
+    protected function getAuthorizedHeaders($username = "Adah",$passsword = "test123" ,$headers = array())
     {
         $client = new Client('http://localhost', array(
             'request.options' => array(
