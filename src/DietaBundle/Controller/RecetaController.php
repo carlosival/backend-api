@@ -550,7 +550,7 @@ class RecetaController extends FOSRestController
         $receta->removeUsuarioSeguidores($user);
         $sn->flush();
 
-        $response = $this->createApiResponse($receta, 204, 'json');
+        $response = $this->createApiResponse($receta, 204);
         return $response;
     }
 
@@ -594,7 +594,7 @@ class RecetaController extends FOSRestController
         $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
         $sn = $this->getDoctrine()->getManager();
         $receta = $sn->getRepository('DietaBundle:Receta')->find($recetaid);
-       // $user = $sn->getRepository('DietaBundle:User')->find($userid);
+      //  $user = $sn->getRepository('DietaBundle:User')->find($userid);
 
 
         $user = $this->getUser();
@@ -613,13 +613,12 @@ class RecetaController extends FOSRestController
         }
 
         $receta->addUsuarioSeguidores($user);
-        $user->addRecetasSeguida($receta);
+
 
         $sn->persist($receta);
-        $sn->persist($user);
         $sn->flush();
 
-        $response = $this->createApiResponse($receta, 200, 'json');
+        $response = $this->createApiResponse($receta, 200);
         return $response;
 
     }
@@ -669,7 +668,7 @@ class RecetaController extends FOSRestController
             throw new NotFoundHttpException('Receta not found');
         }
 
-        $response = $this->createApiResponse($owner, 200, 'json');
+        $response = $this->createApiResponse($owner, 200);
         return $response;
     }
 

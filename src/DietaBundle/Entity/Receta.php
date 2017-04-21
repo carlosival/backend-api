@@ -286,6 +286,8 @@ class Receta
             return $this;
         }
 
+        $usuarioSeguidores ->addRecetasSeguida($this); // synchronously updating inverse side
+
         $this->usuario_seguidores[] = $usuarioSeguidores;
 
         return $this;

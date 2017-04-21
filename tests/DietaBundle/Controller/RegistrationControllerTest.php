@@ -26,8 +26,8 @@ class RegistrationControllerTestController extends WebTestCase
 
         // Build the resouce
 
-        $username = 'fefa@gmail.com';
-        $email = 'fefa@gmail.com';
+        $username = 'carlos@gmail.com';
+        $email = 'carlos@gmail.com';
         $plainPassword ='test123';
 
 

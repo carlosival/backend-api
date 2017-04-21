@@ -1,0 +1,30 @@
+DietaBundle\Entity\User:
+    exclusion_policy: ALL
+    properties:
+        recetas:
+            expose: true
+        dietas:
+            expose: true
+        imageAvatar:
+            expose: true
+        updatedAt:
+            expose: true
+        myFriends:
+            expose: true
+            max_depth: 1
+    relations:
+            -
+                rel: self
+                href:
+                    route: dieta_user_get
+                    parameters:
+                          id: expr(object.getId())
+                absolute: true
+            #recetas:
+            #    expose: true
+            #dietas_seguidas:
+            #    expose: true
+            #recetas_seguidas:
+            #  expose: true
+            #myFriends:
+            #    expose: true

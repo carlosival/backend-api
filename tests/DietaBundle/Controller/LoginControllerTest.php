@@ -32,7 +32,7 @@ class LoginControllerTest extends WebTestCase
 
         // Build the resouce
 
-        $username = 'Adah';
+        $username = 'carlos@gmail.com';
         $passsword = 'test123';
       //  $plainPassword = ['first' => 'test123', 'second' => 'test123'];
 

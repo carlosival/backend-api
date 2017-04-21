@@ -8,9 +8,59 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 class UserControllerTest extends WebTestCase
 {
 
+   /**
+    * dieta_user_addfriends                    POST     ANY      ANY    /api/user/{id}/friend/{friendid}
+    *
+    */
+
+   public function testAddFriend () {
+
+       $client = new Client('http://localhost', array(
+           'request.options' => array(
+               'exceptions' => false,
+           )
+       ));
+
+       $headers = $this->getAuthorizedHeaders();
+
+       $request = $client->post('/app_dev.php/api/user/1/friend/2', $headers, array());
+       $response = $request->send();
+       $this->assertEquals(200, $response->getStatusCode());
+       $this->assertTrue($response->hasHeader('Content-Type'));
+       $this->assertEquals($response->getHeader('Content-Type'), 'application/json');
+       $dataresponse = json_decode($response->getBody(true), true);
+
+   }
+
+    /**
+     * dieta_user_addfriends                    Delete     ANY      ANY    /api/user/{id}/friend/{friendid}
+     *
+     */
+
+    public function testDeleteFriend () {
+
+        $client = new Client('http://localhost', array(
+            'request.options' => array(
+                'exceptions' => false,
+            )
+        ));
+
+        $headers = $this->getAuthorizedHeaders();
+
+        $request = $client->delete('/app_dev.php/api/user/1/friend/2', $headers, array());
+        $response = $request->send();
+        $this->assertEquals(204, $response->getStatusCode());
+        $this->assertTrue($response->hasHeader('Content-Type'));
+        $this->assertEquals($response->getHeader('Content-Type'), 'application/json');
+        $dataresponse = json_decode($response->getBody(true), true);
+
+    }
 
 
-    protected function getAuthorizedHeaders($username = "carlosmartinezival@gmail.com",$passsword = "test123" ,$headers = array())
+
+
+
+    protected function getAuthorizedHeaders($username = "carlos@gmail.com",$passsword = "test123" ,$headers = array())
     {
         $client = new Client('http://localhost', array(
             'request.options' => array(

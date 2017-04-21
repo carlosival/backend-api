@@ -185,6 +185,86 @@ class UserController extends FOSRestController
 
     }
 
+
+    /**
+     * @Rest\Post("/user/{id}/friend/{friendid}")
+     * @Rest\View
+     *
+     */
+    public function addFriendAction(Request $request, $id, $friendid) {
+
+
+        $sn = $this->getDoctrine()->getManager();
+        $friend = $sn->getRepository('DietaBundle:User')->find($friendid);
+       // $user = $sn->getRepository('DietaBundle:User')->find($id);
+
+
+        $user = $this->getUser();
+
+        if($user === null || $user->getId() != $id){
+
+            throw new \HttpRequestException() ;
+        }
+
+        if (!$friend instanceof User) {
+            throw new NotFoundHttpException('Receta not found');
+        }
+
+        if (!$user instanceof User) {
+            throw new NotFoundHttpException('User not found');
+        }
+
+        $user->addMyFriend($friend);
+
+        $sn->persist($user);
+        $sn->flush();
+
+        $response = $this->createApiResponse($user, 200);
+        return $response;
+
+    }
+
+    /**
+     * @Rest\Delete("/user/{id}/friend/{friendid}")
+     * @Rest\View
+     *
+     */
+    public function FriendAction(Request $request, $id, $friendid) {
+
+
+        $sn = $this->getDoctrine()->getManager();
+        $friend = $sn->getRepository('DietaBundle:User')->find($friendid);
+        // $user = $sn->getRepository('DietaBundle:User')->find($id);
+
+
+        $user = $this->getUser();
+
+        if($user === null || $user->getId() != $id){
+
+            throw new \HttpRequestException() ;
+        }
+
+        if (!$friend instanceof User) {
+            throw new NotFoundHttpException('Receta not found');
+        }
+
+        if (!$user instanceof User ) {
+            throw new NotFoundHttpException('User not found');
+        }
+
+        $user->removeMyFriend($friend);
+
+        $sn->persist($user);
+        $sn->flush();
+
+        $response = $this->createApiResponse($user, 204);
+        return $response;
+
+    }
+
+
+
+
     /**
      * @Rest\Get("/users")
      * @Rest\View

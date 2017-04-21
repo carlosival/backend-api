@@ -385,6 +385,7 @@ class User extends BaseUser
             return $this;
         }
 
+        $myFriend->addFriendsWithMe($this);
         $this->myFriends[] = $myFriend;
 
         return $this;

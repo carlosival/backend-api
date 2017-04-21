@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f2d209a-4075-44cb-91a9-50886132f1c9" name="Default" comment="">
+    <list default="true" id="3f2d209a-4075-44cb-91a9-50886132f1c9" name="Default" comment="Correciones">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.User.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/DataFixtures/ORM/fixtures.yml" afterPath="$PROJECT_DIR$/app/DataFixtures/ORM/fixtures.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/serializer/FOSUB/Model.User.yml" afterPath="$PROJECT_DIR$/app/serializer/FOSUB/Model.User.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Controller/LoginController.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Controller/LoginController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Repository/UserRepository.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Repository/UserRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Receta.yml" afterPath="$PROJECT_DIR$/src/DietaBundle/Resources/config/serializer/Entity.Receta.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Tests/Common_commands.txt" afterPath="$PROJECT_DIR$/src/DietaBundle/Tests/Common_commands.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Tests/recetainsertar.json" afterPath="$PROJECT_DIR$/src/DietaBundle/Tests/recetainsertar.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DietaBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/DietaBundle/Entity/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/DietaBundle/Controller/LoginControllerTest.php" afterPath="$PROJECT_DIR$/tests/DietaBundle/Controller/LoginControllerTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php" afterPath="$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/DietaBundle/Controller/RegistrationControllerTest.php" afterPath="$PROJECT_DIR$/tests/DietaBundle/Controller/RegistrationControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/classes.map" afterPath="$PROJECT_DIR$/var/cache/dev/classes.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/DietaBundle/Controller/UserControllerTest.php" afterPath="$PROJECT_DIR$/tests/DietaBundle/Controller/UserControllerTest.php" />
     </list>
     <ignored path="web/images/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,8 +55,32 @@
       <file leaf-file-name="RecetaControllerTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="163" column="80" lean-forward="false" selection-start-line="163" selection-start-column="80" selection-end-line="163" selection-end-column="80" />
+            <state relative-caret-position="3582">
+              <caret line="202" column="56" lean-forward="false" selection-start-line="202" selection-start-column="8" selection-end-line="202" selection-end-column="68" />
+              <folding>
+                <element signature="e#48#100#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserControllerTest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/UserControllerTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="51" column="31" lean-forward="false" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+              <folding>
+                <element signature="e#48#71#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3960">
+              <caret line="231" column="40" lean-forward="false" selection-start-line="231" selection-start-column="40" selection-end-line="231" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -72,12 +89,9 @@
       <file leaf-file-name="RecetaController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="618" column="28" lean-forward="false" selection-start-line="618" selection-start-column="28" selection-end-line="618" selection-end-column="28" />
-              <folding>
-                <element signature="e#42#70#0#PHP" expanded="true" />
-                <element signature="e#17929#17949#1#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="10872">
+              <caret line="620" column="57" lean-forward="false" selection-start-line="620" selection-start-column="57" selection-end-line="620" selection-end-column="57" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,19 +109,23 @@
       <file leaf-file-name="Receta.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="74" column="72" lean-forward="false" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="72" />
-              <folding />
+            <state relative-caret-position="5364">
+              <caret line="300" column="20" lean-forward="false" selection-start-line="300" selection-start-column="20" selection-end-line="300" selection-end-column="20" />
+              <folding>
+                <element signature="e#38#70#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="55" column="29" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="6912">
+              <caret line="387" column="41" lean-forward="false" selection-start-line="387" selection-start-column="41" selection-end-line="387" selection-end-column="41" />
+              <folding>
+                <element signature="e#38#80#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,7 +133,7 @@
       <file leaf-file-name="PersistentCollection.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/PersistentCollection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
+            <state relative-caret-position="7290">
               <caret line="428" column="0" lean-forward="false" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
               <folding>
                 <element signature="e#6#987#0#PHP" expanded="false" />
@@ -159,17 +177,11 @@
       <find>usuario_se</find>
       <find>picture</find>
       <find>serial</find>
+      <find>&quot;id&quot;:2</find>
     </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s generate:bundle" />
-      <command text="s cache:clear" />
-      <command text="s assets:install --symlink " />
-      <command text="s debug:router " />
-      <command text="s doctrine:schema:validate" />
-      <command text="s doctrine:schema:update --force " />
-      <command text="s debug:router " />
       <command text="s doctrine:schema:update" />
       <command text="s doctrine:generate:entities DietaBundle" />
       <command text="s doctrine:generate:entities DietaBundle:Receta" />
@@ -188,6 +200,13 @@
       <command text="s debug:router " />
       <command text="s cache:clear" />
       <command text="s debug:router " />
+      <command text="s doctrine:schema:validate" />
+      <command text="s doctrine:schema:update" />
+      <command text="s doctrine:schema:drop" />
+      <command text="s doctrine:schema:drop --force" />
+      <command text="s doctrine:schema:create --force" />
+      <command text="s doctrine:schema:create" />
+      <command text="s debug:router " />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -197,10 +216,6 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-    <setting file="dummy://restClient/response61.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -215,7 +230,6 @@
         <option value="$PROJECT_DIR$/src/DietaBundle/Tests/credenciales.json" />
         <option value="$PROJECT_DIR$/tests/DietaBundle/Controller/DietaControllerTest.php" />
         <option value="$PROJECT_DIR$/tests/DietaBundle/Controller/DietaItemControllerTest.php" />
-        <option value="$PROJECT_DIR$/tests/DietaBundle/Controller/UserControllerTest.php" />
         <option value="$PROJECT_DIR$/src/FrontDietaBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/FrontDietaBundle/Resources/public/js/app.react.js" />
         <option value="$PROJECT_DIR$/src/FrontDietaBundle/Resources/views/Default/index.html.twig" />
@@ -234,9 +248,7 @@
         <option value="$PROJECT_DIR$/app/DataFixtures/ORM/DietaFixtures.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Tests/Common commands" />
         <option value="$PROJECT_DIR$/app/DataFixtures/ORM/FriendsProcessor.php" />
-        <option value="$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Entity/Dieta.php" />
-        <option value="$PROJECT_DIR$/src/DietaBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Controller/RegistrationController.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
@@ -248,14 +260,17 @@
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Controller/LoginController.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Repository/UserRepository.php" />
-        <option value="$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Tests/Common_commands.txt" />
-        <option value="$PROJECT_DIR$/tests/DietaBundle/Controller/RegistrationControllerTest.php" />
-        <option value="$PROJECT_DIR$/tests/DietaBundle/Controller/LoginControllerTest.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Tests/recetainsertar.json" />
-        <option value="$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/tests/DietaBundle/Controller/LoginControllerTest.php" />
+        <option value="$PROJECT_DIR$/tests/DietaBundle/Controller/RegistrationControllerTest.php" />
         <option value="$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php" />
+        <option value="$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php" />
+        <option value="$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/tests/DietaBundle/Controller/UserControllerTest.php" />
       </list>
     </option>
   </component>
@@ -622,8 +637,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -663,6 +678,313 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/api/user/1/friend/2" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MiwiZW1haWwiOiJ5YW5lbGlzQGdtYWlsLmNvbSIsImNvbmZpcm1hdGlvbnRva2VuIjpudWxsLCJsYXN0bG9naW4iOnsiZGF0ZSI6IjIwMTctMDQtMjAgMjA6MDA6MDUuMDAwMDAwIiwidGltZXpvbmVfdHlwZSI6MywidGltZXpvbmUiOiJFdXJvcGUvTWFkcmlkIn0sInVzZXJuYW1lIjoieWFuZWxpc0BnbWFpbC5jb20iLCJmb3RvIjpudWxsLCJleHAiOjE0OTM1NzUzNzYsImlhdCI6MTQ5MjcxMTM3Nn0.hO06RTKJCnaMNAbVUvauG2BiPfIng46ci1nBFUXjc3Lz_dgOCtm8AOTTSGwRvB5n5XrfF51VpQzdEZHEWvmB9LFrIDiCD4hOHqw1FxvVE4GNAgJeK-bV0madT_gf4YtRWB26n8PANMrobBykKUZXZ8E-hIDKMD-hUS5NhBrvU9gSl-3HlwR9pdyRRz6-TDVcPuuzN95Mm0Fn2abSLbj1qWW3EgGSoXSn0bC6m1Tb0wUp0U_GAOLKuyoy8q5mey00KXmDIC3NOCE8UMirpTGuyWcEmZuPX_E7tTgd-ydjDmYu_GNPgibno6Ym4G3mmCmteWuQJU5gaTEt9Uu2TBZEKorbmHmRG9SAhjnwhXrsUaP92Q635EInk4geq3TJNhtYduYYsPVq9cuzr6l9ID95fNDyDjRO9hgouidPAPb8G7ezILw6dFkoZnPibry0-POklOdxk-rF145QeNP4BVau8UuN4O_u7bsXAp7dGj1rym_r07GPVd0rZZnfQeirYCtxEu0sExUvR7ol8wvhrIZrXRyP7U-nZDbPiNdBXD72uBGJiAfVW_x8iZBv9aTMPxow5jYOlSZq-UhvN3Stse86hDpfmyrjK1zQa--Ict9zruGXWghU_tlPYbx0-NjDQwkTWzKv2AQiOju3784QDRu8N5dH06Ffo3adZWmT3T61zHI" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{     &quot;username&quot;: &quot;yanelis@gmail.com&quot;,  &quot;password&quot;: &quot;test123&quot;                  }" />
+          <option name="filesToSend" value="$PROJECT_DIR$/web/images/recetas/58cebe5624c95.jpeg" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/api/user/1/friend/2" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MiwiZW1haWwiOiJ5YW5lbGlzQGdtYWlsLmNvbSIsImNvbmZpcm1hdGlvbnRva2VuIjpudWxsLCJsYXN0bG9naW4iOnsiZGF0ZSI6IjIwMTctMDQtMjAgMjA6MDA6MDUuMDAwMDAwIiwidGltZXpvbmVfdHlwZSI6MywidGltZXpvbmUiOiJFdXJvcGUvTWFkcmlkIn0sInVzZXJuYW1lIjoieWFuZWxpc0BnbWFpbC5jb20iLCJmb3RvIjpudWxsLCJleHAiOjE0OTM1NzUzNzYsImlhdCI6MTQ5MjcxMTM3Nn0.hO06RTKJCnaMNAbVUvauG2BiPfIng46ci1nBFUXjc3Lz_dgOCtm8AOTTSGwRvB5n5XrfF51VpQzdEZHEWvmB9LFrIDiCD4hOHqw1FxvVE4GNAgJeK-bV0madT_gf4YtRWB26n8PANMrobBykKUZXZ8E-hIDKMD-hUS5NhBrvU9gSl-3HlwR9pdyRRz6-TDVcPuuzN95Mm0Fn2abSLbj1qWW3EgGSoXSn0bC6m1Tb0wUp0U_GAOLKuyoy8q5mey00KXmDIC3NOCE8UMirpTGuyWcEmZuPX_E7tTgd-ydjDmYu_GNPgibno6Ym4G3mmCmteWuQJU5gaTEt9Uu2TBZEKorbmHmRG9SAhjnwhXrsUaP92Q635EInk4geq3TJNhtYduYYsPVq9cuzr6l9ID95fNDyDjRO9hgouidPAPb8G7ezILw6dFkoZnPibry0-POklOdxk-rF145QeNP4BVau8UuN4O_u7bsXAp7dGj1rym_r07GPVd0rZZnfQeirYCtxEu0sExUvR7ol8wvhrIZrXRyP7U-nZDbPiNdBXD72uBGJiAfVW_x8iZBv9aTMPxow5jYOlSZq-UhvN3Stse86hDpfmyrjK1zQa--Ict9zruGXWghU_tlPYbx0-NjDQwkTWzKv2AQiOju3784QDRu8N5dH06Ffo3adZWmT3T61zHI" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{     &quot;username&quot;: &quot;yanelis@gmail.com&quot;,  &quot;password&quot;: &quot;test123&quot;                  }" />
+          <option name="filesToSend" value="$PROJECT_DIR$/web/images/recetas/58cebe5624c95.jpeg" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/api/receta/1/seguidores" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MiwiZW1haWwiOiJ5YW5lbGlzQGdtYWlsLmNvbSIsImNvbmZpcm1hdGlvbnRva2VuIjpudWxsLCJsYXN0bG9naW4iOnsiZGF0ZSI6IjIwMTctMDQtMjAgMjA6MDA6MDUuMDAwMDAwIiwidGltZXpvbmVfdHlwZSI6MywidGltZXpvbmUiOiJFdXJvcGUvTWFkcmlkIn0sInVzZXJuYW1lIjoieWFuZWxpc0BnbWFpbC5jb20iLCJmb3RvIjpudWxsLCJleHAiOjE0OTM1NzUzNzYsImlhdCI6MTQ5MjcxMTM3Nn0.hO06RTKJCnaMNAbVUvauG2BiPfIng46ci1nBFUXjc3Lz_dgOCtm8AOTTSGwRvB5n5XrfF51VpQzdEZHEWvmB9LFrIDiCD4hOHqw1FxvVE4GNAgJeK-bV0madT_gf4YtRWB26n8PANMrobBykKUZXZ8E-hIDKMD-hUS5NhBrvU9gSl-3HlwR9pdyRRz6-TDVcPuuzN95Mm0Fn2abSLbj1qWW3EgGSoXSn0bC6m1Tb0wUp0U_GAOLKuyoy8q5mey00KXmDIC3NOCE8UMirpTGuyWcEmZuPX_E7tTgd-ydjDmYu_GNPgibno6Ym4G3mmCmteWuQJU5gaTEt9Uu2TBZEKorbmHmRG9SAhjnwhXrsUaP92Q635EInk4geq3TJNhtYduYYsPVq9cuzr6l9ID95fNDyDjRO9hgouidPAPb8G7ezILw6dFkoZnPibry0-POklOdxk-rF145QeNP4BVau8UuN4O_u7bsXAp7dGj1rym_r07GPVd0rZZnfQeirYCtxEu0sExUvR7ol8wvhrIZrXRyP7U-nZDbPiNdBXD72uBGJiAfVW_x8iZBv9aTMPxow5jYOlSZq-UhvN3Stse86hDpfmyrjK1zQa--Ict9zruGXWghU_tlPYbx0-NjDQwkTWzKv2AQiOju3784QDRu8N5dH06Ffo3adZWmT3T61zHI" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{     &quot;username&quot;: &quot;yanelis@gmail.com&quot;,  &quot;password&quot;: &quot;test123&quot;                  }" />
+          <option name="filesToSend" value="$PROJECT_DIR$/web/images/recetas/58cebe5624c95.jpeg" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/receta/1/seguidores" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MiwiZW1haWwiOiJ5YW5lbGlzQGdtYWlsLmNvbSIsImNvbmZpcm1hdGlvbnRva2VuIjpudWxsLCJsYXN0bG9naW4iOnsiZGF0ZSI6IjIwMTctMDQtMjAgMjA6MDA6MDUuMDAwMDAwIiwidGltZXpvbmVfdHlwZSI6MywidGltZXpvbmUiOiJFdXJvcGUvTWFkcmlkIn0sInVzZXJuYW1lIjoieWFuZWxpc0BnbWFpbC5jb20iLCJmb3RvIjpudWxsLCJleHAiOjE0OTM1NzUzNzYsImlhdCI6MTQ5MjcxMTM3Nn0.hO06RTKJCnaMNAbVUvauG2BiPfIng46ci1nBFUXjc3Lz_dgOCtm8AOTTSGwRvB5n5XrfF51VpQzdEZHEWvmB9LFrIDiCD4hOHqw1FxvVE4GNAgJeK-bV0madT_gf4YtRWB26n8PANMrobBykKUZXZ8E-hIDKMD-hUS5NhBrvU9gSl-3HlwR9pdyRRz6-TDVcPuuzN95Mm0Fn2abSLbj1qWW3EgGSoXSn0bC6m1Tb0wUp0U_GAOLKuyoy8q5mey00KXmDIC3NOCE8UMirpTGuyWcEmZuPX_E7tTgd-ydjDmYu_GNPgibno6Ym4G3mmCmteWuQJU5gaTEt9Uu2TBZEKorbmHmRG9SAhjnwhXrsUaP92Q635EInk4geq3TJNhtYduYYsPVq9cuzr6l9ID95fNDyDjRO9hgouidPAPb8G7ezILw6dFkoZnPibry0-POklOdxk-rF145QeNP4BVau8UuN4O_u7bsXAp7dGj1rym_r07GPVd0rZZnfQeirYCtxEu0sExUvR7ol8wvhrIZrXRyP7U-nZDbPiNdBXD72uBGJiAfVW_x8iZBv9aTMPxow5jYOlSZq-UhvN3Stse86hDpfmyrjK1zQa--Ict9zruGXWghU_tlPYbx0-NjDQwkTWzKv2AQiOju3784QDRu8N5dH06Ffo3adZWmT3T61zHI" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{     &quot;username&quot;: &quot;yanelis@gmail.com&quot;,  &quot;password&quot;: &quot;test123&quot;                  }" />
+          <option name="filesToSend" value="$PROJECT_DIR$/web/images/recetas/58cebe5624c95.jpeg" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{     &quot;username&quot;: &quot;yanelis@gmail.com&quot;,  &quot;password&quot;: &quot;test123&quot;                  }" />
+          <option name="filesToSend" value="$PROJECT_DIR$/web/images/recetas/58cebe5624c95.jpeg" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{     &quot;username&quot;: &quot;yanelis&quot;,  &quot;password&quot;: &quot;test123&quot;                  }" />
+          <option name="filesToSend" value="$PROJECT_DIR$/web/images/recetas/58cebe5624c95.jpeg" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MjEsImVtYWlsIjoiVGlhbm5hc3N0cm9tYW5AZXhhbXBsZS5uZXRAZ21haWwuY29tIiwiY29uZmlybWF0aW9udG9rZW4iOm51bGwsImxhc3Rsb2dpbiI6eyJkYXRlIjoiMjAxNy0wNC0yMCAxNTo1OTo1MS4wMDAwMDAiLCJ0aW1lem9uZV90eXBlIjozLCJ0aW1lem9uZSI6IkV1cm9wZS9NYWRyaWQifSwidXNlcm5hbWUiOiJBZGFoIiwiZm90byI6IjU4ZTkxN2Y1NWQ4ZTYuanBnIiwiZXhwIjoxNDkzNTYxNDExLCJpYXQiOjE0OTI2OTc0MTF9.tJwpGtssuA3zCadFhkqHqyzWOpwOuxyA9aBOEed15PV90brGvw3m3F7M43LdomRtSm6soggrMuH8MMrHXdHqYTAV4LGlCo4f4zlS2DLc1fD7MpO22HeWUu2BnAHWPyYFbYUC__AL2p-YlmfXpw6fcfbApFyd66ULx6rTEmel8dt_KjdiM3pusAF6ODf40OglW3t9eQK-wnkzPpZOsav27avFebH36UI6sJcXb5juU86oOhz6dUu3jF1kF-ucyhWvZRRk9lEeWKkFk4MWuI7Sw3HWlvn7e8PLQCmFO2rWlRqy7nXSfNLc0FAPwyUTDFPpFpvYAludrAzLDBlvLREbBoZp6N9umItj9jaJxqSMhMZfNpUHM2hteQegDJGRPltI4LZ8MogJVNZsGig4hlI7ij5VKsmMdc9TxZi13Wx3O4_5iQZAqhbEcHb795QP-ARRE1-wNkghHpn-q70kSTAQm8EbYPZxufDdZNjsgE23THFxRCXK32ONHn0-bGKqgIHAvqgrYuSpUS-CwgV2SJ2aQ-zcfG5HuBLmycpwD2VTryefmKzZZl8pyHWuuTbX2D8s8iWvUSuMY6-t1FJpB1YHJRkIXJHkZtb11NybMKBUQ3tfpjRMvwK66UZyk2n_OJpbCJbjxpcCq_fBMmPBPUeddOjtmIwKScihk3_mG81yIpw" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{     &quot;username&quot;: &quot;yanelis&quot;,  &quot;password&quot;: &quot;test123&quot;                  }" />
+          <option name="filesToSend" value="$PROJECT_DIR$/web/images/recetas/58cebe5624c95.jpeg" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/api/receta/1/seguidores" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MjEsImVtYWlsIjoiVGlhbm5hc3N0cm9tYW5AZXhhbXBsZS5uZXRAZ21haWwuY29tIiwiY29uZmlybWF0aW9udG9rZW4iOm51bGwsImxhc3Rsb2dpbiI6eyJkYXRlIjoiMjAxNy0wNC0yMCAxNTo1OTo1MS4wMDAwMDAiLCJ0aW1lem9uZV90eXBlIjozLCJ0aW1lem9uZSI6IkV1cm9wZS9NYWRyaWQifSwidXNlcm5hbWUiOiJBZGFoIiwiZm90byI6IjU4ZTkxN2Y1NWQ4ZTYuanBnIiwiZXhwIjoxNDkzNTYxNDExLCJpYXQiOjE0OTI2OTc0MTF9.tJwpGtssuA3zCadFhkqHqyzWOpwOuxyA9aBOEed15PV90brGvw3m3F7M43LdomRtSm6soggrMuH8MMrHXdHqYTAV4LGlCo4f4zlS2DLc1fD7MpO22HeWUu2BnAHWPyYFbYUC__AL2p-YlmfXpw6fcfbApFyd66ULx6rTEmel8dt_KjdiM3pusAF6ODf40OglW3t9eQK-wnkzPpZOsav27avFebH36UI6sJcXb5juU86oOhz6dUu3jF1kF-ucyhWvZRRk9lEeWKkFk4MWuI7Sw3HWlvn7e8PLQCmFO2rWlRqy7nXSfNLc0FAPwyUTDFPpFpvYAludrAzLDBlvLREbBoZp6N9umItj9jaJxqSMhMZfNpUHM2hteQegDJGRPltI4LZ8MogJVNZsGig4hlI7ij5VKsmMdc9TxZi13Wx3O4_5iQZAqhbEcHb795QP-ARRE1-wNkghHpn-q70kSTAQm8EbYPZxufDdZNjsgE23THFxRCXK32ONHn0-bGKqgIHAvqgrYuSpUS-CwgV2SJ2aQ-zcfG5HuBLmycpwD2VTryefmKzZZl8pyHWuuTbX2D8s8iWvUSuMY6-t1FJpB1YHJRkIXJHkZtb11NybMKBUQ3tfpjRMvwK66UZyk2n_OJpbCJbjxpcCq_fBMmPBPUeddOjtmIwKScihk3_mG81yIpw" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{     &quot;username&quot;: &quot;Adah&quot;,  &quot;password&quot;: &quot;test123&quot;                  }" />
+          <option name="filesToSend" value="$PROJECT_DIR$/web/images/recetas/58cebe5624c95.jpeg" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/api/receta/602/seguidores" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MjEsImVtYWlsIjoiVGlhbm5hc3N0cm9tYW5AZXhhbXBsZS5uZXRAZ21haWwuY29tIiwiY29uZmlybWF0aW9udG9rZW4iOm51bGwsImxhc3Rsb2dpbiI6eyJkYXRlIjoiMjAxNy0wNC0yMCAxNTo1OTo1MS4wMDAwMDAiLCJ0aW1lem9uZV90eXBlIjozLCJ0aW1lem9uZSI6IkV1cm9wZS9NYWRyaWQifSwidXNlcm5hbWUiOiJBZGFoIiwiZm90byI6IjU4ZTkxN2Y1NWQ4ZTYuanBnIiwiZXhwIjoxNDkzNTYxNDExLCJpYXQiOjE0OTI2OTc0MTF9.tJwpGtssuA3zCadFhkqHqyzWOpwOuxyA9aBOEed15PV90brGvw3m3F7M43LdomRtSm6soggrMuH8MMrHXdHqYTAV4LGlCo4f4zlS2DLc1fD7MpO22HeWUu2BnAHWPyYFbYUC__AL2p-YlmfXpw6fcfbApFyd66ULx6rTEmel8dt_KjdiM3pusAF6ODf40OglW3t9eQK-wnkzPpZOsav27avFebH36UI6sJcXb5juU86oOhz6dUu3jF1kF-ucyhWvZRRk9lEeWKkFk4MWuI7Sw3HWlvn7e8PLQCmFO2rWlRqy7nXSfNLc0FAPwyUTDFPpFpvYAludrAzLDBlvLREbBoZp6N9umItj9jaJxqSMhMZfNpUHM2hteQegDJGRPltI4LZ8MogJVNZsGig4hlI7ij5VKsmMdc9TxZi13Wx3O4_5iQZAqhbEcHb795QP-ARRE1-wNkghHpn-q70kSTAQm8EbYPZxufDdZNjsgE23THFxRCXK32ONHn0-bGKqgIHAvqgrYuSpUS-CwgV2SJ2aQ-zcfG5HuBLmycpwD2VTryefmKzZZl8pyHWuuTbX2D8s8iWvUSuMY6-t1FJpB1YHJRkIXJHkZtb11NybMKBUQ3tfpjRMvwK66UZyk2n_OJpbCJbjxpcCq_fBMmPBPUeddOjtmIwKScihk3_mG81yIpw" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{     &quot;username&quot;: &quot;Adah&quot;,  &quot;password&quot;: &quot;test123&quot;                  }" />
+          <option name="filesToSend" value="$PROJECT_DIR$/web/images/recetas/58cebe5624c95.jpeg" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/api/receta/602/seguidores" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MjEsImVtYWlsIjoiVGlhbm5hc3N0cm9tYW5AZXhhbXBsZS5uZXRAZ21haWwuY29tIiwiY29uZmlybWF0aW9udG9rZW4iOm51bGwsImxhc3Rsb2dpbiI6eyJkYXRlIjoiMjAxNy0wNC0yMCAxNTo1OTo1MS4wMDAwMDAiLCJ0aW1lem9uZV90eXBlIjozLCJ0aW1lem9uZSI6IkV1cm9wZS9NYWRyaWQifSwidXNlcm5hbWUiOiJBZGFoIiwiZm90byI6IjU4ZTkxN2Y1NWQ4ZTYuanBnIiwiZXhwIjoxNDkzNTYxNDExLCJpYXQiOjE0OTI2OTc0MTF9.tJwpGtssuA3zCadFhkqHqyzWOpwOuxyA9aBOEed15PV90brGvw3m3F7M43LdomRtSm6soggrMuH8MMrHXdHqYTAV4LGlCo4f4zlS2DLc1fD7MpO22HeWUu2BnAHWPyYFbYUC__AL2p-YlmfXpw6fcfbApFyd66ULx6rTEmel8dt_KjdiM3pusAF6ODf40OglW3t9eQK-wnkzPpZOsav27avFebH36UI6sJcXb5juU86oOhz6dUu3jF1kF-ucyhWvZRRk9lEeWKkFk4MWuI7Sw3HWlvn7e8PLQCmFO2rWlRqy7nXSfNLc0FAPwyUTDFPpFpvYAludrAzLDBlvLREbBoZp6N9umItj9jaJxqSMhMZfNpUHM2hteQegDJGRPltI4LZ8MogJVNZsGig4hlI7ij5VKsmMdc9TxZi13Wx3O4_5iQZAqhbEcHb795QP-ARRE1-wNkghHpn-q70kSTAQm8EbYPZxufDdZNjsgE23THFxRCXK32ONHn0-bGKqgIHAvqgrYuSpUS-CwgV2SJ2aQ-zcfG5HuBLmycpwD2VTryefmKzZZl8pyHWuuTbX2D8s8iWvUSuMY6-t1FJpB1YHJRkIXJHkZtb11NybMKBUQ3tfpjRMvwK66UZyk2n_OJpbCJbjxpcCq_fBMmPBPUeddOjtmIwKScihk3_mG81yIpw" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{     &quot;username&quot;: &quot;Adah&quot;,  &quot;password&quot;: &quot;test123&quot;                  }" />
+          <option name="filesToSend" value="$PROJECT_DIR$/web/images/recetas/58cebe5624c95.jpeg" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/api/receta/602/user/22" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MjEsImVtYWlsIjoiVGlhbm5hc3N0cm9tYW5AZXhhbXBsZS5uZXRAZ21haWwuY29tIiwiY29uZmlybWF0aW9udG9rZW4iOm51bGwsImxhc3Rsb2dpbiI6eyJkYXRlIjoiMjAxNy0wNC0yMCAxNTo1OTo1MS4wMDAwMDAiLCJ0aW1lem9uZV90eXBlIjozLCJ0aW1lem9uZSI6IkV1cm9wZS9NYWRyaWQifSwidXNlcm5hbWUiOiJBZGFoIiwiZm90byI6IjU4ZTkxN2Y1NWQ4ZTYuanBnIiwiZXhwIjoxNDkzNTYxNDExLCJpYXQiOjE0OTI2OTc0MTF9.tJwpGtssuA3zCadFhkqHqyzWOpwOuxyA9aBOEed15PV90brGvw3m3F7M43LdomRtSm6soggrMuH8MMrHXdHqYTAV4LGlCo4f4zlS2DLc1fD7MpO22HeWUu2BnAHWPyYFbYUC__AL2p-YlmfXpw6fcfbApFyd66ULx6rTEmel8dt_KjdiM3pusAF6ODf40OglW3t9eQK-wnkzPpZOsav27avFebH36UI6sJcXb5juU86oOhz6dUu3jF1kF-ucyhWvZRRk9lEeWKkFk4MWuI7Sw3HWlvn7e8PLQCmFO2rWlRqy7nXSfNLc0FAPwyUTDFPpFpvYAludrAzLDBlvLREbBoZp6N9umItj9jaJxqSMhMZfNpUHM2hteQegDJGRPltI4LZ8MogJVNZsGig4hlI7ij5VKsmMdc9TxZi13Wx3O4_5iQZAqhbEcHb795QP-ARRE1-wNkghHpn-q70kSTAQm8EbYPZxufDdZNjsgE23THFxRCXK32ONHn0-bGKqgIHAvqgrYuSpUS-CwgV2SJ2aQ-zcfG5HuBLmycpwD2VTryefmKzZZl8pyHWuuTbX2D8s8iWvUSuMY6-t1FJpB1YHJRkIXJHkZtb11NybMKBUQ3tfpjRMvwK66UZyk2n_OJpbCJbjxpcCq_fBMmPBPUeddOjtmIwKScihk3_mG81yIpw" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{     &quot;username&quot;: &quot;Adah&quot;,  &quot;password&quot;: &quot;test123&quot;                  }" />
+          <option name="filesToSend" value="$PROJECT_DIR$/web/images/recetas/58cebe5624c95.jpeg" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/api/receta/602/user/22" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MjEsImVtYWlsIjoiVGlhbm5hc3N0cm9tYW5AZXhhbXBsZS5uZXRAZ21haWwuY29tIiwiY29uZmlybWF0aW9udG9rZW4iOm51bGwsImxhc3Rsb2dpbiI6eyJkYXRlIjoiMjAxNy0wNC0yMCAxNTo1OTo1MS4wMDAwMDAiLCJ0aW1lem9uZV90eXBlIjozLCJ0aW1lem9uZSI6IkV1cm9wZS9NYWRyaWQifSwidXNlcm5hbWUiOiJBZGFoIiwiZm90byI6IjU4ZTkxN2Y1NWQ4ZTYuanBnIiwiZXhwIjoxNDkzNTYxNDExLCJpYXQiOjE0OTI2OTc0MTF9.tJwpGtssuA3zCadFhkqHqyzWOpwOuxyA9aBOEed15PV90brGvw3m3F7M43LdomRtSm6soggrMuH8MMrHXdHqYTAV4LGlCo4f4zlS2DLc1fD7MpO22HeWUu2BnAHWPyYFbYUC__AL2p-YlmfXpw6fcfbApFyd66ULx6rTEmel8dt_KjdiM3pusAF6ODf40OglW3t9eQK-wnkzPpZOsav27avFebH36UI6sJcXb5juU86oOhz6dUu3jF1kF-ucyhWvZRRk9lEeWKkFk4MWuI7Sw3HWlvn7e8PLQCmFO2rWlRqy7nXSfNLc0FAPwyUTDFPpFpvYAludrAzLDBlvLREbBoZp6N9umItj9jaJxqSMhMZfNpUHM2hteQegDJGRPltI4LZ8MogJVNZsGig4hlI7ij5VKsmMdc9TxZi13Wx3O4_5iQZAqhbEcHb795QP-ARRE1-wNkghHpn-q70kSTAQm8EbYPZxufDdZNjsgE23THFxRCXK32ONHn0-bGKqgIHAvqgrYuSpUS-CwgV2SJ2aQ-zcfG5HuBLmycpwD2VTryefmKzZZl8pyHWuuTbX2D8s8iWvUSuMY6-t1FJpB1YHJRkIXJHkZtb11NybMKBUQ3tfpjRMvwK66UZyk2n_OJpbCJbjxpcCq_fBMmPBPUeddOjtmIwKScihk3_mG81yIpw" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{     &quot;username&quot;: &quot;Adah&quot;,  &quot;password&quot;: &quot;test123&quot;                  }" />
+          <option name="filesToSend" value="$PROJECT_DIR$/web/images/recetas/58cebe5624c95.jpeg" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/app_dev.php/api/receta/602" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MjEsImVtYWlsIjoiVGlhbm5hc3N0cm9tYW5AZXhhbXBsZS5uZXRAZ21haWwuY29tIiwiY29uZmlybWF0aW9udG9rZW4iOm51bGwsImxhc3Rsb2dpbiI6eyJkYXRlIjoiMjAxNy0wNC0yMCAxNTo1OTo1MS4wMDAwMDAiLCJ0aW1lem9uZV90eXBlIjozLCJ0aW1lem9uZSI6IkV1cm9wZS9NYWRyaWQifSwidXNlcm5hbWUiOiJBZGFoIiwiZm90byI6IjU4ZTkxN2Y1NWQ4ZTYuanBnIiwiZXhwIjoxNDkzNTYxNDExLCJpYXQiOjE0OTI2OTc0MTF9.tJwpGtssuA3zCadFhkqHqyzWOpwOuxyA9aBOEed15PV90brGvw3m3F7M43LdomRtSm6soggrMuH8MMrHXdHqYTAV4LGlCo4f4zlS2DLc1fD7MpO22HeWUu2BnAHWPyYFbYUC__AL2p-YlmfXpw6fcfbApFyd66ULx6rTEmel8dt_KjdiM3pusAF6ODf40OglW3t9eQK-wnkzPpZOsav27avFebH36UI6sJcXb5juU86oOhz6dUu3jF1kF-ucyhWvZRRk9lEeWKkFk4MWuI7Sw3HWlvn7e8PLQCmFO2rWlRqy7nXSfNLc0FAPwyUTDFPpFpvYAludrAzLDBlvLREbBoZp6N9umItj9jaJxqSMhMZfNpUHM2hteQegDJGRPltI4LZ8MogJVNZsGig4hlI7ij5VKsmMdc9TxZi13Wx3O4_5iQZAqhbEcHb795QP-ARRE1-wNkghHpn-q70kSTAQm8EbYPZxufDdZNjsgE23THFxRCXK32ONHn0-bGKqgIHAvqgrYuSpUS-CwgV2SJ2aQ-zcfG5HuBLmycpwD2VTryefmKzZZl8pyHWuuTbX2D8s8iWvUSuMY6-t1FJpB1YHJRkIXJHkZtb11NybMKBUQ3tfpjRMvwK66UZyk2n_OJpbCJbjxpcCq_fBMmPBPUeddOjtmIwKScihk3_mG81yIpw" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{     &quot;username&quot;: &quot;Adah&quot;,  &quot;password&quot;: &quot;test123&quot;                  }" />
+          <option name="filesToSend" value="$PROJECT_DIR$/web/images/recetas/58cebe5624c95.jpeg" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost" />
@@ -1779,305 +2101,10 @@
           <option name="textToSend" value="" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/api/receta/415/seguidores" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/api/users" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/api/users" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/api/user/11" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/api/user/1" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/api/users" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{   &quot;nombre&quot;: &quot;Carne con papas&quot;,   &quot;raciones&quot;: &quot;10&quot;,   &quot;tiempo_preparacion&quot;: &quot;15min&quot;,    &quot;ingredientes&quot;: [     &quot;carne&quot;,     &quot;papas&quot;,     &quot;aceite&quot;,     &quot;ajo&quot;   ],    &quot;preparacion&quot;: [     &quot;Cortar&quot;,     &quot;Cocinar durante 15 min&quot;,     &quot;Aliñar &quot;,     &quot;Enplatar&quot;   ]   }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/api/users" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6NjkxLCJlbWFpbCI6IlRpYW5uYXNzdHJvbWFuQGV4YW1wbGUubmV0QGdtYWlsLmNvbSIsImNvbmZpcm1hdGlvbnRva2VuIjpudWxsLCJsYXN0bG9naW4iOm51bGwsInVzZXJuYW1lIjoiQWRhaCIsImZvdG8iOiI1OGU5MTdmNTVkOGU2LmpwZyIsImV4cCI6MTQ5MjYwMTU3NiwiaWF0IjoxNDkyNTE1MTc2fQ.S5ABA3WyFG5n-iT3al8JVWKIbS6cT38fTw2KwemGfmX72id9SANgcL01sSuLrNcyg15sRcx-qHbES8Fazb8Jrhh6Z5rc9kkboPZZFwpVZjpwldteWmZaeYnWkAJm8ZocF_TWJdwWbJBPYiPAc1d5JsSqpFQkkI4_1a_t8dkLOZ5TZu_2stBaQrZKTo5E7Yibd_uSMqqjkJVE1sUzqk8NIWtVw9xxLCRP8DccDcOB1SD2sdnooGayOk_o3uQ_psjbugOU573IjbpO-cwYoGomP40Y2l1XZmAuybwnCkX442vgogUErErV3n9kDTboVWnj-qN637or4IEtuoe7GChSmsNXAXbvTkEwL7g9NkWAJs4zk1FOtI4lDc_cGH4GbYOdd9768CsB0DmWX7myHmrct9CJo7RWXFIOXgFQbQgoeNLIlUUi9GrgDatNjH_BJmoo0uMumXBuTPG_abYwe5pyHTTS8WW_-HNRKdp5PlhQ8qdCTmHgqjkHUgsoidryj6cE-VFlTmQpt_NzgutJNsAo21aznLN0DcQQXI3tqYu_HcnK4R5KQzibW2VxOvk7Hj1Q3_hYPSirS-FCzligSfsbW2aTJrDmtzQY5mV-qS0heC0KBrE6-idXtfnqgSTZfAfMMQxxETD3E9mH4uGml6qdEAaqdhbvDNWTzBLYmX71eVI" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{   &quot;nombre&quot;: &quot;Carne con papas&quot;,   &quot;raciones&quot;: &quot;10&quot;,   &quot;tiempo_preparacion&quot;: &quot;15min&quot;,    &quot;ingredientes&quot;: [     &quot;carne&quot;,     &quot;papas&quot;,     &quot;aceite&quot;,     &quot;ajo&quot;   ],    &quot;preparacion&quot;: [     &quot;Cortar&quot;,     &quot;Cocinar durante 15 min&quot;,     &quot;Aliñar &quot;,     &quot;Enplatar&quot;   ]   }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/api/user/705" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6NjkxLCJlbWFpbCI6IlRpYW5uYXNzdHJvbWFuQGV4YW1wbGUubmV0QGdtYWlsLmNvbSIsImNvbmZpcm1hdGlvbnRva2VuIjpudWxsLCJsYXN0bG9naW4iOm51bGwsInVzZXJuYW1lIjoiQWRhaCIsImZvdG8iOiI1OGU5MTdmNTVkOGU2LmpwZyIsImV4cCI6MTQ5MjYwMTU3NiwiaWF0IjoxNDkyNTE1MTc2fQ.S5ABA3WyFG5n-iT3al8JVWKIbS6cT38fTw2KwemGfmX72id9SANgcL01sSuLrNcyg15sRcx-qHbES8Fazb8Jrhh6Z5rc9kkboPZZFwpVZjpwldteWmZaeYnWkAJm8ZocF_TWJdwWbJBPYiPAc1d5JsSqpFQkkI4_1a_t8dkLOZ5TZu_2stBaQrZKTo5E7Yibd_uSMqqjkJVE1sUzqk8NIWtVw9xxLCRP8DccDcOB1SD2sdnooGayOk_o3uQ_psjbugOU573IjbpO-cwYoGomP40Y2l1XZmAuybwnCkX442vgogUErErV3n9kDTboVWnj-qN637or4IEtuoe7GChSmsNXAXbvTkEwL7g9NkWAJs4zk1FOtI4lDc_cGH4GbYOdd9768CsB0DmWX7myHmrct9CJo7RWXFIOXgFQbQgoeNLIlUUi9GrgDatNjH_BJmoo0uMumXBuTPG_abYwe5pyHTTS8WW_-HNRKdp5PlhQ8qdCTmHgqjkHUgsoidryj6cE-VFlTmQpt_NzgutJNsAo21aznLN0DcQQXI3tqYu_HcnK4R5KQzibW2VxOvk7Hj1Q3_hYPSirS-FCzligSfsbW2aTJrDmtzQY5mV-qS0heC0KBrE6-idXtfnqgSTZfAfMMQxxETD3E9mH4uGml6qdEAaqdhbvDNWTzBLYmX71eVI" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{   &quot;nombre&quot;: &quot;Carne con papas&quot;,   &quot;raciones&quot;: &quot;10&quot;,   &quot;tiempo_preparacion&quot;: &quot;15min&quot;,    &quot;ingredientes&quot;: [     &quot;carne&quot;,     &quot;papas&quot;,     &quot;aceite&quot;,     &quot;ajo&quot;   ],    &quot;preparacion&quot;: [     &quot;Cortar&quot;,     &quot;Cocinar durante 15 min&quot;,     &quot;Aliñar &quot;,     &quot;Enplatar&quot;   ]   }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="http://localhost/app_dev.php/api/user/705" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6NjkxLCJlbWFpbCI6IlRpYW5uYXNzdHJvbWFuQGV4YW1wbGUubmV0QGdtYWlsLmNvbSIsImNvbmZpcm1hdGlvbnRva2VuIjpudWxsLCJsYXN0bG9naW4iOm51bGwsInVzZXJuYW1lIjoiQWRhaCIsImZvdG8iOiI1OGU5MTdmNTVkOGU2LmpwZyIsImV4cCI6MTQ5MjYwMTU3NiwiaWF0IjoxNDkyNTE1MTc2fQ.S5ABA3WyFG5n-iT3al8JVWKIbS6cT38fTw2KwemGfmX72id9SANgcL01sSuLrNcyg15sRcx-qHbES8Fazb8Jrhh6Z5rc9kkboPZZFwpVZjpwldteWmZaeYnWkAJm8ZocF_TWJdwWbJBPYiPAc1d5JsSqpFQkkI4_1a_t8dkLOZ5TZu_2stBaQrZKTo5E7Yibd_uSMqqjkJVE1sUzqk8NIWtVw9xxLCRP8DccDcOB1SD2sdnooGayOk_o3uQ_psjbugOU573IjbpO-cwYoGomP40Y2l1XZmAuybwnCkX442vgogUErErV3n9kDTboVWnj-qN637or4IEtuoe7GChSmsNXAXbvTkEwL7g9NkWAJs4zk1FOtI4lDc_cGH4GbYOdd9768CsB0DmWX7myHmrct9CJo7RWXFIOXgFQbQgoeNLIlUUi9GrgDatNjH_BJmoo0uMumXBuTPG_abYwe5pyHTTS8WW_-HNRKdp5PlhQ8qdCTmHgqjkHUgsoidryj6cE-VFlTmQpt_NzgutJNsAo21aznLN0DcQQXI3tqYu_HcnK4R5KQzibW2VxOvk7Hj1Q3_hYPSirS-FCzligSfsbW2aTJrDmtzQY5mV-qS0heC0KBrE6-idXtfnqgSTZfAfMMQxxETD3E9mH4uGml6qdEAaqdhbvDNWTzBLYmX71eVI" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{   &quot;nombre&quot;: &quot;Carne con papas&quot;,   &quot;raciones&quot;: &quot;10&quot;,   &quot;tiempo_preparacion&quot;: &quot;15min&quot;,    &quot;ingredientes&quot;: [     &quot;carne&quot;,     &quot;papas&quot;,     &quot;aceite&quot;,     &quot;ajo&quot;   ],    &quot;preparacion&quot;: [     &quot;Cortar&quot;,     &quot;Cocinar durante 15 min&quot;,     &quot;Aliñar &quot;,     &quot;Enplatar&quot;   ]   }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/api/recetas" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6NjkxLCJlbWFpbCI6IlRpYW5uYXNzdHJvbWFuQGV4YW1wbGUubmV0QGdtYWlsLmNvbSIsImNvbmZpcm1hdGlvbnRva2VuIjpudWxsLCJsYXN0bG9naW4iOm51bGwsInVzZXJuYW1lIjoiQWRhaCIsImZvdG8iOiI1OGU5MTdmNTVkOGU2LmpwZyIsImV4cCI6MTQ5MjYwMTU3NiwiaWF0IjoxNDkyNTE1MTc2fQ.S5ABA3WyFG5n-iT3al8JVWKIbS6cT38fTw2KwemGfmX72id9SANgcL01sSuLrNcyg15sRcx-qHbES8Fazb8Jrhh6Z5rc9kkboPZZFwpVZjpwldteWmZaeYnWkAJm8ZocF_TWJdwWbJBPYiPAc1d5JsSqpFQkkI4_1a_t8dkLOZ5TZu_2stBaQrZKTo5E7Yibd_uSMqqjkJVE1sUzqk8NIWtVw9xxLCRP8DccDcOB1SD2sdnooGayOk_o3uQ_psjbugOU573IjbpO-cwYoGomP40Y2l1XZmAuybwnCkX442vgogUErErV3n9kDTboVWnj-qN637or4IEtuoe7GChSmsNXAXbvTkEwL7g9NkWAJs4zk1FOtI4lDc_cGH4GbYOdd9768CsB0DmWX7myHmrct9CJo7RWXFIOXgFQbQgoeNLIlUUi9GrgDatNjH_BJmoo0uMumXBuTPG_abYwe5pyHTTS8WW_-HNRKdp5PlhQ8qdCTmHgqjkHUgsoidryj6cE-VFlTmQpt_NzgutJNsAo21aznLN0DcQQXI3tqYu_HcnK4R5KQzibW2VxOvk7Hj1Q3_hYPSirS-FCzligSfsbW2aTJrDmtzQY5mV-qS0heC0KBrE6-idXtfnqgSTZfAfMMQxxETD3E9mH4uGml6qdEAaqdhbvDNWTzBLYmX71eVI" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{   &quot;nombre&quot;: &quot;Carne con papas&quot;,   &quot;raciones&quot;: &quot;10&quot;,   &quot;tiempo_preparacion&quot;: &quot;15min&quot;,    &quot;ingredientes&quot;: [     &quot;carne&quot;,     &quot;papas&quot;,     &quot;aceite&quot;,     &quot;ajo&quot;   ],    &quot;preparacion&quot;: [     &quot;Cortar&quot;,     &quot;Cocinar durante 15 min&quot;,     &quot;Aliñar &quot;,     &quot;Enplatar&quot;   ]   }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/api/receta" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6NjkxLCJlbWFpbCI6IlRpYW5uYXNzdHJvbWFuQGV4YW1wbGUubmV0QGdtYWlsLmNvbSIsImNvbmZpcm1hdGlvbnRva2VuIjpudWxsLCJsYXN0bG9naW4iOm51bGwsInVzZXJuYW1lIjoiQWRhaCIsImZvdG8iOiI1OGU5MTdmNTVkOGU2LmpwZyIsImV4cCI6MTQ5MjYwMTU3NiwiaWF0IjoxNDkyNTE1MTc2fQ.S5ABA3WyFG5n-iT3al8JVWKIbS6cT38fTw2KwemGfmX72id9SANgcL01sSuLrNcyg15sRcx-qHbES8Fazb8Jrhh6Z5rc9kkboPZZFwpVZjpwldteWmZaeYnWkAJm8ZocF_TWJdwWbJBPYiPAc1d5JsSqpFQkkI4_1a_t8dkLOZ5TZu_2stBaQrZKTo5E7Yibd_uSMqqjkJVE1sUzqk8NIWtVw9xxLCRP8DccDcOB1SD2sdnooGayOk_o3uQ_psjbugOU573IjbpO-cwYoGomP40Y2l1XZmAuybwnCkX442vgogUErErV3n9kDTboVWnj-qN637or4IEtuoe7GChSmsNXAXbvTkEwL7g9NkWAJs4zk1FOtI4lDc_cGH4GbYOdd9768CsB0DmWX7myHmrct9CJo7RWXFIOXgFQbQgoeNLIlUUi9GrgDatNjH_BJmoo0uMumXBuTPG_abYwe5pyHTTS8WW_-HNRKdp5PlhQ8qdCTmHgqjkHUgsoidryj6cE-VFlTmQpt_NzgutJNsAo21aznLN0DcQQXI3tqYu_HcnK4R5KQzibW2VxOvk7Hj1Q3_hYPSirS-FCzligSfsbW2aTJrDmtzQY5mV-qS0heC0KBrE6-idXtfnqgSTZfAfMMQxxETD3E9mH4uGml6qdEAaqdhbvDNWTzBLYmX71eVI" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;nombre&quot;: &quot;Carne con papas&quot;,   &quot;raciones&quot;: &quot;10&quot;,   &quot;tiempo_preparacion&quot;: &quot;15min&quot;,    &quot;ingredientes&quot;: [     &quot;carne&quot;,     &quot;papas&quot;,     &quot;aceite&quot;,     &quot;ajo&quot;   ],    &quot;preparacion&quot;: [     &quot;Cortar&quot;,     &quot;Cocinar durante 15 min&quot;,     &quot;Aliñar &quot;,     &quot;Enplatar&quot;   ]   }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/login" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJpZCI6NjkxLCJlbWFpbCI6IlRpYW5uYXNzdHJvbWFuQGV4YW1wbGUubmV0QGdtYWlsLmNvbSIsImNvbmZpcm1hdGlvbnRva2VuIjpudWxsLCJsYXN0bG9naW4iOm51bGwsInVzZXJuYW1lIjoiQWRhaCIsImZvdG8iOiI1OGU5MTdmNTVkOGU2LmpwZyIsImV4cCI6MTQ5MjYwMTU3NiwiaWF0IjoxNDkyNTE1MTc2fQ.S5ABA3WyFG5n-iT3al8JVWKIbS6cT38fTw2KwemGfmX72id9SANgcL01sSuLrNcyg15sRcx-qHbES8Fazb8Jrhh6Z5rc9kkboPZZFwpVZjpwldteWmZaeYnWkAJm8ZocF_TWJdwWbJBPYiPAc1d5JsSqpFQkkI4_1a_t8dkLOZ5TZu_2stBaQrZKTo5E7Yibd_uSMqqjkJVE1sUzqk8NIWtVw9xxLCRP8DccDcOB1SD2sdnooGayOk_o3uQ_psjbugOU573IjbpO-cwYoGomP40Y2l1XZmAuybwnCkX442vgogUErErV3n9kDTboVWnj-qN637or4IEtuoe7GChSmsNXAXbvTkEwL7g9NkWAJs4zk1FOtI4lDc_cGH4GbYOdd9768CsB0DmWX7myHmrct9CJo7RWXFIOXgFQbQgoeNLIlUUi9GrgDatNjH_BJmoo0uMumXBuTPG_abYwe5pyHTTS8WW_-HNRKdp5PlhQ8qdCTmHgqjkHUgsoidryj6cE-VFlTmQpt_NzgutJNsAo21aznLN0DcQQXI3tqYu_HcnK4R5KQzibW2VxOvk7Hj1Q3_hYPSirS-FCzligSfsbW2aTJrDmtzQY5mV-qS0heC0KBrE6-idXtfnqgSTZfAfMMQxxETD3E9mH4uGml6qdEAaqdhbvDNWTzBLYmX71eVI" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;nombre&quot;: &quot;Carne con papas&quot;,   &quot;raciones&quot;: &quot;10&quot;,   &quot;tiempo_preparacion&quot;: &quot;15min&quot;,    &quot;ingredientes&quot;: [     &quot;carne&quot;,     &quot;papas&quot;,     &quot;aceite&quot;,     &quot;ajo&quot;   ],    &quot;preparacion&quot;: [     &quot;Cortar&quot;,     &quot;Cocinar durante 15 min&quot;,     &quot;Aliñar &quot;,     &quot;Enplatar&quot;   ]   }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost" />
-          <option name="urlPath" value="/app_dev.php/login" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{ &quot;username&quot;: &quot;Adah&quot;, &quot;password&quot;: &quot;test123&quot;  }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.RecetaControllerTest.testNew (1)">
-    <configuration default="false" name="DietaControllerTest.testGet" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="DietaBundle\Tests\Controller\DietaControllerTest" file="$PROJECT_DIR$/tests/DietaBundle/Controller/DietaControllerTest.php" method="testGet" scope="Method" />
-      <method />
-    </configuration>
-    <configuration default="false" name="RecetaControllerTest.testNew" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="DietaBundle\Tests\Controller\RecetaControllerTest" file="$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php" method="testNew" scope="Method" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="PHPUnit.RecetaControllerTest.testGetusuarios_seguidores">
     <configuration default="false" name="RecetaControllerTest.testEdit" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="DietaBundle\Tests\Controller\RecetaControllerTest" file="$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php" method="testEdit" scope="Method" />
       <method />
@@ -2088,6 +2115,14 @@
     </configuration>
     <configuration default="false" name="LoginControllerTest.testLogin" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="DietaBundle\Tests\Controller\LoginControllerTest" file="$PROJECT_DIR$/tests/DietaBundle/Controller/LoginControllerTest.php" method="testLogin" scope="Method" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RecetaControllerTest.testAll" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\DietaBundle\Controller\RecetaControllerTest" file="$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php" method="testAll" scope="Method" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RecetaControllerTest.testGetusuarios_seguidores" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\DietaBundle\Controller\RecetaControllerTest" file="$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php" method="testGetusuarios_seguidores" scope="Method" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -2154,19 +2189,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="PHP Web Application.Usuarios" />
-      <item index="1" class="java.lang.String" itemvalue="PHPUnit.DietaControllerTest.testGet" />
-      <item index="2" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testNew" />
-      <item index="3" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testEdit" />
-      <item index="4" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testNew (1)" />
-      <item index="5" class="java.lang.String" itemvalue="PHPUnit.LoginControllerTest.testLogin" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testEdit" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testNew (1)" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.LoginControllerTest.testLogin" />
+      <item index="4" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testAll" />
+      <item index="5" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testGetusuarios_seguidores" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testNew (1)" />
-        <item index="1" class="java.lang.String" itemvalue="PHPUnit.LoginControllerTest.testLogin" />
-        <item index="2" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testEdit" />
-        <item index="3" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testNew" />
-        <item index="4" class="java.lang.String" itemvalue="PHPUnit.DietaControllerTest.testGet" />
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testGetusuarios_seguidores" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testAll" />
+        <item index="2" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testNew (1)" />
+        <item index="3" class="java.lang.String" itemvalue="PHPUnit.LoginControllerTest.testLogin" />
+        <item index="4" class="java.lang.String" itemvalue="PHPUnit.RecetaControllerTest.testEdit" />
       </list>
     </recent_temporary>
   </component>
@@ -2234,7 +2269,8 @@
       <workItem from="1492599238901" duration="9841000" />
       <workItem from="1492610895020" duration="14674000" />
       <workItem from="1492686263547" duration="284000" />
-      <workItem from="1492686615772" duration="13725000" />
+      <workItem from="1492686615772" duration="27127000" />
+      <workItem from="1492770897366" duration="80000" />
     </task>
     <task id="LOCAL-00001" summary="Primeros Pasos implementando el API REST.">
       <created>1488912254168</created>
@@ -2376,21 +2412,28 @@
       <option name="project" value="LOCAL" />
       <updated>1492510782312</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Correciones">
+      <created>1492704214021</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1492704214021</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoginControllerTest_testLogin - 2017.03.30 at 12h 45m 38s.xml">
-      <configuration name="LoginControllerTest.testLogin" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="RecetaControllerTest_testAll - 2017.04.20 at 19h 12m 02s.xml">
+      <configuration name="RecetaControllerTest.testAll" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="LoginControllerTest_testLogin - 2017.03.30 at 12h 49m 16s.xml">
-      <configuration name="LoginControllerTest.testLogin" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="RecetaControllerTest_testAll - 2017.04.20 at 19h 27m 22s.xml">
+      <configuration name="RecetaControllerTest.testAll" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="RecetaControllerTest_testNew_(1) - 2017.03.29 at 23h 49m 06s.xml">
-      <configuration name="RecetaControllerTest.testNew (1)" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="RecetaControllerTest_testAll - 2017.04.20 at 19h 29m 39s.xml">
+      <configuration name="RecetaControllerTest.testAll" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="RecetaControllerTest_testNew_(1) - 2017.03.30 at 12h 39m 11s.xml">
-      <configuration name="RecetaControllerTest.testNew (1)" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="RecetaControllerTest_testGetusuarios_seguidores - 2017.04.20 at 19h 59m 30s.xml">
+      <configuration name="RecetaControllerTest.testGetusuarios_seguidores" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
     <history-entry file="RecetaControllerTest_testNew_(1) - 2017.03.30 at 12h 44m 23s.xml">
       <configuration name="RecetaControllerTest.testNew (1)" configurationId="PHPUnitRunConfigurationType" />
@@ -2412,7 +2455,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="622665000" />
+    <option name="totallyTimeSpent" value="636147000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -2425,32 +2468,32 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="720" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28528073" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2579666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32828283" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.56155145" sideWeight="0.5030349" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5699831" sideWeight="0.5060698" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14545454" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5969646" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49915683" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44688028" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44688028" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5699831" sideWeight="0.4969651" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5699831" sideWeight="0.4939302" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53794265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="91" y="128" width="1166" height="520" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5969646" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5598651" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41414142" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53794265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32828283" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2528,7 +2571,8 @@
     <MESSAGE value="Fixtures relacionados." />
     <MESSAGE value="Fixtures Relaciones complejas." />
     <MESSAGE value="Documentacion del API y  algunas correciones." />
-    <option name="LAST_COMMIT_MESSAGE" value="Documentacion del API y  algunas correciones." />
+    <MESSAGE value="Correciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correciones" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2543,24 +2587,12 @@
           <line>79</line>
           <option name="timeStamp" value="97" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php</url>
-          <line>593</line>
-          <option name="timeStamp" value="100" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="101" />
+      <option name="time" value="107" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/AbstractFixture.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="30" column="51" lean-forward="true" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DietaBundle/DataFixtures/ORM/DietaFixtures.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -2736,7 +2768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
           <caret line="51" column="10" lean-forward="false" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2744,15 +2775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="41" column="67" lean-forward="false" selection-start-line="41" selection-start-column="67" selection-end-line="41" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2788,17 +2810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="101" lean-forward="false" selection-start-line="2" selection-start-column="101" selection-end-line="2" selection-end-column="101" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/RegistrationControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="68" column="37" lean-forward="false" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
-          <folding>
-            <element signature="e#48#71#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2816,7 +2827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2824,7 +2834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2832,7 +2841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="640" column="0" lean-forward="false" selection-start-line="640" selection-start-column="0" selection-end-line="640" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2840,7 +2848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="340" column="0" lean-forward="false" selection-start-line="340" selection-start-column="0" selection-end-line="340" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2848,7 +2855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2856,7 +2862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2864,7 +2869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2884,48 +2888,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/LoginControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="872">
-          <caret line="75" column="25" lean-forward="false" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="372" column="23" lean-forward="false" selection-start-line="372" selection-start-column="23" selection-end-line="372" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="163" column="80" lean-forward="false" selection-start-line="163" selection-start-column="80" selection-end-line="163" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/PersistentCollection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
+        <state relative-caret-position="7290">
           <caret line="428" column="0" lean-forward="false" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
           <folding>
             <element signature="e#6#987#0#PHP" expanded="false" />
             <element signature="e#1014#1026#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="618" column="28" lean-forward="false" selection-start-line="618" selection-start-column="28" selection-end-line="618" selection-end-column="28" />
-          <folding>
-            <element signature="e#42#70#0#PHP" expanded="true" />
-            <element signature="e#17929#17949#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2938,19 +2914,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6912">
+          <caret line="387" column="41" lean-forward="false" selection-start-line="387" selection-start-column="41" selection-end-line="387" selection-end-column="41" />
+          <folding>
+            <element signature="e#38#80#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/RegistrationControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/LoginControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/Receta.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="74" column="72" lean-forward="false" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="72" />
+        <state relative-caret-position="5364">
+          <caret line="300" column="20" lean-forward="false" selection-start-line="300" selection-start-column="20" selection-end-line="300" selection-end-column="20" />
+          <folding>
+            <element signature="e#38#70#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/RecetaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10872">
+          <caret line="620" column="57" lean-forward="false" selection-start-line="620" selection-start-column="57" selection-end-line="620" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Entity/User.php">
+    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/RecetaControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="55" column="29" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="29" />
+        <state relative-caret-position="3582">
+          <caret line="202" column="56" lean-forward="false" selection-start-line="202" selection-start-column="8" selection-end-line="202" selection-end-column="68" />
+          <folding>
+            <element signature="e#48#100#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DietaBundle/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3960">
+          <caret line="231" column="40" lean-forward="false" selection-start-line="231" selection-start-column="40" selection-end-line="231" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/DietaBundle/Controller/UserControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="51" column="31" lean-forward="false" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+          <folding>
+            <element signature="e#48#71#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
