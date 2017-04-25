@@ -39,17 +39,40 @@ class UserRepository extends \Doctrine\ORM\EntityRepository
 
     }
 
+
+    public function friends ($userid){
+
+        $query = $this->createQueryBuilder('user');
+
+        return   $query
+
+           # ->from('DietaBundle:User', 'user')
+           ->andWhere('user.id = :usuario' )
+            ->leftJoin('user.myFriends','myfriends')
+            ->addSelect('myfriends')
+            ->setParameter('usuario' , $userid)
+            ->getQuery()
+            ->getOneOrNullResult();
+
+    }
+
+
+
+
+
+
+
     public function findSomeUsers($user,$amount = 10,$offset = 0) {
 
         $query = $this->getEntityManager()->createQueryBuilder();
 
         return   $query
             ->select('user')
-            ->from('DietaBundle:User', 'user')
-            ->andWhere('user != :usuario' )
+            ->from('DietaBundle:User', 'usuario')
+            ->andWhere('user!= :usuario' )
             ->setParameter('usuario' , $user)
             ->setMaxResults($amount)
-             ->setFirstResult($offset)
+            ->setFirstResult($offset)
             ->getQuery()
             ->getResult();
 

@@ -16,7 +16,7 @@ use DietaBundle\Entity\User;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 
 /**
- * @Security("is_granted('IS_AUTHENTICATED_FULLY')")
+ * Security("is_granted('IS_AUTHENTICATED_FULLY')")
  */
 class UserController extends FOSRestController
 {
@@ -174,15 +174,15 @@ class UserController extends FOSRestController
     public function friendsAction(Request $request, $id) {
 
         $sn = $this->getDoctrine()->getManager();
-        $user = $sn->getRepository('DietaBundle:User')->find($id);
+        $user = $sn->getRepository('DietaBundle:User')->friends($id);
 
         if (!$user instanceof User) {
             throw new NotFoundHttpException('User not found');
         }
         $friends = $user->getMyFriends();
 
-        $resposne = $this->createApiResponse($friends, 200);
-
+        $response = $this->createApiResponse($friends, 200);
+        return $response;
     }
 
 
